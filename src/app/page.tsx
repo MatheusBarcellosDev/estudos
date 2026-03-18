@@ -46,13 +46,25 @@ export default function Home() {
     setAppState("QUIZ");
     setIsLoadingQuestions(true);
     
+    // Extract filename from URL if it's a proxy URL (e.g. /api/image-proxy?file=test.png)
+    let fileName = "";
+    if (selectedMaterial?.url.includes("file=")) {
+      fileName = decodeURIComponent(selectedMaterial.url.split("file=")[1]);
+    } else if (selectedMaterial?.type === 'image') {
+      fileName = selectedMaterial.url.split('/').pop() || "";
+    }
+
     try {
       const res = await fetch('/api/generate-questions', {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json',
         },
-        body: JSON.stringify({ pdfUrl: selectedMaterial?.url, screenshot }),
+        body: JSON.stringify({ 
+          pdfUrl: selectedMaterial?.url, 
+          screenshot: fileName ? undefined : screenshot,
+          fileName: fileName || undefined
+        }),
       });
 
       if (!res.ok) {

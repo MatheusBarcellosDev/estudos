@@ -16,71 +16,49 @@ export default function PdfReview({ pdfUrl, type = 'pdf', onComplete }: PdfRevie
   const [isCapturing, setIsCapturing] = useState(false);
   const canvasRef = useRef<HTMLCanvasElement>(null);
 
-  // Capture material as image once component mounts
+  // Capture material as image once component mounts (Only needed for PDF as fallback)
   useEffect(() => {
     // Only run in browser
     if (typeof window === "undefined") return;
+    if (type !== 'pdf') return; // For images, we read directly from disk on server
 
     const captureMaterial = async () => {
       if (isCapturing || screenshot) return;
       setIsCapturing(true);
 
       try {
-        if (type === 'image') {
-          // Wait for image to load
-          const img = new Image();
-          img.crossOrigin = "anonymous";
-          img.src = pdfUrl;
-          img.onload = () => {
-            const canvas = canvasRef.current;
-            if (!canvas) return;
-            const ctx = canvas.getContext('2d');
-            if (!ctx) return;
-            canvas.width = img.naturalWidth;
-            canvas.height = img.naturalHeight;
-            ctx.drawImage(img, 0, 0);
-            const base64 = canvas.toDataURL('image/png');
-            setScreenshot(base64);
-            console.log("Image captured successfully (client-side)");
-            setIsCapturing(false);
-          };
-          img.onerror = () => {
-            console.error("Error loading image for capture");
-            setIsCapturing(false);
-          };
-        } else {
-          // Dynamic import for PDF
-          const pdfjsLib = await import("pdfjs-dist");
-          // @ts-ignore
-          pdfjsLib.GlobalWorkerOptions.workerSrc = `https://unpkg.com/pdfjs-dist@${pdfjsLib.version}/build/pdf.worker.min.mjs`;
+        // Dynamic import for PDF
+        const pdfjsLib = await import("pdfjs-dist");
+        // @ts-ignore
+        pdfjsLib.GlobalWorkerOptions.workerSrc = `https://unpkg.com/pdfjs-dist@${pdfjsLib.version}/build/pdf.worker.min.mjs`;
 
-          const loadingTask = pdfjsLib.getDocument(pdfUrl);
-          const pdf = await loadingTask.promise;
-          const page = await pdf.getPage(1);
-          
-          const scale = 1.5;
-          const viewport = page.getViewport({ scale });
-          
-          const canvas = canvasRef.current;
-          if (!canvas) return;
-          
-          const context = canvas.getContext('2d');
-          if (!context) return;
-          
-          canvas.height = viewport.height;
-          canvas.width = viewport.width;
+        const loadingTask = pdfjsLib.getDocument(pdfUrl);
+        const pdf = await loadingTask.promise;
+        const page = await pdf.getPage(1);
+        
+        const scale = 1.5;
+        const viewport = page.getViewport({ scale });
+        
+        const canvas = canvasRef.current;
+        if (!canvas) return;
+        
+        const context = canvas.getContext('2d');
+        if (!context) return;
+        
+        canvas.height = viewport.height;
+        canvas.width = viewport.width;
 
-          await page.render({
-            canvasContext: context,
-            viewport: viewport,
-            canvas: canvas as any
-          }).promise;
+        await page.render({
+          canvasContext: context,
+          viewport: viewport,
+          canvas: canvas as any
+        }).promise;
 
-          const base64Image = canvas.toDataURL('image/png');
-          setScreenshot(base64Image);
-          console.log("PDF Screen captured successfully (client-side)");
-          setIsCapturing(false);
-        }
+        // Use JPEG with 0.8 quality to reduce payload size
+        const base64Image = canvas.toDataURL('image/jpeg', 0.8);
+        setScreenshot(base64Image);
+        console.log("PDF Screen captured and compressed successfully (client-side fallback)");
+        setIsCapturing(false);
       } catch (error) {
         console.error("Error capturing material screenshot:", error);
         setIsCapturing(false);
@@ -114,8 +92,8 @@ export default function PdfReview({ pdfUrl, type = 'pdf', onComplete }: PdfRevie
           </div>
           
           <Button
-            onClick={() => screenshot && onComplete(screenshot)}
-            disabled={!screenshot || isCapturing}
+            onClick={() => onComplete(screenshot || "")}
+            disabled={(type === 'pdf' && !screenshot) || isCapturing}
             size="lg"
             className="px-8 text-lg h-12 rounded-xl shadow-lg hover:shadow-primary/25 hover:-translate-y-0.5 transition-all group font-bold"
           >

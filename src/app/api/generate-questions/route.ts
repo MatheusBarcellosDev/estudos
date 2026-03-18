@@ -1,5 +1,7 @@
 import { NextResponse } from 'next/server';
 import OpenAI from 'openai';
+import fs from 'fs';
+import path from 'path';
 
 const openai = new OpenAI({
   apiKey: process.env.OPENAI_API_KEY,
@@ -11,15 +13,26 @@ export async function POST(req: Request) {
       return NextResponse.json({ error: 'OPENAI_API_KEY não configurada no .env.local' }, { status: 500 });
     }
 
-    const { pdfUrl, screenshot } = await req.json();
-    if (!screenshot) {
-      return NextResponse.json({ error: 'Screenshot is required' }, { status: 400 });
+    const { pdfUrl, screenshot, fileName } = await req.json();
+    
+    let base64Data = '';
+
+    if (fileName) {
+      // 1. New Efficient Way: Read directly from server disk
+      const filePath = path.join(process.cwd(), 'sample-images', path.basename(fileName));
+      if (!fs.existsSync(filePath)) {
+        throw new Error('Arquivo não encontrado no servidor: ' + fileName);
+      }
+      const buffer = fs.readFileSync(filePath);
+      base64Data = buffer.toString('base64');
+      console.log(`[DEBUG] Read image from disk: ${fileName}. Size: ${(buffer.length / 1024 / 1024).toFixed(2)}MB`);
+    } else if (screenshot) {
+      // 2. Legacy/Fallback: Receive from client (prone to 413 errors)
+      base64Data = screenshot.replace(/^data:image\/\w+;base64,/, '');
+      console.log('[DEBUG] Using screenshot from client. Length:', base64Data.length);
+    } else {
+      return NextResponse.json({ error: 'fileName or screenshot is required' }, { status: 400 });
     }
-
-    console.log('[DEBUG] Received screenshot from client. Length:', screenshot.length);
-
-    // 1. Prepare image for OpenAI (strip base64 header if present)
-    const base64Data = screenshot.replace(/^data:image\/\w+;base64,/, '');
 
     // 2. Send image to gpt-4o-mini via Chat Completions Vision API
     const prompt = `Você é um especialista em concursos públicos e criação de questões da banca CEBRASPE.
