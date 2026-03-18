@@ -1,44 +1,51 @@
 "use client";
 
-import { useState } from "react";
+import { useState, useEffect } from "react";
 import dynamic from "next/dynamic";
 import Dashboard from "@/components/Dashboard";
 const PdfReview = dynamic(() => import("@/components/PdfReview"), { ssr: false });
 import Quiz from "@/components/Quiz";
 import Results from "@/components/Results";
-import { Question, QuizResult } from "@/types";
-
-export type AppState = "DASHBOARD" | "REVIEW" | "QUIZ" | "RESULTS";
-
-// A mock question string so the build works. We will fetch these later.
-const MOCK_QUESTIONS: Question[] = [
-  { text: "A segunda lei da termodinâmica afirma que a entropia de um sistema isolado tende a diminuir.", answer: "ERRADO", explanation: "A entropia tende a aumentar." },
-];
+import { Question, QuizResult, Material, AppState } from "@/types";
 
 export default function Home() {
   const [appState, setAppState] = useState<AppState>("DASHBOARD");
-  const [selectedMaterial, setSelectedMaterial] = useState<{ url: string, type: 'pdf' | 'image' } | null>(null);
+  
+  // Session State
+  const [allMaterials, setAllMaterials] = useState<Material[]>([]);
+  const [currentIndex, setCurrentIndex] = useState(0);
+  const [selectedMaterial, setSelectedMaterial] = useState<Material | null>(null);
   
   // Quiz State
   const [questions, setQuestions] = useState<Question[]>([]);
   const [results, setResults] = useState<QuizResult[]>([]);
   const [isLoadingQuestions, setIsLoadingQuestions] = useState(false);
 
-  const handleStartStudy = async () => {
-    try {
-      const res = await fetch('/api/list-pdfs');
-      const data = await res.json();
-      
-      if (data.materials && data.materials.length > 0) {
-        const randomItem = data.materials[Math.floor(Math.random() * data.materials.length)];
-        setSelectedMaterial({ url: randomItem.url, type: randomItem.type });
-        setAppState("REVIEW");
-      } else {
-        alert("Nenhum mapa encontrado na pasta public/sample-images. Por favor, adicione imagens (PNG/JPG) para começar.");
+  // Fetch all materials once at the start
+  useEffect(() => {
+    const fetchMaterials = async () => {
+      try {
+        const res = await fetch('/api/list-pdfs');
+        const data = await res.json();
+        if (data.materials && data.materials.length > 0) {
+          // Shuffle the list for a new experience each session
+          const shuffled = [...data.materials].sort(() => Math.random() - 0.5);
+          setAllMaterials(shuffled);
+        }
+      } catch (error) {
+        console.error("Erro ao carregar materiais:", error);
       }
-    } catch (error) {
-      console.error(error);
-      alert("Erro ao buscar a lista de materiais.");
+    };
+    fetchMaterials();
+  }, []);
+
+  const handleStartStudy = () => {
+    if (allMaterials.length > 0) {
+      const material = allMaterials[currentIndex];
+      setSelectedMaterial(material);
+      setAppState("REVIEW");
+    } else {
+      alert("Nenhum mapa encontrado. Por favor, adicione imagens para começar.");
     }
   };
 
@@ -76,11 +83,13 @@ export default function Home() {
     } catch (error: any) {
       console.error(error);
       alert("Erro ao gerar questões: " + (error.message || "Erro desconhecido"));
+      
+      // Error fallback
       setQuestions([
         { 
-          text: "Erro ao gerar questões. Por favor, tente novamente clicando em Iniciar Estudo.", 
-          answer: "ERRADO", 
-          explanation: "Houve uma falha na comunicação com a IA ou no processamento do PDF." 
+          afirmacao: "Erro ao gerar questões. Por favor, tente novamente.", 
+          resposta: "ERRADO", 
+          explicacao: "Houve uma falha na comunicação com a IA." 
         }
       ]);
     } finally {
@@ -93,8 +102,24 @@ export default function Home() {
     setAppState("RESULTS");
   };
 
+  const handleNextStudy = () => {
+    const nextIndex = currentIndex + 1;
+    if (nextIndex < allMaterials.length) {
+      setCurrentIndex(nextIndex);
+      setSelectedMaterial(allMaterials[nextIndex]);
+      setQuestions([]);
+      setResults([]);
+      setAppState("REVIEW");
+    } else {
+      // Loop or complete session? For now, reset and go to dashboard
+      handleRestart();
+      alert("Parabéns! Você completou todos os mapas disponíveis nesta sessão.");
+    }
+  };
+
   const handleRestart = () => {
     setAppState("DASHBOARD");
+    setCurrentIndex(0); // Reset progress on manual restart
     setSelectedMaterial(null);
     setQuestions([]);
     setResults([]);
@@ -103,13 +128,20 @@ export default function Home() {
   return (
     <main className="min-h-screen bg-[#FDFDFD] dark:bg-[#0A0A0A] text-neutral-900 dark:text-neutral-50 font-sans transition-colors duration-300">
       <div className="container mx-auto p-4 sm:p-6 lg:p-8 flex flex-col items-center justify-center">
-        {appState === "DASHBOARD" && <Dashboard onStart={handleStartStudy} />}
+        {appState === "DASHBOARD" && (
+          <Dashboard 
+            onStart={handleStartStudy} 
+            totalMaterials={allMaterials.length}
+          />
+        )}
         
         {appState === "REVIEW" && selectedMaterial && (
           <PdfReview 
             pdfUrl={selectedMaterial.url}
             type={selectedMaterial.type}
-            onComplete={handleReviewComplete} 
+            onComplete={handleReviewComplete}
+            currentCount={currentIndex + 1}
+            totalCount={allMaterials.length}
           />
         )}
         
@@ -125,7 +157,9 @@ export default function Home() {
         {appState === "RESULTS" && (
           <Results 
             results={results} 
-            onRestart={handleRestart} 
+            onRestart={handleRestart}
+            onNext={handleNextStudy}
+            hasNext={currentIndex + 1 < allMaterials.length}
           />
         )}
       </div>

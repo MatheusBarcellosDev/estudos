@@ -14,7 +14,7 @@ export async function POST(req: Request) {
     }
 
     const { pdfUrl, screenshot, fileName } = await req.json();
-    
+
     let base64Data = '';
 
     if (fileName) {
@@ -35,31 +35,72 @@ export async function POST(req: Request) {
     }
 
     // 2. Send image to gpt-4o-mini via Chat Completions Vision API
-    const prompt = `Você é um especialista em concursos públicos e criação de questões da banca CEBRASPE.
+    const prompt = `Você é um especialista em concursos públicos e criação de questões no padrão CEBRASPE (CERTO ou ERRADO), com profundo domínio teórico das disciplinas cobradas.
 
-Sua tarefa é criar questões no formato CERTO ou ERRADO baseadas exclusivamente no mapa mental/imagem fornecida.
+Sua tarefa é analisar minuciosamente o mapa mental, imagem, gráfico ou texto fornecido e gerar questões de alto nível.
 
-Regras obrigatórias:
+OBJETIVO:
+Criar 5 questões inéditas no formato CERTO ou ERRADO, exigindo raciocínio profundo e domínio conceitual.
+
+REGRAS OBRIGATÓRIAS:
+
+1. QUANTIDADE:
 - Crie exatamente 5 questões.
-- Cada questão deve ter um "contexto" (um pequeno texto de apoio ou situação hipotética baseada no mapa) e uma "afirmação" (o item a ser julgado).
-- As afirmações devem parecer questões reais de prova, explorando conceitos importantes do texto/imagem.
-- Podem conter pegadinhas conceituais (inversão, troca de palavras).
-- O nível deve ser difícil.
-- Não invente conteúdo que não esteja no texto.
-- As respostas devem ser apenas "CERTO" ou "ERRADO".
-- Misture respostas CERTAS e ERRADAS.
 
-Retorne um objeto JSON exatamente neste formato:
+2. ESTRUTURA:
+Cada questão deve conter:
+- "contexto": situação, explicação ou mini-caso baseado no conteúdo fornecido
+- "afirmacao": item a ser julgado (estilo CEBRASPE)
+- "resposta": "CERTO" ou "ERRADO"
+- "explicacao": explicação detalhada, didática e técnica (mínimo 3 frases)
+
+3. FIDELIDADE AO CONTEÚDO:
+- NÃO invente conteúdos fora do material fornecido.
+- Toda questão deve estar fundamentada direta ou indiretamente no conteúdo.
+- É permitido aprofundar o conceito, mas sem sair do tema central.
+
+4. NÍVEL DE DIFICULDADE:
+- As questões devem ser difíceis, com nível de prova real.
+- Evite questões óbvias ou diretas.
+
+5. USO DE RACIOCÍNIO (ESSENCIAL):
+As questões NÃO devem ser apenas cópia do material.
+Você deve:
+- Explorar implicações do conceito
+- Relacionar causa e efeito
+- Aplicar o conceito em situações hipotéticas
+- Testar entendimento profundo
+
+6. TÉCNICAS ESTILO CEBRASPE (OBRIGATÓRIO USAR PELO MENOS 3):
+- Inversão de conceitos (ex: relação direta vs inversa)
+- Troca de nomenclaturas (descrever certo, nome errado)
+- Uso de termos absolutos ("sempre", "nunca", "apenas")
+- Generalizações indevidas
+- Extrapolações plausíveis porém incorretas
+- Confusão entre conceitos semelhantes
+
+7. DISTRIBUIÇÃO:
+- Misture respostas CERTAS e ERRADAS.
+- Evite padrões previsíveis (ex: alternância perfeita).
+
+8. QUALIDADE DAS EXPLICAÇÕES:
+- Explique o conceito envolvido, não apenas diga que está certo ou errado.
+- A explicação deve ensinar o conteúdo ao aluno.
+
+FORMATO DE SAÍDA (OBRIGATÓRIO):
+
+Retorne APENAS um JSON válido, exatamente neste formato:
+
 {
   "questions": [
     {
-      "contexto": "Texto de apoio ou base para a afirmação...",
-      "afirmacao": "A afirmação que deve ser julgada como CERTO ou ERRADO...",
+      "contexto": "Texto de apoio ou situação baseada no conteúdo...",
+      "afirmacao": "A afirmação a ser julgada...",
       "resposta": "CERTO ou ERRADO",
-      "explicacao": "Uma explicação detalhada e pedagógica sobre o tema, explicando o porquê da resposta para ajudar o aluno a aprender o conceito (mínimo 3 sentenças)."
+      "explicacao": "Explicação detalhada e pedagógica com no mínimo 3 frases."
     }
   ]
-}`;
+}ss`;
 
     console.log('[DEBUG] Calling OpenAI Vision API (JSON Mode)...');
     const result = await openai.chat.completions.create({
@@ -94,7 +135,7 @@ Retorne um objeto JSON exatamente neste formato:
     try {
       const parsed = JSON.parse(rawContent);
       const items = parsed.questions || parsed.items || (Array.isArray(parsed) ? parsed : Object.values(parsed)[0]);
-      
+
       if (!Array.isArray(items)) {
         throw new Error('Formato JSON inválido: "questions" deve ser um array.');
       }
@@ -119,7 +160,7 @@ Retorne um objeto JSON exatamente neste formato:
 
   } catch (error: any) {
     console.error('Generate API Error:', error);
-    return NextResponse.json({ 
+    return NextResponse.json({
       error: error.message || 'Internal Server Error',
       stack: process.env.NODE_ENV === 'development' ? error.stack?.split('\n').slice(0, 3) : undefined
     }, { status: 500 });

@@ -2,15 +2,17 @@
 
 import { motion } from "framer-motion";
 import { Button } from "@/components/ui/button";
-import { CheckCircle2, XCircle, RefreshCw, Trophy } from "lucide-react";
+import { CheckCircle2, XCircle, RefreshCw, Trophy, Zap } from "lucide-react";
 import { QuizResult } from "@/types";
 
 interface ResultsProps {
   results: QuizResult[];
   onRestart: () => void;
+  onNext?: () => void;
+  hasNext?: boolean;
 }
 
-export default function Results({ results, onRestart }: ResultsProps) {
+export default function Results({ results, onRestart, onNext, hasNext }: ResultsProps) {
   const correctCount = results.filter((r) => r.isCorrect).length;
   const totalCount = results.length;
   const percentage = Math.round((correctCount / totalCount) * 100);
@@ -45,57 +47,87 @@ export default function Results({ results, onRestart }: ResultsProps) {
         </div>
       </div>
 
-      {/* Answers Breakdown */}
-      <div className="w-full space-y-4">
-        <h3 className="text-2xl font-bold px-2 py-2">Gabarito Comentado</h3>
-        {results.map((result, index) => (
-          <div 
-            key={index} 
-            className={`p-6 rounded-2xl border ${
-              result.userAnswer === "NÃO SEI" 
-                ? 'bg-blue-50/50 dark:bg-blue-950/10 border-blue-200 dark:border-blue-900/50'
-                : result.isCorrect 
-                  ? 'bg-green-50/50 dark:bg-green-950/10 border-green-200 dark:border-green-900/50' 
-                  : 'bg-red-50/50 dark:bg-red-950/10 border-red-200 dark:border-red-900/50'
-            }`}
+      {/* Action Buttons */}
+      <div className="w-full flex flex-col sm:flex-row gap-4 justify-center">
+        <Button 
+          onClick={onRestart} 
+          variant="outline" 
+          size="lg" 
+          className="w-full sm:w-auto px-10 h-14 rounded-2xl font-bold border-2 hover:bg-black/5 dark:hover:bg-white/5 transition-all"
+        >
+          Voltar ao Início
+        </Button>
+
+        {hasNext && onNext && (
+          <Button 
+            onClick={onNext} 
+            size="lg" 
+            className="w-full sm:w-auto px-10 h-14 rounded-2xl font-bold shadow-lg hover:shadow-primary/25 hover:-translate-y-1 transition-all"
           >
-            <div className="flex items-start gap-4">
-              <div className="pt-1">
-                {result.userAnswer === "NÃO SEI" ? (
-                  <RefreshCw className="w-6 h-6 text-blue-600 dark:text-blue-400" />
-                ) : result.isCorrect ? (
-                  <CheckCircle2 className="w-6 h-6 text-green-600 dark:text-green-500" />
-                ) : (
-                  <XCircle className="w-6 h-6 text-red-600 dark:text-red-500" />
-                )}
-              </div>
-              <div className="space-y-3 flex-grow">
-                {result.question.context && (
-                  <p className="text-xs text-muted-foreground italic border-l-2 pl-3 py-1 bg-muted/30">
-                    {result.question.context}
+            Estudar Próximo Mapa
+          </Button>
+        )}
+      </div>
+
+      <div className="w-full space-y-6">
+        <h3 className="text-2xl font-bold px-2">Gabarito Comentado</h3>
+        <div className="grid gap-6">
+          {results.map((result, idx) => (
+            <motion.div 
+              key={idx}
+              initial={{ opacity: 0, y: 20 }}
+              animate={{ opacity: 1, y: 0 }}
+              transition={{ delay: 0.1 * idx }}
+              className="bg-card text-card-foreground p-6 rounded-3xl border shadow-sm"
+            >
+              <div className="flex items-start gap-4">
+                <div className={`mt-1 p-2 rounded-xl flex-shrink-0 ${
+                  result.isCorrect ? 'bg-green-100 text-green-700' : 'bg-red-100 text-red-700'
+                }`}>
+                  {result.isCorrect ? <CheckCircle2 className="w-6 h-6" /> : <XCircle className="w-6 h-6" />}
+                </div>
+                
+                <div className="space-y-3">
+                  {result.question.context && (
+                    <div className="p-3 bg-muted/30 rounded-xl border border-border text-sm italic text-muted-foreground leading-relaxed">
+                      {result.question.context}
+                    </div>
+                  )}
+                  <p className="text-lg font-medium leading-relaxed">
+                    {result.question.afirmacao}
                   </p>
-                )}
-                <p className="text-lg font-medium leading-relaxed">
-                  {result.question.text}
-                </p>
-                <div className="flex flex-wrap gap-3 text-sm font-medium">
-                  <span className="px-2 py-1 rounded-md bg-neutral-200/50 dark:bg-neutral-800/50 border">
-                    Gabarito: <span className={result.question.answer === "CERTO" ? 'text-green-600 dark:text-green-400 font-bold' : 'text-red-600 dark:text-red-400 font-bold'}>{result.question.answer}</span>
-                  </span>
-                  <span className={`px-2 py-1 rounded-md border ${
-                    result.userAnswer === "NÃO SEI" ? 'bg-blue-100 dark:bg-blue-900/30 text-blue-700 dark:text-blue-300' : 'bg-neutral-200/50 dark:bg-neutral-800/50'
-                  }`}>
-                    Sua Resposta: <span className="font-bold">{result.userAnswer}</span>
-                  </span>
-                </div>
-                <div className="p-4 bg-background rounded-xl text-sm leading-relaxed border mt-2 shadow-sm">
-                  <strong className="text-primary mr-2">📚 Explicação Detalhada:</strong> 
-                  {result.question.explanation}
+                  
+                  <div className="flex flex-wrap items-center gap-3 text-sm">
+                    <span className={`px-3 py-1 rounded-full font-bold border-2 ${
+                      result.question.resposta === 'CERTO' 
+                        ? 'border-green-500/30 bg-green-500/10 text-green-700' 
+                        : 'border-red-500/30 bg-red-500/10 text-red-700'
+                    }`}>
+                      Gabarito: {result.question.resposta}
+                    </span>
+                    
+                    <span className={`px-3 py-1 rounded-full font-bold border-2 ${
+                      result.userAnswer === result.question.resposta 
+                        ? 'border-green-500/30 bg-green-500/10 text-green-700' 
+                        : 'border-red-500/30 bg-red-500/10 text-red-700'
+                    }`}>
+                      Sua Resposta: <span className="font-bold">{result.userAnswer || "PULOU"}</span>
+                    </span>
+                  </div>
+                  
+                  <div className="p-4 bg-muted/40 rounded-2xl border-l-4 border-primary/40">
+                    <p className="text-sm font-semibold text-primary mb-1 inline-flex items-center">
+                      <Zap className="w-4 h-4 mr-1" /> Explicação:
+                    </p>
+                    <p className="text-sm text-muted-foreground leading-relaxed">
+                      {result.question.explicacao}
+                    </p>
+                  </div>
                 </div>
               </div>
-            </div>
-          </div>
-        ))}
+            </motion.div>
+          ))}
+        </div>
       </div>
 
       {/* Action */}

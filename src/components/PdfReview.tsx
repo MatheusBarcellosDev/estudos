@@ -7,11 +7,19 @@ import { Timer, ArrowRight, EyeOff, Loader2 } from "lucide-react";
 
 interface PdfReviewProps {
   pdfUrl: string;
-  type?: 'pdf' | 'image';
+  type: 'pdf' | 'image';
   onComplete: (screenshot: string) => void;
+  currentCount?: number;
+  totalCount?: number;
 }
 
-export default function PdfReview({ pdfUrl, type = 'pdf', onComplete }: PdfReviewProps) {
+export default function PdfReview({ 
+  pdfUrl, 
+  type, 
+  onComplete, 
+  currentCount, 
+  totalCount 
+}: PdfReviewProps) {
   const [screenshot, setScreenshot] = useState<string | null>(null);
   const [isCapturing, setIsCapturing] = useState(false);
   const canvasRef = useRef<HTMLCanvasElement>(null);
@@ -90,6 +98,21 @@ export default function PdfReview({ pdfUrl, type = 'pdf', onComplete }: PdfRevie
             </h2>
             <p className="text-xs text-muted-foreground mt-1">Estude o mapa e clique no botão quando estiver pronto para as questões.</p>
           </div>
+          <div className="flex items-center gap-4">
+          {currentCount && totalCount && (
+            <div className="px-3 py-1 bg-primary/20 text-primary rounded-full text-sm font-bold border border-primary/20">
+              Mapa {currentCount} de {totalCount}
+            </div>
+          )}
+          <Button 
+            variant="ghost" 
+            size="sm" 
+            onClick={() => onComplete("")} 
+            className="rounded-xl hover:bg-black/5 dark:hover:bg-white/5"
+          >
+            Pular Revisão
+          </Button>
+        </div>
           
           <Button
             onClick={() => onComplete(screenshot || "")}

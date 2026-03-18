@@ -1,8 +1,16 @@
+export interface Material {
+  name: string;
+  type: 'pdf' | 'image';
+  url: string;
+}
+
+export type AppState = 'DASHBOARD' | 'REVIEW' | 'QUIZ' | 'RESULTS';
+
 export interface Question {
-  context?: string;
-  text: string;
-  answer: "CERTO" | "ERRADO";
-  explanation: string;
+  afirmacao: string;
+  resposta: 'CERTO' | 'ERRADO';
+  explicacao: string;
+  context?: string; // CEBRASPE style preamble/context
 }
 
 export interface QuizResult {

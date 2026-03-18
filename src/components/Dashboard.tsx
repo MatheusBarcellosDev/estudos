@@ -5,9 +5,10 @@ import { BookOpen, BrainCircuit } from "lucide-react";
 
 interface DashboardProps {
   onStart: () => void;
+  totalMaterials: number;
 }
 
-export default function Dashboard({ onStart }: DashboardProps) {
+export default function Dashboard({ onStart, totalMaterials }: DashboardProps) {
   return (
     <motion.div 
       initial={{ opacity: 0, scale: 0.95 }}
@@ -46,6 +47,10 @@ export default function Dashboard({ onStart }: DashboardProps) {
         <div className="bg-card text-card-foreground p-4 rounded-2xl border shadow-sm">
           <p className="text-sm text-muted-foreground font-medium mb-1">Tempo de Leitura</p>
           <p className="text-lg font-semibold">2 Minutos</p>
+        </div>
+        <div className="bg-card text-card-foreground p-4 rounded-2xl border shadow-sm col-span-2">
+          <p className="text-sm text-muted-foreground font-medium mb-1">Total de Mapas Disponíveis</p>
+          <p className="text-xl font-bold text-primary">{totalMaterials}</p>
         </div>
       </div>
     </motion.div>
