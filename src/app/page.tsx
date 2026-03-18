@@ -1,65 +1,122 @@
-import Image from "next/image";
+"use client";
+
+import { useState } from "react";
+import dynamic from "next/dynamic";
+import Dashboard from "@/components/Dashboard";
+const PdfReview = dynamic(() => import("@/components/PdfReview"), { ssr: false });
+import Quiz from "@/components/Quiz";
+import Results from "@/components/Results";
+import { Question, QuizResult } from "@/types";
+
+export type AppState = "DASHBOARD" | "REVIEW" | "QUIZ" | "RESULTS";
+
+// A mock question string so the build works. We will fetch these later.
+const MOCK_QUESTIONS: Question[] = [
+  { text: "A segunda lei da termodinâmica afirma que a entropia de um sistema isolado tende a diminuir.", answer: "ERRADO", explanation: "A entropia tende a aumentar." },
+];
 
 export default function Home() {
+  const [appState, setAppState] = useState<AppState>("DASHBOARD");
+  const [selectedMaterial, setSelectedMaterial] = useState<{ url: string, type: 'pdf' | 'image' } | null>(null);
+  
+  // Quiz State
+  const [questions, setQuestions] = useState<Question[]>([]);
+  const [results, setResults] = useState<QuizResult[]>([]);
+  const [isLoadingQuestions, setIsLoadingQuestions] = useState(false);
+
+  const handleStartStudy = async () => {
+    try {
+      const res = await fetch('/api/list-pdfs');
+      const data = await res.json();
+      
+      if (data.materials && data.materials.length > 0) {
+        const randomItem = data.materials[Math.floor(Math.random() * data.materials.length)];
+        setSelectedMaterial({ url: randomItem.url, type: randomItem.type });
+        setAppState("REVIEW");
+      } else {
+        alert("Nenhum mapa encontrado na pasta public/sample-images. Por favor, adicione imagens (PNG/JPG) para começar.");
+      }
+    } catch (error) {
+      console.error(error);
+      alert("Erro ao buscar a lista de materiais.");
+    }
+  };
+
+  const handleReviewComplete = async (screenshot: string) => {
+    setAppState("QUIZ");
+    setIsLoadingQuestions(true);
+    
+    try {
+      const res = await fetch('/api/generate-questions', {
+        method: 'POST',
+        headers: {
+          'Content-Type': 'application/json',
+        },
+        body: JSON.stringify({ pdfUrl: selectedMaterial?.url, screenshot }),
+      });
+
+      if (!res.ok) {
+        throw new Error('Failed to generate questions');
+      }
+
+      const data = await res.json();
+      setQuestions(data.questions);
+    } catch (error: any) {
+      console.error(error);
+      alert("Erro ao gerar questões: " + (error.message || "Erro desconhecido"));
+      setQuestions([
+        { 
+          text: "Erro ao gerar questões. Por favor, tente novamente clicando em Iniciar Estudo.", 
+          answer: "ERRADO", 
+          explanation: "Houve uma falha na comunicação com a IA ou no processamento do PDF." 
+        }
+      ]);
+    } finally {
+      setIsLoadingQuestions(false);
+    }
+  };
+
+  const handleQuizComplete = (finalResults: QuizResult[]) => {
+    setResults(finalResults);
+    setAppState("RESULTS");
+  };
+
+  const handleRestart = () => {
+    setAppState("DASHBOARD");
+    setSelectedMaterial(null);
+    setQuestions([]);
+    setResults([]);
+  };
+
   return (
-    <div className="flex min-h-screen items-center justify-center bg-zinc-50 font-sans dark:bg-black">
-      <main className="flex min-h-screen w-full max-w-3xl flex-col items-center justify-between py-32 px-16 bg-white dark:bg-black sm:items-start">
-        <Image
-          className="dark:invert"
-          src="/next.svg"
-          alt="Next.js logo"
-          width={100}
-          height={20}
-          priority
-        />
-        <div className="flex flex-col items-center gap-6 text-center sm:items-start sm:text-left">
-          <h1 className="max-w-xs text-3xl font-semibold leading-10 tracking-tight text-black dark:text-zinc-50">
-            To get started, edit the page.tsx file.
-          </h1>
-          <p className="max-w-md text-lg leading-8 text-zinc-600 dark:text-zinc-400">
-            Looking for a starting point or more instructions? Head over to{" "}
-            <a
-              href="https://vercel.com/templates?framework=next.js&utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-              className="font-medium text-zinc-950 dark:text-zinc-50"
-            >
-              Templates
-            </a>{" "}
-            or the{" "}
-            <a
-              href="https://nextjs.org/learn?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-              className="font-medium text-zinc-950 dark:text-zinc-50"
-            >
-              Learning
-            </a>{" "}
-            center.
-          </p>
-        </div>
-        <div className="flex flex-col gap-4 text-base font-medium sm:flex-row">
-          <a
-            className="flex h-12 w-full items-center justify-center gap-2 rounded-full bg-foreground px-5 text-background transition-colors hover:bg-[#383838] dark:hover:bg-[#ccc] md:w-[158px]"
-            href="https://vercel.com/new?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            <Image
-              className="dark:invert"
-              src="/vercel.svg"
-              alt="Vercel logomark"
-              width={16}
-              height={16}
-            />
-            Deploy Now
-          </a>
-          <a
-            className="flex h-12 w-full items-center justify-center rounded-full border border-solid border-black/[.08] px-5 transition-colors hover:border-transparent hover:bg-black/[.04] dark:border-white/[.145] dark:hover:bg-[#1a1a1a] md:w-[158px]"
-            href="https://nextjs.org/docs?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Documentation
-          </a>
-        </div>
-      </main>
-    </div>
+    <main className="min-h-screen bg-[#FDFDFD] dark:bg-[#0A0A0A] text-neutral-900 dark:text-neutral-50 font-sans transition-colors duration-300">
+      <div className="container mx-auto p-4 sm:p-6 lg:p-8 flex flex-col items-center justify-center">
+        {appState === "DASHBOARD" && <Dashboard onStart={handleStartStudy} />}
+        
+        {appState === "REVIEW" && selectedMaterial && (
+          <PdfReview 
+            pdfUrl={selectedMaterial.url}
+            type={selectedMaterial.type}
+            onComplete={handleReviewComplete} 
+          />
+        )}
+        
+        {appState === "QUIZ" && selectedMaterial && (
+          <Quiz 
+            pdfUrl={selectedMaterial.url}
+            questions={questions}
+            isLoading={isLoadingQuestions}
+            onComplete={handleQuizComplete} 
+          />
+        )}
+        
+        {appState === "RESULTS" && (
+          <Results 
+            results={results} 
+            onRestart={handleRestart} 
+          />
+        )}
+      </div>
+    </main>
   );
 }
