@@ -100,7 +100,8 @@ Retorne APENAS um JSON válido, exatamente neste formato:
       "explicacao": "Explicação detalhada e pedagógica com no mínimo 3 frases."
     }
   ]
-}ss`;
+}
+`;
 
     console.log('[DEBUG] Calling OpenAI Vision API (JSON Mode)...');
     const result = await openai.chat.completions.create({
@@ -140,12 +141,12 @@ Retorne APENAS um JSON válido, exatamente neste formato:
         throw new Error('Formato JSON inválido: "questions" deve ser um array.');
       }
 
-      // Map Portuguese keys to Internal keys (text, answer, explanation)
+      // Map Portuguese keys to match the frontend interface
       questions = items.map((item: any) => ({
-        context: item.contexto || item.context || item.preamble,
-        text: item.afirmacao || item.text || item.question,
-        answer: (item.resposta || item.answer || "").toUpperCase(),
-        explanation: item.explicacao || item.explanation || item.reason,
+        context: item.contexto || item.context || item.preamble || "",
+        afirmacao: item.afirmacao || item.text || item.question || "",
+        resposta: (item.resposta || item.answer || "").toUpperCase(),
+        explicacao: item.explicacao || item.explanation || item.reason || "",
       }));
     } catch (e: any) {
       console.error('[OpenAI] JSON Parse Fail. Content:', rawContent);

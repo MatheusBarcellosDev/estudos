@@ -112,17 +112,17 @@ export default function Quiz({ pdfUrl, questions, isLoading, onComplete }: QuizP
           </AnimatePresence>
 
           {/* Answer Buttons */}
-          <div className="grid grid-cols-2 gap-4 pt-4">
+          <div className="grid grid-cols-1 sm:grid-cols-2 gap-4 pt-4 mt-auto">
             <Button
               onClick={() => handleAnswer("CERTO")}
               disabled={showFeedback || isAnswering}
               variant="outline"
-              className={`h-20 text-xl font-black rounded-2xl border-2 transition-all duration-300 ${
+              className={`h-24 sm:h-20 text-2xl font-black rounded-3xl border-2 transition-all duration-300 ${
                 showFeedback && currentQuestion.resposta === "CERTO"
-                  ? "bg-green-500 text-white border-green-500 scale-105 shadow-lg shadow-green-500/20"
+                  ? "bg-green-500 text-white border-green-500 scale-105 shadow-xl shadow-green-500/30"
                   : showFeedback && userAnswer === "CERTO" && currentQuestion.resposta !== "CERTO"
                   ? "bg-red-500 text-white border-red-500"
-                  : "hover:bg-green-500/10 hover:border-green-500/50 hover:text-green-600"
+                  : "hover:bg-green-500/10 hover:border-green-500/50 hover:text-green-600 border-green-500/20"
               }`}
             >
               CERTO
@@ -131,12 +131,12 @@ export default function Quiz({ pdfUrl, questions, isLoading, onComplete }: QuizP
               onClick={() => handleAnswer("ERRADO")}
               disabled={showFeedback || isAnswering}
               variant="outline"
-              className={`h-20 text-xl font-black rounded-2xl border-2 transition-all duration-300 ${
+              className={`h-24 sm:h-20 text-2xl font-black rounded-3xl border-2 transition-all duration-300 ${
                 showFeedback && currentQuestion.resposta === "ERRADO"
-                  ? "bg-red-500 text-white border-red-500 scale-105 shadow-lg shadow-red-500/20"
+                  ? "bg-red-500 text-white border-red-500 scale-105 shadow-xl shadow-red-500/30"
                   : showFeedback && userAnswer === "ERRADO" && currentQuestion.resposta !== "ERRADO"
                   ? "bg-green-500 text-white border-green-500"
-                  : "hover:bg-red-500/10 hover:border-red-500/50 hover:text-red-600"
+                  : "hover:bg-red-500/10 hover:border-red-500/50 hover:text-red-600 border-red-500/20"
               }`}
             >
               ERRADO

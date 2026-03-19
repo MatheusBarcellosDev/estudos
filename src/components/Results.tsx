@@ -25,25 +25,25 @@ export default function Results({ results, onRestart, onNext, hasNext }: Results
       className="w-full flex flex-col items-center justify-start flex-grow py-8 max-w-3xl mx-auto space-y-8"
     >
       {/* Score Header */}
-      <div className="w-full bg-card p-8 rounded-3xl shadow-lg border flex flex-col sm:flex-row items-center justify-between gap-6">
-        <div className="flex items-center gap-6">
-          <div className="w-24 h-24 rounded-full bg-primary/10 flex items-center justify-center border-4 border-primary/20">
+      <div className="w-full bg-card p-6 sm:p-8 rounded-3xl shadow-lg border flex flex-col sm:flex-row items-center justify-between gap-6">
+        <div className="flex flex-col sm:flex-row items-center gap-4 sm:gap-6 text-center sm:text-left">
+          <div className="w-20 h-20 sm:w-24 sm:h-24 rounded-full bg-primary/10 flex items-center justify-center border-4 border-primary/20 flex-shrink-0">
             {percentage >= 70 ? (
-              <Trophy className="w-12 h-12 text-primary" />
+              <Trophy className="w-10 h-10 sm:w-12 sm:h-12 text-primary" />
             ) : (
-              <CheckCircle2 className="w-12 h-12 text-primary" />
+              <CheckCircle2 className="w-10 h-10 sm:w-12 sm:h-12 text-primary" />
             )}
           </div>
           <div>
-            <h2 className="text-3xl font-bold">Avaliação Concluída</h2>
-            <p className="text-lg text-muted-foreground mt-1">
+            <h2 className="text-2xl sm:text-3xl font-bold">Avaliação Concluída</h2>
+            <p className="text-base sm:text-lg text-muted-foreground mt-1">
               Você acertou <strong className="text-foreground">{correctCount}</strong> de {totalCount} questões.
             </p>
           </div>
         </div>
-        <div className="text-right">
-          <div className="text-5xl font-black text-primary">{percentage}%</div>
-          <div className="text-sm font-medium text-muted-foreground uppercase tracking-wider mt-1">de aproveitamento</div>
+        <div className="text-center sm:text-right border-t sm:border-t-0 sm:border-l pt-4 sm:pt-0 sm:pl-8 border-border w-full sm:w-auto">
+          <div className="text-5xl sm:text-6xl font-black text-primary">{percentage}%</div>
+          <div className="text-xs sm:text-sm font-medium text-muted-foreground uppercase tracking-wider mt-1">aproveitamento</div>
         </div>
       </div>
 
