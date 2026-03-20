@@ -28,8 +28,12 @@ export default function Home() {
         const res = await fetch('/api/list-pdfs');
         const data = await res.json();
         if (data.materials && data.materials.length > 0) {
-          // Shuffle the list for a new experience each session
-          const shuffled = [...data.materials].sort(() => Math.random() - 0.5);
+          // Fisher-Yates Shuffle for true randomness
+          const shuffled = [...data.materials];
+          for (let i = shuffled.length - 1; i > 0; i--) {
+            const j = Math.floor(Math.random() * (i + 1));
+            [shuffled[i], shuffled[j]] = [shuffled[j], shuffled[i]];
+          }
           setAllMaterials(shuffled);
         }
       } catch (error) {
@@ -111,15 +115,17 @@ export default function Home() {
       setResults([]);
       setAppState("REVIEW");
     } else {
-      // Loop or complete session? For now, reset and go to dashboard
-      handleRestart();
+      // Complete session
+      setAppState("DASHBOARD");
+      setCurrentIndex(0);
+      setSelectedMaterial(null);
       alert("Parabéns! Você completou todos os mapas disponíveis nesta sessão.");
     }
   };
 
   const handleRestart = () => {
     setAppState("DASHBOARD");
-    setCurrentIndex(0); // Reset progress on manual restart
+    setCurrentIndex(0);
     setSelectedMaterial(null);
     setQuestions([]);
     setResults([]);
@@ -140,6 +146,7 @@ export default function Home() {
             pdfUrl={selectedMaterial.url}
             type={selectedMaterial.type}
             onComplete={handleReviewComplete}
+            onSkip={handleNextStudy}
             currentCount={currentIndex + 1}
             totalCount={allMaterials.length}
           />

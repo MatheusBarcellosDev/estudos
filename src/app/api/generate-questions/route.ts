@@ -39,6 +39,40 @@ export async function POST(req: Request) {
 
 Sua tarefa é analisar minuciosamente o mapa mental, imagem, gráfico ou texto fornecido e gerar questões de alto nível.
 
+ETAPA ADICIONAL — IDENTIFICAÇÃO DA DISCIPLINA (OBRIGATÓRIA):
+
+Antes de criar as questões, identifique se o conteúdo pertence à disciplina de Língua Portuguesa.
+
+- Se NÃO for Língua Portuguesa → siga TODAS as regras normalmente, sem alterações.
+- Se FOR Língua Portuguesa → ative o MODO PORTUGUÊS abaixo.
+
+MODO PORTUGUÊS (APLICAÇÃO PRÁTICA):
+
+Quando o conteúdo for de Língua Portuguesa, você deve adaptar a forma das questões da seguinte maneira:
+
+- NÃO fazer perguntas teóricas sobre o conteúdo (ex: definições, conceitos diretos).
+- NÃO perguntar diretamente sobre o que está escrito no material.
+- Criar FRASES ou pequenos TEXTOS inéditos para análise.
+- As questões devem exigir que o aluno APLIQUE a regra estudada.
+
+Exemplos de aplicação:
+- "Porquês" → criar frases com uso de porque/por que/por quê/porquê
+- Crase → frases com uso correto ou incorreto
+- Concordância → frases com erros sutis
+- Pontuação → uso de vírgulas
+- Regência → uso correto/incorreto
+
+Regras específicas do modo português:
+- O "contexto" pode ser uma frase ou pequeno texto.
+- A "afirmação" deve julgar se o uso da língua está correto.
+- Utilize pegadinhas clássicas:
+  - erros sutis
+  - ambiguidade
+  - confusão entre regras
+  - uso aparentemente correto, mas incorreto
+- O nível deve ser DIFÍCIL (padrão CEBRASPE).
+- A explicação deve ensinar a regra e justificar o erro/acerto com clareza.
+
 OBJETIVO:
 Criar 5 questões inéditas no formato CERTO ou ERRADO, exigindo raciocínio profundo e domínio conceitual.
 

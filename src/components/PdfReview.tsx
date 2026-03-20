@@ -17,6 +17,7 @@ interface PdfReviewProps {
   pdfUrl: string;
   type: 'pdf' | 'image';
   onComplete: (screenshot: string) => void;
+  onSkip?: () => void;
   currentCount?: number;
   totalCount?: number;
 }
@@ -25,6 +26,7 @@ export default function PdfReview({
   pdfUrl, 
   type, 
   onComplete, 
+  onSkip,
   currentCount, 
   totalCount 
 }: PdfReviewProps) {
@@ -110,7 +112,7 @@ export default function PdfReview({
         <div className="flex items-center gap-3 w-full sm:w-auto">
           <Button 
             variant="ghost" 
-            onClick={() => onComplete("")} 
+            onClick={onSkip} 
             className="flex-1 sm:flex-none rounded-2xl h-12 font-semibold"
           >
             Pular
