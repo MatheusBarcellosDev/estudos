@@ -1,7 +1,9 @@
 "use client";
 import { motion } from "framer-motion";
 import { Button } from "@/components/ui/button";
-import { BookOpen, BrainCircuit } from "lucide-react";
+import { BookOpen, BrainCircuit, Layers } from "lucide-react";
+import Link from "next/link";
+import { flashcards } from "@/data/flashcards";
 
 interface DashboardProps {
   onStart: () => void;
@@ -28,7 +30,7 @@ export default function Dashboard({ onStart, totalMaterials }: DashboardProps) {
         </p>
       </div>
 
-      <div className="w-full pt-8">
+      <div className="w-full pt-8 space-y-3">
         <Button 
           onClick={onStart} 
           size="lg" 
@@ -37,6 +39,19 @@ export default function Dashboard({ onStart, totalMaterials }: DashboardProps) {
           <BookOpen className="mr-3 w-6 h-6" />
           Iniciar Estudo
         </Button>
+        <Link href="/flashcards" className="block">
+          <Button 
+            variant="outline"
+            size="lg" 
+            className="w-full text-base h-13 rounded-2xl border-2 hover:bg-primary/5 hover:border-primary/50 transition-all duration-300 font-semibold gap-2"
+          >
+            <Layers className="w-5 h-5" />
+            Flashcards
+            <span className="ml-auto bg-primary/10 text-primary text-xs font-bold px-2 py-0.5 rounded-full">
+              {flashcards.length}
+            </span>
+          </Button>
+        </Link>
       </div>
 
       <div className="grid grid-cols-2 gap-4 w-full pt-8 border-t border-border mt-8">
