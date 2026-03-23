@@ -304,4 +304,239 @@ A = {1, 2, 3} e B = {2, 3, 4}
     },
     tags: ['Matemática', 'Teoria dos Conjuntos', 'Diagrama de Venn'],
   },
+  {
+    id: 15,
+    front: {
+      title: 'Regência: Obedecer e a Crase 👮‍♂️',
+      subtitle: 'Por que dizemos "obedeceu às normas" com crase?',
+    },
+    back: {
+      body: `**A Regra do Verbo:**
+O verbo **Obedecer** é Transitivo Indireto. Ele sempre exige a preposição **"A"**.
+*(Quem obedece, obedece A algo).*
+
+**A Formação da Crase:**
+• Preposição **A** (do verbo) + Artigo **AS** (das normas) = **ÀS**. ✅
+
+**O Teste do Masculino (Infalível):**
+Troque "normas" por "regulamentos":
+"Obedeceu **AOS** regulamentos."
+*(Se deu **AO** no masculino, dá **À** no feminino!)*
+
+**Cuidado:** Nunca use apenas "obedeceu as normas" na norma culta. ❌`,
+    },
+    tags: ['Português', 'Regência Verbal', 'Crase'],
+  },
+  {
+    id: 16,
+    front: {
+      title: 'Pronome Relativo: CUJO 🔗',
+      subtitle: 'Quais as duas regras de ouro para usar o "cujo"?',
+    },
+    back: {
+      body: `**1. Posse:** Indica que o termo seguinte pertence ao anterior (Ex: O motor cujo óleo... = óleo do motor). 🛢️
+
+**2. Proibido Artigo:** Nunca se usa artigo (o, a, os, as) logo após o cujo.
+• ❌ Cujo o / Cuja a
+• ✅ Cujo / Cuja
+
+**Exemplo da Prova:** "O equipamento cujo o manual..." está INCORRETO porque o artigo "o" não pode estar ali.`,
+    },
+    tags: ['Português', 'Pronomes', 'Sintaxe'],
+  },
+  {
+    id: 17,
+    front: {
+      title: 'Parônimos: Iminente vs. Eminente 🚨🌟',
+      subtitle: 'Qual a diferença entre algo "iminente" e alguém "eminente"?',
+    },
+    back: {
+      body: `**1. Iminente (com I):** Refere-se a algo imediato, que está prestes a acontecer agora.
+• Exemplo: "Havia um risco **iminente** de desabamento." 🚨
+
+**2. Eminente (com E):** Refere-se a algo ou alguém excelente, ilustre, que se destaca.
+• Exemplo: "Convidamos um **eminente** jurista para a palestra." 🎓
+
+**Dica de Ouro:**
+• **I**minente = **I**mediato.
+• **E**minente = **E**xcelente/Elevado.`,
+    },
+    tags: ['Português', 'Ortografia', 'Semântica'],
+  },
+  {
+    id: 19,
+    front: {
+      title: 'Pronomes: EU vs. MIM ✍️',
+      subtitle: 'Quando usar cada um antes de um verbo no infinitivo?',
+    },
+    back: {
+      body: `**A Regra de Ouro:** • **EU:** É sujeito. Ele faz a ação. (Eu vou, eu falo, eu assino). 🏃‍♂️
+• **MIM:** É complemento. Ele não faz ação. 🛑
+
+**Macete do Concurseiro:** "Mim não faz nada". Se tem um verbo no infinitivo (terminado em -ar, -er, -ir) logo depois, o correto é usar **EU**.
+
+**Exemplo da Prova:**
+• ❌ "Para **mim** assinar" (Incorreto: mim não assina).
+• ✅ "Para **eu** assinar" (Correto: eu pratico a ação).
+
+**Dica:** O "mim" só encerra frases ou aparece após preposição sem verbo depois: "Entregue o relatório para **mim**."`,
+    },
+    tags: ['Português', 'Gramática', 'Pronomes'],
+  },
+  {
+    id: 20,
+    front: {
+      title: 'Conjunções: Embora (Concessiva) 💡',
+      subtitle: 'Qual a diferença entre uma oração Condicional e uma Concessiva?',
+    },
+    back: {
+      body: `**1. Concessiva (Embora):** Indica um contraste, algo que acontece "apesar de". 
+• Ex: "Embora chova, eu vou." (Vou mesmo com chuva).
+
+**2. Condicional (Se):** Indica uma dependência, algo que só acontece "se" outra ocorrer.
+• Ex: "Se chover, eu não vou." (A chuva impede a ida).
+
+**Na Prova:** A questão afirmou que "embora" é condicional. Está **ERRADO**, pois "embora" é a conjunção concessiva mais famosa das provas! ❌`,
+    },
+    tags: ['Português', 'Conjunções', 'Sintaxe'],
+  },
+  {
+    id: 22,
+    front: {
+      title: 'Colocação Pronominal: Próclise 🧲',
+      subtitle: 'Por que o pronome aparece antes do verbo em "que se mantivesse"?',
+    },
+    back: {
+      body: `**A Regra do Ímã:** Palavras atrativas exigem Próclise.
+• O **"QUE"** é uma das palavras atrativas mais comuns.
+
+**A Regra do Início de Frase:**
+• Na norma culta, **NUNCA** se inicia frase ou período com pronome oblíquo (me, te, se, lhe...). 🚫
+• Ex: Incorreto: "Se acalme". / Correto: "Acalme-se".
+
+**Na Prova:** A questão diz que o "se" está em próclise porque "inicia o período". 
+1. Ele não inicia o período (quem inicia é "O supervisor").
+2. Se iniciasse, a próclise seria proibida.
+**Gabarito: ERRADO.** ❌`,
+    },
+    tags: ['Português', 'Gramática', 'Colocação Pronominal'],
+  },
+  {
+    id: 23,
+    front: {
+      title: 'Morfologia: Plural de "Qualquer" 🔄',
+      subtitle: 'Como o pronome "qualquer" se comporta no plural?',
+    },
+    back: {
+      body: `**A Regra Única:** O plural de **qualquer** é **quaisquer**. Note que o "s" entra no meio da palavra (quais + quer).
+
+**Substituição em Provas:**
+• "Sob qualquer circunstância" (Singular)
+• "Em quaisquer circunstâncias" (Plural)
+
+**Por que está certo?**
+1. O plural de qualquer está correto (**quaisquer**).
+2. O substantivo concordou (**circunstâncias**).
+3. O sentido de "em qualquer caso" foi preservado. ✅
+
+**Cuidado:** Nunca use "qualqueres". Isso não existe! ❌`,
+    },
+    tags: ['Português', 'Morfologia', 'Concordância'],
+  },
+  {
+    id: 24,
+    front: {
+      title: 'Química: Reação de Neutralização 🧪',
+      subtitle: 'O que acontece quando misturamos HCl e NaOH?',
+    },
+    back: {
+      body: `**A Reação:** HCl (Ácido) + NaOH (Base) → **NaCl (Sal) + H₂O (Água)**
+
+**Perfil Térmico:** É uma reação **EXOTÉRMICA** 🔥.
+*(Liberta calor ao formar as novas ligações).*
+
+**Gabarito da Questão:** CERTO ✅
+
+**Dica de Ouro:** "Ácido com base, sal e água faz. E o calor? Esse sempre sai de trás!" (Neutralização é quase sempre exotérmica).`,
+    },
+    tags: ['Química', 'Reações Químicas', 'Termoquímica'],
+  },
+  {
+    id: 25,
+    front: {
+      title: 'Química: Identificando Força de Ácidos e Bases 🧪',
+      subtitle: 'Como saber se a reação será forte sem decorar tudo?',
+    },
+    back: {
+      body: `**Bases Fortes:** Metais das colunas 1 e 2 da Tabela Periódica (ex: NaOH, KOH, Ca(OH)₂).
+
+**Ácidos Fortes:** • Hidrácidos: HCl, HBr, HI.
+• Oxiácidos: (Nº de Oxigênios) - (Nº de Hidrogênios). Se sobrar 2 ou mais, é forte!
+
+**Por que importa?** Reações entre Ácido Forte + Base Forte são altamente **Exotérmicas** 🔥 e produzem sais neutros.`,
+    },
+    tags: ['Química', 'Funções Inorgânicas', 'Ácidos e Bases'],
+  },
+  {
+    id: 26,
+    front: {
+      title: 'Química: Escala de pH 🧪',
+      subtitle: 'Como calcular a diferença de acidez entre dois valores de pH?',
+    },
+    back: {
+      body: `**A Regra de Ouro:** O pH é logarítmico. Cada unidade de diferença equivale a uma variação de **10 vezes** na concentração de H⁺.
+
+**O Cálculo Rápido:**
+1. Subtraia os valores de pH: 5 - 3 = **2 unidades**.
+2. Eleve 10 ao resultado: 10² = **100**.
+
+**Conclusão:** Uma solução de pH 3 é **100 vezes** mais ácida que uma de pH 5. Se fosse pH 6 para pH 3, seriam 3 unidades (10³ = 1000 vezes). ✅`,
+    },
+    tags: ['Química', 'Equilíbrio Químico', 'pH'],
+  },
+  {
+    id: 27,
+    front: {
+      title: 'Química: Oxirredução (Redox) 🧪',
+      subtitle: 'Como identificar o Agente Oxidante e o Agente Redutor?',
+    },
+    back: {
+      body: `**Regra de Ouro:** O agente é o oposto do processo.
+• Quem **se oxida** (perde e- / Nox sobe) é o **Agente Redutor**.
+• Quem **se reduz** (ganha e- / Nox desce) é o **Agente Oxidante**.
+
+**Na questão:**
+4Fe + 3O₂ → 2Fe₂O₃
+• Fe: Nox 0 → +3 (Oxidou). Logo, é o **Agente Redutor**. 
+• O₂: Nox 0 → -2 (Reduziu). Logo, é o **Agente Oxidante**.
+
+**Veredito:** Errado. O ferro perde elétrons, mas isso o torna agente redutor, não oxidante. ❌`,
+    },
+    tags: ['Química', 'Eletroquímica', 'Redox'],
+  },
+  {
+    id: 28,
+    front: {
+      title: 'Química: Como Calcular o Nox 🧮',
+      subtitle: 'Passo a passo para não errar a conta na hora da prova.',
+    },
+    back: {
+      body: `**1. As Regras Fixas (Âncoras):**
+• **Substância Simples:** Sempre é **0** (Ex: Fe, O₂, H₂).
+• **Oxigênio (O):** Geralmente **-2**.
+• **Hidrogênio (H):** Geralmente **+1**.
+• **Metais Alcalinos (G1):** Sempre **+1** (Ex: Na, K).
+
+**2. A Regra da Balança:**
+A soma de todos os Nox de uma molécula neutra deve ser **ZERO**.
+
+**3. Exemplo Prático (Fe₂O₃):**
+• O oxigênio é -2. Como são 3, temos total de **-6**.
+• Para zerar, os 2 ferros precisam somar **+6**.
+• Dividindo pelo número de átomos: +6 ÷ 2 = **+3**. ✅
+
+**Dica:** Monte a "equaçãozinha": (2 * x) + (3 * -2) = 0`,
+    },
+    tags: ['Química', 'Nox', 'Cálculo'],
+  },
 ];
