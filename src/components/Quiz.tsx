@@ -81,8 +81,21 @@ export default function Quiz({ pdfUrl, questions, isLoading, onComplete }: QuizP
             <BrainCircuit className="w-5 h-5" />
             <span>Simulado CEBRASPE</span>
           </div>
-          <div className="text-sm font-bold bg-primary/10 text-primary px-3 py-1 rounded-full">
-            Questão {currentIndex + 1} de {questions.length}
+          <div className="flex items-center gap-2">
+            {currentQuestion.dificuldade && (
+              <span className={`text-xs font-bold px-2 py-1 rounded-full ${
+                currentQuestion.dificuldade === 'FÁCIL'
+                  ? 'bg-green-100 text-green-700 dark:bg-green-900/30 dark:text-green-400'
+                  : currentQuestion.dificuldade === 'MÉDIO'
+                  ? 'bg-yellow-100 text-yellow-700 dark:bg-yellow-900/30 dark:text-yellow-400'
+                  : 'bg-red-100 text-red-700 dark:bg-red-900/30 dark:text-red-400'
+              }`}>
+                {currentQuestion.dificuldade}
+              </span>
+            )}
+            <div className="text-sm font-bold bg-primary/10 text-primary px-3 py-1 rounded-full">
+              Questão {currentIndex + 1} de {questions.length}
+            </div>
           </div>
         </div>
 

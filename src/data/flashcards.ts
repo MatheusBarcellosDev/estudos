@@ -886,7 +886,284 @@ A questão disse que ele era "Agente Redutor".
       "body": "**Processo de Adição:**\n1. A ligação dupla (C=C) do monômero (etileno) se ABRE.\n2. Não há perda de átomos (por isso é 'adição').\n3. Forma-se o polímero (polietileno) com ligações SIMPLES (C-C).\n\n**Representação:**\nn(CH₂=CH₂) → [—CH₂—CH₂—]ₙ\n\n**Importância na Indústria:** É a base da produção de plásticos. O edital da ANSA exige o conhecimento de polímeros para entender os subprodutos e processos petroquímicos."
     },
     "tags": ["Química Orgânica", "Polímeros", "Etileno", "ANSA 2026", "Operação"]
+  },
+  {
+    "id": 56,
+    "front": {
+      "title": "Primeira Lei da Termodinâmica 🌡️",
+      "subtitle": "ΔU = Q − W"
+    },
+    "back": {
+      "body": "**Regra de Sinais (Cuidado!):**\n- **+Q:** Sistema recebe calor (esquenta).\n- **-Q:** Sistema perde calor (esfria).\n- **+W:** Sistema REALIZA trabalho (expande/gasta energia).\n- **-W:** Sistema RECEBE trabalho (é comprimido).\n\n**Conceito:** A energia não pode ser criada nem destruída, apenas transformada.\n\n**Na Operação ANSA:** Se um gás em um pistão recebe calor e não realiza trabalho, toda essa energia vira aumento de temperatura (Energia Interna)."
+    },
+    "tags": ["Física", "Termodinâmica", "Energia", "ANSA 2026", "Operação"]
+  },
+  {
+    "id": 57,
+    "front": {
+      "title": "Processo Isocórico (ou Isométrico) 🌡️",
+      "subtitle": "O que acontece com o Trabalho (W)?"
+    },
+    "back": {
+      "body": "**Regra de Ouro:**\nVolume Constante = **Trabalho ZERO (W = 0)**.\n\n**Consequência na 1ª Lei:**\nComo ΔU = Q - W e W é 0, então:\n**ΔU = Q**\n\n**O que isso significa?**\nTodo o calor que você fornece ao sistema vira apenas aumento de temperatura e pressão interna, pois o gás não consegue 'gastar' essa energia realizando trabalho.\n\n**Exemplo:** Uma panela de pressão antes de começar a apitar (volume fixo)."
+    },
+    "tags": ["Física", "Termodinâmica", "Processos Térmicos", "ANSA 2026", "Operação"]
+  },
+  {
+    "id": 58,
+    "front": {
+      "title": "NR-15: Atividades e Operações Insalubres ⚠️",
+      "subtitle": "Como usar esse argumento na Redação da ANSA?"
+    },
+    "back": {
+      "body": "**O que é:** Norma do Ministério do Trabalho que define limites de tolerância para agentes físicos, químicos e biológicos.\n\n**Argumento para Redação:**\n'A conformidade com a **NR-15** é essencial em plantas de fertilizantes, pois estabelece limites de exposição a agentes como **amônia e ácido nítrico**, garantindo a integridade física através do monitoramento contínuo e uso de **EPIs**.'\n\n**Conexão com o Edital:** O item 15.2.3 (Ênfase 22) exige conhecimento em segurança e saúde; a redação (P3) exige atualidades sobre segurança e tecnologia."
+    },
+    "tags": ["Segurança do Trabalho", "NR-15", "Redação", "ANSA 2026", "Operação"]
+  },
+  {
+    "id": 59,
+    "front": {
+      "title": "NR-7: Programa de Controle Médico (PCMSO) 🩺",
+      "subtitle": "Qual a obrigatoriedade para a saúde do trabalhador?"
+    },
+    "back": {
+      "body": "**O que é:** Norma que obriga a implementação do Programa de Controle Médico de Saúde Ocupacional (PCMSO).\n\n**Ações Principais:**\n- Realização de exames: Admissional, Periódico, Retorno ao trabalho, Mudança de riscos e Demissional.\n- Objetivo: Diagnosticar precocemente danos à saúde causados pelos riscos ambientais (químicos, físicos, etc.).\n\n**Uso na Redação:**\n'Conforme a **NR-7**, as empresas devem garantir o monitoramento da saúde dos colaboradores por meio do **PCMSO**, prevenindo o surgimento de doenças ocupacionais decorrentes da exposição a agentes nocivos.'\n\n**No Edital:** Citada como conhecimento obrigatório para Operação e Enfermagem (Bloco I e II)."
+    },
+    "tags": ["Saúde Ocupacional", "NR-7", "PCMSO", "Redação", "ANSA 2026"]
+  },
+  {
+    "id": 60,
+    "front": {
+      "title": "Dado Crítico: Afastamentos no Setor Químico 🏥",
+      "subtitle": "Como fundamentar a gravidade dos riscos ocupacionais?"
+    },
+    "back": {
+      "body": "**Dado:** +18 mil afastamentos/ano por doenças ocupacionais (Observatório SST, 2022).\n\n**Uso na Redação (P3):**\n'A urgência na fiscalização rigorosa é evidenciada pelos dados do **Observatório de Segurança e Saúde no Trabalho**, que registrou mais de **18 mil afastamentos** no setor químico em 2022, evidenciando falhas no monitoramento de agentes tóxicos.'\n\n**Aplicação no Edital:** Reforça os tópicos de 'Higiene Ocupacional', 'Prevenção de doenças relacionadas ao trabalho' e 'Estatísticas de acidentes'[cite: 1313, 1318].\n\n**Dica:** Use este dado para concluir que o custo da prevenção é menor que o custo social e econômico do afastamento."
+    },
+    "tags": ["Dados", "Redação", "Saúde Ocupacional", "Indústria Química", "ANSA 2026"]
+  },
+  {
+    "id": 61,
+    "front": {
+      "title": "Lei 9.605/1998: Crimes Ambientais ⚖️",
+      "subtitle": "Qual a punição para o descarte irregular na indústria?"
+    },
+    "back": {
+      "body": "**O que é:** Lei que criminaliza condutas lesivas ao meio ambiente (poluição, descarte irregular, danos à fauna/flora).\n\n**Pontos Chave:**\n- Responsabiliza a empresa (Pessoa Jurídica) e os gestores (Pessoa Física).\n- Punições: Multas pesadas, suspensão de atividades e até prisão.\n\n**Uso na Redação (P3):**\n'A **Lei 9.605/1998 (Crimes Ambientais)** é um marco na proteção do ecossistema, pois impõe sanções severas a indústrias que negligenciam o descarte de efluentes químicos, reforçando a necessidade de uma operação sustentável.'\n\n**No Edital:** Essencial para o Bloco II (Legislação Ambiental) e para fundamentar o descarte de resíduos tóxicos."
+    },
+    "tags": ["Meio Ambiente", "Lei 9.605", "Redação", "ANSA 2026", "Operação"]
+  },
+  {
+    "id": 62,
+    "front": {
+      "title": "Lei 12.305/2010: PNRS 🏭",
+      "subtitle": "Qual a responsabilidade da indústria sobre seus rejeitos?"
+    },
+    "back": {
+      "body": "**Conceito Chave:** Responsabilidade Compartilhada e Logística Reversa.\n\n**O que a lei exige:**\n- Elaboração do Plano de Gerenciamento de Resíduos Sólidos (PGRS) .\n- Ordem de prioridade: Não geração > Redução > Reutilização > Reciclagem > Tratamento > Disposição final adequada .\n\n**Uso na Redação (P3):**\n'A **PNRS (Lei 12.305/2010)** estabelece que a responsabilidade pelo ciclo de vida dos produtos é compartilhada, obrigando indústrias químicas a gerenciarem seus resíduos desde a origem até o descarte ambientalmente adequado' .\n\n**No Edital:** Tópico fundamental em 'Gestão Ambiental' e 'Gerenciamento de Resíduos Sólidos'[cite: 1015, 1262]."
+    },
+    "tags": ["Meio Ambiente", "Lei 12.305", "Sustentabilidade", "ANSA 2026", "Operação"]
+  },
+  {
+    "id": 63,
+    "front": {
+      "title": "Brasil: Potência em Fertilizantes 🇧🇷",
+      "subtitle": "Qual a posição do país no consumo global?"
+    },
+    "back": {
+      "body": "**Dado Estratégico:** 3º maior consumidor de fertilizantes do mundo (Fonte: ANDA).\n\n**Uso na Redação (P3):**\n'Como o Brasil ocupa a posição de **terceiro maior consumidor mundial de fertilizantes**, a operação eficiente de plantas de nitrogenados é vital para a economia, mas exige rigoroso controle ambiental devido à escala da produção'.\n\n**Contexto ANSA:** Justifica a alta demanda por amônia e ureia. Serve para temas sobre agronegócio, soberania nacional (redução da dependência externa) e sustentabilidade industrial."
+    },
+    "tags": ["Dados", "Agronegócio", "Fertilizantes", "Redação", "ANSA 2026"]
+  },
+  {
+    "id": 64,
+    "front": {
+      "title": "Lei 13.709/2018: LGPD 💻",
+      "subtitle": "Como os dados pessoais devem ser tratados na ANSA?"
+    },
+    "back": {
+      "body": "**Conceito Chave:** Proteção da liberdade e privacidade do cidadão.\n\n**O que a lei exige:**\n- Consentimento explícito para coleta de dados .\n- Adoção de medidas de segurança para evitar vazamentos [cite: 710].\n- Transparência no uso de dados pessoais e sensíveis .\n\n**Uso na Redação (P3):**\n'A implementação da **LGPD (Lei 13.709/2018)** nas empresas públicas é um pilar da ética digital, pois obriga o uso de protocolos de segurança para proteger informações de trabalhadores contra o uso indevido' .\n\n**No Edital:** Item obrigatório em 'Noções de Informática' para todas as ênfases."
+    },
+    "tags": ["Informática", "LGPD", "Dados", "Redação", "ANSA 2026"]
+  },
+  {
+    "id": 65,
+    "front": {
+      "title": "Constituição Federal: Artigo 225 🇧🇷",
+      "subtitle": "Qual o dever do Estado e da sociedade com o meio ambiente?"
+    },
+    "back": {
+      "body": "**O Texto Sagrado:**\n'Todos têm direito ao meio ambiente ecologicamente equilibrado... impondo-se ao Poder Público e à coletividade o dever de defendê-lo e preservá-lo para as presentes e futuras gerações.'\n\n**Por que é um 'Coringa'?**\n1. **Responsabilidade:** Define que a preservação não é só do governo, mas também das empresas (coletividade).\n2. **Solidariedade Intergeracional:** Foca no futuro ('futuras gerações').\n\n**Uso na Redação (P3):**\n'Conforme preconiza o **Artigo 225 da Constituição Federal**, o equilíbrio ecológico é um direito fundamental, o que exige das indústrias químicas um manejo rigoroso de seus impactos para garantir a sustentabilidade das futuras gerações.'\n\n**No Edital:** Base para todos os temas de Meio Ambiente e Legislação Ambiental."
+    },
+    "tags": ["Direito Constitucional", "Meio Ambiente", "Redação", "ANSA 2026", "Operação"]
+  },
+  {
+    "id": 66,
+    "front": {
+      "title": "Constituição Federal: Artigo 7º (Inciso XXII) 🇧🇷",
+      "subtitle": "Qual a obrigação constitucional sobre riscos do trabalho?"
+    },
+    "back": {
+      "body": "**O que garante:** 'Redução dos riscos inerentes ao trabalho, por meio de normas de saúde, higiene e segurança'.\n\n**Pontos Chave:**\n- Torna a segurança do trabalho um Direito Fundamental.\n- Obriga o empregador a investir em prevenção e equipamentos (EPI/EPC).\n- Fundamenta o adicional de insalubridade e periculosidade.\n\n**Uso na Redação (P3):**\n'O **Artigo 7º da Carta Magna** impõe ao empregador o dever de mitigar os riscos laborais, o que na indústria química traduz-se na aplicação rigorosa de protocolos de higiene e segurança para preservar a saúde do operário'.\n\n**No Edital:** Base para 'Segurança e Medicina no Trabalho' e 'Direitos Constitucionais dos Trabalhadores'."
+    },
+    "tags": ["Direito do Trabalho", "Constituição", "Segurança", "Redação", "ANSA 2026"]
+  },
+  {
+    "id": 67,
+    "front": {
+      "title": "Brasil: 4º Lugar em Acidentes Fatais 🌎",
+      "subtitle": "Qual a gravidade do cenário nacional segundo a OIT?"
+    },
+    "back": {
+      "body": "**Dado de Impacto:** O Brasil é o 4º país com mais mortes no trabalho no mundo (Fonte: OIT).\n\n**Uso na Redação (P3):**\n'A necessidade de uma cultura de prevenção é urgente, visto que o Brasil ocupa o **quarto lugar no ranking mundial de acidentes fatais**, segundo a OIT. Esse cenário exige que indústrias de alto risco, como a de nitrogenados, sigam rigorosamente as normas de segurança de processo'.\n\n**Conexão com o Edital:** Fundamenta os tópicos de 'Investigação e análise de acidentes' [cite: 1315, 1528] e 'Causas e consequências dos acidentes'[cite: 1313, 1527]."
+    },
+    "tags": ["Dados", "Segurança do Trabalho", "OIT", "Redação", "ANSA 2026"]
+  },
+  {
+    "id": 69,
+    "front": {
+      "title": "Cálculo de Eficiência: Exemplo 02 ⚙️",
+      "subtitle": "Máquina recebe 800 J e realiza 200 J de trabalho."
+    },
+    "back": {
+      "body": "**Passo a Passo:**\n1. Identifique o Trabalho (W): 200 J.\n2. Identifique o Calor Total (Q): 800 J.\n3. Monte a fração: 200 / 800.\n4. Simplifique: 2 / 8 = 1 / 4.\n\n**Resultado:**\n1 / 4 = 0,25.\nMultiplicando por 100 = **25% de eficiência**.\n\n**Dica de Operador:** Se a eficiência é 25%, significa que 75% da energia foi 'jogada fora' como calor para o ambiente (fonte fria)."
+    },
+    "tags": ["Física", "Termodinâmica", "Cálculo", "ANSA 2026", "Operação"]
+  }, {
+    "id": 70,
+    "front": {
+      "title": "Ciclo de Rankine: O Caminho do Vapor 💨",
+      "subtitle": "Quais são os 4 processos e equipamentos principais?"
+    },
+    "back": {
+      "body": "**Processos e Equipamentos:**\n1. **Bombeamento:** Realizado pela BOMBA (Líquido).\n2. **Vaporização:** Realizada pela CALDEIRA (Recebe Calor).\n3. **Expansão:** Realizada pela TURBINA (Gera Trabalho).\n4. **Condensação:** Realizada pelo CONDENSADOR (Esfria o vapor).\n\n**No Edital ANSA:** O Bloco II exige o conhecimento de 'Ciclos de geração de potência' e 'Equipamentos auxiliares' como esses."
+    },
+    "tags": ["Termodinâmica", "Ciclo de Rankine", "Operação", "ANSA 2026"]
+  },
+  {
+    "id": 71,
+    "front": {
+      "title": "Adiabático Reversível = Isentrópico 🔄",
+      "subtitle": "O que acontece com a Entropia (S)?"
+    },
+    "back": {
+      "body": "**A Regra:**\n- **Adiabático:** Troca de calor (Q) é ZERO.\n- **Reversível:** Não há geração interna de entropia (sem atrito).\n\n**Conclusão:**\nA variação de entropia (ΔS) é **ZERO**. A entropia permanece **CONSTANTE**.\n\n**Cilada do Cebraspe:** Dizer que a entropia aumenta porque a temperatura mudou. **ERRADO.** No adiabático, a temperatura muda por causa do trabalho, mas a entropia só muda se houver troca de calor ou irreversibilidade."
+    },
+    "tags": ["Física", "Termodinâmica", "Entropia", "ANSA 2026", "Operação"]
+  },
+  {
+    "id": 72,
+    "front": {
+      "title": "Escala Kelvin (Absoluta) 🌡️",
+      "subtitle": "Como converter Celsius para Kelvin?"
+    },
+    "back": {
+      "body": "**A Regra:** Somar 273.\n\n**Exemplos Clássicos de Prova:**\n- 0 °C = 273 K (Gelo)\n- 27 °C = 300 K (Ambiente - cai muito!)\n- 100 °C = 373 K (Ebulição da água)\n\n**Por que Kelvin?** Nas fórmulas de gases e termodinâmica (PV = nRT), a temperatura **OBRIGATORIAMENTE** deve estar em Kelvin. Se usar Celsius, o cálculo dá errado."
+    },
+    "tags": ["Física", "Termodinâmica", "Gases", "ANSA 2026", "Operação"]
+  },
+  {
+    "id": 73,
+    "front": {
+      "title": "Condutividade Térmica (k) 🌡️",
+      "subtitle": "Metal é isolante ou condutor?"
+    },
+    "back": {
+      "body": "**Regra Simples:**\n- **Alta Condutividade (k alto):** O calor passa fácil. Ex: Metais (Cobre, Alumínio, Aço). São **CONDUTORES**.\n- **Baixa Condutividade (k baixo):** O calor tem dificuldade de passar. Ex: Lã de vidro, isopor, madeira, cerâmica. São **ISOLANTES**.\n\n**Cilada do Cebraspe:** Dizer que um material é isolante PORQUE tem alta condutividade. **ERRADO.** É exatamente o contrário.\n\n**Na Operação:** Permutadores de calor usam metais (condutores) para trocar energia; tubulações de vapor usam isolantes para manter a energia."
+    },
+    "tags": ["Física", "Transferência de Calor", "Materiais", "ANSA 2026", "Operação"]
+  },
+  {
+    "id": 74,
+    "front": {
+      "title": "Calor Latente de Vaporização (L) 💨",
+      "subtitle": "O que acontece com a temperatura durante a mudança de fase?"
+    },
+    "back": {
+      "body": "**Definição:** Energia necessária para mudar 1 kg de líquido para gasoso.\n\n**Regra de Ouro:** Durante o calor latente, a **TEMPERATURA NÃO MUDA**.\n\n**Na Prática (ANSA):** É o princípio de funcionamento das **Caldeiras**. Você queima combustível para fornecer calor latente à água, transformando-a em vapor de alta energia para girar as turbinas.\n\n**Dica:** Se a questão disser que a temperatura aumenta enquanto o líquido vaporiza, marque **ERRADO**."
+    },
+    "tags": ["Física", "Termodinâmica", "Calorimetria", "ANSA 2026", "Operação"]
+  },
+  {
+    "id": 75,
+    "front": {
+      "title": "A Direção do Calor (Clausius) 🌡️",
+      "subtitle": "O calor pode fluir do frio para o quente?"
+    },
+    "back": {
+      "body": "**A Regra de Ouro:**\n- **Espontâneo:** Quente → Frio (Sempre).\n- **Não Espontâneo:** Frio → Quente (Apenas com TRABALHO externo).\n\n**O que o Cebraspe pode perguntar:**\n'É possível transferir calor de um corpo frio para um quente sem gasto de energia?'\n**Resposta:** ERRADO ❌. Isso violaria a 2ª Lei.\n\n**Na Operação ANSA:** Explica por que precisamos de motores e eletricidade para manter sistemas de resfriamento e liquefação de gases."
+    },
+    "tags": ["Física", "Termodinâmica", "Segunda Lei", "ANSA 2026", "Operação"]
+  },
+  {
+    "id": 76,
+    "front": {
+      "title": "Princípio de Arquimedes (Empuxo) ⚓",
+      "subtitle": "Qual o valor da força que empurra o corpo para cima?"
+    },
+    "back": {
+      "body": "**A Regra:** Empuxo = Peso do fluido deslocado.\n\n**Consequências:**\n- **Objeto afunda:** Peso > Empuxo.\n- **Objeto boia:** Peso = Empuxo (o objeto desloca uma massa de água igual à sua própria massa).\n- **Objeto sobe:** Empuxo > Peso.\n\n**Na Operação ANSA:** Fundamental para entender a medição de nível por boias (dislocadores) e a separação de fases líquidas (óleo/água) em decantadores."
+    },
+    "tags": ["Física", "Mecânica dos Fluidos", "Empuxo", "ANSA 2026", "Operação"]
+  },
+  {
+    "id": 77,
+    "front": {
+      "title": "Equação da Continuidade: A₁v₁ = A₂v₂ 🧪",
+      "subtitle": "O que acontece com a velocidade quando a área diminui?"
+    },
+    "back": {
+      "body": "**Regra de Ouro:** Área e Velocidade são **inversamente proporcionais**.\n\n- **Se a Área diminui (estreitamento):** A Velocidade AUMENTA 🚀.\n- **Se a Área aumenta (alargamento):** A Velocidade DIMINUI 🐢.\n\n**Por que isso acontece?** Conservação da Massa. A mesma quantidade de fluido tem que passar por segundo em qualquer ponto do tubo.\n\n**Na Operação ANSA:** Fundamental para entender o funcionamento de bicos injetores, redutores de tubulação e a velocidade de escoamento em trocadores de calor."
+    },
+    "tags": ["Física", "Mecânica dos Fluidos", "Continuidade", "ANSA 2026", "Operação"]
+  },
+  {
+    "id": 78,
+    "front": {
+      "title": "Equação de Bernoulli: Quando vale? 🌊",
+      "subtitle": "Fluido viscoso e turbulento entra na conta?"
+    },
+    "back": {
+      "body": "**Resposta: NÃO.**\n\n**Condições para Bernoulli (Fluido Ideal):**\n1. **Incompressível** (Densidade constante).\n2. **Não Viscoso** (Sem perda de energia por atrito).\n3. **Regime Laminar** (Oposto de turbulento).\n4. **Regime Permanente** (Estacionário).\n\n**O que o Cebraspe faz:** Ele mistura 'Viscoso' ou 'Turbulento' na frase para tornar o item **ERRADO**. \n\n**Na Prática (ANSA):** Em fluidos reais (viscosos), usamos a 'Equação de Bernoulli Estendida', que inclui a **Perda de Carga** (perda de energia pelo atrito)."
+    },
+    "tags": ["Física", "Mecânica dos Fluidos", "Bernoulli", "ANSA 2026", "Operação"]
+  },
+  {
+    "id": 79,
+    "front": {
+      "title": "Número de Reynolds (Re) e Regimes 🌊",
+      "subtitle": "Qual o limite para o escoamento Laminar?"
+    },
+    "back": {
+      "body": "**Os Limites Mágicos (Escoamento em Tubos):**\n- **Re < 2.300:** LAMINAR (Linhas paralelas, organizado).\n- **2.300 < Re < 4.000:** TRANSIÇÃO.\n- **Re > 4.000:** TURBULENTO (Mistura, redemoinhos).\n\n**Fórmula Mental:** Re = (Inércia) / (Viscosidade).\n\n**Na Operação ANSA:** Trocadores de calor preferem regime **Turbulento**, pois a mistura melhora a troca térmica. Já para evitar perda de carga (atrito) excessiva, o regime deve ser controlado."
+    },
+    "tags": ["Física", "Mecânica dos Fluidos", "Reynolds", "ANSA 2026", "Operação"]
+  },
+  {
+    "id": 80,
+    "front": {
+      "title": "Cavitação: A Regra do NPSH 🛡️",
+      "subtitle": "Quem deve ser maior para evitar o problema?"
+    },
+    "back": {
+      "body": "**Regra para SEM cavitação:**\nNPSH Disponível (Sistema) **>** NPSH Requerido (Bomba).\n\n**O que acontece na Cavitação:**\n1. A pressão cai abaixo da pressão de vapor.\n2. Formam-se bolhas de vapor.\n3. As bolhas implodem no rotor.\n\n**Sintomas na Planta:**\n- Barulho de 'pedras' dentro da bomba.\n- Vibração excessiva.\n- Queda de desempenho (vazão/pressão).\n- Erosão do rotor (furos no metal)."
+    },
+    "tags": ["Hidráulica", "Bombas", "Cavitação", "ANSA 2026", "Operação"]
+  },
+  {
+    "id": 81,
+    "front": {
+      "title": "Perda de Carga: Darcy-Weisbach 🧪",
+      "subtitle": "O que faz a pressão cair no meio do cano?"
+    },
+    "back": {
+      "body": "**A Regra da Perda (h_f):**\n- **Proporcional ao Comprimento (L):** Cano maior = Mais perda.\n- **Proporcional ao Quadrado da Velocidade (v²):** Veloz = Muito mais perda.\n- **Inversamente Proporcional ao Diâmetro (D):** Cano estreito = Mais perda.\n\n**O que o Cebraspe pergunta:** 'A perda de carga é independente da velocidade?'. **ERRADO.** Ela depende do quadrado dela.\n\n**Na Operação ANSA:** Ajuda a entender por que precisamos de bombas mais potentes para levar fluidos a distâncias longas ou através de tubos finos."
+    },
+    "tags": ["Física", "Mecânica dos Fluidos", "Perda de Carga", "ANSA 2026", "Operação"]
   }
+
+
+
 
 
 ];
