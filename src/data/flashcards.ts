@@ -1160,6 +1160,215 @@ A questão disse que ele era "Agente Redutor".
       "body": "**A Regra da Perda (h_f):**\n- **Proporcional ao Comprimento (L):** Cano maior = Mais perda.\n- **Proporcional ao Quadrado da Velocidade (v²):** Veloz = Muito mais perda.\n- **Inversamente Proporcional ao Diâmetro (D):** Cano estreito = Mais perda.\n\n**O que o Cebraspe pergunta:** 'A perda de carga é independente da velocidade?'. **ERRADO.** Ela depende do quadrado dela.\n\n**Na Operação ANSA:** Ajuda a entender por que precisamos de bombas mais potentes para levar fluidos a distâncias longas ou através de tubos finos."
     },
     "tags": ["Física", "Mecânica dos Fluidos", "Perda de Carga", "ANSA 2026", "Operação"]
+  },
+  {
+    "id": 83,
+    "front": {
+      "title": "Sujeito Composto vs. Núcleos 📝",
+      "subtitle": "Por que o verbo vai para o plural?"
+    },
+    "back": {
+      "body": "**A Regra:** Quando o sujeito é composto (possui mais de um núcleo) e aparece antes do verbo, o verbo vai para o plural.\n\n**O Pulo do Gato (Cebraspe):**\n- **Frase:** 'João e Maria saíram'.\n- **Sujeito:** João e Maria (UM sujeito composto).\n- **Núcleos:** João (1) e Maria (2).\n\n**Cilada:** A banca dirá que existem 'dois sujeitos' ou 'sujeitos compostos no plural'. **ERRADO.** O sujeito é um só, os núcleos é que são vários."
+    },
+    "tags": ["Português", "Gramática", "Concordância Verbal", "ANSA 2026"]
+  },
+  {
+    "id": 85,
+    "front": {
+      "title": "Concordância: Sujeito Composto 📝",
+      "subtitle": "O que acontece quando há mais de um núcleo?"
+    },
+    "back": {
+      "body": "**Regra Geral:**\n- **Anteposto (Antes do verbo):** O verbo vai obrigatoriamente para o **PLURAL**.\n  *Ex: 'Governo e sociedade **atuam**'.*\n\n- **Posposto (Depois do verbo):** O verbo pode ir para o **PLURAL** ou concordar com o **NÚCLEO PRÓXIMO**.\n  *Ex: 'Atuam governo e sociedade' OU 'Atua governo e sociedade'.*\n\n**Cilada Cebraspe:** Dizer que a concordância atrativa (com o mais próximo) é erro quando o sujeito está depois do verbo. **É PERMITIDO!**"
+    },
+    "tags": ["Português", "Sintaxe", "Concordância", "ANSA 2026"]
+  },
+  {
+    "id": 86,
+    "front": {
+      "title": "Vírgula: Adjunto Adverbial Deslocado 🚩",
+      "subtitle": "Quando a vírgula deixa de ser opcional?"
+    },
+    "back": {
+      "body": "**Critério do Cebraspe:**\n- **Curto (até 2 palavras):** Vírgula é **FACULTATIVA**.\n  *Ex: 'No Brasil(,) a transição avança'.*\n\n- **Longo (3 ou mais palavras):** Vírgula é **OBRIGATÓRIA**.\n  *Ex: 'Em decorrência da crise energética**,** o país investe'.*\n\n**Atenção:** Se a banca perguntar se a retirada da vírgula de um adjunto CURTO mantém a correção gramatical, a resposta é **SIM**."
+    },
+    "tags": ["Português", "Pontuação", "Vírgula", "ANSA 2026"]
+  },
+  {
+    "id": 87,
+    "front": {
+      "title": "Conectivo 'COMO' 🔗",
+      "subtitle": "Quais os 3 valores principais em prova?"
+    },
+    "back": {
+      "body": "1. **Causal (Início de frase):** Equivale a 'Visto que / Já que'.\n   *Ex: 'Como não havia sol, a geração caiu'.*\n\n2. **Conformativo:** Equivale a 'Conforme / Segundo'.\n   *Ex: 'Atuam como determina a lei'.*\n\n3. **Comparativo:** Estabelece relação de semelhança.\n   *Ex: 'A amônia é volátil como o éter'.*\n\n**Dica:** O Cebraspe adora trocar 'causal' por 'conformativo' para tornar o item **ERRADO**."
+    },
+    "tags": ["Português", "Conectivos", "Coesão", "ANSA 2026"]
+  },
+  {
+    "id": 88,
+    "front": {
+      "title": "Voz Ativa vs. Voz Passiva ⚙️",
+      "subtitle": "Como identificar a transposição?"
+    },
+    "back": {
+      "body": "- **Voz Ativa:** O sujeito faz a ação.\n  *Ex: 'O operador (S) acionou a bomba (Obj. Direto)'.*\n\n- **Voz Passiva:** O sujeito sofre a ação.\n  *Ex: 'A bomba (S. Paciente) foi acionada pelo operador'.*\n\n**Regra de Ouro:** Só existe voz passiva se o verbo for **Transitivo Direto (VTD)**. Verbos de ligação (ser, estar) ou que pedem preposição (VTI) **NÃO** admitem essa troca.\n\n"
+    },
+    "tags": ["Português", "Sintaxe", "Vozes Verbais", "ANSA 2026"]
+  },
+  {
+    "id": 89,
+    "front": {
+      "title": "IP Privado vs. IP Público 💻",
+      "subtitle": "Quais são as faixas reservadas para redes internas?"
+    },
+    "back": {
+      "body": "**IP Privado (Rede Interna - Casa/Empresa):**\n- **Classe A:** 10.0.0.0 a 10.255.255.255\n- **Classe B:** 172.16.0.0 a 172.31.255.255\n- **Classe C:** 192.168.0.0 a 192.168.255.255\n\n**IP Público (Internet):**\n- Únicos no mundo inteiro.\n- Gerenciados pelo provedor.\n\n**O Pulo do Gato:** IPs privados **NÃO** são roteáveis na internet diretamente; eles precisam do **NAT** (Network Address Translation) no roteador para navegar."
+    },
+    "tags": ["Informática", "Redes", "IP", "ANSA 2026"]
+  },
+  {
+    "id": 90,
+    "front": {
+      "title": "Protocolo HTTP vs. HTTPS 🔒",
+      "subtitle": "Qual a diferença crucial para segurança?"
+    },
+    "back": {
+      "body": "**HTTP (HyperText Transfer Protocol):**\n- **Porta Padrão:** 80.\n- **Segurança:** **NENHUMA**. Os dados trafegam em texto puro (qualquer um pode ler).\n\n**HTTPS (HTTP Secure):**\n- **Porta Padrão:** 443.\n- **Segurança:** **SIM**. Usa criptografia (SSL/TLS) para proteger os dados.\n\n**Na Prática:** Em sites de login, bancos ou qualquer coisa que envolva dados sensíveis, o **HTTPS é obrigatório**. O Cebraspe adora perguntar se o HTTP é seguro; a resposta é **NÃO**."
+    },
+    "tags": ["Informática", "Internet", "Segurança", "ANSA 2026"]
+  },
+  {
+    "id": 91,
+    "front": {
+      "title": "Direitos do Titular (LGPD) ⚖️",
+      "subtitle": "O que você pode exigir da ANSA sobre seus dados?"
+    },
+    "back": {
+      "body": "**Principais Direitos (Art. 18):**\n1. **Acesso e Confirmação:** Saber se tratam seus dados.\n2. **Correção:** Arrumar dados incompletos ou errados.\n3. **Anonimização/Bloqueio:** Para dados desnecessários.\n4. **Portabilidade:** Levar dados para outro fornecedor.\n5. **Eliminação:** Apagar dados (salvo obrigação legal).\n6. **Revogação:** Retirar o consentimento dado antes.\n\n**Dica Cebraspe:** A banca pode dizer que o direito de eliminação é absoluto. **ERRADO.** A empresa pode manter dados por obrigação legal (ex: registros fiscais/trabalhistas)."
+    },
+    "tags": ["Direito", "LGPD", "ANSA 2026", "Direitos do Titular"]
+  },
+  {
+    "id": 91,
+    "front": {
+      "title": "Progressão Aritmética (PA) 🔢",
+      "subtitle": "Como achar qualquer termo sem somar um por um?"
+    },
+    "back": {
+      "body": "**Fórmula do Termo Geral:**\n$$a_n = a_1 + (n - 1) \\cdot r$$\n\n**O que é cada coisa:**\n- **a_n:** O termo que você quer achar (ex: o 10º).\n- **a_1:** O primeiro termo da sequência.\n- **n - 1:** Quantos 'pulos' você dá (sempre a posição desejada menos 1).\n- **r:** A razão (de quanto em quanto a sequência aumenta).\n\n**Dica de Prova:** Se a PA for decrescente, a razão é negativa. Se a questão pedir a SOMA dos termos, a lógica muda!"
+    },
+    "tags": ["Raciocínio Lógico", "Matemática", "PA", "ANSA 2026"]
+  },
+  {
+    "id": 93,
+    "front": {
+      "title": "Diagrama de Venn: A Regra do 'Ambos' 🧩",
+      "subtitle": "Por onde começar a preencher os círculos?"
+    },
+    "back": {
+      "body": "**A Regra de Ouro:** Comece sempre pelo MEIO (interseção).\n\n**Passo a Passo:**\n1. Coloque o valor de 'Ambos' no centro.\n2. Subtraia esse valor dos totais de cada grupo (A e B) para achar quem tem 'Apenas'.\n3. Some tudo: Apenas A + Ambos + Apenas B.\n4. O que sobrar para o total geral é o grupo do 'NENHUM'.\n\n**Dica de Prova:** Se você somar direto 30 + 25, vai dar 55. Como o total é 50, você já sabe que tem gente contada duas vezes (a interseção)."
+    },
+    "tags": ["Raciocínio Lógico", "Conjuntos", "Venn", "ANSA 2026"]
+  },
+  {
+    "id": 95,
+    "front": {
+      "title": "Atalho: Probabilidade 'Um e Outro' 🎲",
+      "subtitle": "Como calcular 60% de 60% rápido?"
+    },
+    "back": {
+      "body": "**Macete:**\n1. Multiplique os números iniciais: 6 * 6 = 36.\n2. O resultado já te dá a base da porcentagem.\n\n**Exemplos Rápidos:**\n- 20% de 20%? -> 2 * 2 = 4 -> 4% (0,04)\n- 50% de 10%? -> 5 * 1 = 5 -> 5% (0,05)\n- 80% de 30%? -> 8 * 3 = 24 -> 24% (0,24)\n\n**Uso na ANSA:** Se a chance de uma bomba falhar é 10% (0,1) e a da reserva também é 10% (0,1), a chance das duas falharem juntas é 1% (0,01)."
+    },
+    "tags": ["Matemática", "Probabilidade", "Atalho", "ANSA 2026"]
+  },
+  {
+    "id": 97,
+    "front": {
+      "title": "Cálculo de Massa Molar ⚖️",
+      "subtitle": "Como somar o peso de uma molécula?"
+    },
+    "back": {
+      "body": "**Passo a Passo:**\n1. Pegue a fórmula (ex: H₂O).\n2. Veja os pesos na tabela (ou dados da questão): H=1, O=16.\n3. Multiplique a quantidade pelo peso:\n   - H₂: 2 * 1 = 2\n   - O: 1 * 16 = 16\n4. Some tudo: 2 + 16 = 18 g/mol.\n\n**Na Prova ANSA:** O Cebraspe costuma dar números redondos (como o 100 do heptano) para facilitar a regra de três. Se a conta der um número muito 'quebrado', confira se não errou a soma!"
+    },
+    "tags": ["Química", "Massa Molar", "Estequiometria", "ANSA 2026"]
+  },
+  {
+    "id": 98,
+    "front": {
+      "title": "Hidrólise Salina: Ácido Forte + Base Forte ⚗️",
+      "subtitle": "O sal formado sofre hidrólise?"
+    },
+    "back": {
+      "body": "**Regra de Ouro:**\n- Sais de Ácido Forte + Base Forte (ex: NaCl) **NÃO sofrem hidrólise**.\n- A solução resultante é **NEUTRA (pH = 7)**.\n\n**O que o Cebraspe faz:** Ele diz que o sal de ácido forte torna a solução ácida. **ERRADO.** Ele só faria isso se a base fosse fraca.\n\n**Na Operação ANSA:** Fundamental para o tratamento de efluentes. Se você neutraliza um ácido forte com uma base forte, o descarte final terá pH neutro."
+    },
+    "tags": ["Química", "Equilíbrio Químico", "pH", "ANSA 2026", "Operação"]
+  },
+  {
+    "id": 99,
+    "front": {
+      "title": "Emulsão: Líquido + Líquido 🧴",
+      "subtitle": "O que define esse tipo de coloide?"
+    },
+    "back": {
+      "body": "**Definição:** Mistura de dois líquidos que normalmente não se misturam (**imiscíveis**).\n\n**Exemplos Clássicos:**\n- **Leite:** Gotículas de gordura dispersas em água.\n- **Maionese:** Óleo e vinagre/ovo.\n- **Petróleo Bruto:** Frequentemente vem com água emulsionada.\n\n**Dica de Prova:** O Cebraspe pode tentar dizer que é uma mistura de sólido e líquido. **ERRADO.** Sólido em líquido é um 'Sol' (ex: tinta). Emulsão é **LÍQUIDO em LÍQUIDO**.\n\n**Na Operação ANSA:** Fundamental para entender a separação de água e óleo em tanques e o uso de agentes desmulsificantes para 'quebrar' a mistura."
+    },
+    "tags": ["Química", "Coloides", "Emulsão", "ANSA 2026", "Operação"]
+  },
+  {
+    "id": 100,
+    "front": {
+      "title": "Separação de Emulsões 🏺",
+      "subtitle": "Filtração funciona para óleo e água emulsionados?"
+    },
+    "back": {
+      "body": "**Resposta: NÃO.**\n\n**O Erro da Questão:** As partículas coloidais de uma emulsão passam pelos poros do filtro comum.\n\n**Métodos Corretos:**\n1. **Decantação** (Diferença de densidade).\n2. **Centrifugação** (Aceleração da decantação).\n3. **Quebra Química** (Uso de desmulsificantes).\n\n**Dica Cebraspe:** Filtração serve para separar SÓLIDO de LÍQUIDO (mistura heterogênea). Para Líquido + Líquido (emulsão), use Decantação."
+    },
+    "tags": ["Química", "Separação de Misturas", "Emulsão", "ANSA 2026", "Operação"]
+  },
+  {
+    "id": 101,
+    "front": {
+      "title": "Agente Oxidante: KMnO₄ 🧪",
+      "subtitle": "Qual a sua função principal em reações?"
+    },
+    "back": {
+      "body": "**Definição:** O Permanganato de Potássio é um **FORTE AGENTE OXIDANTE**.\n\n**O que ele faz:**\n- Rouba elétrons de outras substâncias (especialmente orgânicas).\n- Ele próprio sofre **redução** (seu NOX diminui).\n\n**Aparência:** Cristais roxo-escuros que deixam a água violeta.\n\n**Na Operação ANSA:** Usado no tratamento de águas para remover odores, sabores e oxidar metais como Ferro e Manganês, facilitando a remoção por filtração."
+    },
+    "tags": ["Química", "Oxirredução", "KMnO4", "ANSA 2026", "Operação"]
+  },
+  {
+    "id": 102,
+    "front": {
+      "title": "Produto de Solubilidade (Kps) ⚖️",
+      "subtitle": "O que um Kps pequeno indica?"
+    },
+    "back": {
+      "body": "**Regra Direta:**\n- **Kps Baixo** = Sal **Insolúvel** (forma precipitado fácil).\n- **Kps Alto** = Sal **Solúvel** (dissolve bem na água).\n\n**O Exemplo do FeS:**\n- O Sulfeto de Ferro é um sólido preto que não dissolve quase nada na água. Seu Kps é extremamente pequeno.\n\n**Na Operação ANSA:** Fundamental para o **Tratamento de Efluentes**. Se você quer tirar um metal tóxico da água, você adiciona um reagente para formar um sal de **baixo Kps**. Ele vira um sólido (precipita) e você consegue filtrá-lo ou decantá-lo."
+    },
+    "tags": ["Química", "Equilíbrio Químico", "Kps", "ANSA 2026", "Operação"]
+  },
+  {
+    "id": 103,
+    "front": {
+      "title": "Oxirredução: O Agente Redutor 🔄",
+      "subtitle": "Quem oxida é o quê?"
+    },
+    "back": {
+      "body": "**A Lógica Invertida:**\n- **Agente REDUTOR:** É quem SOFRE OXIDAÇÃO (perde elétrons). Ele reduz o outro.\n- **Agente OXIDANTE:** É quem SOFRE REDUÇÃO (ganha elétrons). Ele oxida o outro.\n\n**Como identificar na prova:**\n1. Veja o NOX (carga).\n2. O NOX aumentou? (0 para +2) -> OXIDOU -> **Agente Redutor**.\n3. O NOX diminuiu? (+1 para 0) -> REDUZIU -> **Agente Oxidante**.\n\n**Na Operação ANSA:** Fundamental para entender a **CORROSÃO**. O ferro do tubo oxida (perde elétrons) e vira ferrugem ou sulfeto, agindo como redutor do meio corrosivo."
+    },
+    "tags": ["Química", "Oxirredução", "Corrosão", "ANSA 2026", "Operação"]
+  },
+  {
+    "id": 104,
+    "front": {
+      "title": "O que é Equilíbrio Químico? ⚗️",
+      "subtitle": "O que acontece com as velocidades e concentrações?"
+    },
+    "back": {
+      "body": "**As Duas Regras de Ouro:**\n1. **Velocidades:** A velocidade da reação direta fica IGUAL à da inversa ($v_d = v_i$).\n2. **Concentrações:** As quantidades de reagentes e produtos tornam-se CONSTANTES (não mudam mais).\n\n**Cilada do Cebraspe:** Dizer que o equilíbrio é 'estático' (a reação para). **ERRADO.** O equilíbrio é **DINÂMICO**; as reações continuam acontecendo, mas na mesma velocidade, por isso parece parado.\n\n**Na Operação ANSA:** Fundamental para processos como a síntese da Amônia. Se não controlarmos o equilíbrio, a reação 'volta' e perdemos produção."
+    },
+    "tags": ["Química", "Equilíbrio Químico", "Cinética", "ANSA 2026", "Operação"]
   }
 
 
