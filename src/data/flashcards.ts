@@ -787,6 +787,105 @@ A questão disse que ele era "Agente Redutor".
       "body": "**A FÓRMULA:**\n**n = m / MM**\n\n**Onde:**\n- **n:** Número de mols (o que você quer).\n- **m:** Massa dada no enunciado (g).\n- **MM:** Massa Molar (g/mol).\n\n**Exemplo Prático:**\nSe a questão diz: 'Dissolveu-se 58,5 g de NaCl em água'.\n1. Massa (m) = 58,5 g.\n2. Massa Molar (MM) do NaCl = 58,5 g/mol.\n3. n = 58,5 / 58,5 = **1 mol**.\n\n**Dica:** Se a massa for igual à massa molar, é sempre 1 mol!"
     },
     "tags": ["Química", "Cálculo", "Mols", "Molaridade"]
+  },
+  {
+    "id": 46,
+    "front": {
+      "title": "Contagem de Mols para Pressão 🎈",
+      "subtitle": "Devo olhar o número grande ou o pequeno?"
+    },
+    "back": {
+      "body": "**Regra de Ouro:**\nPara deslocamento de equilíbrio por PRESSÃO, olhe APENAS os **Coeficientes** (os números grandes da frente).\n\n**Exemplo: N₂ + 3H₂ ⇌ 2NH₃**\n• Reagentes: 1 + 3 = **4 mols**.\n• Produtos: **2 mols**.\n\n**Ação da Pressão:**\n- ↑ Pressão: Vai para o lado com MENOR número de mols (2 mols).\n- ↓ Pressão: Vai para o lado com MAIOR número de mols (4 mols).\n\n**Atenção:** Ignore os números pequenos debaixo (átomos) e ignore substâncias sólidas ou líquidas!"
+    },
+    "tags": ["Química", "Le Chatelier", "Equilíbrio", "ANSA 2026"]
+  },
+  {
+    "id": 47,
+    "front": {
+      "title": "Temperatura vs. Kc 🌡️",
+      "subtitle": "O valor da constante sempre aumenta?"
+    },
+    "back": {
+      "body": "**CUIDADO:** A afirmação 'independente da reação' está sempre errada!\n\n• **Reação ENDO (ΔH > 0):** ↑ Temp = ↑ Kc. (Amigos do calor).\n• **Reação EXO (ΔH < 0):** ↑ Temp = ↓ Kc. (Inimigos do calor).\n\n**Dica de Prova:** Pressão, concentração e catalisadores deslocam o equilíbrio, mas **NÃO mudam o valor do Kc**. Só a temperatura tem esse poder."
+    },
+    "tags": ["Química", "Equilíbrio Químico", "Kc", "ANSA 2026"]
+  },
+  {
+    "id": 48,
+    "front": {
+      "title": "Produção de Amônia: N₂ + 3H₂ ⇌ 2NH₃ + Calor 🌡️",
+      "subtitle": "O que acontece se o operador aumentar a temperatura?"
+    },
+    "back": {
+      "body": "**Análise da Reação EXOTÉRMICA (ΔH < 0):**\nO calor é um 'produto'. Se você aumenta a temperatura, o sistema tenta consumir esse excesso.\n\n1. **Deslocamento:** O equilíbrio foge para a ESQUERDA (sentido endotérmico).\n2. **Consequência:** A produção de Amônia (NH₃) DIMINUI.\n3. **Valor de Kc:** O Kc DIMINUI (porque há mais reagentes que produtos agora).\n\n**O Dilema do Operador:** Industrialmente usa-se uma temperatura moderada (450°C) apenas para a reação ser rápida o suficiente, mas não tão alta a ponto de destruir o rendimento."
+    },
+    "tags": ["Química", "Equilíbrio Químico", "Amônia", "ANSA 2026", "Operação"]
+  },
+  {
+    "id": 49,
+    "front": {
+      "title": "Equação 'Corretamente Representada' 🧪",
+      "subtitle": "O que a banca Cebraspe quer dizer com isso?"
+    },
+    "back": {
+      "body": "**Regra de Ouro:**\nPara estar correta, a equação precisa de duas coisas:\n1. Reagentes e Produtos certos.\n2. **BALANCEAMENTO** (Lei de Lavoisier).\n\n**Como conferir em 10 segundos (Método MACHO):**\nContar na ordem: **M**etais, **A**metais, **C**arbono, **H**idrogênio e **O**xigênio.\n\n**No exemplo do Metano:**\n- Lado esquerdo: 4H.\n- Lado direito: Precisa de 2 H₂O para ter 4H.\n- Total de O na direita: 4 átomos.\n- Lado esquerdo: Precisa de 2 O₂ para ter 4O.\n\n**Ajuste Final:** CH₄ + 2O₂ → CO₂ + 2H₂O."
+    },
+    "tags": ["Química", "Estequiometria", "Balanceamento", "ANSA 2026"]
+  },
+  {
+    "id": 50,
+    "front": {
+      "title": "Pressão de Vapor e Temperatura 💨",
+      "subtitle": "Qual a relação entre calor e a vontade de evaporar?"
+    },
+    "back": {
+      "body": "**Regra Direta (Proporcional):**\n↑ Temperatura = ↑ Pressão de Vapor.\n↓ Temperatura = ↓ Pressão de Vapor.\n\n**Por que isso acontece?**\nO calor aumenta a energia cinética das moléculas. Com mais energia, mais moléculas escapam da superfície do líquido e viram gás, exercendo mais força (pressão).\n\n**Dica de Prova:** O 'Ponto de Ebulição' é atingido quando a **Pressão de Vapor** se iguala à **Pressão Atmosférica** externa."
+    },
+    "tags": ["Química", "Termodinâmica", "Estados da Matéria", "ANSA 2026"]
+  },
+  {
+    "id": 51,
+    "front": {
+      "title": "Alcanos: A Fórmula Geral 🧪",
+      "subtitle": "Como saber se a molécula é um alcano?"
+    },
+    "back": {
+      "body": "**Fórmula:** CₙH₂ₙ₊₂\n\n**Macete Mental:** 'O dobro mais dois'.\n- **Metano (1C):** 1x2+2 = CH₄ \n- **Etano (2C):** 2x2+2 = C₂H₆\n- **Propano (3C):** 3x2+2 = C₃H₈\n- **Butano (4C):** 4x2+2 = C₄H₁₀\n\n**Uso Prático (ANSA):** Propano e Butano formam o GLP (Gás Liquefeito de Petróleo). O Metano é o principal componente do Gás Natural[cite: 1407, 1462, 1503]."
+    },
+    "tags": ["Química Orgânica", "Alcanos", "Hidrocarbonetos", "ANSA 2026"]
+  },
+  {
+    "id": 52,
+    "front": {
+      "title": "Solução Tampão: A Regra do 'Fraco' 🧪",
+      "subtitle": "Ácido forte consegue formar tampão?"
+    },
+    "back": {
+      "body": "**RESPOSTA: NÃO.**\n\n**A Receita do Tampão:**\n1. **Ácido FRACO** + seu Sal (Base conjugada).\n   - Ex: Ácido Acético + Acetato de Sódio.\n2. **Base FRACA** + seu Sal (Ácido conjugado).\n   - Ex: Amônia (NH₃) + Cloreto de Amônio.\n\n**Por que o 'Forte' não serve?**\nO ácido forte libera todos os seus íons de uma vez. O tampão precisa de um sistema em **Equilíbrio Químico** para agir como uma 'esponja' e resistir a variações de pH.\n\n**Aplicação na ANSA:** Essencial no tratamento de efluentes e no controle de processos de síntese."
+    },
+    "tags": ["Química", "pH", "Solução Tampão", "Equilíbrio", "ANSA 2026"]
+  },
+  {
+    "id": 54,
+    "front": {
+      "title": "Aromáticos (Benzeno): A Regra do Anel 💍",
+      "subtitle": "Por que o benzeno é 'especial'?"
+    },
+    "back": {
+      "body": "**Conceito Chave:** Ressonância (ou Deslocalização).\n\n**O que a prova vai dizer:**\n- 'Possuem estabilidade extra' → VERDADEIRO ✅\n- 'São mais estáveis que alcenos comuns' → VERDADEIRO ✅\n- 'A estrutura é um hexágono com elétrons deslocalizados' → VERDADEIRO ✅\n\n**Por que cai:** O Benzeno é um risco ocupacional grave citado no edital (Higiene Ocupacional). Operadores devem conhecer sua natureza química para segurança."
+    },
+    "tags": ["Química Orgânica", "Benzeno", "Aromáticos", "ANSA 2026", "Operação"]
+  },
+  {
+    "id": 55,
+    "front": {
+      "title": "Polimerização do Etileno 🏗️",
+      "subtitle": "O que acontece com a ligação dupla C=C?"
+    },
+    "back": {
+      "body": "**Processo de Adição:**\n1. A ligação dupla (C=C) do monômero (etileno) se ABRE.\n2. Não há perda de átomos (por isso é 'adição').\n3. Forma-se o polímero (polietileno) com ligações SIMPLES (C-C).\n\n**Representação:**\nn(CH₂=CH₂) → [—CH₂—CH₂—]ₙ\n\n**Importância na Indústria:** É a base da produção de plásticos. O edital da ANSA exige o conhecimento de polímeros para entender os subprodutos e processos petroquímicos."
+    },
+    "tags": ["Química Orgânica", "Polímeros", "Etileno", "ANSA 2026", "Operação"]
   }
 
 
