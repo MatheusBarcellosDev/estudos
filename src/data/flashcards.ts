@@ -197,7 +197,7 @@ C(5, 2) = 20 / 2 = **10** ✅
 
 **Dica de Ouro:** "Se a ordem não importa, a Combinação é o que te suporta!" 💡`,
     },
-    tags: ['Matemática', 'Análise Combinatória', 'Sintaxe'],
+    tags: ['Matemática', 'Análise Combinatória', 'Combinatória'],
   },
   {
     id: 10,
@@ -266,41 +266,25 @@ Se eles enchem **1/12** do tanque a cada hora, o tanque levará **12 horas** par
   {
     id: 13,
     front: {
-      title: 'Conjuntos: União (∪) vs Interseção (∩) 🧩',
-      subtitle: 'Como diferenciar os dois símbolos e seus resultados?',
+      title: 'Conjuntos: União, Interseção e Venn 🧩',
+      subtitle: 'Como diferenciar os símbolos e calcular "pelo menos um"?',
     },
     back: {
-      body: `**A Regra Visual:**
-• **Interseção (∩):** Pense em uma "ponte". Só passa quem está nos dois lados. (Elementos em comum).
-• **União (∪):** Pense em um "copo". Você despeja tudo dentro. (Todos os elementos, sem repetir).
+      body: `**Os Dois Operadores:**
+| Símbolo | Nome | O que inclui |
+|---|---|---|
+| **∩** | Interseção | Só quem está nos **dois** lados |
+| **∪** | União | **Todos** os elementos, sem repetir |
 
-**Exemplo da Prova:**
-A = {1, 2, 3} e B = {2, 3, 4}
-• **A ∩ B = {2, 3}** ✅ (Apenas os repetidos)
-• **A ∪ B = {1, 2, 3, 4}** ❌ (Isso é a união, não a interseção)
+**Exemplo:** A = {1,2,3} e B = {2,3,4}
+• A ∩ B = **{2, 3}** (em comum)
+• A ∪ B = **{1, 2, 3, 4}** (todos)
 
-**Dica de Ouro:** O símbolo da Interseção parece um "n" de "No comum".`,
-    },
-    tags: ['Matemática', 'Teoria dos Conjuntos', 'Lógica'],
-  },
-  {
-    id: 14,
-    front: {
-      title: 'Conjuntos: "Pelo menos um" (União) 🧩',
-      subtitle: 'Como calcular o total de pessoas em grupos que se sobrepõem?',
-    },
-    back: {
-      body: `**A Regra:** Para achar o total de pessoas que pertencem a pelo menos um grupo, somamos os grupos e subtraímos quem foi contado duas vezes (a interseção).
+**Fórmula: "Pelo menos um"**
+União = A + B − (A ∩ B)
+*Ex: 60% + 40% − 20% = **80%** ✅*
 
-**Fórmula:** União = A + B - (A ∩ B)
-
-**No exemplo da prova:**
-• Química: 60%
-• Mecânica: 40%
-• Ambos: 20%
-• **Cálculo:** 60 + 40 - 20 = **80%**. ✅
-
-**Conclusão:** A afirmação está **CERTA**, pois 80% conhecem pelo menos uma das duas áreas.`,
+**Macete:** ∩ parece a letra **"n"** de **"No comum"**.`,
     },
     tags: ['Matemática', 'Teoria dos Conjuntos', 'Diagrama de Venn'],
   },
@@ -383,23 +367,7 @@ Troque "normas" por "regulamentos":
     },
     tags: ['Português', 'Gramática', 'Pronomes'],
   },
-  {
-    id: 19,
-    front: {
-      title: 'Conjunções: Embora (Concessiva) 💡',
-      subtitle: 'Qual a diferença entre uma oração Condicional e uma Concessiva?',
-    },
-    back: {
-      body: `**1. Concessiva (Embora):** Indica um contraste, algo que acontece "apesar de". 
-• Ex: "Embora chova, eu vou." (Vou mesmo com chuva).
 
-**2. Condicional (Se):** Indica uma dependência, algo que só acontece "se" outra ocorrer.
-• Ex: "Se chover, eu não vou." (A chuva impede a ida).
-
-**Na Prova:** A questão afirmou que "embora" é condicional. Está **ERRADO**, pois "embora" é a conjunção concessiva mais famosa das provas! ❌`,
-    },
-    tags: ['Português', 'Conjunções', 'Sintaxe'],
-  },
   {
     id: 20,
     front: {
@@ -490,73 +458,53 @@ Troque "normas" por "regulamentos":
 1. Subtraia os valores de pH: 5 - 3 = **2 unidades**.
 2. Eleve 10 ao resultado: 10² = **100**.
 
-**Conclusão:** Uma solução de pH 3 é **100 vezes** mais ácida que uma de pH 5. Se fosse pH 6 para pH 3, seriam 3 unidades (10³ = 1000 vezes). ✅`,
+**Conclusão:** Uma solução de pH 3 é **100 vezes** mais ácida que uma de pH 5. ✅`,
     },
     tags: ['Química', 'Equilíbrio Químico', 'pH'],
   },
   {
     id: 25,
     front: {
-      title: 'Química: Oxirredução (Redox) 🧪',
-      subtitle: 'Como identificar o Agente Oxidante e o Agente Redutor?',
+      title: 'Dicionário Redox: Agente Oxidante vs. Redutor 📚',
+      subtitle: 'Quem oxida, quem reduz e qual o nome de cada um?',
     },
     back: {
-      body: `**Regra de Ouro:** O agente é o oposto do processo.
-• Quem **se oxida** (perde e- / Nox sobe) é o **Agente Redutor**.
-• Quem **se reduz** (ganha e- / Nox desce) é o **Agente Oxidante**.
+      body: `**Regra de Ouro:** O agente é o **oposto** do processo que ele sofre.
 
-**Na questão:**
-4Fe + 3O₂ → 2Fe₂O₃
-• Fe: Nox 0 → +3 (Oxidou). Logo, é o **Agente Redutor**. 
-• O₂: Nox 0 → -2 (Reduziu). Logo, é o **Agente Oxidante**.
+| O Nox... | Processo | Título |
+|---|---|---|
+| **Subiu** (+) | OXIDOU (perdeu e⁻) | **AGENTE REDUTOR** |
+| **Desceu** (−) | REDUZIU (ganhou e⁻) | **AGENTE OXIDANTE** |
 
-**Veredito:** Errado. O ferro perde elétrons, mas isso o torna agente redutor, não oxidante. ❌`,
+**Exemplo:** Fe + O₂ → Fe₂O₃
+• Fe: 0 → +3 (Subiu = Oxidou) → **Agente Redutor**.
+• O₂: 0 → -2 (Desceu = Reduziu) → **Agente Oxidante**.
+
+**Macete:** O Agente Oxidante é o "ladrão" (rouba elétrons). Quem é roubado fica pobre (perde e⁻) = Agente Redutor.`,
     },
-    tags: ['Química', 'Eletroquímica', 'Redox'],
+    tags: ['Química', 'Redox', 'Eletroquímica'],
   },
   {
     id: 26,
     front: {
-      title: 'Química: Como Calcular o Nox 🧮',
-      subtitle: 'Passo a passo para não errar a conta na hora da prova.',
+      title: 'Nox: Âncoras + Cálculo 🧮',
+      subtitle: 'Quais valores são fixos e como calcular o elemento que muda?',
     },
     back: {
-      body: `**1. As Regras Fixas (Âncoras):**
-• **Substância Simples:** Sempre é **0** (Ex: Fe, O₂, H₂).
-• **Oxigênio (O):** Geralmente **-2**.
-• **Hidrogênio (H):** Geralmente **+1**.
-• **Metais Alcalinos (G1):** Sempre **+1** (Ex: Na, K).
+      body: `**Âncoras (Decore):**
+| Elemento | Nox |
+|---|---|
+| Substância simples (O₂, Fe...) | **0** |
+| Oxigênio (O) | **-2** (exceto H₂O₂: -1) |
+| Hidrogênio (H) | **+1** |
+| Metais Alcalinos G1 (Na, K) | **+1** |
+| Metais Alc. Terrosos G2 (Ca, Mg) | **+2** |
+| Alumínio (Al) | **+3** |
 
-**2. A Regra da Balança:**
-A soma de todos os Nox de uma molécula neutra deve ser **ZERO**.
-
-**3. Exemplo Prático (Fe₂O₃):**
-• O oxigênio é -2. Como são 3, temos total de **-6**.
-• Para zerar, os 2 ferros precisam somar **+6**.
-• Dividindo pelo número de átomos: +6 ÷ 2 = **+3**. ✅
-
-**Dica:** Monte a "equaçãozinha": (2 * x) + (3 * -2) = 0`,
+**Cálculo:** Soma de todos os Nox = **ZERO** (molécula neutra).
+*Ex: Fe₂O₃ → (2x) + (3×-2) = 0 ⇒ x = **+3** ✅*`,
     },
     tags: ['Química', 'Nox', 'Cálculo'],
-  },
-  {
-    id: 27,
-    front: {
-      title: 'Química: Nox "Invisível" 🕵️‍♂️',
-      subtitle: 'Quais valores a banca espera que eu saiba de cor?',
-    },
-    back: {
-      body: `**DECORE ESSAS ÂNCORAS:**
-1. **Simples é Zero:** Se o elemento está sozinho ($O_2, Fe, Al$), Nox = 0.
-2. **Família 1A (Li, Na, K):** +1.
-3. **Família 2A (Mg, Ca, Ba):** +2.
-4. **Hidrogênio (H):** +1.
-5. **Oxigênio (O):** -2.
-6. **Alumínio (Al):** +3.
-
-**Como usar:** Use esses valores para montar a conta e descobrir o elemento que "muda" (como o Ferro, Carbono ou Enxofre).`,
-    },
-    tags: ['Química', 'Nox', 'Memorização'],
   },
   {
     id: 28,
@@ -578,24 +526,7 @@ A soma de todos os Nox de uma molécula neutra deve ser **ZERO**.
     },
     tags: ['Química', 'Nox', 'Cálculo'],
   },
-  {
-    id: 29,
-    front: {
-      title: 'Dicionário de Prova: Oxirredução 📖',
-      subtitle: 'Como traduzir o que a questão está pedindo?',
-    },
-    back: {
-      body: `**Se a questão disser...**
-• **"Sofreu Oxidação":** O Nox aumentou (perdeu e-).
-• **"Sofreu Redução":** O Nox diminuiu (ganhou e-).
-• **"Agente Redutor":** É a substância que **oxidou**.
-• **"Agente Oxidante":** É a substância que **reduziu**.
 
-**Cuidado:** O Agente é a molécula INTEIRA do reagente.
-*Ex: Se o H do HCl reduziu, o Agente Oxidante é o **HCl**.*`,
-    },
-    tags: ['Química', 'Redox', 'Terminologia'],
-  },
   {
     id: 30,
     front: {
@@ -616,56 +547,31 @@ O Nitrogênio **reduziu**, logo o $N_2$ é o **Agente Oxidante**.`,
     },
     tags: ['Química', 'ANSA', 'Nitrogênio'],
   },
+
   {
-    id: 31,
+    id: 33,
     front: {
-      title: 'Química: O Oxigênio (O₂) é sempre o quê? 💨',
-      subtitle: 'Cuidado com a confusão entre "Agente" e "Processo".',
+      title: 'Soluções: Fórmula Mestra + Conversões 🧪',
+      subtitle: 'Como calcular qualquer grandeza de solução com uma única lógica?',
     },
     back: {
-      body: `**Análise do O₂ em reações:**
-• O O₂ adora roubar elétrons (ele é eletronegativo).
-• Quem rouba elétrons **REDUZ** o próprio Nox (0 p/ -2).
-• Quem **REDUZ** é o **AGENTE OXIDANTE**.
+      body: `**As 3 Fórmulas Integradas:**
+| Quer saber... | Use |
+|---|---|
+| Molaridade (mol/L) | **M = n / V** |
+| Mols (n) | **n = m / MM** |
+| Molaridade pela massa | **M = m / (MM × V)** |
 
-**Por que a questão estava errada?**
-A questão disse que ele era "Agente Redutor". 
-**Correção:** Ele é o Agente Oxidante porque ele oxida o outro, mas ele mesmo sofre Redução.`,
+**Conversão g/L ↔ mol/L:**
+• g/L → mol/L: divida por MM
+• mol/L → g/L: multiplique por MM
+
+**Exemplo NaCl (MM = 58,5 g/mol):**
+58,5 g em 1 L → M = 58,5 / (58,5 × 1) = **1 mol/L** ✅
+
+**Dica ANSA:** Volume sempre em **Litros**! 500 mL = 0,5 L.`,
     },
-    tags: ['Química', 'Redox', 'Pegadinhas'],
-  },
-  {
-    "id": 32,
-    "front": {
-      "title": "O Jogo do Sobe e Desce (Redox) 🎢",
-      "subtitle": "Como saber quem ganhou ou perdeu elétrons?"
-    },
-    "back": {
-      "body": "**Regra da Dívida (Elétron = Carga Negativa):**\n\n1. **O NÚMERO SUBIU (Ex: 0 → +3):**\n   - **O que houve:** Perdeu \"dívidas\" (elétrons).\n   - **Processo:** OXIDOU (ficou mais positivo).\n   - **Título:** AGENTE REDUTOR (O Doador).\n\n2. **O NÚMERO DESCEU (Ex: 0 → -3):**\n   - **O que houve:** Ganhou \"dívidas\" (elétrons).\n   - **Processo:** REDUZIU (ficou mais negativo).\n   - **Título:** AGENTE OXIDANTE (O Ladrão).\n\n**Dica de Ouro:** Se o número **D**iminuiu, ele **R**eduziu (**DR**). Se ele Reduziu, ele é o Agente **O**xidante (**RO**)."
-    },
-    "tags": ["Química", "Redox", "Lógica"]
-  },
-  {
-    "id": 33,
-    "front": {
-      "title": "Cálculo de Concentração (g/L vs mol/L) 🧪",
-      "subtitle": "Como transformar mol/L em gramas por litro rapidamente?"
-    },
-    "back": {
-      "body": "**A Fórmula Mágica:**\nConcentração (g/L) = Molaridade (mol/L) × Massa Molar (g/mol)\n\n**Exemplo NaCl (58,5 g/mol):**\n• Se a solução é 1 mol/L → tem 58,5 g/L.\n• Se a solução é 2 mol/L → tem 117 g/L (58,5 × 2).\n\n**Macete:** Pense no mol como uma 'caixa'. Se cada caixa pesa 58,5kg e você tem 2 caixas por litro, você tem 117kg por litro. Simples assim!"
-    },
-    "tags": ["Química", "Soluções", "Cálculo"]
-  },
-  {
-    "id": 34,
-    "front": {
-      "title": "Macetes de Soluções: O Triângulo Mágico 🔺",
-      "subtitle": "Como isolar o que a questão pede (Massa, Mol ou Volume)?"
-    },
-    "back": {
-      "body": "**Memorize a pirâmide:**\n      m (massa)\n    -----------\n    n (mol) | M (massa molar)\n\n**Como usar:**\n1. Quer a MASSA (g)? Multiplique o mol pela massa molar (n × M).\n2. Quer o MOL (n)? Divida a massa pela massa molar (m / M).\n3. Quer a CONCENTRAÇÃO? Divida o total de mols pelo Volume (n / V).\n\n**Cuidado ANSA:** Se o volume for 500mL, divida o resultado de 1L por 2!"
-    },
-    "tags": ["Química", "Cálculo", "Soluções"]
+    tags: ['Química', 'Soluções', 'Cálculo'],
   },
   {
     "id": 35,
@@ -712,37 +618,22 @@ A questão disse que ele era "Agente Redutor".
     "tags": ["Química", "Nox", "Exceções", "ANSA"]
   },
   {
-    "id": 39,
-    "front": {
-      "title": "Conversão: g/L para mol/L 🔄",
-      "subtitle": "Como transformar massa em concentração molar rápido?"
+    id: 40,
+    front: {
+      title: 'NaCl: O Número Mágico 58,5 🧂',
+      subtitle: 'Como identificar concentrações do NaCl de cabeça?',
     },
-    "back": {
-      "body": "**A Fórmula de Cabeça:**\nDivida a concentração em gramas (g/L) pela Massa Molar (g/mol).\n\n**Exemplo do NaOH (40 g/mol):**\n- 40 g/L = 1 mol/L\n- 80 g/L = 2 mol/L\n- 20 g/L = 0,5 mol/L\n\n**Dica ANSA:** Se a questão te der a massa em gramas e pedir o mol, é sempre uma conta de divisão simples. Geralmente são números fáceis de dividir (múltiplos)."
+    back: {
+      body: `**Decore (MM = 58,5 g/mol):**
+- 58,5 g em 1 L = **1,0 mol/L**
+- 29,25 g em 1 L = **0,5 mol/L**
+- 117,0 g em 1 L = **2,0 mol/L**
+
+**Cilada CEBRASPE:** A questão dá 29,25 g e chama de 1 mol/L. **ERRADO** — é 0,5 mol/L.
+
+**Regra Rápida:** Divida sempre a massa pela MM antes de marcar Certo!`,
     },
-    "tags": ["Química", "Cálculo", "Soluções", "Conversão"]
-  },
-  {
-    "id": 40,
-    "front": {
-      "title": "NaCl: O Número Mágico 58,5 🧂",
-      "subtitle": "Como identificar 0,5 mol/L de cabeça?"
-    },
-    "back": {
-      "body": "**Decore os valores do NaCl (58,5 g/mol):**\n- 58,5 g em 1L = **1,0 mol/L**\n- 29,25 g em 1L = **0,5 mol/L**\n- 117,0 g em 1L = **2,0 mol/L**\n\n**O erro da questão:** Ela deu a massa de MEIO mol (29,25) mas disse que a concentração era de UM mol (1 mol/L). \n\n**Dica:** Sempre divida a massa dada pela massa molar antes de marcar 'Certo'!"
-    },
-    "tags": ["Química", "Cálculo", "Soluções", "NaCl"]
-  },
-  {
-    "id": 41,
-    "front": {
-      "title": "Conversão: mol/L para g/L 🔄",
-      "subtitle": "Como achar a massa (g) a partir do Mol?"
-    },
-    "back": {
-      "body": "**A Fórmula de Cabeça:**\nMultiplique a concentração molar (mol/L) pela Massa Molar (g/mol).\n\n**Exemplo do H₂SO₄ (98 g/mol):**\n- 1 mol/L = 98 g/L\n- 0,5 mol/L = 49 g/L\n- 2 mol/L = 196 g/L\n\n**Dica ANSA:** 0,5 mol/L é a 'metade'. Se a questão der 0,5 mol/L, basta pegar a massa molar e dividir por 2 para achar os g/L!"
-    },
-    "tags": ["Química", "Cálculo", "Soluções", "H2SO4"]
+    tags: ['Química', 'Soluções', 'NaCl', 'Cálculo'],
   },
   {
     "id": 42,
@@ -755,39 +646,7 @@ A questão disse que ele era "Agente Redutor".
     },
     "tags": ["Química", "Diluição", "Cálculo", "ANSA"]
   },
-  {
-    "id": 43,
-    "front": {
-      "title": "A Fórmula Mestra de Soluções 🧪",
-      "subtitle": "Como calcular Molaridade direto pela Massa?"
-    },
-    "back": {
-      "body": "**A FÓRMULA:**\n**M = m / (MM × V)**\n\n**Onde:**\n- **M:** Concentração Molar (mol/L)\n- **m:** Massa dada no enunciado (g)\n- **MM:** Massa Molar (da tabela ou somada)\n- **V:** Volume (CUIDADO: Sempre em LITROS!)\n\n**Macete para isolar a Massa (m):**\nSe a questão pedir 'Quantos gramas...', use:\n**m = M × MM × V**\n(Massa é o produto de tudo!)"
-    },
-    "tags": ["Química", "Cálculo", "Soluções", "Fórmulas"]
-  },
-  {
-    "id": 44,
-    "front": {
-      "title": "Molaridade (M): A Fórmula Raiz 🧪",
-      "subtitle": "Como calcular quando a questão já dá o Mol (n)?"
-    },
-    "back": {
-      "body": "**A FÓRMULA:**\n**M = n / V**\n\n**Onde:**\n- **n:** Número de mols (mol).\n- **V:** Volume total (Litros).\n\n**Unidade Final:** mol/L (ou Molar).\n\n**Exemplo Rápido:**\nSe eu tenho 0,5 mol de soluto em 2 Litros de água:\nM = 0,5 / 2 = **0,25 mol/L**.\n\n**Dica:** Se o volume estiver em mL, divida por 1000 antes de colocar no 'V'!"
-    },
-    "tags": ["Química", "Molaridade", "Fórmulas", "Fundamentos"]
-  },
-  {
-    "id": 45,
-    "front": {
-      "title": "Cálculo de Mols (n): A Chave da Molaridade 🔑",
-      "subtitle": "Como achar o 'n' quando a questão dá a massa (g)?"
-    },
-    "back": {
-      "body": "**A FÓRMULA:**\n**n = m / MM**\n\n**Onde:**\n- **n:** Número de mols (o que você quer).\n- **m:** Massa dada no enunciado (g).\n- **MM:** Massa Molar (g/mol).\n\n**Exemplo Prático:**\nSe a questão diz: 'Dissolveu-se 58,5 g de NaCl em água'.\n1. Massa (m) = 58,5 g.\n2. Massa Molar (MM) do NaCl = 58,5 g/mol.\n3. n = 58,5 / 58,5 = **1 mol**.\n\n**Dica:** Se a massa for igual à massa molar, é sempre 1 mol!"
-    },
-    "tags": ["Química", "Cálculo", "Mols", "Molaridade"]
-  },
+
   {
     "id": 46,
     "front": {
@@ -938,7 +797,7 @@ A questão disse que ele era "Agente Redutor".
       "subtitle": "Como fundamentar a gravidade dos riscos ocupacionais?"
     },
     "back": {
-      "body": "**Dado:** +18 mil afastamentos/ano por doenças ocupacionais (Observatório SST, 2022).\n\n**Uso na Redação (P3):**\n'A urgência na fiscalização rigorosa é evidenciada pelos dados do **Observatório de Segurança e Saúde no Trabalho**, que registrou mais de **18 mil afastamentos** no setor químico em 2022, evidenciando falhas no monitoramento de agentes tóxicos.'\n\n**Aplicação no Edital:** Reforça os tópicos de 'Higiene Ocupacional', 'Prevenção de doenças relacionadas ao trabalho' e 'Estatísticas de acidentes'[cite: 1313, 1318].\n\n**Dica:** Use este dado para concluir que o custo da prevenção é menor que o custo social e econômico do afastamento."
+      "body": "**Dado:** +18 mil afastamentos/ano por doenças ocupacionais (Observatório SST, 2022).\n\n**Uso na Redação (P3):**\n'A urgência na fiscalização rigorosa é evidenciada pelos dados do **Observatório de Segurança e Saúde no Trabalho**, que registrou mais de **18 mil afastamentos** no setor químico em 2022, evidenciando falhas no monitoramento de agentes tóxicos.'\n\n**Dica:** Use este dado para concluir que o custo da prevenção é menor que o custo social e econômico do afastamento."
     },
     "tags": ["Dados", "Redação", "Saúde Ocupacional", "Indústria Química", "ANSA 2026"]
   },
@@ -960,7 +819,7 @@ A questão disse que ele era "Agente Redutor".
       "subtitle": "Qual a responsabilidade da indústria sobre seus rejeitos?"
     },
     "back": {
-      "body": "**Conceito Chave:** Responsabilidade Compartilhada e Logística Reversa.\n\n**O que a lei exige:**\n- Elaboração do Plano de Gerenciamento de Resíduos Sólidos (PGRS) .\n- Ordem de prioridade: Não geração > Redução > Reutilização > Reciclagem > Tratamento > Disposição final adequada .\n\n**Uso na Redação (P3):**\n'A **PNRS (Lei 12.305/2010)** estabelece que a responsabilidade pelo ciclo de vida dos produtos é compartilhada, obrigando indústrias químicas a gerenciarem seus resíduos desde a origem até o descarte ambientalmente adequado' .\n\n**No Edital:** Tópico fundamental em 'Gestão Ambiental' e 'Gerenciamento de Resíduos Sólidos'[cite: 1015, 1262]."
+      "body": "**Conceito Chave:** Responsabilidade Compartilhada e Logística Reversa.\n\n**O que a lei exige:**\n- Elaboração do Plano de Gerenciamento de Resíduos Sólidos (PGRS).\n- Ordem de prioridade: Não geração > Redução > Reutilização > Reciclagem > Tratamento > Disposição final adequada.\n\n**Uso na Redação (P3):**\n'A **PNRS (Lei 12.305/2010)** estabelece que a responsabilidade pelo ciclo de vida dos produtos é compartilhada, obrigando indústrias químicas a gerenciarem seus resíduos desde a origem até o descarte ambientalmente adequado.'\n\n**No Edital:** Tópico fundamental em 'Gestão Ambiental' e 'Gerenciamento de Resíduos Sólidos'."
     },
     "tags": ["Meio Ambiente", "Lei 12.305", "Sustentabilidade", "ANSA 2026", "Operação"]
   },
@@ -982,7 +841,7 @@ A questão disse que ele era "Agente Redutor".
       "subtitle": "Como os dados pessoais devem ser tratados na ANSA?"
     },
     "back": {
-      "body": "**Conceito Chave:** Proteção da liberdade e privacidade do cidadão.\n\n**O que a lei exige:**\n- Consentimento explícito para coleta de dados .\n- Adoção de medidas de segurança para evitar vazamentos [cite: 710].\n- Transparência no uso de dados pessoais e sensíveis .\n\n**Uso na Redação (P3):**\n'A implementação da **LGPD (Lei 13.709/2018)** nas empresas públicas é um pilar da ética digital, pois obriga o uso de protocolos de segurança para proteger informações de trabalhadores contra o uso indevido' .\n\n**No Edital:** Item obrigatório em 'Noções de Informática' para todas as ênfases."
+      "body": "**Conceito Chave:** Proteção da liberdade e privacidade do cidadão.\n\n**O que a lei exige:**\n- Consentimento explícito para coleta de dados.\n- Adoção de medidas de segurança para evitar vazamentos.\n- Transparência no uso de dados pessoais e sensíveis.\n\n**Uso na Redação (P3):**\n'A implementação da **LGPD (Lei 13.709/2018)** nas empresas públicas é um pilar da ética digital, pois obriga o uso de protocolos de segurança para proteger informações de trabalhadores contra o uso indevido.'\n\n**No Edital:** Item obrigatório em 'Noções de Informática' para todas as ênfases."
     },
     "tags": ["Informática", "LGPD", "Dados", "Redação", "ANSA 2026"]
   },
@@ -1015,20 +874,30 @@ A questão disse que ele era "Agente Redutor".
       "subtitle": "Qual a gravidade do cenário nacional segundo a OIT?"
     },
     "back": {
-      "body": "**Dado de Impacto:** O Brasil é o 4º país com mais mortes no trabalho no mundo (Fonte: OIT).\n\n**Uso na Redação (P3):**\n'A necessidade de uma cultura de prevenção é urgente, visto que o Brasil ocupa o **quarto lugar no ranking mundial de acidentes fatais**, segundo a OIT. Esse cenário exige que indústrias de alto risco, como a de nitrogenados, sigam rigorosamente as normas de segurança de processo'.\n\n**Conexão com o Edital:** Fundamenta os tópicos de 'Investigação e análise de acidentes' [cite: 1315, 1528] e 'Causas e consequências dos acidentes'[cite: 1313, 1527]."
+      "body": "**Dado de Impacto:** O Brasil é o 4º país com mais mortes no trabalho no mundo (Fonte: OIT).\n\n**Uso na Redação (P3):**\n'A necessidade de uma cultura de prevenção é urgente, visto que o Brasil ocupa o **quarto lugar no ranking mundial de acidentes fatais**, segundo a OIT. Esse cenário exige que indústrias de alto risco, como a de nitrogenados, sigam rigorosamente as normas de segurança de processo.'\n\n**Conexão com o Edital:** Fundamenta os tópicos de 'Investigação e análise de acidentes' e 'Causas e consequências dos acidentes'."
     },
     "tags": ["Dados", "Segurança do Trabalho", "OIT", "Redação", "ANSA 2026"]
   },
   {
-    "id": 69,
-    "front": {
-      "title": "Cálculo de Eficiência: Exemplo 02 ⚙️",
-      "subtitle": "Máquina recebe 800 J e realiza 200 J de trabalho."
+    id: 69,
+    front: {
+      title: 'Eficiência Térmica (η) ⚙️',
+      subtitle: 'Como calcular? Máquina recebe 800 J e realiza 200 J.',
     },
-    "back": {
-      "body": "**Passo a Passo:**\n1. Identifique o Trabalho (W): 200 J.\n2. Identifique o Calor Total (Q): 800 J.\n3. Monte a fração: 200 / 800.\n4. Simplifique: 2 / 8 = 1 / 4.\n\n**Resultado:**\n1 / 4 = 0,25.\nMultiplicando por 100 = **25% de eficiência**.\n\n**Dica de Operador:** Se a eficiência é 25%, significa que 75% da energia foi 'jogada fora' como calor para o ambiente (fonte fria)."
+    back: {
+      body: `**Fórmula Mestra:** η = W / Q
+
+| Elemento | Valor |
+|---|---|
+| Trabalho (W) | 200 J |
+| Calor Total (Q) | 800 J |
+| Eficiência | 200/800 = **1/4 = 25%** |
+
+**Macete:** Se η = 25%, então **75% foi descartado** como calor para o ambiente (fonte fria).
+
+**Cilada Cebraspe:** Confundir W (trabalho útil) com Q (calor total recebido). Sempre divida pelo calor recebido (η = W/Q).`,
     },
-    "tags": ["Física", "Termodinâmica", "Cálculo", "ANSA 2026", "Operação"]
+    tags: ['Física', 'Termodinâmica', 'Cálculo', 'ANSA 2026', 'Operação'],
   }, {
     "id": 70,
     "front": {
@@ -1161,27 +1030,24 @@ A questão disse que ele era "Agente Redutor".
     },
     "tags": ["Física", "Mecânica dos Fluidos", "Perda de Carga", "ANSA 2026", "Operação"]
   },
+
   {
-    "id": 83,
-    "front": {
-      "title": "Sujeito Composto vs. Núcleos 📝",
-      "subtitle": "Por que o verbo vai para o plural?"
+    id: 83,
+    front: {
+      title: 'Concordância Verbal: Sujeito Composto 📝',
+      subtitle: 'Quando pluralizar é obrigatório, e quando é facultativo?',
     },
-    "back": {
-      "body": "**A Regra:** Quando o sujeito é composto (possui mais de um núcleo) e aparece antes do verbo, o verbo vai para o plural.\n\n**O Pulo do Gato (Cebraspe):**\n- **Frase:** 'João e Maria saíram'.\n- **Sujeito:** João e Maria (UM sujeito composto).\n- **Núcleos:** João (1) e Maria (2).\n\n**Cilada:** A banca dirá que existem 'dois sujeitos' ou 'sujeitos compostos no plural'. **ERRADO.** O sujeito é um só, os núcleos é que são vários."
+    back: {
+      body: `**1. Sujeito Anteposto (antes do verbo) → plural obrigatório.**
+*Ex: "Governo e sociedade **atuam**".*
+
+**2. Sujeito Posposto (depois do verbo) → plural ou concorda com o núcleo próximo.**
+*Ex: "**Atuam** governo e sociedade" OU "**Atua** governo e sociedade".* ✅
+
+**Cilada #1:** "Há dois sujeitos." **ERRADO** — o sujeito é **um** composto; os núcleos é que são vários.
+**Cilada #2:** Concordar com o mais próximo quando posposto é **PERMITIDO**, não é erro.`,
     },
-    "tags": ["Português", "Gramática", "Concordância Verbal", "ANSA 2026"]
-  },
-  {
-    "id": 85,
-    "front": {
-      "title": "Concordância: Sujeito Composto 📝",
-      "subtitle": "O que acontece quando há mais de um núcleo?"
-    },
-    "back": {
-      "body": "**Regra Geral:**\n- **Anteposto (Antes do verbo):** O verbo vai obrigatoriamente para o **PLURAL**.\n  *Ex: 'Governo e sociedade **atuam**'.*\n\n- **Posposto (Depois do verbo):** O verbo pode ir para o **PLURAL** ou concordar com o **NÚCLEO PRÓXIMO**.\n  *Ex: 'Atuam governo e sociedade' OU 'Atua governo e sociedade'.*\n\n**Cilada Cebraspe:** Dizer que a concordância atrativa (com o mais próximo) é erro quando o sujeito está depois do verbo. **É PERMITIDO!**"
-    },
-    "tags": ["Português", "Sintaxe", "Concordância", "ANSA 2026"]
+    tags: ['Português', 'Concordância Verbal', 'ANSA 2026'],
   },
   {
     "id": 86,
@@ -1250,7 +1116,7 @@ A questão disse que ele era "Agente Redutor".
     "tags": ["Direito", "LGPD", "ANSA 2026", "Direitos do Titular"]
   },
   {
-    "id": 91,
+    "id": 92,
     "front": {
       "title": "Progressão Aritmética (PA) 🔢",
       "subtitle": "Como achar qualquer termo sem somar um por um?"
@@ -1260,17 +1126,7 @@ A questão disse que ele era "Agente Redutor".
     },
     "tags": ["Raciocínio Lógico", "Matemática", "PA", "ANSA 2026"]
   },
-  {
-    "id": 93,
-    "front": {
-      "title": "Diagrama de Venn: A Regra do 'Ambos' 🧩",
-      "subtitle": "Por onde começar a preencher os círculos?"
-    },
-    "back": {
-      "body": "**A Regra de Ouro:** Comece sempre pelo MEIO (interseção).\n\n**Passo a Passo:**\n1. Coloque o valor de 'Ambos' no centro.\n2. Subtraia esse valor dos totais de cada grupo (A e B) para achar quem tem 'Apenas'.\n3. Some tudo: Apenas A + Ambos + Apenas B.\n4. O que sobrar para o total geral é o grupo do 'NENHUM'.\n\n**Dica de Prova:** Se você somar direto 30 + 25, vai dar 55. Como o total é 50, você já sabe que tem gente contada duas vezes (a interseção)."
-    },
-    "tags": ["Raciocínio Lógico", "Conjuntos", "Venn", "ANSA 2026"]
-  },
+
   {
     "id": 95,
     "front": {
@@ -1348,17 +1204,7 @@ A questão disse que ele era "Agente Redutor".
     },
     "tags": ["Química", "Equilíbrio Químico", "Kps", "ANSA 2026", "Operação"]
   },
-  {
-    "id": 103,
-    "front": {
-      "title": "Oxirredução: O Agente Redutor 🔄",
-      "subtitle": "Quem oxida é o quê?"
-    },
-    "back": {
-      "body": "**A Lógica Invertida:**\n- **Agente REDUTOR:** É quem SOFRE OXIDAÇÃO (perde elétrons). Ele reduz o outro.\n- **Agente OXIDANTE:** É quem SOFRE REDUÇÃO (ganha elétrons). Ele oxida o outro.\n\n**Como identificar na prova:**\n1. Veja o NOX (carga).\n2. O NOX aumentou? (0 para +2) -> OXIDOU -> **Agente Redutor**.\n3. O NOX diminuiu? (+1 para 0) -> REDUZIU -> **Agente Oxidante**.\n\n**Na Operação ANSA:** Fundamental para entender a **CORROSÃO**. O ferro do tubo oxida (perde elétrons) e vira ferrugem ou sulfeto, agindo como redutor do meio corrosivo."
-    },
-    "tags": ["Química", "Oxirredução", "Corrosão", "ANSA 2026", "Operação"]
-  },
+
   {
     "id": 104,
     "front": {
@@ -1369,6 +1215,386 @@ A questão disse que ele era "Agente Redutor".
       "body": "**As Duas Regras de Ouro:**\n1. **Velocidades:** A velocidade da reação direta fica IGUAL à da inversa ($v_d = v_i$).\n2. **Concentrações:** As quantidades de reagentes e produtos tornam-se CONSTANTES (não mudam mais).\n\n**Cilada do Cebraspe:** Dizer que o equilíbrio é 'estático' (a reação para). **ERRADO.** O equilíbrio é **DINÂMICO**; as reações continuam acontecendo, mas na mesma velocidade, por isso parece parado.\n\n**Na Operação ANSA:** Fundamental para processos como a síntese da Amônia. Se não controlarmos o equilíbrio, a reação 'volta' e perdemos produção."
     },
     "tags": ["Química", "Equilíbrio Químico", "Cinética", "ANSA 2026", "Operação"]
+  },
+  {
+    id: 201,
+    front: {
+      title: 'Neutralização: produtos da reação 🧪',
+      subtitle:
+        'O que se forma, em regra, quando um ácido reage com uma base?',
+    },
+    back: {
+      body: `**Regra direta:** Em uma reação de neutralização, formam-se, em regra, **sal + água**.
+
+**Exemplo:**  
+HCl + NaOH → NaCl + H₂O
+
+**Cilada Cebraspe:** a banca pode dizer que neutralização forma apenas sal ou apenas água. **Errado.**
+
+**Na Operação ANSA:** esse conceito é importante para tratamento químico, controle de pH e neutralização de correntes ácidas ou básicas.`,
+    },
+    tags: ['Química', 'Reações Químicas', 'Neutralização', 'ANSA 2026', 'Operação'],
+  },
+  {
+    id: 202,
+    front: {
+      title: 'pH de solução ácida 📉',
+      subtitle: 'Uma solução ácida tem pH maior ou menor que 7?',
+    },
+    back: {
+      body: `**Regra direta:** Solução ácida tem **pH menor que 7**.
+
+**Referência rápida:**  
+- pH < 7 → ácido  
+- pH = 7 → neutro  
+- pH > 7 → básico
+
+**Cilada Cebraspe:** trocar ácido por básico ou afirmar que ácido tem pH superior a 7. **Errado.**
+
+**Na Operação ANSA:** conceito essencial para controle de processo, corrosão, neutralização e efluentes.`,
+    },
+    tags: ['Química', 'pH', 'Ácidos e Bases', 'ANSA 2026', 'Operação'],
+  },
+  {
+    id: 203,
+    front: {
+      title: 'Equilíbrio químico: constante ou igual? ⚖️',
+      subtitle: 'As concentrações ficam iguais ou apenas constantes?',
+    },
+    back: {
+      body: `**Regra direta:** No equilíbrio químico, as concentrações de reagentes e produtos ficam **constantes**, mas **não necessariamente iguais**.
+
+**O que nunca esquecer:**  
+- velocidade da reação direta = velocidade da inversa  
+- concentrações = constantes  
+- concentrações ≠ obrigatoriamente iguais
+
+**Cilada Cebraspe:** dizer que, em equilíbrio, as concentrações se igualam. **Errado.**
+
+**Na Operação ANSA:** isso é importante para síntese da amônia, rendimento de processo e controle operacional.`,
+    },
+    tags: ['Química', 'Equilíbrio Químico', 'Cinética', 'ANSA 2026', 'Operação'],
+  },
+  {
+    id: 204,
+    front: {
+      title: 'Le Chatelier: aumento de reagente ➕',
+      subtitle: 'O que acontece com o equilíbrio quando aumentamos um reagente?',
+    },
+    back: {
+      body: `**Regra direta:** O aumento da concentração de um reagente tende a deslocar o equilíbrio no sentido de **consumir esse reagente**, geralmente favorecendo a formação de produtos.
+
+**Exemplo geral:**  
+Se A + B ⇌ C + D, aumentar A tende a deslocar para a direita.
+
+**Cilada Cebraspe:** inverter o sentido do deslocamento.  
+A lógica é: o sistema tenta **reduzir a perturbação**.
+
+**Na Operação ANSA:** isso ajuda a entender otimização de rendimento e controle de processos químicos.`,
+    },
+    tags: ['Química', 'Equilíbrio Químico', 'Le Chatelier', 'ANSA 2026', 'Operação'],
+  },
+  {
+    id: 205,
+    front: {
+      title: 'Oxidação = perda de elétrons 🔄',
+      subtitle: 'Na oxidação, a espécie ganha ou perde elétrons?',
+    },
+    back: {
+      body: `**Regra direta:** Na **oxidação**, a espécie **perde elétrons**.
+
+**Resumo-memória:**  
+- Oxidação → perda de elétrons  
+- Redução → ganho de elétrons
+
+**Outra forma de reconhecer:**  
+Se o NOX aumentou, a espécie oxidou.
+
+**Cilada Cebraspe:** trocar oxidação por ganho de elétrons. **Errado.**
+
+**Na Operação ANSA:** conceito central para corrosão, combustão, pilhas e tratamento químico.`,
+    },
+    tags: ['Química', 'Oxirredução', 'Redox', 'ANSA 2026', 'Operação'],
+  },
+  {
+    id: 206,
+    front: {
+      title: 'Redução e número de oxidação ⬇️',
+      subtitle: 'Se o NOX diminui, houve oxidação ou redução?',
+    },
+    back: {
+      body: `**Regra direta:** Se o número de oxidação (**NOX**) **diminui**, a espécie sofreu **redução**.
+
+**Resumo prático:**  
+- NOX subiu → oxidou  
+- NOX desceu → reduziu
+
+**Cilada Cebraspe:** afirmar que a diminuição do NOX indica oxidação. **Errado.**
+
+**Na Operação ANSA:** muito cobrado em corrosão, eletroquímica e reações industriais.`,
+    },
+    tags: ['Química', 'Oxirredução', 'NOX', 'ANSA 2026', 'Operação'],
+  },
+  {
+    id: 207,
+    front: {
+      title: 'Hidrostática: profundidade e pressão 🌊',
+      subtitle: 'A pressão em um fluido em repouso depende da profundidade?',
+    },
+    back: {
+      body: `**Regra direta:** Sim. Em um fluido em repouso, a pressão **aumenta com a profundidade**.
+
+**Ideia-chave:** quanto maior a coluna de fluido acima do ponto, maior a pressão.
+
+**Cilada Cebraspe:** dizer que a pressão é a mesma em qualquer profundidade. **Errado.**
+
+**Na Operação ANSA:** importante para tanques, vasos, medição de nível e sistemas hidráulicos.`,
+    },
+    tags: ['Física', 'Hidrostática', 'Pressão', 'ANSA 2026', 'Operação'],
+  },
+  {
+    id: 208,
+    front: {
+      title: 'Equação da continuidade 🚰',
+      subtitle: 'Se a área do tubo diminui, o que acontece com a velocidade?',
+    },
+    back: {
+      body: `**Regra direta:** Em escoamento incompressível, se a área da seção transversal **diminui**, a velocidade do fluido **aumenta**.
+
+**Relação básica:**  
+A₁v₁ = A₂v₂
+
+**Cilada Cebraspe:** afirmar que área menor reduz a velocidade. **Errado.**
+
+**Na Operação ANSA:** útil para tubulações, bocais, estrangulamentos e interpretação de processo.`,
+    },
+    tags: ['Física', 'Mecânica dos Fluidos', 'Continuidade', 'ANSA 2026', 'Operação'],
+  },
+  {
+    id: 209,
+    front: {
+      title: 'Cavitação em bombas centrífugas 🫧',
+      subtitle: 'O que caracteriza a cavitação?',
+    },
+    back: {
+      body: `**Regra direta:** Cavitação é a formação e o colapso de bolhas de vapor no fluido, geralmente quando a pressão local cai abaixo da pressão de vapor.
+
+**Consequências:**  
+- ruído  
+- vibração  
+- erosão do rotor  
+- perda de desempenho
+
+**Cilada Cebraspe:** confundir cavitação com simples presença de ar no sistema. Não é a mesma coisa.
+
+**Na Operação ANSA:** tema clássico em bombas centrífugas e operação de sistemas de bombeamento.`,
+    },
+    tags: ['Operações Unitárias', 'Bombas', 'Cavitação', 'ANSA 2026', 'Operação'],
+  },
+  {
+    id: 210,
+    front: {
+      title: 'Válvula globo x válvula gaveta 🚪',
+      subtitle: 'Qual é mais usada para controle de vazão?',
+    },
+    back: {
+      body: `**Regra direta:** A **válvula globo** é mais indicada para **controle de vazão** do que a válvula de gaveta.
+
+**Comparação rápida:**  
+- Globo → melhor para regulagem/controle  
+- Gaveta → melhor para abertura/fechamento total
+
+**Cilada Cebraspe:** dizer que a gaveta é a mais adequada para controle fino. **Errado.**
+
+**Na Operação ANSA:** importante para leitura de processo e função dos acessórios de tubulação.`,
+    },
+    tags: ['Equipamentos de Processo', 'Válvulas', 'Tubulações', 'ANSA 2026', 'Operação'],
+  },
+  {
+    id: 211,
+    front: {
+      title: 'Transmissor pneumático 💨',
+      subtitle: 'Que tipo de sinal ele utiliza?',
+    },
+    back: {
+      body: `**Regra direta:** O transmissor pneumático utiliza **pressão de ar comprimido** como sinal.
+
+**Cilada Cebraspe:** afirmar que ele transmite por corrente elétrica como regra geral. **Errado.**
+
+**Na Operação ANSA:** muito útil em instrumentação industrial e ambientes onde sinais pneumáticos ainda são usados.`,
+    },
+    tags: ['Instrumentação', 'Transmissores', 'Pneumática', 'ANSA 2026', 'Operação'],
+  },
+  {
+    id: 212,
+    front: {
+      title: 'PID: quais são as três ações? 🎛️',
+      subtitle: 'O que significa P, I e D?',
+    },
+    back: {
+      body: `**Regra direta:** PID significa:
+- **P** = Proporcional  
+- **I** = Integral  
+- **D** = Derivativa
+
+**Cilada Cebraspe:** trocar alguma das três ações ou inventar outra letra/função.
+
+**Na Operação ANSA:** base para controle de pressão, temperatura, nível e vazão.`,
+    },
+    tags: ['Controle de Processo', 'PID', 'Instrumentação', 'ANSA 2026', 'Operação'],
+  },
+  {
+    id: 213,
+    front: {
+      title: 'PID: ação derivativa 📈',
+      subtitle: 'A ação derivativa atua sobre o erro acumulado?',
+    },
+    back: {
+      body: `**Regra direta:** Não. A ação **derivativa** atua sobre a **tendência de variação do erro**, e não sobre o erro acumulado.
+
+**Resumo das ações:**  
+- Proporcional → erro atual  
+- Integral → erro acumulado  
+- Derivativa → tendência do erro
+
+**Cilada Cebraspe:** trocar derivativa por integral. Essa é clássica.
+
+**Na Operação ANSA:** ajuda a estabilizar a resposta do sistema e antecipar variações.`,
+    },
+    tags: ['Controle de Processo', 'PID', 'Derivativa', 'ANSA 2026', 'Operação'],
+  },
+  {
+    id: 214,
+    front: {
+      title: 'Permutador casco e tubo 🌡️',
+      subtitle: 'Como ocorre a troca de calor nesse equipamento?',
+    },
+    back: {
+      body: `**Regra direta:** No permutador casco e tubo, a troca térmica ocorre entre fluidos **separados por uma superfície sólida**, normalmente a parede do tubo.
+
+**Cilada Cebraspe:** dizer que os fluidos precisam se misturar para haver troca térmica. **Errado.**
+
+**Na Operação ANSA:** equipamento muito importante em aquecimento, resfriamento e recuperação de energia.`,
+    },
+    tags: ['Operações Unitárias', 'Transferência de Calor', 'Permutadores', 'ANSA 2026', 'Operação'],
+  },
+  {
+    id: 215,
+    front: {
+      title: 'Filtração: o que ela separa? 🧫',
+      subtitle: 'Qual separação é típica da operação de filtração?',
+    },
+    back: {
+      body: `**Regra direta:** A filtração é usada, em geral, para separar **sólidos de fluidos** (líquidos ou gases).
+
+**Exemplo:** separar partículas sólidas de um líquido.
+
+**Cilada Cebraspe:** dizer que filtração separa líquidos miscíveis ou emulsões de forma típica. **Errado.**
+
+**Na Operação ANSA:** importante em tratamento, purificação e remoção de partículas.`,
+    },
+    tags: ['Operações Unitárias', 'Filtração', 'Separação de Misturas', 'ANSA 2026', 'Operação'],
+  },
+  {
+    id: 216,
+    front: {
+      title: 'Metano e gás natural 🔥',
+      subtitle: 'O metano é hidrocarboneto? É o principal componente do gás natural?',
+    },
+    back: {
+      body: `**Regra direta:** Sim. O **metano (CH₄)** é um hidrocarboneto e é o **principal componente do gás natural**.
+
+**Cilada Cebraspe:** afirmar que metano não é hidrocarboneto ou não é o principal componente do gás natural. **Errado.**
+
+**Na Operação ANSA:** conceito importante para combustíveis, energia e processos industriais.`,
+    },
+    tags: ['Química Orgânica', 'Hidrocarbonetos', 'Metano', 'ANSA 2026', 'Operação'],
+  },
+  {
+    id: 217,
+    front: {
+      title: 'Polímeros e monômeros 🧱',
+      subtitle: 'Do que são formados os polímeros?',
+    },
+    back: {
+      body: `**Regra direta:** Polímeros são formados por unidades repetitivas chamadas **monômeros**.
+
+**Exemplo:**  
+Eteno → polietileno
+
+**Cilada Cebraspe:** inverter e dizer que monômeros são formados por polímeros. **Errado.**
+
+**Na Operação ANSA:** tema cobrado em química orgânica e produtos da indústria química.`,
+    },
+    tags: ['Química Orgânica', 'Polímeros', 'Monômeros', 'ANSA 2026', 'Operação'],
+  },
+  {
+    id: 218,
+    front: {
+      title: 'Riscos físicos ⚠️',
+      subtitle: 'Ruído, calor e radiações pertencem a qual grupo de risco?',
+    },
+    back: {
+      body: `**Regra direta:** Ruído, calor e radiações são exemplos de **riscos físicos**.
+
+**Outros exemplos de risco físico:**  
+- vibração  
+- frio  
+- pressões anormais
+
+**Cilada Cebraspe:** trocar risco físico por químico ou biológico. **Errado.**
+
+**Na Operação ANSA:** tema essencial em segurança, higiene ocupacional e saúde do trabalhador.`,
+    },
+    tags: ['Segurança', 'Higiene Ocupacional', 'Riscos Físicos', 'ANSA 2026', 'Operação'],
+  },
+  {
+    id: 219,
+    front: {
+      title: 'Riscos químicos x biológicos ☣️',
+      subtitle: 'Poeiras e vapores químicos são risco químico ou biológico?',
+    },
+    back: {
+      body: `**Regra direta:** Poeiras e vapores químicos são exemplos de **riscos químicos**, não biológicos.
+
+**Risco químico:**  
+- poeiras  
+- fumos  
+- névoas  
+- neblinas  
+- gases  
+- vapores
+
+**Risco biológico:**  
+- vírus  
+- bactérias  
+- fungos  
+- parasitas
+
+**Cilada Cebraspe:** classificar agente químico como biológico. **Errado.**
+
+**Na Operação ANSA:** muito importante para segurança do trabalho e identificação correta de exposição ocupacional.`,
+    },
+    tags: ['Segurança', 'Higiene Ocupacional', 'Riscos Químicos', 'Riscos Biológicos', 'ANSA 2026', 'Operação'],
+  },
+  {
+    id: 220,
+    front: {
+      title: 'Negação de “algum” 🔁',
+      subtitle: 'Qual é a negação lógica de “Algum operador errou o procedimento”?',
+    },
+    back: {
+      body: `**Regra direta:** A negação de “Algum A é B” é “**Nenhum A é B**”.
+
+**Exemplo:**  
+- Proposição: “Algum operador errou o procedimento.”  
+- Negação: “Nenhum operador errou o procedimento.”
+
+**Cilada Cebraspe:** trocar por “Todo operador não errou” ou outra forma confusa. A forma-padrão lógica é “nenhum”.
+
+**Na Operação ANSA:** essencial para raciocínio lógico e leitura rigorosa de itens da banca.`,
+    },
+    tags: ['Raciocínio Lógico', 'Quantificadores', 'Negação', 'Cebraspe', 'ANSA 2026', 'Operação'],
   }
 
 
