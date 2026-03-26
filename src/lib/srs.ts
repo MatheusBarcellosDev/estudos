@@ -106,7 +106,7 @@ export interface SRSStats {
   due: number;       // cards vencidos (nextReviewAt <= now)
   newToday: number;  // cards novos ainda não vistos
   learning: number;  // cards em aprendizado (revisados, não dominados)
-  mastered: number;  // streak >= 3 e rating 'facil'
+  mastered: number;  // cards avaliados como fácil ou com streak >= 2
   total: number;
 }
 
@@ -181,7 +181,7 @@ export function computeStats(
       due++;
     }
 
-    if (p.streak >= 3 && p.difficultyLevel === "facil") {
+    if (p.difficultyLevel === "facil" || p.streak >= 2) {
       mastered++;
     } else {
       learning++;

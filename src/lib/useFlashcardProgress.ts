@@ -48,6 +48,8 @@ export interface UseFlashcardProgressReturn {
   stats: SRSStats;
   /** Reset all progress (for testing/reset) */
   resetProgress: () => void;
+  /** Refreshes the session deck to pull new cards */
+  refreshSession: () => void;
 }
 
 export function useFlashcardProgress(
@@ -55,12 +57,15 @@ export function useFlashcardProgress(
 ): UseFlashcardProgressReturn {
   const [allProgress, setAllProgress] = useState<FlashcardProgress[]>([]);
   const [hydrated, setHydrated] = useState(false);
+  const [sessionDeck, setSessionDeck] = useState<Flashcard[]>(flashcards);
 
   // Load from localStorage on mount (client only)
   useEffect(() => {
-    setAllProgress(loadProgress());
+    const loaded = loadProgress();
+    setAllProgress(loaded);
     setHydrated(true);
-  }, []);
+    setSessionDeck(selectSessionCards(loaded, flashcards));
+  }, [flashcards]);
 
   const progressMap = useMemo(
     () => new Map(allProgress.map((p) => [p.flashcardId, p])),
@@ -96,18 +101,17 @@ export function useFlashcardProgress(
     if (typeof window !== "undefined") {
       localStorage.removeItem(STORAGE_KEY);
     }
-  }, []);
+    setSessionDeck(selectSessionCards([], flashcards));
+  }, [flashcards]);
 
-  // Session deck: recalculated whenever progress changes
-  const sessionDeck = useMemo(() => {
-    if (!hydrated) return flashcards;
-    return selectSessionCards(allProgress, flashcards);
-  }, [allProgress, flashcards, hydrated]);
+  const refreshSession = useCallback(() => {
+    setSessionDeck(selectSessionCards(allProgress, flashcards));
+  }, [allProgress, flashcards]);
 
   const stats = useMemo(
     () => computeStats(allProgress, flashcards.length),
     [allProgress, flashcards.length]
   );
 
-  return { sessionDeck, allProgress, getProgress, rateCard, stats, resetProgress };
+  return { sessionDeck, allProgress, getProgress, rateCard, stats, resetProgress, refreshSession };
 }

@@ -29,26 +29,14 @@ function cardBackToText(body: string): string {
   return body.replace(/\*\*/g, "").replace(/\*/g, "").trim();
 }
 
-const RATING_CONFIG: {
-  rating: DifficultyRating;
-  emoji: string;
-  label: string;
-  color: string;
-  bg: string;
-}[] = [
-  { rating: "errei",   emoji: "❌", label: "Errei",   color: "text-red-600 dark:text-red-400",    bg: "hover:bg-red-50 dark:hover:bg-red-950/30 border-red-200 dark:border-red-800" },
-  { rating: "dificil", emoji: "😓", label: "Difícil",  color: "text-orange-500 dark:text-orange-400", bg: "hover:bg-orange-50 dark:hover:bg-orange-950/30 border-orange-200 dark:border-orange-800" },
-  { rating: "medio",   emoji: "😐", label: "Médio",    color: "text-yellow-600 dark:text-yellow-400", bg: "hover:bg-yellow-50 dark:hover:bg-yellow-950/30 border-yellow-200 dark:border-yellow-800" },
-  { rating: "facil",   emoji: "✅", label: "Fácil",    color: "text-emerald-600 dark:text-emerald-400", bg: "hover:bg-emerald-50 dark:hover:bg-emerald-950/30 border-emerald-200 dark:border-emerald-800" },
-];
+
 
 export default function FlashcardsPage() {
-  const { sessionDeck, getProgress, rateCard, stats, resetProgress } =
+  const { sessionDeck, getProgress, rateCard, stats, resetProgress, refreshSession } =
     useFlashcardProgress(flashcards);
 
   const [currentIdx, setCurrentIdx] = useState(0);
   const [direction, setDirection] = useState(1);
-  const [rated, setRated] = useState(false); // has user rated this card?
   const [isFlipped, setIsFlipped] = useState(false); // card was flipped
 
   // Quiz state
@@ -64,17 +52,10 @@ export default function FlashcardsPage() {
 
   const handleFlip = () => setIsFlipped(true);
 
-  const handleRate = (rating: DifficultyRating) => {
-    if (!card) return;
-    rateCard(card.id, rating);
-    setRated(true);
-  };
-
   const handleNext = () => {
     setPageState("REVIEW");
     setQuestions([]);
     setResults([]);
-    setRated(false);
     setIsFlipped(false);
 
     if (currentIdx < sessionDeck.length - 1) {
@@ -83,6 +64,7 @@ export default function FlashcardsPage() {
     } else {
       // session complete — restart from top (deck will be re-ordered by SRS)
       setCurrentIdx(0);
+      refreshSession();
     }
   };
 
@@ -92,8 +74,8 @@ export default function FlashcardsPage() {
     setPageState("REVIEW");
     setQuestions([]);
     setResults([]);
-    setRated(false);
     setIsFlipped(false);
+    refreshSession();
   };
 
   // ── Question Generation ────────────────────────────────────────────────────
@@ -146,7 +128,6 @@ export default function FlashcardsPage() {
       else autoRating = "errei";                            // 0-20% (0-1/5)
 
       rateCard(card.id, autoRating);
-      setRated(true);
     }
   };
 
@@ -262,46 +243,14 @@ export default function FlashcardsPage() {
                 Gerar Questões sobre este Card
               </Button>
 
-              {/* Rating buttons — appear after flip */}
+              {/* Next button — appear after flip */}
               <AnimatePresence>
-                {isFlipped && !rated && (
-                  <motion.div
-                    initial={{ opacity: 0, y: 16 }}
-                    animate={{ opacity: 1, y: 0 }}
-                    exit={{ opacity: 0, y: 8 }}
-                    className="space-y-2"
-                  >
-                    <p className="text-center text-xs font-semibold text-muted-foreground uppercase tracking-wider">
-                      Como foi?
-                    </p>
-                    <div className="grid grid-cols-4 gap-2">
-                      {RATING_CONFIG.map(({ rating, emoji, label, color, bg }) => (
-                        <button
-                          key={rating}
-                          onClick={() => handleRate(rating)}
-                          className={`flex flex-col items-center justify-center py-2.5 rounded-2xl border text-xs font-semibold transition-all active:scale-95 ${color} ${bg}`}
-                        >
-                          <span className="text-base leading-none mb-1">{emoji}</span>
-                          <span>{label}</span>
-                          <span className="mt-0.5 font-normal text-[10px] opacity-70">
-                            {getNextReviewLabel(rating)}
-                          </span>
-                        </button>
-                      ))}
-                    </div>
-                  </motion.div>
-                )}
-              </AnimatePresence>
-
-              {/* "Já avaliei" feedback + next */}
-              <AnimatePresence>
-                {rated && (
+                {isFlipped && (
                   <motion.div
                     initial={{ opacity: 0, y: 10 }}
                     animate={{ opacity: 1, y: 0 }}
                     className="space-y-2"
                   >
-
                     <Button
                       onClick={handleNext}
                       size="lg"
