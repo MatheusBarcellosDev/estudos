@@ -133,6 +133,21 @@ export default function FlashcardsPage() {
   const handleQuizComplete = (finalResults: QuizResult[]) => {
     setResults(finalResults);
     setPageState("RESULTS");
+
+    // Auto-rate based on quiz score
+    if (card && finalResults.length > 0) {
+      const correctAnswers = finalResults.filter((r) => r.isCorrect).length;
+      const percentage = correctAnswers / finalResults.length;
+
+      let autoRating: DifficultyRating = "errei";
+      if (percentage === 1) autoRating = "facil";           // 100% (5/5)
+      else if (percentage >= 0.8) autoRating = "medio";      // 80% (4/5)
+      else if (percentage >= 0.4) autoRating = "dificil";    // 40-60% (2-3/5)
+      else autoRating = "errei";                            // 0-20% (0-1/5)
+
+      rateCard(card.id, autoRating);
+      setRated(true);
+    }
   };
 
   const isLastCard = currentIdx >= sessionDeck.length - 1;
@@ -236,6 +251,16 @@ export default function FlashcardsPage() {
             </div>
 
             <div className="mt-6 w-full space-y-3">
+              {/* Generate Questions CTA */}
+              <Button
+                onClick={handleGenerateQuestions}
+                size="lg"
+                variant="outline"
+                className="w-full h-12 text-sm font-bold rounded-[1.75rem] border-2 hover:bg-primary/5 hover:border-primary/50 gap-2 transition-all"
+              >
+                <BrainCircuit className="w-4 h-4 text-primary" />
+                Gerar Questões sobre este Card
+              </Button>
 
               {/* Rating buttons — appear after flip */}
               <AnimatePresence>
@@ -276,16 +301,6 @@ export default function FlashcardsPage() {
                     animate={{ opacity: 1, y: 0 }}
                     className="space-y-2"
                   >
-                    {/* Generate Questions CTA */}
-                    <Button
-                      onClick={handleGenerateQuestions}
-                      size="lg"
-                      variant="outline"
-                      className="w-full h-12 text-sm font-bold rounded-[1.75rem] border-2 hover:bg-primary/5 hover:border-primary/50 gap-2 transition-all"
-                    >
-                      <BrainCircuit className="w-4 h-4 text-primary" />
-                      Gerar Questões sobre este Card
-                    </Button>
 
                     <Button
                       onClick={handleNext}
