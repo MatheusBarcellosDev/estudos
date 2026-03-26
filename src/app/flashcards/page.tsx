@@ -5,32 +5,51 @@ import { motion, AnimatePresence } from "framer-motion";
 import FlashcardCard from "@/components/FlashcardCard";
 import Quiz from "@/components/Quiz";
 import Results from "@/components/Results";
-import { flashcards, Flashcard } from "@/data/flashcards";
+import { flashcards } from "@/data/flashcards";
 import { Button } from "@/components/ui/button";
-import { Shuffle, ArrowLeft, ChevronRight, Layers, BrainCircuit } from "lucide-react";
+import {
+  ArrowLeft,
+  Layers,
+  BrainCircuit,
+  RotateCcw,
+  Trophy,
+  Clock,
+  Sparkles,
+  BookOpen,
+} from "lucide-react";
 import Link from "next/link";
 import { Question, QuizResult } from "@/types";
+import { useFlashcardProgress } from "@/lib/useFlashcardProgress";
+import { DifficultyRating, getNextReviewLabel } from "@/lib/srs";
 
 type PageState = "REVIEW" | "QUIZ" | "RESULTS";
-
-function shuffleArr<T>(arr: T[]): T[] {
-  const a = [...arr];
-  for (let i = a.length - 1; i > 0; i--) {
-    const j = Math.floor(Math.random() * (i + 1));
-    [a[i], a[j]] = [a[j], a[i]];
-  }
-  return a;
-}
 
 /** Convert a card's back body to clean plain text for the API */
 function cardBackToText(body: string): string {
   return body.replace(/\*\*/g, "").replace(/\*/g, "").trim();
 }
 
+const RATING_CONFIG: {
+  rating: DifficultyRating;
+  emoji: string;
+  label: string;
+  color: string;
+  bg: string;
+}[] = [
+  { rating: "errei",   emoji: "❌", label: "Errei",   color: "text-red-600 dark:text-red-400",    bg: "hover:bg-red-50 dark:hover:bg-red-950/30 border-red-200 dark:border-red-800" },
+  { rating: "dificil", emoji: "😓", label: "Difícil",  color: "text-orange-500 dark:text-orange-400", bg: "hover:bg-orange-50 dark:hover:bg-orange-950/30 border-orange-200 dark:border-orange-800" },
+  { rating: "medio",   emoji: "😐", label: "Médio",    color: "text-yellow-600 dark:text-yellow-400", bg: "hover:bg-yellow-50 dark:hover:bg-yellow-950/30 border-yellow-200 dark:border-yellow-800" },
+  { rating: "facil",   emoji: "✅", label: "Fácil",    color: "text-emerald-600 dark:text-emerald-400", bg: "hover:bg-emerald-50 dark:hover:bg-emerald-950/30 border-emerald-200 dark:border-emerald-800" },
+];
+
 export default function FlashcardsPage() {
-  const [deck, setDeck] = useState<Flashcard[]>(() => shuffleArr(flashcards));
+  const { sessionDeck, getProgress, rateCard, stats, resetProgress } =
+    useFlashcardProgress(flashcards);
+
   const [currentIdx, setCurrentIdx] = useState(0);
   const [direction, setDirection] = useState(1);
+  const [rated, setRated] = useState(false); // has user rated this card?
+  const [isFlipped, setIsFlipped] = useState(false); // card was flipped
 
   // Quiz state
   const [pageState, setPageState] = useState<PageState>("REVIEW");
@@ -38,33 +57,49 @@ export default function FlashcardsPage() {
   const [results, setResults] = useState<QuizResult[]>([]);
   const [isLoadingQuestions, setIsLoadingQuestions] = useState(false);
 
-  const card = deck[currentIdx];
+  // Derived
+  const card = sessionDeck[currentIdx] ?? sessionDeck[0];
 
-  // ── Navigation ──────────────────────────────────────────────────────────────
+  // ── Handlers ────────────────────────────────────────────────────────────────
+
+  const handleFlip = () => setIsFlipped(true);
+
+  const handleRate = (rating: DifficultyRating) => {
+    if (!card) return;
+    rateCard(card.id, rating);
+    setRated(true);
+  };
+
   const handleNext = () => {
     setPageState("REVIEW");
     setQuestions([]);
     setResults([]);
-    if (currentIdx < deck.length - 1) {
+    setRated(false);
+    setIsFlipped(false);
+
+    if (currentIdx < sessionDeck.length - 1) {
       setDirection(1);
       setCurrentIdx((i) => i + 1);
     } else {
-      setDeck(shuffleArr(flashcards));
+      // session complete — restart from top (deck will be re-ordered by SRS)
       setCurrentIdx(0);
     }
   };
 
   const handleReshuffle = () => {
-    setDeck(shuffleArr(flashcards));
     setCurrentIdx(0);
     setDirection(1);
     setPageState("REVIEW");
     setQuestions([]);
     setResults([]);
+    setRated(false);
+    setIsFlipped(false);
   };
 
-  // ── Question Generation ──────────────────────────────────────────────────────
+  // ── Question Generation ────────────────────────────────────────────────────
+
   const handleGenerateQuestions = async () => {
+    if (!card) return;
     setPageState("QUIZ");
     setIsLoadingQuestions(true);
 
@@ -100,50 +135,89 @@ export default function FlashcardsPage() {
     setPageState("RESULTS");
   };
 
-  // ── UI ────────────────────────────────────────────────────────────────────────
+  const isLastCard = currentIdx >= sessionDeck.length - 1;
+
+  // ── UI ────────────────────────────────────────────────────────────────────
+
   return (
     <main className="min-h-screen bg-[#FDFDFD] dark:bg-[#0A0A0A] text-neutral-900 dark:text-neutral-50 font-sans">
-      <div className="container mx-auto px-4 py-8 max-w-3xl flex flex-col min-h-screen">
+      <div className="container mx-auto px-4 py-6 max-w-3xl flex flex-col min-h-screen">
 
         {/* Top Nav */}
-        <div className="flex items-center justify-between mb-8">
+        <div className="flex items-center justify-between mb-5">
           <Link href="/">
-            <Button variant="ghost" className="gap-2 rounded-2xl">
+            <Button variant="ghost" className="gap-2 rounded-2xl px-3">
               <ArrowLeft className="w-4 h-4" />
               Voltar
             </Button>
           </Link>
           <div className="flex items-center gap-2">
             <Layers className="w-5 h-5 text-primary" />
-            <span className="font-bold text-lg">Flashcards</span>
+            <span className="font-bold text-lg">Flashcards SRS</span>
           </div>
-          <Button variant="ghost" onClick={handleReshuffle} className="gap-2 rounded-2xl">
-            <Shuffle className="w-4 h-4" />
-            Sortear
+          <Button
+            variant="ghost"
+            onClick={resetProgress}
+            className="gap-2 rounded-2xl px-3 text-muted-foreground"
+            title="Resetar progresso"
+          >
+            <RotateCcw className="w-4 h-4" />
           </Button>
         </div>
 
-        {/* Progress bar (only in REVIEW mode) */}
+        {/* ── SRS Stats Bar ── */}
+        <div className="grid grid-cols-4 gap-2 mb-5">
+          <StatChip
+            icon={<Clock className="w-3.5 h-3.5" />}
+            value={stats.due}
+            label="Vencer hoje"
+            color="text-red-500"
+            bg="bg-red-50 dark:bg-red-950/30"
+          />
+          <StatChip
+            icon={<Sparkles className="w-3.5 h-3.5" />}
+            value={stats.newToday}
+            label="Novos"
+            color="text-blue-500"
+            bg="bg-blue-50 dark:bg-blue-950/30"
+          />
+          <StatChip
+            icon={<BookOpen className="w-3.5 h-3.5" />}
+            value={stats.learning}
+            label="Aprendendo"
+            color="text-amber-500"
+            bg="bg-amber-50 dark:bg-amber-950/30"
+          />
+          <StatChip
+            icon={<Trophy className="w-3.5 h-3.5" />}
+            value={stats.mastered}
+            label="Dominados"
+            color="text-emerald-500"
+            bg="bg-emerald-50 dark:bg-emerald-950/30"
+          />
+        </div>
+
+        {/* ── Progress bar (REVIEW mode) ── */}
         {pageState === "REVIEW" && (
-          <div className="flex items-center justify-between mb-6 px-1">
-            <span className="text-sm font-medium text-muted-foreground">
-              {currentIdx + 1} de {deck.length}
+          <div className="flex items-center justify-between mb-4 px-1">
+            <span className="text-xs font-medium text-muted-foreground">
+              {currentIdx + 1} / {sessionDeck.length}
             </span>
-            <div className="flex-1 mx-4 h-1.5 bg-muted rounded-full overflow-hidden">
+            <div className="flex-1 mx-3 h-1.5 bg-muted rounded-full overflow-hidden">
               <motion.div
                 className="h-full bg-primary rounded-full"
-                animate={{ width: `${((currentIdx + 1) / deck.length) * 100}%` }}
+                animate={{ width: `${((currentIdx + 1) / sessionDeck.length) * 100}%` }}
                 transition={{ type: "spring", stiffness: 200, damping: 30 }}
               />
             </div>
             <span className="text-xs text-muted-foreground font-medium">
-              {deck.length - currentIdx - 1} restantes
+              {sessionDeck.length - currentIdx - 1} restantes
             </span>
           </div>
         )}
 
         {/* ── REVIEW STATE ── */}
-        {pageState === "REVIEW" && (
+        {pageState === "REVIEW" && card && (
           <>
             <div className="flex-1 flex flex-col items-center justify-center">
               <AnimatePresence mode="wait" custom={direction}>
@@ -156,38 +230,80 @@ export default function FlashcardsPage() {
                   transition={{ type: "spring", stiffness: 300, damping: 30 }}
                   className="w-full"
                 >
-                  <FlashcardCard card={card} />
+                  <FlashcardCard card={card} onFlip={handleFlip} />
                 </motion.div>
               </AnimatePresence>
             </div>
 
-            <div className="mt-8 w-full space-y-3">
-              {/* Generate Questions CTA */}
-              <Button
-                onClick={handleGenerateQuestions}
-                size="lg"
-                variant="outline"
-                className="w-full h-14 text-base font-bold rounded-[1.75rem] border-2 hover:bg-primary/5 hover:border-primary/50 gap-2 transition-all"
-              >
-                <BrainCircuit className="w-5 h-5 text-primary" />
-                Gerar Questões sobre este Card
-              </Button>
+            <div className="mt-6 w-full space-y-3">
 
-              {/* Next card */}
-              <Button
-                onClick={handleNext}
-                size="lg"
-                className="w-full h-16 text-lg font-bold rounded-[1.75rem] shadow-xl shadow-primary/20 hover:-translate-y-1 transition-all gap-2"
-              >
-                {currentIdx < deck.length - 1 ? (
-                  <>Próximo Flashcard <ChevronRight className="w-5 h-5" /></>
-                ) : (
-                  <>Baralhar e Recomeçar <Shuffle className="w-5 h-5" /></>
+              {/* Rating buttons — appear after flip */}
+              <AnimatePresence>
+                {isFlipped && !rated && (
+                  <motion.div
+                    initial={{ opacity: 0, y: 16 }}
+                    animate={{ opacity: 1, y: 0 }}
+                    exit={{ opacity: 0, y: 8 }}
+                    className="space-y-2"
+                  >
+                    <p className="text-center text-xs font-semibold text-muted-foreground uppercase tracking-wider">
+                      Como foi?
+                    </p>
+                    <div className="grid grid-cols-4 gap-2">
+                      {RATING_CONFIG.map(({ rating, emoji, label, color, bg }) => (
+                        <button
+                          key={rating}
+                          onClick={() => handleRate(rating)}
+                          className={`flex flex-col items-center justify-center py-2.5 rounded-2xl border text-xs font-semibold transition-all active:scale-95 ${color} ${bg}`}
+                        >
+                          <span className="text-base leading-none mb-1">{emoji}</span>
+                          <span>{label}</span>
+                          <span className="mt-0.5 font-normal text-[10px] opacity-70">
+                            {getNextReviewLabel(rating)}
+                          </span>
+                        </button>
+                      ))}
+                    </div>
+                  </motion.div>
                 )}
-              </Button>
-              <p className="text-center text-xs text-muted-foreground mt-2">
-                Toque no card para revelar o verso
-              </p>
+              </AnimatePresence>
+
+              {/* "Já avaliei" feedback + next */}
+              <AnimatePresence>
+                {rated && (
+                  <motion.div
+                    initial={{ opacity: 0, y: 10 }}
+                    animate={{ opacity: 1, y: 0 }}
+                    className="space-y-2"
+                  >
+                    {/* Generate Questions CTA */}
+                    <Button
+                      onClick={handleGenerateQuestions}
+                      size="lg"
+                      variant="outline"
+                      className="w-full h-12 text-sm font-bold rounded-[1.75rem] border-2 hover:bg-primary/5 hover:border-primary/50 gap-2 transition-all"
+                    >
+                      <BrainCircuit className="w-4 h-4 text-primary" />
+                      Gerar Questões sobre este Card
+                    </Button>
+
+                    <Button
+                      onClick={handleNext}
+                      size="lg"
+                      className="w-full h-14 text-base font-bold rounded-[1.75rem] shadow-xl shadow-primary/20 hover:-translate-y-1 transition-all gap-2"
+                    >
+                      {isLastCard ? "Finalizar Sessão 🎉" : "Próximo Card →"}
+                    </Button>
+                  </motion.div>
+                )}
+              </AnimatePresence>
+
+              {/* Hint if not yet flipped */}
+              {!isFlipped && (
+                <p className="text-center text-xs text-muted-foreground mt-1">
+                  Toque no card para revelar o verso
+                </p>
+              )}
             </div>
           </>
         )}
@@ -214,5 +330,31 @@ export default function FlashcardsPage() {
 
       </div>
     </main>
+  );
+}
+
+// ── Sub-component: StatChip ────────────────────────────────────────────────
+
+function StatChip({
+  icon,
+  value,
+  label,
+  color,
+  bg,
+}: {
+  icon: React.ReactNode;
+  value: number;
+  label: string;
+  color: string;
+  bg: string;
+}) {
+  return (
+    <div className={`flex flex-col items-center justify-center py-2.5 px-1 rounded-2xl ${bg} gap-0.5`}>
+      <div className={`flex items-center gap-1 ${color}`}>
+        {icon}
+        <span className="text-base font-bold leading-none">{value}</span>
+      </div>
+      <span className="text-[10px] text-muted-foreground text-center leading-tight">{label}</span>
+    </div>
   );
 }

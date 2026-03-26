@@ -7,6 +7,8 @@ import { RotateCw } from "lucide-react";
 
 interface FlashcardCardProps {
   card: Flashcard;
+  /** Called the first time the card is flipped to the back */
+  onFlip?: () => void;
 }
 
 /** Simple inline markdown: **bold**, *italic*, ✅ emoji passthrough */
@@ -49,14 +51,19 @@ function renderBody(body: string) {
   });
 }
 
-export default function FlashcardCard({ card }: FlashcardCardProps) {
+export default function FlashcardCard({ card, onFlip }: FlashcardCardProps) {
   const [flipped, setFlipped] = useState(false);
+
+  const handleClick = () => {
+    if (!flipped && onFlip) onFlip();
+    setFlipped((prev) => !prev);
+  };
 
   return (
     <div
       className="w-full max-w-2xl mx-auto cursor-pointer select-none"
       style={{ perspective: "1200px" }}
-      onClick={() => setFlipped((prev) => !prev)}
+      onClick={handleClick}
     >
       <motion.div
         style={{ transformStyle: "preserve-3d", minHeight: "360px" }}

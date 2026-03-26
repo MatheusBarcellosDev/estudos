@@ -289,7 +289,7 @@ União = A + B − (A ∩ B)
     tags: ['Matemática', 'Teoria dos Conjuntos', 'Diagrama de Venn'],
   },
   {
-    id: 15,
+    id: 14,
     front: {
       title: 'Regência: Obedecer e a Crase 👮‍♂️',
       subtitle: 'Por que dizemos "obedeceu às normas" com crase?',
@@ -312,7 +312,7 @@ Troque "normas" por "regulamentos":
     tags: ['Português', 'Regência Verbal', 'Crase'],
   },
   {
-    id: 16,
+    id: 15,
     front: {
       title: 'Pronome Relativo: CUJO 🔗',
       subtitle: 'Quais as duas regras de ouro para usar o "cujo"?',
@@ -329,7 +329,7 @@ Troque "normas" por "regulamentos":
     tags: ['Português', 'Pronomes', 'Sintaxe'],
   },
   {
-    id: 17,
+    id: 16,
     front: {
       title: 'Parônimos: Iminente vs. Eminente 🚨🌟',
       subtitle: 'Qual a diferença entre algo "iminente" e alguém "eminente"?',
@@ -348,7 +348,7 @@ Troque "normas" por "regulamentos":
     tags: ['Português', 'Ortografia', 'Semântica'],
   },
   {
-    id: 18,
+    id: 17,
     front: {
       title: 'Pronomes: EU vs. MIM ✍️',
       subtitle: 'Quando usar cada um antes de um verbo no infinitivo?',
@@ -369,7 +369,7 @@ Troque "normas" por "regulamentos":
   },
 
   {
-    id: 20,
+    id: 18,
     front: {
       title: 'Colocação Pronominal: Próclise 🧲',
       subtitle: 'Por que o pronome aparece antes do verbo em "que se mantivesse"?',
@@ -390,7 +390,7 @@ Troque "normas" por "regulamentos":
     tags: ['Português', 'Gramática', 'Colocação Pronominal'],
   },
   {
-    id: 21,
+    id: 19,
     front: {
       title: 'Morfologia: Plural de "Qualquer" 🔄',
       subtitle: 'Como o pronome "qualquer" se comporta no plural?',
@@ -412,7 +412,7 @@ Troque "normas" por "regulamentos":
     tags: ['Português', 'Morfologia', 'Concordância'],
   },
   {
-    id: 22,
+    id: 20,
     front: {
       title: 'Química: Reação de Neutralização 🧪',
       subtitle: 'O que acontece quando misturamos HCl e NaOH?',
@@ -430,7 +430,7 @@ Troque "normas" por "regulamentos":
     tags: ['Química', 'Reações Químicas', 'Termoquímica'],
   },
   {
-    id: 23,
+    id: 21,
     front: {
       title: 'Química: Identificando Força de Ácidos e Bases 🧪',
       subtitle: 'Como saber se a reação será forte sem decorar tudo?',
@@ -446,7 +446,7 @@ Troque "normas" por "regulamentos":
     tags: ['Química', 'Funções Inorgânicas', 'Ácidos e Bases'],
   },
   {
-    id: 24,
+    id: 22,
     front: {
       title: 'Química: Escala de pH 🧪',
       subtitle: 'Como calcular a diferença de acidez entre dois valores de pH?',
@@ -463,7 +463,7 @@ Troque "normas" por "regulamentos":
     tags: ['Química', 'Equilíbrio Químico', 'pH'],
   },
   {
-    id: 25,
+    id: 23,
     front: {
       title: 'Dicionário Redox: Agente Oxidante vs. Redutor 📚',
       subtitle: 'Quem oxida, quem reduz e qual o nome de cada um?',
@@ -485,7 +485,7 @@ Troque "normas" por "regulamentos":
     tags: ['Química', 'Redox', 'Eletroquímica'],
   },
   {
-    id: 26,
+    id: 24,
     front: {
       title: 'Nox: Âncoras + Cálculo 🧮',
       subtitle: 'Quais valores são fixos e como calcular o elemento que muda?',
@@ -507,7 +507,7 @@ Troque "normas" por "regulamentos":
     tags: ['Química', 'Nox', 'Cálculo'],
   },
   {
-    id: 28,
+    id: 25,
     front: {
       title: 'Redox: Montando a Equação de Nox 🧮',
       subtitle: 'Como descobrir o elemento que "muda" em um composto?',
@@ -528,7 +528,7 @@ Troque "normas" por "regulamentos":
   },
 
   {
-    id: 30,
+    id: 26,
     front: {
       title: 'Química Industrial: Nox do Nitrogênio (N) 🏭',
       subtitle: 'Valores fixos nos principais compostos da ANSA.',
@@ -549,7 +549,7 @@ O Nitrogênio **reduziu**, logo o $N_2$ é o **Agente Oxidante**.`,
   },
 
   {
-    id: 33,
+    id: 27,
     front: {
       title: 'Soluções: Fórmula Mestra + Conversões 🧪',
       subtitle: 'Como calcular qualquer grandeza de solução com uma única lógica?',
@@ -574,7 +574,7 @@ O Nitrogênio **reduziu**, logo o $N_2$ é o **Agente Oxidante**.`,
     tags: ['Química', 'Soluções', 'Cálculo'],
   },
   {
-    "id": 35,
+    "id": 28,
     "front": {
       "title": "O Pacote Hidroxila (OH) 💧",
       "subtitle": "Quanto vale o grupo OH nas fórmulas?"
@@ -585,7 +585,7 @@ O Nitrogênio **reduziu**, logo o $N_2$ é o **Agente Oxidante**.`,
     "tags": ["Química", "Nox", "Bases", "ANSA"]
   },
   {
-    "id": 36,
+    "id": 29,
     "front": {
       "title": "Polos da Pilha: Quem é quem? 🔋",
       "subtitle": "Onde ocorre a Oxidação e onde ocorre a Redução?"
@@ -596,7 +596,7 @@ O Nitrogênio **reduziu**, logo o $N_2$ é o **Agente Oxidante**.`,
     "tags": ["Química", "Eletroquímica", "Pilhas", "ANSA"]
   },
   {
-    "id": 37,
+    "id": 30,
     "front": {
       "title": "Corrosão de Tubulações (ANSA/Petrobras) 🏗️",
       "subtitle": "Como identificar os processos no cano enferrujado?"
@@ -607,7 +607,7 @@ O Nitrogênio **reduziu**, logo o $N_2$ é o **Agente Oxidante**.`,
     "tags": ["Química", "Corrosão", "Indústria", "Redox"]
   },
   {
-    "id": 38,
+    "id": 31,
     "front": {
       "title": "A Exceção do Peróxido (H₂O₂) 🧴",
       "subtitle": "Qual o Nox do Oxigênio aqui?"
@@ -618,7 +618,7 @@ O Nitrogênio **reduziu**, logo o $N_2$ é o **Agente Oxidante**.`,
     "tags": ["Química", "Nox", "Exceções", "ANSA"]
   },
   {
-    id: 40,
+    id: 32,
     front: {
       title: 'NaCl: O Número Mágico 58,5 🧂',
       subtitle: 'Como identificar concentrações do NaCl de cabeça?',
@@ -636,7 +636,7 @@ O Nitrogênio **reduziu**, logo o $N_2$ é o **Agente Oxidante**.`,
     tags: ['Química', 'Soluções', 'NaCl', 'Cálculo'],
   },
   {
-    "id": 42,
+    "id": 33,
     "front": {
       "title": "Diluição Reversa: Quanto do estoque eu pego? 🧪",
       "subtitle": "Como achar o V1 (Volume inicial) rápido?"
@@ -648,7 +648,7 @@ O Nitrogênio **reduziu**, logo o $N_2$ é o **Agente Oxidante**.`,
   },
 
   {
-    "id": 46,
+    "id": 34,
     "front": {
       "title": "Contagem de Mols para Pressão 🎈",
       "subtitle": "Devo olhar o número grande ou o pequeno?"
@@ -659,7 +659,7 @@ O Nitrogênio **reduziu**, logo o $N_2$ é o **Agente Oxidante**.`,
     "tags": ["Química", "Le Chatelier", "Equilíbrio", "ANSA 2026"]
   },
   {
-    "id": 47,
+    "id": 35,
     "front": {
       "title": "Temperatura vs. Kc 🌡️",
       "subtitle": "O valor da constante sempre aumenta?"
@@ -670,7 +670,7 @@ O Nitrogênio **reduziu**, logo o $N_2$ é o **Agente Oxidante**.`,
     "tags": ["Química", "Equilíbrio Químico", "Kc", "ANSA 2026"]
   },
   {
-    "id": 48,
+    "id": 36,
     "front": {
       "title": "Produção de Amônia: N₂ + 3H₂ ⇌ 2NH₃ + Calor 🌡️",
       "subtitle": "O que acontece se o operador aumentar a temperatura?"
@@ -681,7 +681,7 @@ O Nitrogênio **reduziu**, logo o $N_2$ é o **Agente Oxidante**.`,
     "tags": ["Química", "Equilíbrio Químico", "Amônia", "ANSA 2026", "Operação"]
   },
   {
-    "id": 49,
+    "id": 37,
     "front": {
       "title": "Equação 'Corretamente Representada' 🧪",
       "subtitle": "O que a banca Cebraspe quer dizer com isso?"
@@ -692,7 +692,7 @@ O Nitrogênio **reduziu**, logo o $N_2$ é o **Agente Oxidante**.`,
     "tags": ["Química", "Estequiometria", "Balanceamento", "ANSA 2026"]
   },
   {
-    "id": 50,
+    "id": 38,
     "front": {
       "title": "Pressão de Vapor e Temperatura 💨",
       "subtitle": "Qual a relação entre calor e a vontade de evaporar?"
@@ -703,7 +703,7 @@ O Nitrogênio **reduziu**, logo o $N_2$ é o **Agente Oxidante**.`,
     "tags": ["Química", "Termodinâmica", "Estados da Matéria", "ANSA 2026"]
   },
   {
-    "id": 51,
+    "id": 39,
     "front": {
       "title": "Alcanos: A Fórmula Geral 🧪",
       "subtitle": "Como saber se a molécula é um alcano?"
@@ -714,7 +714,7 @@ O Nitrogênio **reduziu**, logo o $N_2$ é o **Agente Oxidante**.`,
     "tags": ["Química Orgânica", "Alcanos", "Hidrocarbonetos", "ANSA 2026"]
   },
   {
-    "id": 52,
+    "id": 40,
     "front": {
       "title": "Solução Tampão: A Regra do 'Fraco' 🧪",
       "subtitle": "Ácido forte consegue formar tampão?"
@@ -725,7 +725,7 @@ O Nitrogênio **reduziu**, logo o $N_2$ é o **Agente Oxidante**.`,
     "tags": ["Química", "pH", "Solução Tampão", "Equilíbrio", "ANSA 2026"]
   },
   {
-    "id": 54,
+    "id": 41,
     "front": {
       "title": "Aromáticos (Benzeno): A Regra do Anel 💍",
       "subtitle": "Por que o benzeno é 'especial'?"
@@ -736,7 +736,7 @@ O Nitrogênio **reduziu**, logo o $N_2$ é o **Agente Oxidante**.`,
     "tags": ["Química Orgânica", "Benzeno", "Aromáticos", "ANSA 2026", "Operação"]
   },
   {
-    "id": 55,
+    "id": 42,
     "front": {
       "title": "Polimerização do Etileno 🏗️",
       "subtitle": "O que acontece com a ligação dupla C=C?"
@@ -747,7 +747,7 @@ O Nitrogênio **reduziu**, logo o $N_2$ é o **Agente Oxidante**.`,
     "tags": ["Química Orgânica", "Polímeros", "Etileno", "ANSA 2026", "Operação"]
   },
   {
-    "id": 56,
+    "id": 43,
     "front": {
       "title": "Primeira Lei da Termodinâmica 🌡️",
       "subtitle": "ΔU = Q − W"
@@ -758,7 +758,7 @@ O Nitrogênio **reduziu**, logo o $N_2$ é o **Agente Oxidante**.`,
     "tags": ["Física", "Termodinâmica", "Energia", "ANSA 2026", "Operação"]
   },
   {
-    "id": 57,
+    "id": 44,
     "front": {
       "title": "Processo Isocórico (ou Isométrico) 🌡️",
       "subtitle": "O que acontece com o Trabalho (W)?"
@@ -769,7 +769,7 @@ O Nitrogênio **reduziu**, logo o $N_2$ é o **Agente Oxidante**.`,
     "tags": ["Física", "Termodinâmica", "Processos Térmicos", "ANSA 2026", "Operação"]
   },
   {
-    "id": 58,
+    "id": 45,
     "front": {
       "title": "NR-15: Atividades e Operações Insalubres ⚠️",
       "subtitle": "Como usar esse argumento na Redação da ANSA?"
@@ -780,7 +780,7 @@ O Nitrogênio **reduziu**, logo o $N_2$ é o **Agente Oxidante**.`,
     "tags": ["Segurança do Trabalho", "NR-15", "Redação", "ANSA 2026", "Operação"]
   },
   {
-    "id": 59,
+    "id": 46,
     "front": {
       "title": "NR-7: Programa de Controle Médico (PCMSO) 🩺",
       "subtitle": "Qual a obrigatoriedade para a saúde do trabalhador?"
@@ -791,7 +791,7 @@ O Nitrogênio **reduziu**, logo o $N_2$ é o **Agente Oxidante**.`,
     "tags": ["Saúde Ocupacional", "NR-7", "PCMSO", "Redação", "ANSA 2026"]
   },
   {
-    "id": 60,
+    "id": 47,
     "front": {
       "title": "Dado Crítico: Afastamentos no Setor Químico 🏥",
       "subtitle": "Como fundamentar a gravidade dos riscos ocupacionais?"
@@ -802,7 +802,7 @@ O Nitrogênio **reduziu**, logo o $N_2$ é o **Agente Oxidante**.`,
     "tags": ["Dados", "Redação", "Saúde Ocupacional", "Indústria Química", "ANSA 2026"]
   },
   {
-    "id": 61,
+    "id": 48,
     "front": {
       "title": "Lei 9.605/1998: Crimes Ambientais ⚖️",
       "subtitle": "Qual a punição para o descarte irregular na indústria?"
@@ -813,7 +813,7 @@ O Nitrogênio **reduziu**, logo o $N_2$ é o **Agente Oxidante**.`,
     "tags": ["Meio Ambiente", "Lei 9.605", "Redação", "ANSA 2026", "Operação"]
   },
   {
-    "id": 62,
+    "id": 49,
     "front": {
       "title": "Lei 12.305/2010: PNRS 🏭",
       "subtitle": "Qual a responsabilidade da indústria sobre seus rejeitos?"
@@ -824,7 +824,7 @@ O Nitrogênio **reduziu**, logo o $N_2$ é o **Agente Oxidante**.`,
     "tags": ["Meio Ambiente", "Lei 12.305", "Sustentabilidade", "ANSA 2026", "Operação"]
   },
   {
-    "id": 63,
+    "id": 50,
     "front": {
       "title": "Brasil: Potência em Fertilizantes 🇧🇷",
       "subtitle": "Qual a posição do país no consumo global?"
@@ -835,7 +835,7 @@ O Nitrogênio **reduziu**, logo o $N_2$ é o **Agente Oxidante**.`,
     "tags": ["Dados", "Agronegócio", "Fertilizantes", "Redação", "ANSA 2026"]
   },
   {
-    "id": 64,
+    "id": 51,
     "front": {
       "title": "Lei 13.709/2018: LGPD 💻",
       "subtitle": "Como os dados pessoais devem ser tratados na ANSA?"
@@ -1595,6 +1595,94 @@ Eteno → polietileno
 **Na Operação ANSA:** essencial para raciocínio lógico e leitura rigorosa de itens da banca.`,
     },
     tags: ['Raciocínio Lógico', 'Quantificadores', 'Negação', 'Cebraspe', 'ANSA 2026', 'Operação'],
+  },
+  {
+    "id": 221,
+    "front": {
+      "title": "Gerúndio (-ndo) na Sintaxe 📝",
+      "subtitle": "Verbo no gerúndio pode ser Adjunto Adverbial?"
+    },
+    "back": {
+      "body": "**REGRA CURTA:**\n- **Verbo** (-ndo) = **ORAÇÃO** (Reduzida).\n- **Advérbio** (Ex: 'de forma coordenada') = **ADJUNTO**.\n\n**O Erro do Cebraspe:** Chamar o verbo 'contribuindo' de 'adjunto adverbial de modo'.\n**Por que está errado?** Porque 'contribuindo' é uma ORAÇÃO que indica **consequência** ou **finalidade**, não o 'modo' como algo é feito.\n\n**Dica:** Se tem verbo, é ORAÇÃO. Não aceite o nome de 'adjunto' sozinho."
+    },
+    "tags": ["Português", "Gramática", "Gerúndio", "ANSA 2026"]
+  },
+  {
+    "id": 222,
+    "front": {
+      "title": "Vírgula e Gerúndio Deslocado 📝",
+      "subtitle": "Quando a vírgula vira 'obrigação'?"
+    },
+    "back": {
+      "body": "**Regra Visual:**\n\n- **Gerúndio no FIM:** A vírgula é facultativa (geralmente não se usa).\n  *Ex: A planta opera produzindo amônia.*\n\n- **Gerúndio no INÍCIO:** A vírgula é **OBRIGATÓRIA**.\n  *Ex: Produzindo amônia **,** a planta opera.*\n\n**O que o Cebraspe faz:** Ele propõe inverter a frase e pergunta se a vírgula passa a ser obrigatória. **Resposta: SIM.**"
+    },
+    "tags": ["Português", "Gramática", "Vírgula", "ANSA 2026"]
+  },
+  {
+    "id": 223,
+    "front": {
+      "title": "Conectivos: 'A fim de' vs. 'Porque' 🎯",
+      "subtitle": "É Causa ou é Finalidade?"
+    },
+    "back": {
+      "body": "**A Regra Definitiva:**\n\n- **A FIM DE / PARA / COM O INTUITO DE:** Indicam **FINALIDADE** (Olha para o futuro/objetivo).\n\n- **PORQUE / VISTO QUE / JÁ QUE:** Indicam **CAUSA** (Olha para o passado/motivo).\n\n**O Pulo do Gato:**\nO Cebraspe sempre vai trocar 'Finalidade' por 'Causa'. Se você puder trocar por 'Para', a resposta é FINALIDADE.\n\n*Cuidado:* 'A fim' (finalidade) escreve-se **SEPARADO**. 'Afim' (semelhança) é junto."
+    },
+    "tags": ["Português", "Gramática", "Conectivos", "ANSA 2026"]
+  },
+  {
+    "id": 224,
+    "front": {
+      "title": "Concordância: Tanto... Quanto 📝",
+      "subtitle": "Singular ou Plural?"
+    },
+    "back": {
+      "body": "**Regra Geral:**\nO verbo deve ir para o **PLURAL**.\n\n**Por que?**\nPorque a expressão correlativa soma os núcleos do sujeito, tornando-o composto.\n\n**Exemplos de Prova:**\n- **Correto:** Tanto o óleo quanto a água **são** fluidos imiscíveis.\n- **Errado:** Tanto o óleo quanto a água é fluido imiscível.\n\n**Dica:** Vale o mesmo para 'Não só... mas também'."
+    },
+    "tags": ["Português", "Gramática", "Concordância", "ANSA 2026"]
+  },
+  {
+    "id": 225,
+    "front": {
+      "title": "Morfossintaxe: Substantivo vs. Adjetivo 📝",
+      "subtitle": "A palavra 'técnico' tem sempre a mesma função?"
+    },
+    "back": {
+      "body": "**Regra Prática:**\n\n1. **Acompanhado de Artigo (o, os, um):** Geralmente é **SUBSTANTIVO**.\n   *Ex: Os técnicos (Substantivo) chegaram.*\n\n2. **Caracterizando outro Nome:** É **ADJETIVO**.\n   *Ex: O parecer técnico (Adjetivo) foi emitido.*\n\n**O Erro do Cebraspe:** Dizer que é a mesma função. Se a classe muda (de substantivo para adjetivo), a função sintática também muda (de núcleo para adjunto)."
+    },
+    "tags": ["Português", "Morfossintaxe", "Classes de Palavras", "ANSA 2026"]
+  },
+  {
+    "id": 226,
+    "front": {
+      "title": "Crase: O Teste do 'AO' 🎯",
+      "subtitle": "Como testar sem errar a concordância?"
+    },
+    "back": {
+      "body": "**A Técnica:**\nSubstitua a palavra feminina por uma masculina equivalente.\n\n**O Resultado:**\n- Se virar **AO** ➡️ Tem Crase (**À**).\n- Se virar apenas **O** ➡️ Não tem Crase (**A**).\n\n**Cuidado:** Você deve ajustar o adjetivo também!\n- *Ex:* Refiro-me **à** norma técnica.\n- *Teste:* Refiro-me **ao** regulamento técnico. (Deu AO? Crase confirmada!)"
+    },
+    "tags": ["Português", "Gramática", "Crase", "ANSA 2026"]
+  },
+  {
+    "id": 227,
+    "front": {
+      "title": "Negação de 'Todo' e 'Existe' 🚫",
+      "subtitle": "Como negar sem cair na pegadinha?"
+    },
+    "back": {
+      "body": "**Regra do X (Inversão):**\n\n1. **Negar o TODO:**\n   - Troque por: **Algum / Existe / Pelo menos um**.\n   - Coloque o **NÃO**.\n   *Mnemônico: TODO se nega com PEA + NÃO.*\n\n2. **Negar o EXISTE / PELO MENOS UM:**\n   - Troque por: **TODO NÃO** ou **NENHUM**.\n\n**CILADA CEBRASPE:** Dizer que a negação de 'Todo' é 'Nenhum'. **ERRADO!** Para desmentir que 'Todos bebem café', basta achar **UM** que não beba."
+    },
+    "tags": ["Lógica", "Raciocínio Lógico", "Negação", "ANSA 2026"]
+  },
+  {
+    "id": 228,
+    "front": {
+      "title": "Como dividir por 5 de cabeça? ⚡",
+      "subtitle": "Adeus conta armada!"
+    },
+    "back": {
+      "body": "**A Regra:**\n1. Multiplique o número por 2 (o dobro).\n2. Divida por 10 (corte o último zero ou pule uma vírgula).\n\n**Exemplo:**\n- 176 / 5 ➡️ Dobro de 176 = 352 ➡️ Pula a vírgula = 35,2.\n- 880 / 5 ➡️ Dobro de 880 = 1760 ➡️ Tira o zero = 176.\n\n**Por que usar?** Na prova da ANSA, você não tem calculadora. Simplificar e usar macetes de 5 e 10 te dá 2 minutos de vantagem sobre a concorrência."
+    },
+    "tags": ["Matemática", "Raciocínio Lógico", "Macetes", "ANSA 2026"]
   }
 
 
