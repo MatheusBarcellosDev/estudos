@@ -1683,6 +1683,39 @@ Eteno → polietileno
       "body": "**A Regra:**\n1. Multiplique o número por 2 (o dobro).\n2. Divida por 10 (corte o último zero ou pule uma vírgula).\n\n**Exemplo:**\n- 176 / 5 ➡️ Dobro de 176 = 352 ➡️ Pula a vírgula = 35,2.\n- 880 / 5 ➡️ Dobro de 880 = 1760 ➡️ Tira o zero = 176.\n\n**Por que usar?** Na prova da ANSA, você não tem calculadora. Simplificar e usar macetes de 5 e 10 te dá 2 minutos de vantagem sobre a concorrência."
     },
     "tags": ["Matemática", "Raciocínio Lógico", "Macetes", "ANSA 2026"]
+  },
+  {
+    "id": 229,
+    "front": {
+      "title": "Inclusão de Conjuntos: A ⊂ B ⊂ C 🧩",
+      "subtitle": "Qual a relação entre o primeiro e o último?"
+    },
+    "back": {
+      "body": "**A Regra:**\nSe A está dentro de B, e B está dentro de C, então **A está dentro de C**.\n\n**Símbolos Importantes:**\n- **⊂ (Está contido):** O menor vem primeiro. ($A \\subset C$)\n- **⊃ (Contém):** O maior vem primeiro. ($C \\supset A$)\n\n**Dica de Ouro:** A 'boca' do símbolo sempre abre para o conjunto MAIOR. Se a boca está aberta para o C nas duas formas, a afirmação está correta."
+    },
+    "tags": ["Lógica", "Conjuntos", "Matemática", "ANSA 2026"]
+  },
+  {
+    "id": 230,
+    "front": {
+      "title": "Volume do Cano: O Jeito Fácil 📏",
+      "subtitle": "Esqueça as fórmulas difíceis!"
+    },
+    "back": {
+      "body": "**Pense assim:**\n1. Calcule o círculo: **3,14 × Raio × Raio**.\n2. Multiplique pelo **Comprimento**.\n\n**O SEGREDO DO CEBRASPE:**\nEles dão o cano em METROS e o raio em CENTÍMETROS.\n- **Sempre transforme o metro em centímetro primeiro!**\n- (Ex: 2 m viram 200 cm).\n\n**Resultado:** O volume sai em cm³ (centímetros cúbicos)."
+    },
+    "tags": ["Matemática", "Geometria", "Volume", "ANSA 2026"]
+  },
+  {
+    "id": 231,
+    "front": {
+      "title": "Multiplicando por 10, 100, 1000... ⚡",
+      "subtitle": "Como ganhar tempo na prova da ANSA?"
+    },
+    "back": {
+      "body": "**A Regra da Vírgula:**\n- Para multiplicar por **100**, a vírgula pula **2 casas** para a direita.\n- *Ex:* 3,14 × 100 = 314.\n\n**A Regra dos Zeros:**\n- Se o número não tem vírgula, basta **acrescentar os zeros** no final.\n- *Ex:* 314 × 100 = 31.400.\n\n**O Erro Comum:** Esquecer de converter o metro (1 m) para centímetro (100 cm). No volume, as unidades mandam!"
+    },
+    "tags": ["Matemática", "Macetes", "Volume", "ANSA 2026"]
   }
 
 
