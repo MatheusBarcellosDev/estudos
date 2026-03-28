@@ -1716,10 +1716,242 @@ Eteno → polietileno
       "body": "**A Regra da Vírgula:**\n- Para multiplicar por **100**, a vírgula pula **2 casas** para a direita.\n- *Ex:* 3,14 × 100 = 314.\n\n**A Regra dos Zeros:**\n- Se o número não tem vírgula, basta **acrescentar os zeros** no final.\n- *Ex:* 314 × 100 = 31.400.\n\n**O Erro Comum:** Esquecer de converter o metro (1 m) para centímetro (100 cm). No volume, as unidades mandam!"
     },
     "tags": ["Matemática", "Macetes", "Volume", "ANSA 2026"]
+  },
+  {
+    "id": 232,
+    "front": {
+      "title": "Equilíbrio Químico: O que é igual? ⚗️",
+      "subtitle": "Concentração ou Velocidade?"
+    },
+    "back": {
+      "body": "**A Regra de Ouro:**\n- **Velocidades:** São obrigatoriamente **IGUAIS** ($v_{direta} = v_{inversa}$).\n- **Concentrações:** São obrigatoriamente **CONSTANTES** (não mudam mais), mas raramente são iguais entre si.\n\n**Cuidado Cebraspe:** A banca dirá que 'parou a reação'. **ERRADO.** O equilíbrio é DINÂMICO, a reação continua acontecendo nos dois sentidos na mesma velocidade."
+    },
+    "tags": ["Química", "Equilíbrio Químico", "ANSA 2026", "Operação"]
+  },
+  {
+    id: 233,
+    front: {
+      title: 'Solução Supersaturada 🧪',
+      subtitle: 'O que a define e por que a banca afirma que é um estado instável?',
+    },
+    back: {
+      body: `**A Regra:** Uma solução é **supersaturada** quando contém *mais* soluto dissolvido do que o limite máximo permitido (Coeficiente de Solubilidade) para aquela determinada temperatura.
+
+**O Segredo da Instabilidade:**
+Este estado só é alcançado ao aquecer o solvente (para dissolver mais) e arrefecê-lo de forma extremamente lenta e cuidadosa. Por isso, é um estado **altamente instável** ("sob tensão").
+
+**A Armadilha de Prova (Cebraspe):**
+Qualquer perturbação mínima (um choque no recipiente ou a adição de um "cristal semente") faz com que todo o excesso de soluto **precipite** (vá para o fundo) instantaneamente.
+
+**Palavras-chave para o acerto:**
+Supersaturada = Excesso de soluto + Instabilidade + Precipitação fácil. ✅`,
+    },
+    tags: ['Química', 'Físico-Química', 'Soluções', 'ANSA 2026'],
+  },
+  {
+    id: 234,
+    front: {
+      title: 'Polímeros: Adição vs. Condensação 🧱',
+      subtitle: 'Como diferenciar os dois tipos e o que acontece com o Etileno?',
+    },
+    back: {
+      body: `**1. Polimerização por ADIÇÃO:**
+• O monômero TEM ligação dupla ($C=C$).
+• A ligação se "abre" para formar a cadeia.
+• **Regra de Ouro:** Não perde átomos. **NÃO há subprodutos**.
+• *Exemplo:* Etileno ($CH_2=CH_2$) virando Polietileno (sacola plástica).
+
+**2. Polimerização por CONDENSAÇÃO:**
+• Monômeros reagem em suas extremidades.
+• **Regra de Ouro:** Para se unirem, eles expulsam uma molécula pequena (subproduto).
+• *Exemplo:* Formação do PET ou Nylon, que geralmente libera **Água** ($H_2O$).
+
+**Na Prova:** Se a banca disser que a Adição do etileno libera água ou subprodutos, marque **ERRADO** imediatamente. ❌`,
+    },
+    tags: ['Química Orgânica', 'Polímeros', 'Etileno', 'ANSA 2026'],
+  },
+  {
+    id: 235,
+    front: {
+      title: 'Modelo de Bohr: O Salto Quântico ⚛️',
+      subtitle: 'Quando o elétron emite radiação e quando ele absorve?',
+    },
+    back: {
+      body: `**A Regra da Escada (Níveis de Energia):**
+O núcleo é o "chão". Quanto mais longe dele, maior a energia da órbita.
+
+**1. ABSORÇÃO (Subindo a escada):**
+Para ir de uma órbita **Menor para uma Maior** (afastar-se do núcleo), o elétron precisa **ABSORVER** energia. Ele fica num estado "excitado".
+
+**2. EMISSÃO (Descendo a escada):**
+Para voltar de uma órbita **Maior para uma Menor** (voltar para perto do núcleo), o elétron **EMITE** a energia excedente na forma de radiação (luz/fóton).
+
+**Cilada Cebraspe:** A banca inverte os conceitos, dizendo que ele emite energia ao saltar para uma órbita maior. **Gabarito: ERRADO!** ❌`,
+    },
+    tags: ['Química', 'Modelos Atômicos', 'Bohr', 'ANSA 2026'],
+  },
+  {
+    id: 236,
+    front: {
+      title: 'Potencial Elétrico e o Sinal da Carga ⚡',
+      subtitle: 'O potencial elétrico é sempre positivo? O que define o seu sinal?',
+    },
+    back: {
+      body: `**A Regra do Sinal (Grandeza Escalar):**
+O Potencial Elétrico ($V$) **NÃO** é sempre positivo. Ele "herda" o sinal da carga que o gerou.
+
+**1. Carga Geradora Positiva (+):**
+Gera um potencial elétrico **POSITIVO** ($V > 0$) em qualquer ponto ao seu redor.
+
+**2. Carga Geradora Negativa (-):**
+Gera um potencial elétrico **NEGATIVO** ($V < 0$) em qualquer ponto ao seu redor.
+
+**Fórmula Mestra:** $V = k \cdot \\frac{Q}{d}$
+*(Como 'k' e 'd' são positivos, o sinal de 'Q' dita a regra).*
+
+**Cilada Cebraspe:** A questão afirmou que uma carga negativa gera potencial positivo porque a grandeza é sempre positiva. Totalmente **ERRADO** nos dois pontos! ❌`,
+    },
+    tags: ['Física', 'Eletrostática', 'Potencial Elétrico', 'ANSA 2026'],
+  },
+  {
+    id: 237,
+    front: {
+      title: 'Corrente Elétrica: Definição e Unidade no SI ⚡',
+      subtitle: 'O que significa 1 Ampere na prática?',
+    },
+    back: {
+      body: `**O Conceito (A "Vazão" de elétrons):**
+A corrente elétrica ($i$) é a quantidade de carga elétrica ($Q$) que atravessa o fio dividida pelo tempo ($t$) que ela demora para passar.
+
+**A Fórmula Mestra:**
+$$i = \\frac{\\Delta Q}{\\Delta t}$$
+
+**As Unidades no SI (Decore):**
+• Carga ($Q$) = **Coulomb (C)**
+• Tempo ($t$) = **segundo (s)**
+• Corrente ($i$) = **Ampere (A)**
+
+**A Regra de Ouro:** 1 Ampere é exatamente a mesma coisa que **1 Coulomb por segundo**.
+
+**Cilada Cebraspe:** A banca costuma tentar te enganar dizendo que a unidade de corrente é o Volt ou o Watt. Fique atento: Fluxo de carga no tempo é sempre **AMPERE**. ✅`,
+    },
+    tags: ['Física', 'Eletrodinâmica', 'Corrente Elétrica', 'ANSA 2026'],
+  },
+  {
+    id: 238,
+    front: {
+      title: 'Circuitos: Série vs. Paralelo 💡',
+      subtitle: 'Quem é igual e quem se divide em cada tipo de circuito?',
+    },
+    back: {
+      body: `**A Regra de Ouro (Inverso um do outro):**
+
+**1. Circuito em SÉRIE (Caminho Único):**
+• A **Corrente ($i$)** é a mesma em todos os resistores. (Não tem para onde fugir).
+• A **Tensão ($V$)** se DIVIDE entre os resistores.
+
+**2. Circuito em PARALELO (Bifurcação):**
+• A **Tensão ($V$)** é a mesma em todos os resistores. (Estão ligados nos mesmos pontos).
+• A **Corrente ($i$)** se DIVIDE entre os ramos.
+
+**Cilada Cebraspe:** A banca sempre vai descrever o comportamento do circuito em Série, mas no final vai chamá-lo de Paralelo (ou vice-versa). Fique atento à troca de nomes! ✅`,
+    },
+    tags: ['Física', 'Eletrodinâmica', 'Circuitos Elétricos', 'ANSA 2026'],
+  },
+  {
+    id: 239,
+    front: {
+      title: 'Lei de Faraday: Indução Eletromagnética 🧲',
+      subtitle: 'Como gerar energia com um ímã e o que a velocidade do movimento altera?',
+    },
+    back: {
+      body: `**A Regra do Movimento (Variação do Fluxo):**
+Para gerar tensão elétrica (Força Eletromotriz - fem) em um fio, você precisa de **VARIAÇÃO** no campo magnético. Ímã parado não gera energia! É preciso movimentar o ímã perto do fio, ou o fio perto do ímã.
+
+**A Regra da Velocidade (Tempo):**
+A tensão gerada é **diretamente proporcional à rapidez** dessa variação.
+• Movimento Rápido ➡️ Alta variação ➡️ **MAIOR** fem induzida (Mais energia).
+• Movimento Lento ➡️ Baixa variação ➡️ **MENOR** fem induzida (Menos energia).
+
+**A Fórmula Mestra:**
+$$fem = - \\frac{\\Delta \\Phi}{\\Delta t}$$
+*(A variação do fluxo magnético $\\Phi$ dividida pelo tempo. Quanto menor o tempo, maior a fem).*
+
+**Gabarito:** CERTO ✅.`,
+    },
+    tags: ['Física', 'Eletromagnetismo', 'Lei de Faraday', 'ANSA 2026'],
   }
 
 
 
 
 
+
 ];
+
+export const mapaDeMaterias: Record<string, string[]> = {
+  "Português": [
+    "Português", "Pronome Relativo", "Sintaxe", "Concordância Verbal", "Pontuação",
+    "Vírgula", "Regência", "Regência Verbal", "Vícios de Linguagem", "Conjunções",
+    "Análise Sintática", "Gramática", "Pronomes", "Colocação Pronominal", "Morfologia",
+    "Concordância", "Crase", "Ortografia", "Semântica", "Coesão", "Conectivos",
+    "Vozes Verbais", "Gerúndio", "Morfossintaxe", "Classes de Palavras"
+  ],
+
+  "Raciocínio Lógico e Matemática": [
+    "Raciocínio Lógico", "Lógica Sentencial", "Argumentação", "Quantificadores",
+    "Lógica", "Matemática", "Análise Combinatória", "Combinatória", "Probabilidade",
+    "Vazão", "Razão e Proporção", "Tabela-Verdade", "Teoria dos Conjuntos",
+    "Diagrama de Venn", "Conjuntos", "PA", "Atalho", "Macetes", "Geometria",
+    "Volume", "Cebraspe"
+  ],
+
+  "Química": [
+    "Química", "Reações Químicas", "Termoquímica", "Funções Inorgânicas", "Ácidos e Bases",
+    "Bases", "pH", "Equilíbrio Químico", "Redox", "Eletroquímica", "Nox", "Cálculo",
+    "Soluções", "Pilhas", "Corrosão", "Exceções", "NaCl", "Diluição", "Le Chatelier",
+    "Equilíbrio", "Kc", "Estequiometria", "Balanceamento", "Solução Tampão", "Massa Molar",
+    "Coloides", "Emulsão", "Separação de Misturas", "Oxirredução", "Kps", "Cinética",
+    "Neutralização", "Química Orgânica", "Alcanos", "Hidrocarbonetos", "Benzeno",
+    "Aromáticos", "Polímeros", "Etileno", "Metano", "Monômeros", "Nitrogênio", "Amônia"
+  ],
+
+  "Física e Operações Unitárias": [
+    "Física", "Termodinâmica", "Energia", "Processos Térmicos", "Ciclo de Rankine",
+    "Entropia", "Gases", "Transferência de Calor", "Materiais", "Calorimetria",
+    "Segunda Lei", "Estados da Matéria", "Mecânica dos Fluidos", "Empuxo", "Continuidade",
+    "Bernoulli", "Reynolds", "Perda de Carga", "Hidráulica", "Bombas", "Cavitação",
+    "Hidrostática", "Pressão", "Operações Unitárias", "Permutadores", "Filtração",
+    "Equipamentos de Processo", "Válvulas", "Tubulações", "Instrumentação", "Transmissores",
+    "Pneumática", "Controle de Processo", "PID", "Derivativa", "Operação"
+  ],
+
+  "Segurança e Meio Ambiente": [
+    "Segurança do Trabalho", "Segurança", "NR-15", "Saúde Ocupacional", "NR-7",
+    "PCMSO", "Indústria Química", "Indústria", "Higiene Ocupacional", "Riscos Físicos",
+    "Riscos Químicos", "Riscos Biológicos", "Meio Ambiente", "Lei 9.605", "Lei 12.305",
+    "Sustentabilidade"
+  ],
+
+  "Direito, Informática e Redação": [
+    "Direito Constitucional", "Direito do Trabalho", "Constituição", "Direito",
+    "Direitos do Titular", "Informática", "LGPD", "Redes", "IP", "Internet", "Dados",
+    "Agronegócio", "Fertilizantes", "OIT", "Redação", "ANSA", "ANSA 2026"
+  ]
+};
+
+export function getSubjectForCard(card: Flashcard): string {
+  if (!card.tags || card.tags.length === 0) return "Outros";
+
+  for (const tag of card.tags) {
+    for (const [subject, tags] of Object.entries(mapaDeMaterias)) {
+      if (tags.includes(tag)) {
+        return subject;
+      }
+    }
+  }
+
+  return "Outros";
+}
+
+export const SUBJECT_LIST = Object.keys(mapaDeMaterias).concat(["Outros"]);

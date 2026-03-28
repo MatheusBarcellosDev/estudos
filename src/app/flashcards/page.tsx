@@ -1,11 +1,11 @@
 "use client";
 
-import { useState } from "react";
+import { useState, useMemo } from "react";
 import { motion, AnimatePresence } from "framer-motion";
 import FlashcardCard from "@/components/FlashcardCard";
 import Quiz from "@/components/Quiz";
 import Results from "@/components/Results";
-import { flashcards } from "@/data/flashcards";
+import { flashcards, SUBJECT_LIST, getSubjectForCard } from "@/data/flashcards";
 import { Button } from "@/components/ui/button";
 import {
   ArrowLeft,
@@ -22,7 +22,7 @@ import { Question, QuizResult } from "@/types";
 import { useFlashcardProgress } from "@/lib/useFlashcardProgress";
 import { DifficultyRating, getNextReviewLabel } from "@/lib/srs";
 
-type PageState = "REVIEW" | "QUIZ" | "RESULTS";
+type PageState = "SELECT_SUBJECT" | "REVIEW" | "QUIZ" | "RESULTS";
 
 /** Convert a card's back body to clean plain text for the API */
 function cardBackToText(body: string): string {
@@ -32,21 +32,57 @@ function cardBackToText(body: string): string {
 
 
 export default function FlashcardsPage() {
-  const { sessionDeck, getProgress, rateCard, stats, resetProgress, refreshSession } =
-    useFlashcardProgress(flashcards);
+  const [pageState, setPageState] = useState<PageState>("SELECT_SUBJECT");
+  const [selectedSubject, setSelectedSubject] = useState<string | null>(null);
+
+  const filteredFlashcards = useMemo(() => {
+    if (!selectedSubject) return flashcards;
+    return flashcards.filter((c) => getSubjectForCard(c) === selectedSubject);
+  }, [selectedSubject]);
+
+  const { sessionDeck, allProgress, getProgress, rateCard, stats, resetProgress, refreshSession } =
+    useFlashcardProgress(filteredFlashcards);
 
   const [currentIdx, setCurrentIdx] = useState(0);
   const [direction, setDirection] = useState(1);
   const [isFlipped, setIsFlipped] = useState(false); // card was flipped
 
   // Quiz state
-  const [pageState, setPageState] = useState<PageState>("REVIEW");
   const [questions, setQuestions] = useState<Question[]>([]);
   const [results, setResults] = useState<QuizResult[]>([]);
   const [isLoadingQuestions, setIsLoadingQuestions] = useState(false);
 
   // Derived
   const card = sessionDeck[currentIdx] ?? sessionDeck[0];
+
+  // Subject Stats
+  const subjectStats = useMemo(() => {
+    return SUBJECT_LIST.map((subject) => {
+      const subjectCards = flashcards.filter((c) => getSubjectForCard(c) === subject);
+      if (subjectCards.length === 0) return null;
+
+      const subjectProgress = allProgress.filter((p) =>
+        subjectCards.some((c) => c.id === p.flashcardId)
+      );
+
+      const mastered = subjectProgress.filter(
+        (p) => p.difficultyLevel === "facil" || p.streak >= 2
+      ).length;
+
+      const due = subjectProgress.filter(
+        (p) => !p.isNew && p.nextReviewAt && new Date(p.nextReviewAt) <= new Date()
+      ).length;
+      
+      const newCards = subjectCards.length - subjectProgress.filter((p) => !p.isNew).length;
+
+      return {
+        subject,
+        total: subjectCards.length,
+        mastered,
+        actionable: due + newCards,
+      };
+    }).filter(Boolean);
+  }, [allProgress]);
 
   // ── Handlers ────────────────────────────────────────────────────────────────
 
@@ -141,7 +177,13 @@ export default function FlashcardsPage() {
 
         {/* Top Nav */}
         <div className="flex items-center justify-between mb-5">
-          <Link href="/">
+          <Link href={pageState === "SELECT_SUBJECT" ? "/" : "#"} onClick={(e) => {
+            if (pageState !== "SELECT_SUBJECT") {
+              e.preventDefault();
+              setPageState("SELECT_SUBJECT");
+              setSelectedSubject(null);
+            }
+          }}>
             <Button variant="ghost" className="gap-2 rounded-2xl px-3">
               <ArrowLeft className="w-4 h-4" />
               Voltar
@@ -149,7 +191,9 @@ export default function FlashcardsPage() {
           </Link>
           <div className="flex items-center gap-2">
             <Layers className="w-5 h-5 text-primary" />
-            <span className="font-bold text-lg">Flashcards SRS</span>
+            <span className="font-bold text-lg text-center leading-tight">
+              {pageState === "SELECT_SUBJECT" ? "Flashcards SRS" : selectedSubject}
+            </span>
           </div>
           <Button
             variant="ghost"
@@ -161,8 +205,71 @@ export default function FlashcardsPage() {
           </Button>
         </div>
 
+        {/* ── SUBJECT SELECTION STATE ── */}
+        {pageState === "SELECT_SUBJECT" && (
+          <div className="flex-1 flex flex-col space-y-4">
+            <div className="mb-2">
+              <h2 className="text-xl font-bold">Escolha a Matéria</h2>
+              <p className="text-sm text-muted-foreground mt-1">
+                Foque seus estudos onde você mais precisa. O SRS cuidará do resto.
+              </p>
+            </div>
+
+            <div className="grid grid-cols-1 sm:grid-cols-2 gap-4 pb-12">
+              {subjectStats.map((item: any) => {
+                const percent = Math.round((item.mastered / item.total) * 100);
+                return (
+                  <button
+                    key={item.subject}
+                    onClick={() => {
+                      setSelectedSubject(item.subject);
+                      setCurrentIdx(0);
+                      setPageState("REVIEW");
+                      refreshSession(); // Force a fresh deck for the new subject
+                    }}
+                    className="flex flex-col text-left bg-white dark:bg-neutral-900 border rounded-3xl p-5 shadow-sm hover:shadow-md hover:border-primary/50 transition-all group"
+                  >
+                    <div className="flex justify-between items-start mb-4 w-full">
+                      <h3 className="font-bold text-lg text-neutral-800 dark:text-neutral-100 group-hover:text-primary transition-colors pr-2">
+                        {item.subject}
+                      </h3>
+                      <div className="bg-primary/10 text-primary text-xs font-bold px-2.5 py-1 rounded-full whitespace-nowrap">
+                        {item.total} cards
+                      </div>
+                    </div>
+
+                    {/* Progress Bar */}
+                    <div className="w-full mt-auto">
+                      <div className="flex justify-between text-xs font-medium text-muted-foreground mb-1.5">
+                        <span>Dominados</span>
+                        <span>{percent}%</span>
+                      </div>
+                      <div className="h-2 w-full bg-neutral-100 dark:bg-neutral-800 rounded-full overflow-hidden">
+                        <motion.div
+                          className="h-full bg-emerald-500 rounded-full"
+                          initial={{ width: 0 }}
+                          animate={{ width: `${percent}%` }}
+                          transition={{ duration: 0.8, ease: "easeOut" }}
+                        />
+                      </div>
+                    </div>
+
+                    {item.actionable > 0 && (
+                      <div className="mt-4 flex items-center gap-1.5 text-xs font-semibold text-amber-600 dark:text-amber-500 bg-amber-50 dark:bg-amber-500/10 self-start px-2 py-1 rounded-md">
+                        <Clock className="w-3.5 h-3.5" />
+                        {item.actionable} para revisar/aprender
+                      </div>
+                    )}
+                  </button>
+                );
+              })}
+            </div>
+          </div>
+        )}
+
         {/* ── SRS Stats Bar ── */}
-        <div className="grid grid-cols-4 gap-2 mb-5">
+        {pageState !== "SELECT_SUBJECT" && (
+          <div className="grid grid-cols-4 gap-2 mb-5">
           <StatChip
             icon={<Clock className="w-3.5 h-3.5" />}
             value={stats.due}
@@ -192,6 +299,7 @@ export default function FlashcardsPage() {
             bg="bg-emerald-50 dark:bg-emerald-950/30"
           />
         </div>
+        )}
 
         {/* ── Progress bar (REVIEW mode) ── */}
         {pageState === "REVIEW" && (

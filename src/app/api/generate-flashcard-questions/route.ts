@@ -110,7 +110,7 @@ VALIDAÇÃO ANTES DE RESPONDER:
 
     console.log('[Flashcard] Calling OpenAI API...');
     const result = await openai.chat.completions.create({
-      model: 'gpt-4o-mini',
+      model: 'gpt-5.4-mini',
       messages: [
         {
           role: 'user',
@@ -119,7 +119,7 @@ VALIDAÇÃO ANTES DE RESPONDER:
       ],
       response_format: { type: 'json_object' },
       temperature: 0.4,
-      max_tokens: 3000,
+      max_completion_tokens: 3000,
     });
 
     const rawContent = result.choices[0]?.message?.content || '{}';

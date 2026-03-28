@@ -34,7 +34,7 @@ export async function POST(req: Request) {
       return NextResponse.json({ error: 'fileName or screenshot is required' }, { status: 400 });
     }
 
-    // 2. Send image to gpt-4o-mini via Chat Completions Vision API
+    // 2. Send image to gpt-5.4-mini via Chat Completions Vision API
     const prompt = `Você é um especialista em concursos públicos e criação de questões no padrão CEBRASPE (CERTO ou ERRADO), com profundo domínio teórico das disciplinas cobradas.
 
 Sua tarefa é analisar minuciosamente o mapa mental, imagem, gráfico ou texto fornecido e gerar questões de alto nível.
@@ -139,7 +139,7 @@ Retorne APENAS um JSON válido, exatamente neste formato:
 
     console.log('[DEBUG] Calling OpenAI Vision API (JSON Mode)...');
     const result = await openai.chat.completions.create({
-      model: 'gpt-4o-mini',
+      model: 'gpt-5.4-mini',
       messages: [
         {
           role: 'user',
@@ -160,7 +160,7 @@ Retorne APENAS um JSON válido, exatamente neste formato:
       ],
       response_format: { type: "json_object" },
       temperature: 0.3,
-      max_tokens: 3000,
+      max_completion_tokens: 3000,
     });
 
     const rawContent = result.choices[0]?.message?.content || '{}';
