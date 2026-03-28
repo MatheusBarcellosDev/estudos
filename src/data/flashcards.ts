@@ -156,28 +156,7 @@ Se você puder remover o trecho entre vírgulas e a frase continuar com sentido 
     },
     tags: ['Raciocínio Lógico', 'Lógica Sentencial', 'Argumentação'],
   },
-  {
-    id: 8,
-    front: {
-      title: 'Negação Lógica: "TODO" e "E" 🚫',
-      subtitle: 'Qual a negação de "Todos os A são B E a frase C é verdadeira"?',
-    },
-    back: {
-      body: `**A Regra (Leis de De Morgan):**
-1. Troca-se o **E** pelo **OU**.
-2. Nega-se as duas proposições.
 
-**O Pulo do Gato (Negação do TODO):**
-A negação de "Todo" é **PEA + NÃO** (Pelo menos um não / Existe um que não / Algum não).
-
-**Exemplo da Prova:**
-• Proposição: "Todos estão calibrados E o processo está estável".
-• Negação: "**Algum** instrumento **não** está calibrado **OU** o processo **não** está estável". ✅
-
-**Por que "Nenhum" está errado?** Porque "Nenhum" é uma negação forte demais. Para quebrar a ideia de que "todos são", basta que "um não seja".`,
-    },
-    tags: ['Raciocínio Lógico', 'Lógica Sentencial', 'Quantificadores'],
-  },
   {
     id: 9,
     front: {
@@ -591,7 +570,7 @@ O Nitrogênio **reduziu**, logo o $N_2$ é o **Agente Oxidante**.`,
       "subtitle": "Onde ocorre a Oxidação e onde ocorre a Redução?"
     },
     "back": {
-      "body": "**Regra das Letras (Vogal com Vogal / Consoante com Consoante):**\n\n1. **Ânodo (Vogal):** Ocorre a **Oxidação (Vogal)**.\n   - É o polo NEGATIVO da pilha.\n   - É onde os elétrons saem.\n\n2. **Cátodo (Consoante):** Ocorre a **Redução (Consoante)**.\n   - É o polo POSITIVO da pilha.\n   - É para onde os elétrons vão.\n\n**Macete:** Decore a palavra **CRAO** (Cátodo Redução / Ânodo Oxidação). Se a questão misturar vogal com consoante, está ERRADA!"
+      "body": "**Regra das Letras (Vogal com Vogal / Consoante com Consoante):**\n\n1. **Ânodo (Vogal):** Ocorre a **Oxidação (Vogal)**.\n   - É o polo NEGATIVO da pilha.\n   - É onde os elétrons saem.\n\n2. **Cátodo (Consoante):** Ocorre a **Redução (Consoante)**.\n   - É o polo POSITIVO da pilha.\n   - É para onde os elétrons vão.\n\n**Macete:** Decore a palavra **CRAO** (Cátodo Redução / Ânodo Oxidação). Se a questão misturar vogal com consoante, está ERRADA! Essa regra (CRAO) é a base teórica para entender a Corrosão, lembrando que o tubo metálico atua como o Ânodo que se desgasta."
     },
     "tags": ["Química", "Eletroquímica", "Pilhas", "ANSA"]
   },
@@ -771,7 +750,7 @@ O Nitrogênio **reduziu**, logo o $N_2$ é o **Agente Oxidante**.`,
   {
     "id": 45,
     "front": {
-      "title": "NR-15: Atividades e Operações Insalubres ⚠️",
+      "title": "[CORINGA DE REDAÇÃO] NR-15: Atividades e Operações Insalubres ⚠️",
       "subtitle": "Como usar esse argumento na Redação da ANSA?"
     },
     "back": {
@@ -782,7 +761,7 @@ O Nitrogênio **reduziu**, logo o $N_2$ é o **Agente Oxidante**.`,
   {
     "id": 46,
     "front": {
-      "title": "NR-7: Programa de Controle Médico (PCMSO) 🩺",
+      "title": "[CORINGA DE REDAÇÃO] NR-7: Programa de Controle Médico (PCMSO) 🩺",
       "subtitle": "Qual a obrigatoriedade para a saúde do trabalhador?"
     },
     "back": {
@@ -793,7 +772,7 @@ O Nitrogênio **reduziu**, logo o $N_2$ é o **Agente Oxidante**.`,
   {
     "id": 47,
     "front": {
-      "title": "Dado Crítico: Afastamentos no Setor Químico 🏥",
+      "title": "[CORINGA DE REDAÇÃO] Dado Crítico: Afastamentos no Setor Químico 🏥",
       "subtitle": "Como fundamentar a gravidade dos riscos ocupacionais?"
     },
     "back": {
@@ -804,7 +783,7 @@ O Nitrogênio **reduziu**, logo o $N_2$ é o **Agente Oxidante**.`,
   {
     "id": 48,
     "front": {
-      "title": "Lei 9.605/1998: Crimes Ambientais ⚖️",
+      "title": "[CORINGA DE REDAÇÃO] Lei 9.605/1998: Crimes Ambientais ⚖️",
       "subtitle": "Qual a punição para o descarte irregular na indústria?"
     },
     "back": {
@@ -815,7 +794,7 @@ O Nitrogênio **reduziu**, logo o $N_2$ é o **Agente Oxidante**.`,
   {
     "id": 49,
     "front": {
-      "title": "Lei 12.305/2010: PNRS 🏭",
+      "title": "[CORINGA DE REDAÇÃO] Lei 12.305/2010: PNRS 🏭",
       "subtitle": "Qual a responsabilidade da indústria sobre seus rejeitos?"
     },
     "back": {
@@ -826,7 +805,7 @@ O Nitrogênio **reduziu**, logo o $N_2$ é o **Agente Oxidante**.`,
   {
     "id": 50,
     "front": {
-      "title": "Brasil: Potência em Fertilizantes 🇧🇷",
+      "title": "[CORINGA DE REDAÇÃO] Brasil: Potência em Fertilizantes 🇧🇷",
       "subtitle": "Qual a posição do país no consumo global?"
     },
     "back": {
@@ -837,7 +816,7 @@ O Nitrogênio **reduziu**, logo o $N_2$ é o **Agente Oxidante**.`,
   {
     "id": 51,
     "front": {
-      "title": "Lei 13.709/2018: LGPD 💻",
+      "title": "[CORINGA DE REDAÇÃO] Lei 13.709/2018: LGPD 💻",
       "subtitle": "Como os dados pessoais devem ser tratados na ANSA?"
     },
     "back": {
@@ -848,7 +827,7 @@ O Nitrogênio **reduziu**, logo o $N_2$ é o **Agente Oxidante**.`,
   {
     "id": 65,
     "front": {
-      "title": "Constituição Federal: Artigo 225 🇧🇷",
+      "title": "[CORINGA DE REDAÇÃO] Constituição Federal: Artigo 225 🇧🇷",
       "subtitle": "Qual o dever do Estado e da sociedade com o meio ambiente?"
     },
     "back": {
@@ -859,7 +838,7 @@ O Nitrogênio **reduziu**, logo o $N_2$ é o **Agente Oxidante**.`,
   {
     "id": 66,
     "front": {
-      "title": "Constituição Federal: Artigo 7º (Inciso XXII) 🇧🇷",
+      "title": "[CORINGA DE REDAÇÃO] Constituição Federal: Artigo 7º (Inciso XXII) 🇧🇷",
       "subtitle": "Qual a obrigação constitucional sobre riscos do trabalho?"
     },
     "back": {
@@ -905,7 +884,7 @@ O Nitrogênio **reduziu**, logo o $N_2$ é o **Agente Oxidante**.`,
       "subtitle": "Quais são os 4 processos e equipamentos principais?"
     },
     "back": {
-      "body": "**Processos e Equipamentos:**\n1. **Bombeamento:** Realizado pela BOMBA (Líquido).\n2. **Vaporização:** Realizada pela CALDEIRA (Recebe Calor).\n3. **Expansão:** Realizada pela TURBINA (Gera Trabalho).\n4. **Condensação:** Realizada pelo CONDENSADOR (Esfria o vapor).\n\n**No Edital ANSA:** O Bloco II exige o conhecimento de 'Ciclos de geração de potência' e 'Equipamentos auxiliares' como esses."
+      "body": "**Processos e Equipamentos:**\n1. **Bombeamento:** Realizado pela BOMBA (Líquido).\n2. **Vaporização:** Realizada pela CALDEIRA (Recebe Calor).\n3. **Expansão:** Realizada pela TURBINA (Gera Trabalho).\n4. **Condensação:** Realizada pelo CONDENSADOR (Esfria o vapor).\n\n**Atenção para a Planta ANSA:** Nas fábricas de nitrogenados, a turbina a vapor não serve apenas para gerar eletricidade, mas é amplamente usada para tocar grandes compressores (como o compressor de gás de síntese e de ar).\n\n**No Edital ANSA:** O Bloco II exige o conhecimento de 'Ciclos de geração de potência' e 'Equipamentos auxiliares' como esses."
     },
     "tags": ["Termodinâmica", "Ciclo de Rankine", "Operação", "ANSA 2026"]
   },
@@ -1082,28 +1061,7 @@ O Nitrogênio **reduziu**, logo o $N_2$ é o **Agente Oxidante**.`,
     },
     "tags": ["Português", "Sintaxe", "Vozes Verbais", "ANSA 2026"]
   },
-  {
-    "id": 89,
-    "front": {
-      "title": "IP Privado vs. IP Público 💻",
-      "subtitle": "Quais são as faixas reservadas para redes internas?"
-    },
-    "back": {
-      "body": "**IP Privado (Rede Interna - Casa/Empresa):**\n- **Classe A:** 10.0.0.0 a 10.255.255.255\n- **Classe B:** 172.16.0.0 a 172.31.255.255\n- **Classe C:** 192.168.0.0 a 192.168.255.255\n\n**IP Público (Internet):**\n- Únicos no mundo inteiro.\n- Gerenciados pelo provedor.\n\n**O Pulo do Gato:** IPs privados **NÃO** são roteáveis na internet diretamente; eles precisam do **NAT** (Network Address Translation) no roteador para navegar."
-    },
-    "tags": ["Informática", "Redes", "IP", "ANSA 2026"]
-  },
-  {
-    "id": 90,
-    "front": {
-      "title": "Protocolo HTTP vs. HTTPS 🔒",
-      "subtitle": "Qual a diferença crucial para segurança?"
-    },
-    "back": {
-      "body": "**HTTP (HyperText Transfer Protocol):**\n- **Porta Padrão:** 80.\n- **Segurança:** **NENHUMA**. Os dados trafegam em texto puro (qualquer um pode ler).\n\n**HTTPS (HTTP Secure):**\n- **Porta Padrão:** 443.\n- **Segurança:** **SIM**. Usa criptografia (SSL/TLS) para proteger os dados.\n\n**Na Prática:** Em sites de login, bancos ou qualquer coisa que envolva dados sensíveis, o **HTTPS é obrigatório**. O Cebraspe adora perguntar se o HTTP é seguro; a resposta é **NÃO**."
-    },
-    "tags": ["Informática", "Internet", "Segurança", "ANSA 2026"]
-  },
+
   {
     "id": 91,
     "front": {
@@ -1205,17 +1163,7 @@ O Nitrogênio **reduziu**, logo o $N_2$ é o **Agente Oxidante**.`,
     "tags": ["Química", "Equilíbrio Químico", "Kps", "ANSA 2026", "Operação"]
   },
 
-  {
-    "id": 104,
-    "front": {
-      "title": "O que é Equilíbrio Químico? ⚗️",
-      "subtitle": "O que acontece com as velocidades e concentrações?"
-    },
-    "back": {
-      "body": "**As Duas Regras de Ouro:**\n1. **Velocidades:** A velocidade da reação direta fica IGUAL à da inversa ($v_d = v_i$).\n2. **Concentrações:** As quantidades de reagentes e produtos tornam-se CONSTANTES (não mudam mais).\n\n**Cilada do Cebraspe:** Dizer que o equilíbrio é 'estático' (a reação para). **ERRADO.** O equilíbrio é **DINÂMICO**; as reações continuam acontecendo, mas na mesma velocidade, por isso parece parado.\n\n**Na Operação ANSA:** Fundamental para processos como a síntese da Amônia. Se não controlarmos o equilíbrio, a reação 'volta' e perdemos produção."
-    },
-    "tags": ["Química", "Equilíbrio Químico", "Cinética", "ANSA 2026", "Operação"]
-  },
+
   {
     id: 201,
     front: {
@@ -1403,6 +1351,7 @@ A₁v₁ = A₂v₂
 **Comparação rápida:**  
 - Globo → melhor para regulagem/controle  
 - Gaveta → melhor para abertura/fechamento total
+- Borboleta → rápida abertura/fechamento com baixa perda de carga em grandes diâmetros.
 
 **Cilada Cebraspe:** dizer que a gaveta é a mais adequada para controle fino. **Errado.**
 
@@ -1669,7 +1618,7 @@ Eteno → polietileno
       "subtitle": "Como negar sem cair na pegadinha?"
     },
     "back": {
-      "body": "**Regra do X (Inversão):**\n\n1. **Negar o TODO:**\n   - Troque por: **Algum / Existe / Pelo menos um**.\n   - Coloque o **NÃO**.\n   *Mnemônico: TODO se nega com PEA + NÃO.*\n\n2. **Negar o EXISTE / PELO MENOS UM:**\n   - Troque por: **TODO NÃO** ou **NENHUM**.\n\n**CILADA CEBRASPE:** Dizer que a negação de 'Todo' é 'Nenhum'. **ERRADO!** Para desmentir que 'Todos bebem café', basta achar **UM** que não beba."
+      "body": "**Regra do X (Inversão):**\n\n1. **Negar o TODO:**\n   - Troque por: **Algum / Existe / Pelo menos um**.\n   - Coloque o **NÃO**.\n   *Mnemônico: TODO se nega com PEA + NÃO.*\n\n2. **Negar o EXISTE / PELO MENOS UM:**\n   - Troque por: **TODO NÃO** ou **NENHUM**.\n\n3. **Leis de De Morgan ('E' / 'OU'):**\n   - Para negar 'A e B': Troque o E por OU e negue ambas (~A ou ~B).\n\n**CILADA CEBRASPE:** Dizer que a negação de 'Todo' é 'Nenhum'. **ERRADO!** Para desmentir que 'Todos bebem café', basta achar **UM** que não beba."
     },
     "tags": ["Lógica", "Raciocínio Lógico", "Negação", "ANSA 2026"]
   },
@@ -1880,6 +1829,187 @@ $$fem = - \\frac{\\Delta \\Phi}{\\Delta t}$$
 **Gabarito:** CERTO ✅.`,
     },
     tags: ['Física', 'Eletromagnetismo', 'Lei de Faraday', 'ANSA 2026'],
+  },
+  {
+    id: 240,
+    front: {
+      title: 'Termoquímica: Multiplicar ou Dividir? 🧮',
+      subtitle: 'Como calcular o calor total usando a fórmula Q = n · ΔH?',
+    },
+    back: {
+      body: `**A Regra da Fórmula Direta:**
+Utilize a equação base: **$Q = n \\cdot \\Delta H$**
+• **$Q$** = Calor Total
+• **$n$** = Número de mols
+• **$\\Delta H$** = Calor por mol (Entalpia)
+
+**O Macete Visual (Como saber a operação):**
+Se a questão te der dois valores, isole o que está faltando:
+1. Quer achar o Calor Total (**$Q$**)? ➡️ **MULTIPLICA** ($n \\cdot \\Delta H$).
+2. Quer achar os Mols (**$n$**)? ➡️ **DIVIDE** ($Q \\div \\Delta H$).
+3. Quer achar o Calor por mol (**$\\Delta H$**)? ➡️ **DIVIDE** ($Q \\div n$).
+
+**Resumo da Prova:** Se a banca der a quantidade de mols que reagiu (ex: $0,50$) e a energia tabelada por mol (ex: $57$), basta **multiplicar** um pelo outro para achar a energia total daquela reação. ✅`,
+    },
+    tags: ['Química', 'Termoquímica', 'Cálculo', 'ANSA 2026', 'Operação'],
+  },
+  {
+    id: 244,
+    front: {
+      title: '1ª Lei de Newton na Operação: Inércia 🛑',
+      subtitle: 'Como o conceito de inércia explica o fenômeno do Golpe de Aríete?',
+    },
+    back: {
+      body: `**A Lei (Inércia):**
+Todo corpo mantém seu estado de repouso ou de movimento retilíneo uniforme (MRU) a menos que uma força resultante externa atue sobre ele. A inércia é diretamente proporcional à **massa** do corpo.
+
+**Na Planta Industrial (Golpe de Aríete):**
+Líquidos escoando em tubulações possuem massa e, portanto, grande inércia. Se uma válvula for fechada subitamente, o fluido tenta continuar em movimento. A força necessária para parar essa massa subitamente gera um pico de pressão extremo, que pode romper a tubulação.
+
+**Cilada Cebraspe:** A banca pode afirmar que apenas sólidos possuem inércia ou que líquidos perdem sua inércia no escoamento. **ERRADO.** Tudo que tem massa tem inércia, independentemente do estado físico. ✅`,
+    },
+    tags: ['Física', 'Leis de Newton', 'Inércia', 'ANSA 2026', 'Operação'],
+  },
+  {
+    id: 245,
+    front: {
+      title: '2ª e 3ª Leis de Newton: Fluidos e Suportes ⚙️',
+      subtitle: 'Como a força ($F = m \cdot a$) e o recuo afetam equipamentos mecânicos?',
+    },
+    back: {
+      body: `**2ª Lei (Princípio Fundamental da Dinâmica):**
+$$F = m \\cdot a$$
+**Na Bomba:** Para imprimir aceleração ($a$) a um fluido, a bomba deve exercer uma força ($F$). Quanto mais denso for o fluido (maior massa $m$), maior será a força exigida e, consequentemente, maior a potência consumida pelo motor elétrico.
+
+
+
+**3ª Lei (Ação e Reação):**
+Para toda força de ação, existe uma força de reação de mesmo módulo, mesma direção e sentidos opostos. As forças atuam em **corpos diferentes** (logo, não se anulam).
+**Na Tubulação:** Quando um fluido em alta pressão faz uma curva na tubulação ou é expelido por um bocal, ele exerce força sobre o tubo. A reação do tubo é o **recuo**. Por isso, tubulações industriais exigem suportes e ancoragens rígidas para não deformarem. ✅`,
+    },
+    tags: ['Física', 'Leis de Newton', 'Dinâmica', 'ANSA 2026', 'Operação'],
+  },
+  {
+    id: 246,
+    front: {
+      title: 'Eletrostática: Eletrização por Atrito no Escoamento ⚡',
+      subtitle: 'Por que o escoamento de fluidos derivados de petróleo exige aterramento?',
+    },
+    back: {
+      body: `**O Fenômeno Físico (Atrito):**
+Fluidos (gases ou líquidos) escoando em alta velocidade sofrem atrito intenso contra as paredes internas da tubulação. Esse atrito arranca elétrons, gerando **eletrização por atrito** (acúmulo de carga eletrostática).
+
+
+
+**O Risco Industrial:**
+Produtos como hidrocarbonetos possuem **baixa condutividade elétrica** (são maus condutores). A carga gerada não se dissipa facilmente. Se o equipamento/tubulação não estiver rigorosamente **aterrado**, a diferença de potencial elétrico (tensão) aumenta até romper a rigidez dielétrica do ar, gerando uma centelha (faísca). Em áreas classificadas, isso causa ignição e explosão.
+
+**Cilada Cebraspe:** A banca afirmará que fluidos líquidos não sofrem eletrização por atrito ou que, por estarem no estado líquido, não oferecem risco de centelhamento. **ERRADO.** Escoamento turbulento gera altíssima carga estática. ✅`,
+    },
+    tags: ['Física', 'Eletrostática', 'Segurança de Processo', 'ANSA 2026', 'Operação'],
+  },
+  {
+    id: 247,
+    front: {
+      title: 'Segurança: Ransomware vs. Trojan 🦠',
+      subtitle: 'Quais as palavras-chave para identificar cada um na prova?',
+    },
+    back: {
+      body: `**1. Ransomware (O Sequestrador):**
+• **Ação:** Criptografa os dados do usuário ou bloqueia o sistema.
+• **Palavras-chave Cebraspe:** "Sequestro de dados", "Criptografia", "Exigência de resgate", "Pagamento em criptomoedas (Bitcoin)".
+
+**2. Trojan / Cavalo de Troia (O Falso Presente):**
+• **Ação:** Executa funções ocultas prejudiciais enquanto parece ser um programa legítimo.
+• **Palavras-chave Cebraspe:** "Aparentemente inofensivo", "Abre portas (Backdoors)", "Instalado pelo próprio usuário enganado".
+
+**Cilada Cebraspe:** A banca afirmará que o Ransomware rouba os dados e os envia para o atacante. **ERRADO.** A principal característica do Ransomware não é a extração, mas sim a **negação de acesso** (bloqueio/criptografia) no próprio equipamento da vítima. ✅`,
+    },
+    tags: ['Informática', 'Segurança da Informação', 'Malware', 'ANSA 2026'],
+  },
+  {
+    id: 248,
+    front: {
+      title: 'Segurança: Phishing 🎣',
+      subtitle: 'Como o ataque de Phishing é executado e o que ele busca?',
+    },
+    back: {
+      body: `**O Conceito (Engenharia Social):**
+Phishing é um golpe de fraude. Não é necessariamente um software malicioso (vírus) que infecta a máquina, mas sim uma técnica de **enganação**.
+
+**A Mecânica do Ataque:**
+• Ocorre via e-mail falso, SMS ou página web falsificada (clones de sites de bancos).
+• O objetivo é "pescar" (roubar) dados sensíveis, como senhas, números de cartão de crédito e dados bancários.
+
+**Cilada Cebraspe:** A banca dirá que o Phishing infecta o firmware do computador para destruir o hardware. **ERRADO.** Phishing ataca o **usuário** (fator humano) usando persuasão e falsidade ideológica para que a própria vítima entregue seus dados. ✅`,
+    },
+    tags: ['Informática', 'Segurança da Informação', 'Phishing', 'ANSA 2026'],
+  },
+  {
+    id: 249,
+    front: {
+      title: 'Nuvem: SaaS vs. PaaS vs. IaaS ☁️',
+      subtitle: 'Qual a diferença entre os modelos de serviço em Cloud Computing?',
+    },
+    back: {
+      body: `**A Pirâmide da Nuvem (Do topo para a base):**
+
+**1. SaaS (Software as a Service):**
+• **Foco:** Usuário final. O software já está pronto para uso via navegador.
+• **Exemplos da Prova:** Google Drive, Microsoft OneDrive, Microsoft 365, Gmail.
+
+**2. PaaS (Platform as a Service):**
+• **Foco:** Desenvolvedores. Fornece um ambiente (plataforma) com sistemas operacionais e bancos de dados para criar e hospedar aplicativos.
+
+**3. IaaS (Infrastructure as a Service):**
+• **Foco:** Administradores de Redes/TI. Fornece o hardware virtualizado (servidores físicos, armazenamento, roteadores).
+
+**Gatilho Cebraspe:** Se a questão falar de "armazenamento de arquivos pelo usuário comum" (OneDrive/Google Drive), marque como **SaaS**, e não IaaS. O usuário consome o software de disco virtual, não a infraestrutura bruta. ✅`,
+    },
+    tags: ['Informática', 'Computação em Nuvem', 'SaaS', 'ANSA 2026'],
+  },
+  {
+    id: 250,
+    front: {
+      title: 'Pacote Office: A Pegadinha do SALVAR 💾',
+      subtitle: 'Qual a diferença do atalho de salvar entre o Word (PT-BR) e os navegadores?',
+    },
+    back: {
+      body: `**A Regra dos Atalhos de Idioma:**
+
+**No Microsoft Word/Excel (Português - Brasil):**
+• **Ctrl + B:** SALVAR (Salvar o documento).
+• **Ctrl + S:** SUBLINHAR.
+• **Ctrl + U:** LOCALIZAR E SUBSTITUIR.
+
+**No Windows, Navegadores e Softwares em Inglês:**
+• **Ctrl + S (Save):** SALVAR.
+• **Ctrl + F (Find):** LOCALIZAR.
+
+**Cilada Cebraspe:** A banca afirmará que para salvar um documento no Microsoft Word (versão português) o usuário deve pressionar a combinação "Ctrl + S". **ERRADO!** No Word PT-BR, Ctrl+S vai sublinhar o texto selecionado. Para salvar, exige-se **Ctrl + B**. ✅`,
+    },
+    tags: ['Informática', 'Pacote Office', 'Windows', 'Atalhos', 'ANSA 2026'],
+  },
+  {
+    id: 251,
+    front: {
+      title: 'LAI (Lei 12.527/11): Prazos de Sigilo 🏛️',
+      subtitle: 'Quais os prazos máximos de restrição de acesso para cada grau?',
+    },
+    back: {
+      body: `**A Classificação da Informação Sigilosa (Prazos Máximos):**
+
+A Lei de Acesso à Informação estabelece 3 graus de sigilo. Memorize em ordem decrescente (regra dos múltiplos de 5):
+1. **Ultrassecreto:** Prazo máximo de **25 anos**. *(Pode ser prorrogado uma única vez).*
+2. **Secreto:** Prazo máximo de **15 anos**.
+3. **Reservado:** Prazo máximo de **5 anos**.
+
+**A Regra da Transparência:**
+A regra na Administração Pública é a **Publicidade**. O sigilo é sempre a **exceção** e deve ser fundamentado por risco à segurança da sociedade ou do Estado.
+
+**Cilada Cebraspe:** A banca afirmará que documentos pessoais estão sujeitos ao prazo de classificação de 25 anos. **ERRADO.** Informações pessoais relativas à intimidade e vida privada têm restrição de acesso por **100 anos**, o que é uma regra separada da classificação de sigilo de Estado. ✅`,
+    },
+    tags: ['Legislação', 'LAI', 'Direito', 'ANSA 2026', 'Redação'],
   }
 
 
