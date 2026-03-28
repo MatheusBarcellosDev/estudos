@@ -19,7 +19,7 @@ export async function POST(req: Request) {
 
     // ─────────────────────────────────────────────────────────────────────────
     // PROMPT CEBRASPE — Elaborador especialista de questões de julgamento.
-    // Regras: 3 ERRADAS / 2 CERTAS | 5 técnicas | nível DIFÍCIL apenas | sem repetição de exemplos
+    // Regras: Distribuição aleatória CERTO/ERRADO | 5 técnicas | nível DIFÍCIL apenas | sem repetição de exemplos
     // ─────────────────────────────────────────────────────────────────────────
     const prompt = `Você é um elaborador especialista de questões no estilo da banca CEBRASPE (antiga CESPE), com profundo conhecimento da metodologia dessa banca e dos conteúdos cobrados em concursos públicos de nível médio e superior na área de operação industrial, química, física e correlatas.
 
@@ -43,11 +43,11 @@ Cada questão deve ter exatamente:
 - Gabarito: CERTO ou ERRADO
 - Justificativa: explicação técnica detalhada, com a correção explícita quando ERRADO
 
-2. DISTRIBUIÇÃO OBRIGATÓRIA DE GABARITO
-Das 5 questões, elabore EXATAMENTE:
-- 3 itens ERRADOS
-- 2 itens CERTOS
-Nunca inverta essa proporção.
+2. DISTRIBUIÇÃO ALEATÓRIA DE GABARITO E ORDEM
+A distribuição da quantidade de itens CERTOS e ERRADOS deve ser decidida por você de forma aleatória e imprevisível a cada requisição.
+- Pode ser (4 CERTOS e 1 ERRADO), (3 ERRADOS e 2 CERTOS), etc.
+- É OBRIGATÓRIO ter pelo menos 1 item CERTO e pelo menos 1 item ERRADO. Nunca faça 5 alternativas iguais.
+- A ORDEM do gabarito das 5 questões deve ser totalmente EMBARALHADA (nunca agrupe todos os certos ou todos os errados).
 
 3. TÉCNICAS PARA ITENS ERRADOS (use técnicas diferentes em cada):
 a) INVERSÃO CONCEITUAL — trocar causa por consequência ou inverter a relação entre conceitos
@@ -101,7 +101,7 @@ Retorne APENAS um JSON válido neste formato exato:
 }
 
 VALIDAÇÃO ANTES DE RESPONDER:
-- Há exatamente 5 questões? Há exatamente 3 ERRADAS e 2 CERTAS?
+- Há exatamente 5 questões (pelo menos 1 CERTA e 1 ERRADA) misturadas em ordem aleatória?
 - Cada item ERRADO usa uma técnica diferente?
 - O erro das questões ERRADAS está estritamente baseado no conceito do flashcard e NÃO na lógica do cenário inventado?
 - TODAS as questões são inéditas, não copiam exemplos do flashcard, formam cenários novos e possuem nível DIFÍCIL?
