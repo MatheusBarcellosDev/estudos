@@ -2198,7 +2198,6 @@ Como as grandezas se multiplicam, o que acontece com uma, acontece o inverso mat
   {
     id: 263,
     front: {
-      title: 'Mecânica: Trabalho vs. Energia Potencial ⚙️',
       title: 'Mecânica: Trabalho ($W$) vs. Energia Potencial ($E_p$) ⚙️',
       subtitle: 'Quais as fórmulas e por que não posso misturar Força Aplicada com Peso?',
     },
