@@ -2010,6 +2010,397 @@ A regra na Administração Pública é a **Publicidade**. O sigilo é sempre a *
 **Cilada Cebraspe:** A banca afirmará que documentos pessoais estão sujeitos ao prazo de classificação de 25 anos. **ERRADO.** Informações pessoais relativas à intimidade e vida privada têm restrição de acesso por **100 anos**, o que é uma regra separada da classificação de sigilo de Estado. ✅`,
     },
     tags: ['Legislação', 'LAI', 'Direito', 'ANSA 2026', 'Redação'],
+  },
+  {
+    id: 252,
+    front: {
+      title: 'Eletromagnetismo: Lei de Faraday 🧲',
+      subtitle: 'O que gera a Força Eletromotriz (fem) e como a velocidade afeta o resultado?',
+    },
+    back: {
+      body: `**A Lei de Faraday (A Fórmula Mestra):**
+$$\\varepsilon = - \\frac{\\Delta \\Phi}{\\Delta t}$$
+Onde:
+• **$\\varepsilon$** = Força Eletromotriz (fem) induzida (Tensão).
+• **$\\Delta \\Phi$** = Variação do fluxo magnético.
+• **$\\Delta t$** = Intervalo de tempo.
+
+**Regras Diretas para o Cebraspe:**
+1. **Condição Básica:** Para existir fem induzida, tem que haver **VARIAÇÃO** do fluxo magnético ($\\Delta \\Phi$). Ímã parado ou fluxo constante = fem ZERO.
+2. **A Velocidade (O Denominador):** A fem é **inversamente proporcional** ao tempo. 
+   - Variação **RÁPIDA** ($\\Delta t$ pequeno) ➡️ **MAIOR** fem induzida.
+   - Variação **LENTA** ($\\Delta t$ grande) ➡️ **MENOR** fem induzida.
+
+**Gabarito da Questão:** CERTO ✅.`,
+    },
+    tags: ['Física', 'Eletromagnetismo', 'Lei de Faraday', 'ANSA 2026', 'Operação'],
+  },
+  {
+    id: 253,
+    front: {
+      title: 'Instrumentação: Erro de Paralaxe 👁️',
+      subtitle: 'O que causa esse erro de leitura e qual é o ângulo correto de visão?',
+    },
+    back: {
+      body: `**A Causa do Erro:**
+Ocorre na leitura de instrumentos analógicos (ponteiros) quando o operador olha para a escala em um ângulo inclinado. Devido à distância física entre o ponteiro e o mostrador, a leitura sai errada.
+
+**A Regra da Posição (Cebraspe):**
+Para evitar a paralaxe, a linha de visão do observador deve ser estritamente **perpendicular (ângulo de 90°)** em relação à escala.
+
+**O Sistema Antifalda (A Faixa Espelhada):**
+Instrumentos de precisão possuem um espelho no fundo. A leitura só estará correta (livre de paralaxe) quando o observador alinhar a visão de forma que o ponteiro "esconda" o seu próprio reflexo.
+
+**Gabarito da Questão:** CERTO ✅.`,
+    },
+    tags: ['Instrumentação', 'Metrologia', 'Paralaxe', 'ANSA 2026', 'Operação'],
+  },
+  {
+    id: 254,
+    front: {
+      title: 'Metrologia: Resolução do Paquímetro 📏',
+      subtitle: 'Qual a fórmula exata para calcular a resolução (precisão) do instrumento?',
+    },
+    back: {
+      body: `**A Fórmula Mestra (Leitura Direta):**
+$$\\text{Resolução} = \\frac{\\text{Menor divisão da escala principal}}{\\text{Número de divisões do nônio}}$$
+
+**O Passo a Passo Matemático:**
+**1. Identifique o Numerador:** É o valor de 1 tracinho da régua fixa (Geralmente $1 \\text{ mm}$).
+**2. Identifique o Denominador:** É o total de tracinhos da régua móvel (o nônio ou vernier).
+**3. Divida:** Se o nônio tem 20 divisões, a conta é $1 \\div 20 = 0,05 \\text{ mm}$. Se tiver 50 divisões, a conta é $1 \\div 50 = 0,02 \\text{ mm}$.
+
+**O que gravar para a Prova:** A resolução é simplesmente a divisão do valor da escala fixa pela quantidade de marcas do nônio. 
+
+**Gabarito da Questão:** CERTO ✅.`,
+    },
+    tags: ['Instrumentação', 'Metrologia', 'Cálculo', 'ANSA 2026', 'Operação'],
+  },
+  {
+    id: 256,
+    front: {
+      title: 'Soluções: Fração Molar ($X$) 🧪',
+      subtitle: 'Qual a fórmula exata e quais são as duas regras matemáticas para a prova?',
+    },
+    back: {
+      body: `**A Fórmula Mestra (Proporção):**
+$$X_A = \\frac{n_A}{n_{total}}$$
+*(Onde $n_A$ é o número de mols do componente e $n_{total}$ é a soma dos mols de todos os componentes).*
+
+**As Duas Regras de Ouro (Pegadinhas do Cebraspe):**
+**1. A Soma Total:** A soma das frações molares de todos os componentes de uma mistura é **sempre igual a 1** ($X_A + X_B = 1$). 
+*Se a banca disser que a soma pode passar de 1, está ERRADO.*
+
+**2. A Grandeza Adimensional:** A fração molar **NÃO possui unidade de medida** (pois você divide mol por mol e corta as unidades). 
+*Se a banca disser que a fração molar é medida em mol/L ou g/mol, está ERRADO.*
+
+**Gabarito da Questão:** CERTO ✅.`,
+    },
+    tags: ['Química', 'Soluções', 'Cálculo', 'Fração Molar', 'ANSA 2026'],
+  },
+  {
+    id: 257,
+    front: {
+      title: 'Le Chatelier: Efeito da Pressão 🎈',
+      subtitle: 'O aumento de pressão desloca o equilíbrio independentemente dos mols?',
+    },
+    back: {
+      body: `**A Regra Matemática (Contagem Estequiométrica):**
+O efeito da pressão depende EXCLUSIVAMENTE do número de mols dos **gases** (a soma dos coeficientes balanceados de cada lado).
+
+**1. AUMENTO de Pressão ($\\uparrow P$):**
+Desloca o equilíbrio para o lado com **MENOR** número de mols de gás. (Tenta reduzir o volume).
+
+**2. REDUÇÃO de Pressão ($\\downarrow P$):**
+Desloca o equilíbrio para o lado com **MAIOR** número de mols de gás. (Tenta expandir o volume).
+
+**A Exceção (O Empate):**
+Se o número de mols de gás nos reagentes for IGUAL ao número de mols nos produtos (Ex: $2 \\text{ mols} \\rightleftharpoons 2 \\text{ mols}$), a variação de pressão **NÃO DESLOCA** o equilíbrio.
+
+**Cilada Cebraspe:** Palavras como "sempre" e "independentemente" em questões de Le Chatelier geralmente indicam erro. O deslocamento **depende** da diferença de mols!
+**Gabarito da Questão:** ERRADO ❌.`,
+    },
+    tags: ['Química', 'Físico-Química', 'Equilíbrio Químico', 'Le Chatelier', 'ANSA 2026'],
+  },
+  {
+    id: 258,
+    front: {
+      title: 'Petróleo e Motores: Gasolina vs. Diesel ⛽',
+      subtitle: 'Quais os ciclos termodinâmicos, tipos de ignição e posição na destilação?',
+    },
+    back: {
+      body: `**O Pareamento Obrigatório para a Prova:**
+
+**1. GASOLINA:**
+• **Ciclo:** OTTO.
+• **Ignição:** Por **Centelha** (precisa de faísca/vela).
+• **Destilação:** Fração mais **leve** (menor ponto de ebulição, sai mais no topo da torre).
+
+**2. DIESEL:**
+• **Ciclo:** DIESEL.
+• **Ignição:** Por **Compressão** (explode apenas pela alta pressão/temperatura, sem faísca).
+• **Destilação:** Fração mais **pesada** (maior ponto de ebulição, sai mais no fundo da torre).
+
+**Processo de Obtenção:**
+Ambos são separados do petróleo bruto primariamente pelo processo físico de **Destilação Fracionada** (baseado na diferença de pontos de ebulição).
+
+**Cilada Cebraspe:** A banca costuma inverter os conceitos, dizendo que o motor a diesel usa velas de ignição (centelha) ou que a gasolina é uma fração mais pesada. **ERRADO.** ✅`,
+    },
+    tags: ['Operações Unitárias', 'Petróleo', 'Termodinâmica', 'Motores', 'ANSA 2026', 'Operação'],
+  },
+  {
+    id: 260,
+    front: {
+      title: 'Redox na Prática: A Equação $Fe + HCl$ 🧪',
+      subtitle: 'Como provar matematicamente quem é o Agente Oxidante e o Redutor?',
+    },
+    back: {
+      body: `**A Análise do NOX (Passo a Passo):**
+Equação: $Fe + 2HCl \\rightarrow FeCl_2 + H_2$
+
+**1. O Ferro ($Fe$):**
+• Reagente: Substância simples $\\rightarrow$ **NOX = 0**.
+• Produto ($FeCl_2$): Cloro é -1 (x2 = -2), então o Fe $\\rightarrow$ **NOX = +2**.
+• **Conclusão:** De $0$ para $+2$ (Subiu). Ele **OXIDOU** (perdeu elétrons). O Fe é o **Agente Redutor**.
+
+**2. O Hidrogênio ($H$):**
+• Reagente ($HCl$): Âncora fixa $\\rightarrow$ **NOX = +1**.
+• Produto ($H_2$): Substância simples $\\rightarrow$ **NOX = 0**.
+• **Conclusão:** De $+1$ para $0$ (Desceu). Ele **REDUZIU** (ganhou elétrons). O $HCl$ é o **Agente Oxidante**.
+
+**Cilada Cebraspe:** A banca adora dizer que a substância simples (NOX 0) que virou íon positivo sofreu "redução". **ERRADO**. Zero para positivo é aumento (Oxidação). ✅`,
+    },
+    tags: ['Química', 'Oxirredução', 'Cálculo de NOX', 'ANSA 2026', 'Operação'],
+  },
+  {
+    id: 261,
+    front: {
+      title: 'Gases Ideais: Lei de Boyle (Isotérmica) 🎈',
+      subtitle: 'Qual a fórmula e a relação matemática entre Pressão e Volume?',
+    },
+    back: {
+      body: `**A Condição (A Palavra-Chave):**
+A Lei de Boyle se aplica a transformações **ISOTÉRMICAS** (Temperatura Constante).
+
+**A Fórmula Mestra:**
+$$P_1 \\cdot V_1 = P_2 \\cdot V_2$$
+
+**A Regra Matemática (Inversamente Proporcional):**
+Como as grandezas se multiplicam, o que acontece com uma, acontece o inverso matemático com a outra:
+1. **$\\uparrow$ Aumenta a Pressão** (Esmaga o gás) $\\rightarrow$ **$\\downarrow$ Diminui o Volume**.
+2. **$\\downarrow$ Diminui a Pressão** (Libera o gás) $\\rightarrow$ **$\\uparrow$ Aumenta o Volume**.
+*Exato na proporção: Dobrou ($P \\times 2$), cortou pela metade ($V \\div 2$).*
+
+**Cilada Cebraspe:** A banca afirmará que, ao dobrar a pressão de um gás a temperatura constante, seu volume também dobrará. **ERRADO.** Grandezas diretamente proporcionais são volume e temperatura (se esquenta, expande). Pressão e volume são inversos. ✅`,
+    },
+    tags: ['Físico-Química', 'Gases Ideais', 'Termodinâmica', 'Lei de Boyle', 'ANSA 2026'],
+  },
+  {
+    id: 263,
+    front: {
+      title: 'Mecânica: Trabalho vs. Energia Potencial ⚙️',
+      title: 'Mecânica: Trabalho ($W$) vs. Energia Potencial ($E_p$) ⚙️',
+      subtitle: 'Quais as fórmulas e por que não posso misturar Força Aplicada com Peso?',
+    },
+    back: {
+      body: `**1. Trabalho Mecânico ($W$):**
+Calcula a energia gasta para mover algo aplicando uma força.
+• **Fórmula:** $$W = F \\cdot d$$
+*(Força $\\times$ Distância).*
+
+**2. Energia Potencial Gravitacional ($E_p$):**
+Calcula a energia acumulada ao erguer um objeto contra a gravidade.
+• **Fórmula:** $$E_p = m \\cdot g \\cdot h$$
+*(Massa $\\times$ Gravidade $\\times$ Altura).*
+
+**A Armadilha Cebraspe (Variável Oculta):**
+A banca dará o valor da Força ($F$) horizontal e afirmará conclusões sobre a Energia Potencial vertical. **ERRADO.** A força de empurre ($F$) é diferente da Força Peso ($P = m \\cdot g$). Sem conhecer a **massa ($m$)** do objeto, é matematicamente impossível calcular a Energia Potencial, invalidando termos como "necessariamente maior/menor". ✅`,
+    },
+    tags: ['Física', 'Mecânica', 'Trabalho e Energia', 'Cálculo', 'ANSA 2026'],
+  },
+  {
+    id: 264,
+    front: {
+      title: 'Misturas: Solução, Coloide e Suspensão 🧪',
+      subtitle: 'Qual a diferença dimensional e mecânica entre elas?',
+    },
+    back: {
+      body: `**A Regra Dimensional (Tamanho da Partícula):**
+
+**1. Solução Verdadeira:**
+• Tamanho: < 1 nm.
+• Classificação: **Homogênea**.
+• Comportamento: **NÃO** sedimenta e **NÃO** pode ser filtrada.
+
+**2. Coloide:**
+• Tamanho: 1 nm a 1000 nm.
+• Classificação: **Heterogênea** (nível microscópico).
+• Comportamento: **NÃO** sedimenta por gravidade normal.
+
+**3. Suspensão:**
+• Tamanho: > 1000 nm (partículas macroscópicas).
+• Classificação: **Heterogênea**.
+• Comportamento: **Sedimenta** com o tempo (separa-se) e **PODE** ser filtrada.
+
+**A Armadilha Cebraspe:** A banca pega as características de uma Solução (homogênea, não separa) e coloca o rótulo de "Suspensão" ou "Coloide" na frente para invalidar o item. Fique atento à troca de nomes. ✅`,
+    },
+    tags: ['Química', 'Físico-Química', 'Misturas', 'ANSA 2026', 'Operação'],
+  },
+  {
+    id: 265,
+    front: {
+      title: 'Físico-Química: O Princípio da Diluição 💧',
+      subtitle: 'O que acontece matematicamente com o soluto, volume e concentração?',
+    },
+    back: {
+      body: `**A Regra da Conservação do Soluto:**
+Na operação unitária de diluição, adiciona-se **EXCLUSIVAMENTE** solvente à mistura. A massa (ou o número de mols) do soluto permanece **RIGOROSAMENTE CONSTANTE** ($m_1 = m_2$).
+
+**A Fórmula Mestra (Proporção Inversa):**
+$$C_1 \\cdot V_1 = C_2 \\cdot V_2$$
+*(Concentração Inicial $\\times$ Volume Inicial = Concentração Final $\\times$ Volume Final)*
+
+**O Comportamento das Variáveis:**
+• Quantidade de Solvente: **Aumenta** ($\\uparrow$)
+• Volume Total da Solução ($V$): **Aumenta** ($\\uparrow$)
+• Concentração da Solução ($C$): **Diminui** ($\\downarrow$)
+• Quantidade de Soluto ($m$ ou $n$): **CONSTANTE** ($\\leftrightarrow$)
+
+**Cilada Cebraspe:** A banca afirmará que a quantidade de massa ou mols do soluto diminui à medida que a solução é diluída. **ERRADO.** Diluir apenas aumenta o denominador da fórmula (o volume). ✅`,
+    },
+    tags: ['Química', 'Soluções', 'Diluição', 'ANSA 2026', 'Operação'],
+  },
+  {
+    id: 266,
+    front: {
+      title: 'Soluções: Unidades de Concentração 🧪',
+      subtitle: 'Qual a diferença exata entre g/L, g/mol e mol/L?',
+    },
+    back: {
+      body: `**A Regra da Análise Dimensional (Fórmulas vs. Unidades):**
+
+**1. Concentração Comum ($C$):**
+• **Fórmula:** $$C = \\frac{m_1}{V}$$ *(Massa $\\div$ Volume)*
+• **Unidade:** **g/L** (Gramas por Litro).
+
+**2. Concentração Molar / Molaridade ($M$):**
+• **Fórmula:** $$M = \\frac{n_1}{V}$$ *(Mols $\\div$ Volume)*
+• **Unidade:** **mol/L** (Mols por Litro).
+
+**3. Massa Molar ($MM$):**
+• **Fórmula:** $$MM = \\frac{m}{n}$$ *(Massa $\\div$ Mols)*
+• **Unidade:** **g/mol** (Gramas por Mol).
+
+**Cilada Cebraspe:** A banca dará a definição ou a fórmula perfeita de uma grandeza, mas colocará a unidade de medida de outra no final da frase. Se a fórmula usa massa e volume, a unidade **NÃO PODE** ter "mol" no meio.
+**Gabarito da Questão:** ERRADO ❌.`,
+    },
+    tags: ['Química', 'Soluções', 'Concentração', 'Unidades', 'ANSA 2026'],
+  },
+  {
+    id: 267,
+    front: {
+      title: 'Misturas e Sistemas: Contagem de Fases 👁️',
+      subtitle: 'Como classificar sistemas homogêneos e heterogêneos pela visão?',
+    },
+    back: {
+      body: `**A Regra da Fase (Aspecto Visual):**
+"Fase" é cada porção visualmente uniforme de um sistema.
+
+**1. Mistura Homogênea (Monofásica):**
+• Apresenta apenas **1 fase**. 
+• Aspecto totalmente uniforme (Ex: Água + Álcool).
+
+**2. Mistura Heterogênea (Polifásica):**
+• Apresenta **2 ou mais fases**.
+• É possível ver a separação (Ex: Água + Óleo).
+
+**A Armadilha Cebraspe (Estados Físicos):**
+A banca afirmará que um copo com água líquida e gelo é um sistema homogêneo porque só existe $H_2O$. **ERRADO.** Água e gelo formam um sistema **HETEROGÊNEO** (bifásico), pois existem duas fases visíveis (sólida e líquida), mesmo sendo uma substância pura. ✅`,
+    },
+    tags: ['Química', 'Misturas', 'Sistemas', 'Fases', 'ANSA 2026'],
+  },
+  {
+    id: 268,
+    front: {
+      title: 'Soluções: A Definição de "Aquosa" 💧',
+      subtitle: 'O que define uma solução aquosa e qual é a principal pegadinha da banca?',
+    },
+    back: {
+      body: `**A Regra Literal do Solvente:**
+Uma solução é classificada como **AQUOSA** se, e somente se, o **solvente** (a substância que dissolve) for a água ($H_2O$). 
+O estado físico ou a natureza química do soluto (sólido, líquido, gás, sal, ácido, etc.) é totalmente irrelevante para essa classificação.
+
+**O Erro de Vocabulário (A Pegadinha):**
+A palavra "aquosa" indica apenas QUEM é o solvente, e não a CONCENTRAÇÃO da mistura.
+
+**Cilada Cebraspe:** A banca afirmará que "uma solução aquosa é, por definição, uma solução diluída ou com baixa concentração de soluto". **ERRADO.** Você pode ter uma solução aquosa extremamente concentrada ou até saturada. ✅`,
+    },
+    tags: ['Química', 'Físico-Química', 'Soluções', 'Conceitos', 'ANSA 2026'],
+  },
+  {
+    id: 270,
+    front: {
+      title: 'Estequiometria: Rendimento da Reação 📉',
+      subtitle: 'Por que o rendimento experimental é sempre inferior ao cálculo teórico?',
+    },
+    back: {
+      body: `**A Separação Obrigatória para a Prova:**
+
+**1. Rendimento Teórico (100%):** O cálculo matemático perfeito de conversão total dos reagentes.
+**2. Rendimento Real / Experimental (< 100%):** A quantidade efetiva produzida na prática, que é sempre inferior devido a fatores operacionais.
+
+**Os 4 Fatores de Perda (Por que não dá 100%?):**
+• Presença de **impurezas** nos reagentes.
+• Ocorrência de **reações paralelas** ou secundárias.
+• **Perdas mecânicas** (manipulação, transferência, filtração).
+• A reação atinge o **equilíbrio químico** antes da conversão total.
+
+**Cilada Cebraspe:** A banca afirmará que perdas de rendimento significam que a Lei de Lavoisier (Conservação das Massas) foi violada. **ERRADO.** A massa não desaparece, ela apenas se converte em subprodutos indesejados ou é perdida para o ambiente. ✅`,
+    },
+    tags: ['Química', 'Estequiometria', 'Rendimento', 'Conceitos', 'ANSA 2026', 'Operação'],
+  },
+  {
+    id: 271,
+    front: {
+      title: 'Leis de Newton: 3ª Lei (Ação e Reação) 💥',
+      subtitle: 'Quais as 4 características do par de forças e por que elas nunca se anulam?',
+    },
+    back: {
+      body: `**O Checklist Obrigatório da 3ª Lei:**
+Para ser classificado como um par de Ação e Reação, as forças devem ter, simultaneamente:
+**1.** Mesma Intensidade (Valor numérico/Módulo).
+**2.** Mesma Direção (A linha de atuação: horizontal, vertical).
+**3.** Sentidos Opostos (A ponta da seta: direita/esquerda).
+**4. Atuação em CORPOS DIFERENTES.**
+
+**A Consequência Matemática (O Não-Cancelamento):**
+Como a força de Ação atua no Objeto A e a força de Reação atua no Objeto B, é fisicamente impossível somar ou subtrair os vetores. Portanto, **Forças de Ação e Reação NUNCA se anulam e NUNCA geram resultante zero**.
+
+**Cilada Cebraspe:** A banca afirmará que, por terem mesma intensidade e sentidos opostos, as forças de ação e reação se equilibram (se anulam) no mesmo corpo. **ERRADO.** Atuam em corpos distintos. ✅`,
+    },
+    tags: ['Física', 'Mecânica', 'Leis de Newton', 'ANSA 2026', 'Operação'],
+  },
+  {
+    id: 272,
+    front: {
+      title: 'Análise Dimensional: O Desmembramento do Newton (N) 📏',
+      subtitle: 'Como provar matematicamente a unidade de Força e não confundir com Movimento?',
+    },
+    back: {
+      body: `**A Prova Matemática (2ª Lei de Newton):**
+A unidade de Força deriva estritamente da equação $$F = m \\cdot a$$.
+• Massa ($m$) = **kg**
+• Aceleração ($a$) = **m/s²**
+• Logo, multiplicando as grandezas: **1 N = 1 kg·m/s²**
+
+**O Raio-X da Pegadinha (A falta do quadrado):**
+A banca removerá o expoente ² do segundo, transformando a unidade em **kg·m/s**. 
+Isso é um ERRO FATAL para Força. Sem o quadrado, a grandeza "m/s" vira Velocidade ($v$), transformando a equação na fórmula de **Quantidade de Movimento** ($Q = m \\cdot v$).
+
+**Regra para a Prova:** Viu Força (Newton), procure obrigatoriamente o "quadrado" no tempo.
+**Gabarito da Questão:** ERRADO ❌.`,
+    },
+    tags: ['Física', 'Mecânica', 'Análise Dimensional', 'ANSA 2026', 'Operação'],
   }
 
 
