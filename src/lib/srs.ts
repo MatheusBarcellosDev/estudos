@@ -143,25 +143,29 @@ export function selectSessionCards(
     }
   }
 
-  // Sort upcoming by nextReviewAt (soonest first)
-  upcomingCards.sort((a, b) => {
-    const pa = progressMap.get(a.id)?.nextReviewAt ?? "";
-    const pb = progressMap.get(b.id)?.nextReviewAt ?? "";
-    return pa.localeCompare(pb);
-  });
+  // Randomiza os novos cards antes do slice para dar chance a todos
+  const shuffledNew = shuffleArray(newCards);
 
-  // Sort due cards by most overdue first
-  dueCards.sort((a, b) => {
-    const pa = progressMap.get(a.id)?.nextReviewAt ?? "";
-    const pb = progressMap.get(b.id)?.nextReviewAt ?? "";
-    return pa.localeCompare(pb);
-  });
-
-  return [
+  // Monta a sessão e embaralha tudo para a revisão não ficar previsível
+  const session = [
     ...dueCards,
-    ...newCards.slice(0, maxNew),
+    ...shuffledNew.slice(0, maxNew),
     ...upcomingCards,
   ];
+
+  return shuffleArray(session);
+}
+
+/**
+ * Fisher-Yates array shuffle
+ */
+function shuffleArray<T>(array: T[]): T[] {
+  const arr = [...array];
+  for (let i = arr.length - 1; i > 0; i--) {
+    const j = Math.floor(Math.random() * (i + 1));
+    [arr[i], arr[j]] = [arr[j], arr[i]];
+  }
+  return arr;
 }
 
 /**
