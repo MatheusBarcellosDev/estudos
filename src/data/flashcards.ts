@@ -2400,6 +2400,241 @@ Isso é um ERRO FATAL para Força. Sem o quadrado, a grandeza "m/s" vira Velocid
 **Gabarito da Questão:** ERRADO ❌.`,
     },
     tags: ['Física', 'Mecânica', 'Análise Dimensional', 'ANSA 2026', 'Operação'],
+  },
+  {
+    id: 273,
+    front: {
+      title: 'Redação: O que são as NRs e Qual o Objetivo? 🎯',
+      subtitle: 'Como definir as NRs no parágrafo de introdução da redação?',
+    },
+    back: {
+      body: `**O Conceito Técnico (Para escrever na prova):**
+As Normas Regulamentadoras (NRs) são disposições complementares ao Capítulo V da CLT, elaboradas pelo Ministério do Trabalho e Emprego (MTE). 
+
+**Para que servem (O Objetivo Principal):**
+Elas estabelecem os parâmetros mínimos e obrigatórios de **Segurança e Saúde no Trabalho (SST)**. 
+
+**Vocabulário Cebraspe (Palavras-chave para usar no texto):**
+Em vez de escrever "evitar que o trabalhador se machuque", escreva:
+• "Mitigação de riscos ambientais."
+• "Prevenção de acidentes e doenças ocupacionais."
+• "Garantia da integridade física e psicofisiológica do colaborador."
+• "Promoção de um ambiente laboral salubre e seguro."`,
+    },
+    tags: ['Redação', 'SST', 'Normas Regulamentadoras', 'Argumentação', 'ANSA 2026'],
+  },
+  {
+    id: 274,
+    front: {
+      title: 'Redação: Responsabilidades (Empregador x Empregado) ⚖️',
+      subtitle: 'Como argumentar sobre a culpa em acidentes de trabalho?',
+    },
+    back: {
+      body: `**O Argumento para o Desenvolvimento (A Regra da CLT):**
+A aplicação das NRs é uma via de mão dupla, e o Cebraspe adora testar se você sabe disso.
+
+**1. O Dever do Empregador (A Empresa):**
+Não basta apenas entregar o equipamento. A empresa tem o dever legal de **fornecer, treinar e fiscalizar** o uso adequado das medidas de proteção.
+*Frase para a redação:* "A negligência patronal na fiscalização do cumprimento das NRs configura culpa in vigilando, passível de responsabilização civil e penal."
+
+**2. O Dever do Empregado (O Operador):**
+O trabalhador é obrigado a cumprir as ordens de segurança e usar o EPI.
+*Frase para a redação:* "A recusa injustificada do uso de Equipamentos de Proteção Individual (EPIs) ou o descumprimento das normas de segurança constitui ato faltoso, isentando o empregador de responsabilidade exclusiva."`,
+    },
+    tags: ['Redação', 'SST', 'Responsabilidade', 'Direito do Trabalho', 'ANSA 2026'],
+  },
+  {
+    id: 275,
+    front: {
+      title: 'Redação: As 3 NRs "Curingas" 🃏',
+      subtitle: 'Quais NRs memorizar para citar como exemplo em qualquer tema de segurança?',
+    },
+    back: {
+      body: `**O Argumento de Autoridade (Para enriquecer o texto):**
+Se você citar o número da NR no texto, sua nota sobe. Decore estas três, pois elas se encaixam em 90% dos temas operacionais:
+
+**1. NR-1 (Disposições Gerais e GRO/PGR):**
+• *Quando usar:* Textos sobre planejamento e gestão de riscos.
+• *O que dizer:* "A NR-1 exige a implementação do Programa de Gerenciamento de Riscos (PGR), transferindo o foco da empresa da mera reação para a **prevenção ativa**."
+
+**2. NR-6 (Equipamentos de Proteção Individual - EPI):**
+• *Quando usar:* Textos sobre acidentes físicos na operação.
+• *O que dizer:* "Conforme a NR-6, é dever da organização fornecer gratuitamente o EPI adequado ao risco, em perfeito estado de conservação e funcionamento."
+
+**3. NR-17 (Ergonomia):**
+• *Quando usar:* Textos sobre doenças do trabalho, LER/DORT, ou esgotamento.
+• *O que dizer:* "A NR-17 visa estabelecer parâmetros que permitam a adaptação das condições de trabalho às **características psicofisiológicas** dos trabalhadores, garantindo conforto e saúde."`,
+    },
+    tags: ['Redação', 'SST', 'Curingas', 'NR-1', 'NR-6', 'NR-17', 'ANSA 2026'],
+  },
+  {
+    id: 276,
+    front: {
+      title: 'Redação: Dados Estatísticos (Curingas) 📊',
+      subtitle: 'Quais porcentagens memorizar para provar seus argumentos?',
+    },
+    back: {
+      body: `**Use estes dados da AIE (Agência Internacional de Energia) e FAO:**
+• **Emissões Industriais:** O setor industrial responde por cerca de **30%** das emissões globais de Gases de Efeito Estufa (GEE).
+• **Indústria Química:** Sozinha, responde por **7%** das emissões globais.
+• **Dependência Brasileira:** O Brasil importa cerca de **85%** dos fertilizantes que consome.
+• **Guerra e Monopólio:** Rússia e Ucrânia respondem por **28%** das exportações mundiais de fertilizantes nitrogenados.
+
+**Dica de Ouro:** Iniciar um parágrafo de desenvolvimento com "Segundo a Agência Internacional de Energia..." garante a nota máxima em fundamentação.`,
+    },
+    tags: ['Redação', 'Dados Estatísticos', 'Argumentação', 'ANSA 2026'],
+  },
+  {
+    id: 277,
+    front: {
+      title: 'Redação: A Revolução da Amônia Verde 🍃',
+      subtitle: 'Qual é a principal solução tecnológica para descarbonizar a produção de fertilizantes?',
+    },
+    back: {
+      body: `**O Problema (Amônia Cinza):**
+Atualmente, a produção de amônia (base dos fertilizantes nitrogenados) depende majoritariamente da queima de **gás natural**, liberando grandes volumes de $CO_2$.
+
+**A Solução (Amônia Verde):**
+É a amônia obtida através da **eletrólise da água** utilizando fontes de **energia renovável** (eólica, solar), substituindo o gás natural por hidrogênio de baixo carbono.
+
+**Como usar no texto:** Cite como o "principal vetor de inovação e transição energética para a indústria de fertilizantes nacional".`,
+    },
+    tags: ['Redação', 'Sustentabilidade', 'Amônia Verde', 'Transição Energética', 'ANSA 2026'],
+  },
+  {
+    id: 278,
+    front: {
+      title: 'Redação: Segurança - O Acidente de Bhopal 🇮🇳',
+      subtitle: 'Qual o maior argumento histórico para justificar investimentos em segurança de processos?',
+    },
+    back: {
+      body: `**O Marco Histórico (Argumento de Autoridade):**
+O desastre de **Bhopal, na Índia (1984)**, envolvendo o vazamento de gás isocianato de metila, causou mais de 3.500 mortes e é considerado o maior desastre industrial da história.
+
+**Como usar na redação:**
+Use na **Introdução** para contextualizar o tema. 
+*Exemplo:* "Assim como o trágico acidente de Bhopal evidenciou em 1984, a negligência com a segurança de processos em plantas químicas pode gerar consequências catastróficas. De maneira análoga, no contexto atual..."`,
+    },
+    tags: ['Redação', 'Segurança de Processos', 'Repertório Histórico', 'ANSA 2026'],
+  },
+  {
+    id: 279,
+    front: {
+      title: 'Redação: Gestão de Segurança (PSM e Ferramentas) 🛡️',
+      subtitle: 'Quais os nomes técnicos das ferramentas de controle de risco industrial?',
+    },
+    back: {
+      body: `**O Sistema (PSM):**
+**Process Safety Management (Gestão de Segurança de Processos):** Conjunto estruturado de práticas para prevenir vazamentos, explosões e incêndios.
+
+**As Ferramentas de Bolso (Para citar no texto):**
+Em vez de dizer "a empresa precisa analisar os riscos", escreva:
+• "Adoção de **APR** (Análise Preliminar de Risco)."
+• "Aplicação de estudos **HAZOP** (Estudo de Perigos e Operabilidade)."
+
+**O Objetivo:** A identificação sistemática de perigos reduz erros operacionais e protege a vida humana e a integridade das instalações.`,
+    },
+    tags: ['Redação', 'Segurança de Processos', 'HAZOP', 'APR', 'ANSA 2026'],
+  },
+  {
+    id: 280,
+    front: {
+      title: 'Redação: Leis Ambientais (Curingas) ⚖️',
+      subtitle: 'Quais leis federais citar em temas de meio ambiente e poluição?',
+    },
+    back: {
+      body: `**1. Lei de Resíduos Sólidos (Lei nº 12.305/2010):**
+• **O que diz:** Toda empresa geradora de resíduos (especialmente os perigosos) tem responsabilidade legal sobre o seu gerenciamento adequado e destinação final.
+
+**2. Política Nacional sobre Mudança do Clima (Lei nº 12.187/2009):**
+• **O que diz:** Estabelece compromissos do Brasil para reduzir emissões de GEE e responsabiliza o setor produtivo por adotar práticas menos poluentes.
+
+**Dica:** Citar a lei pelo número exato demonstra alto domínio jurídico e técnico para o avaliador do Cebraspe.`,
+    },
+    tags: ['Redação', 'Legislação', 'Meio Ambiente', 'Argumentação', 'ANSA 2026'],
+  },
+  {
+    id: 281,
+    front: {
+      title: 'Redação: Padrões de Qualidade (ISO e ESG) 🌍',
+      subtitle: 'Quais certificações e conceitos modernos o mercado exige das indústrias?',
+    },
+    back: {
+      body: `**1. ISO 14.001:**
+É a norma internacional que estabelece os requisitos para **Sistemas de Gestão Ambiental (SGA)**. Exige monitoramento contínuo e redução do consumo de recursos naturais.
+
+**2. A Sigla ESG (Environmental, Social, and Governance):**
+Novo paradigma do mercado. Significa Governança Ambiental, Social e Corporativa.
+• **Como usar:** "O conceito ESG demonstra que a adoção de tecnologias limpas e economia circular deixou de ser apenas uma obrigação legal para se tornar um requisito de sobrevivência e competitividade financeira no mercado global."`,
+    },
+    tags: ['Redação', 'Gestão Ambiental', 'ISO 14001', 'ESG', 'ANSA 2026'],
+  },
+  {
+    id: 282,
+    front: {
+      title: 'Redação: Indústria 4.0 e Automação 🤖',
+      subtitle: 'Quais tecnologias citar para temas sobre modernização e eficiência?',
+    },
+    back: {
+      body: `**Vocabulário Técnico de Automação:**
+Em vez de falar "computadores", cite:
+• **CLPs** (Controladores Lógicos Programáveis).
+• **Sistemas SCADA** (Supervisão e Aquisição de Dados).
+
+**O Curinga Máximo: Digital Twin (Gêmeo Digital)**
+• **O que é:** Simulação virtual em tempo real da planta física.
+• **Para que serve:** Permite prever falhas operacionais, otimizar a produção e reduzir paradas não programadas antes mesmo que ocorram no mundo real.
+• **Vantagem:** Aumenta a segurança e reduz os erros humanos na operação.`,
+    },
+    tags: ['Redação', 'Indústria 4.0', 'Automação', 'Digital Twin', 'ANSA 2026'],
+  },
+  {
+    id: 283,
+    front: {
+      title: 'Redação: Soberania e Segurança Alimentar 🌾',
+      subtitle: 'Por que produzir fertilizantes no Brasil é uma questão de segurança nacional?',
+    },
+    back: {
+      body: `**A Relação de Causa e Efeito (Para o Desenvolvimento):**
+**1. A Força do Nitrogênio:** O fertilizante nitrogenado é o insumo que mais aumenta a produtividade (até 50% em lavouras como milho e cana).
+**2. A Vulnerabilidade Externa:** Importar 85% expõe o agronegócio (e o preço da comida no prato do brasileiro) às guerras e crises geopolíticas externas.
+**3. A Conclusão Lógica:** Investir em plantas nacionais de fertilizantes não é apenas um negócio, é garantir a **Soberania e a Segurança Alimentar** do país, protegendo as populações mais vulneráveis da fome.`,
+    },
+    tags: ['Redação', 'Fertilizantes', 'Segurança Alimentar', 'Geopolítica', 'ANSA 2026'],
+  },
+  {
+    id: 284,
+    front: {
+      title: 'Redação: Propostas de Intervenção (Ações do Governo) 🏛️',
+      subtitle: 'O que sugerir como solução pública no parágrafo de conclusão?',
+    },
+    back: {
+      body: `**Fórmula de Conclusão Cebraspe (Ação + Agente + Meio + Finalidade):**
+
+Sempre que o tema exigir uma **solução macro/governamental**, use:
+• **Agente:** O Governo Federal / Ministério do Desenvolvimento.
+• **Ação:** Promover políticas de incentivo e linhas de crédito específicas (ex: via BNDES).
+• **Meio (A partir de):** Através de Parcerias Público-Privadas (PPPs) e incentivos fiscais para transição energética.
+• **Finalidade (A fim de):** Reduzir a dependência externa (soberania) ou alcançar as metas climáticas do Acordo de Paris.`,
+    },
+    tags: ['Redação', 'Conclusão', 'Proposta de Intervenção', 'Governo', 'ANSA 2026'],
+  },
+  {
+    id: 285,
+    front: {
+      title: 'Redação: Propostas de Intervenção (Ações da Empresa) 🏭',
+      subtitle: 'O que sugerir como solução corporativa no parágrafo de conclusão?',
+    },
+    back: {
+      body: `**Fórmula de Conclusão Cebraspe (Ação + Agente + Meio + Finalidade):**
+
+Sempre que o tema exigir uma **solução interna/industrial**, use:
+• **Agente:** As indústrias químicas / Empresas do setor.
+• **Ação:** Implementar sistemas rigorosos de gestão (PSM, ISO 14001) e inventários de emissão.
+• **Meio (A partir de):** Através de treinamentos contínuos de operadores (simulações práticas), auditorias internas e adoção de tecnologias da Indústria 4.0.
+• **Finalidade (A fim de):** Mitigar riscos de acidentes, garantir a integridade das instalações e obter a licença social para operar (ESG).`,
+    },
+    tags: ['Redação', 'Conclusão', 'Proposta de Intervenção', 'Indústria', 'ANSA 2026'],
   }
 
 
