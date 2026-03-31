@@ -2635,9 +2635,597 @@ Sempre que o tema exigir uma **solução interna/industrial**, use:
 • **Finalidade (A fim de):** Mitigar riscos de acidentes, garantir a integridade das instalações e obter a licença social para operar (ESG).`,
     },
     tags: ['Redação', 'Conclusão', 'Proposta de Intervenção', 'Indústria', 'ANSA 2026'],
+  },
+  {
+    id: 286,
+    front: {
+      title: 'Crase e Regência: A Armadilha do Verbo "Garantir" 🪤',
+      subtitle: 'Por que o macete do masculino falha se aplicado errado?',
+    },
+    back: {
+      body: `**A Regra da Dupla Regência (VTDI):**
+O verbo GARANTIR exige dois complementos distintos:
+1. Garante **ALGO** (A coisa / Objeto Direto / Sem preposição).
+2. A **ALGUÉM** (A pessoa / Objeto Indireto / Com preposição "a").
+
+**Como o Cebraspe te engana:**
+Na frase *"Para garantir a segurança"*, a banca afirma que há crase. 
+Se você tentar trocar "segurança" por "homem", vai achar que fica "garantir ao homem" e vai errar. 
+
+**O Jeito Certo de Testar:**
+Troque a "coisa" feminina por uma "coisa" masculina.
+• Feminino: Garantir **A** segurança.
+• Masculino: Garantir **O** funcionamento. (E não *ao* funcionamento).
+Se no masculino deu "O", no feminino é apenas "A" (Artigo puro = **SEM CRASE**).
+
+**Gabarito da Questão:** ERRADO ❌.`,
+    },
+    tags: ['Português', 'Crase', 'Regência', 'Macetes', 'ANSA 2026'],
+  },
+  {
+    id: 287,
+    front: {
+      title: 'Sintaxe: A Armadilha do Pronome "O QUE" 🪤',
+      subtitle: 'Como encontrar o verdadeiro sujeito e não cair na pegadinha da palavra mais próxima?',
+    },
+    back: {
+      body: `**A Regra da Exclusividade (Cada verbo tem seu dono):**
+Em um período composto, você deve fazer a pergunta *"Quem é que [verbo]?"* para cada verbo individualmente. Um mesmo núcleo raramente é sujeito de dois verbos em orações diferentes sem estar claramente enumerado.
+
+**A Estrutura do "O QUE" (Resumo de Oração):**
+Em construções como *"A taxa subiu, o que demanda ação"*:
+• O termo **"O"** equivale a **"ISSO"** ou **"AQUILO"** (resume o fato inteiro: o fato da taxa ter subido).
+• O termo **"QUE"** é o pronome relativo que atua como **Sujeito** do verbo "demanda".
+
+**Cilada Cebraspe:** A banca vai escolher o substantivo mais importante da primeira oração (ex: "taxa de corrosão") e dizer que ele é o sujeito do verbo da segunda oração. **ERRADO.** O sujeito é o pronome relativo "que" (que retoma a ideia anterior inteira). ✅`,
+    },
+    tags: ['Português', 'Sintaxe', 'Concordância Verbal', 'Sujeito', 'ANSA 2026'],
+  },
+  {
+    id: 288,
+    front: {
+      title: 'Tipologia Textual: Expositivo vs. Argumentativo 📝',
+      subtitle: 'Como diferenciar relatórios técnicos de textos de opinião na prova?',
+    },
+    back: {
+      body: `**A Regra da Intenção do Autor:**
+
+**1. Dissertativo-Expositivo (O Relatório):**
+• **Objetivo:** Apenas informar, relatar dados, conceituar.
+• **Marcas:** Neutro, objetivo, baseado em fatos ou números.
+• **Textos Típicos:** Manuais, relatórios de inspeção ("Os dados revelaram..."), notícias.
+
+**2. Dissertativo-Argumentativo (O Debate):**
+• **Objetivo:** Convencer, persuadir o leitor.
+• **Marcas:** Possui uma **TESE** (opinião) defendida por argumentos. Apresenta juízo de valor.
+• **Textos Típicos:** Artigos de opinião, editoriais, redação de concurso.
+
+**Cilada Cebraspe:** A banca pegará um trecho de um manual técnico ou relatório de dados operacionais (puramente informativo) e afirmará que ele "defende uma tese" ou "busca persuadir o leitor". **ERRADO.** Textos técnicos de operação são majoritariamente expositivos (informam) ou injuntivos (dão ordens/instruções). ✅`,
+    },
+    tags: ['Português', 'Interpretação de Textos', 'Tipologia Textual', 'ANSA 2026'],
+  },
+  {
+    id: 290,
+    front: {
+      title: 'Matemática: A Fórmula de Ouro do Vértice (Achar o X ou T) 🎯',
+      subtitle: 'Qual a fórmula para achar o MOMENTO do máximo/mínimo e quem são as letras?',
+    },
+    back: {
+      body: `**A Fórmula do Radar (Eixo X ou T):**
+$$X_v = \\frac{-b}{2a}$$
+
+**Quem são as letras na equação $ax^2 + bx + c$?**
+• **$a$:** É o número grudado na letra ao quadrado (ex: $2t^2 \\rightarrow a=2$). *Lembrete: se não tiver número, vale 1 (ex: $t^2 \\rightarrow a=1$).*
+• **$b$:** É o número grudado na letra normal (ex: $-20t \\rightarrow b=-20$).
+
+**O Alerta de Perigo (A Regra dos Sinais):**
+A fórmula **EXIGE** um sinal de menos antes do $b$. 
+Se o seu $b$ já for negativo na equação (ex: $-20$), o encontro dos dois sinais negativos transforma ele em positivo na conta:
+$$t = \\frac{-(-20)}{2a} = \\mathbf{+20}$$
+
+**O que fazer com o resultado?**
+Esse número é o "horário" ou a "quantidade". Para achar o valor final (lucro máximo, pressão mínima), pegue esse resultado e substitua no lugar do $X$ (ou $t$) na equação original. ✅`,
+    },
+    tags: ['Matemática', 'Fórmula', 'Equação do 2º Grau', 'Vértice', 'ANSA 2026'],
+  },
+  {
+    id: 291,
+    front: {
+      title: 'Matemática: Regra de Três Composta Rápida ⚡',
+      subtitle: 'Como resolver sem usar setinhas e sem adivinhar números?',
+    },
+    back: {
+      body: `**A Malícia da Prova (Variável Constante):**
+Se a banca mantiver um dos valores igual nos dois cenários (ex: o mesmo tempo ou a mesma quantidade de máquinas), **IGNORE esse valor**. A conta vira uma Regra de Três Simples comum.
+
+**O Método "Causas x Efeitos" (Para quando tudo muda):**
+Abandone as setinhas de "diretamente/inversamente proporcional". Use a separação de colunas:
+
+**1. CAUSAS (Processo):** Tudo que "trabalha" (Máquinas, Homens, Dias, Horas, Velocidade).
+**2. EFEITO (Produto):** O resultado do trabalho (Peças, Unidades, Metros construídos, Lucro).
+
+**A Mecânica:**
+Coloque as Causas de um lado e o Efeito isolado do outro.
+Multiplique os valores em linha reta nas Causas, e **cruze a linha em formato de "X"** apenas na hora de multiplicar pelo Efeito. Igual os dois resultados e isole o X. ✅`,
+    },
+    tags: ['Matemática', 'Regra de Três', 'Macetes', 'Cálculo Rápido', 'ANSA 2026'],
+  },
+  {
+    id: 292,
+    front: {
+      title: 'Geometria Espacial: Volume da Esfera 🏀',
+      subtitle: 'Qual a fórmula matemática e qual o atalho para calcular sem errar a fração?',
+    },
+    back: {
+      body: `**A Fórmula Mestra:**
+O volume de um tanque esférico é dado por:
+$$V = \\frac{4}{3} \\cdot \\pi \\cdot r^3$$
+
+**A Ordem de Resolução (Para não perder tempo):**
+1. **A Potência:** Sempre resolva o raio ao cubo primeiro ($r \\cdot r \\cdot r$).
+2. **O Atalho da Fração:** Em vez de multiplicar pelo 4 para depois dividir, **divida primeiro** o resultado do raio pelo 3 do denominador. 
+3. **A Multiplicação:** Pegue o valor reduzido e multiplique por 4.
+4. **O Pi ($\\pi$):** Se a banca não mandar usar 3,14, apenas mantenha o símbolo no resultado final.
+
+**Cilada Cebraspe:** A banca tentará te induzir ao erro usando a fórmula da Área da Esfera ($4 \\cdot \\pi \\cdot r^2$) no lugar do Volume, ou esquecendo de elevar o raio ao cubo. Lembre-se: Volume tem 3 dimensões, então a fórmula tem um **3 embaixo** e um **3 no expoente**. ✅`,
+    },
+    tags: ['Matemática', 'Geometria Espacial', 'Volume', 'Esfera', 'ANSA 2026'],
+  },
+  {
+    id: 292,
+    front: {
+      title: 'Geometria Espacial: Volume da Esfera 🏀',
+      subtitle: 'Qual a fórmula matemática e qual o atalho para calcular sem errar a fração?',
+    },
+    back: {
+      body: `**A Fórmula Mestra:**
+O volume de um tanque esférico é dado por:
+$$V = \\frac{4}{3} \\cdot \\pi \\cdot r^3$$
+
+**A Ordem de Resolução (Para não perder tempo):**
+1. **A Potência:** Sempre resolva o raio ao cubo primeiro ($r \\cdot r \\cdot r$).
+2. **O Atalho da Fração:** Em vez de multiplicar pelo 4 para depois dividir, **divida primeiro** o resultado do raio pelo 3 do denominador. 
+3. **A Multiplicação:** Pegue o valor reduzido e multiplique por 4.
+4. **O Pi ($\\pi$):** Se a banca não mandar usar 3,14, apenas mantenha o símbolo no resultado final.
+
+**Cilada Cebraspe:** A banca tentará te induzir ao erro usando a fórmula da Área da Esfera ($4 \\cdot \\pi \\cdot r^2$) no lugar do Volume, ou esquecendo de elevar o raio ao cubo. Lembre-se: Volume tem 3 dimensões, então a fórmula tem um **3 embaixo** e um **3 no expoente**. ✅`,
+    },
+    tags: ['Matemática', 'Geometria Espacial', 'Volume', 'Esfera', 'ANSA 2026'],
+  },
+  {
+    id: 293,
+    front: {
+      title: 'Matemática: A.P. - Termo Geral e Soma ➕',
+      subtitle: 'Quais os dois passos para somar uma Progressão Aritmética sem fazer a conta na mão?',
+    },
+    back: {
+      body: `**O Método de 2 Passos:**
+Não decore a fórmula gigante. Quebre a questão em duas partes lógicas:
+
+**1. Ache o último termo da fila ($a_n$):**
+A fórmula dos "pulos":
+$$a_n = a_1 + (n - 1) \\cdot r$$
+*(Onde $a_1$ é o 1º termo, $n$ é a quantidade total e $r$ é a razão).*
+
+**2. Faça a Soma de Gauss ($S_n$):**
+Some o primeiro com o último, multiplique pelo total e divida por dois:
+$$S_n = \\frac{(a_1 + a_n) \\cdot n}{2}$$
+
+**O Macete de Prova:** Na fórmula da soma, tente sempre dividir o "$n$" (o número de termos) por $2$ antes de multiplicar pelo parêntese. Isso evita que você tenha que lidar com números na casa dos milhares na hora da prova. ✅`,
+    },
+    tags: ['Matemática', 'Progressão Aritmética', 'Soma', 'Fórmula', 'ANSA 2026'],
+  },
+  {
+    id: 294,
+    front: {
+      title: 'Matemática: Probabilidade (Regra do "E" vs "OU") 🎲',
+      subtitle: 'Quando eu devo multiplicar as probabilidades e quando eu devo somar?',
+    },
+    back: {
+      body: `**A Regra do "E" (Eventos Simultâneos): MULTIPLICA ($\\times$)**
+• **Quando usar:** Quando o enunciado exige que várias coisas aconteçam juntas, "simultaneamente", "consecutivamente". 
+• **Exemplo:** A Máquina A funcionar **E** a Máquina B funcionar. ($0,9 \\times 0,9 = 0,81$).
+
+**A Regra do "OU" (Eventos Alternativos): SOMA ($+$)**
+• **Quando usar:** Quando qualquer um dos resultados te atende.
+• **Exemplo:** Sortear uma bola Azul **OU** uma bola Vermelha.
+
+**O Alerta de Prova (A Prova Real):**
+Se você esquecer a regra na hora e tentar somar eventos simultâneos (ex: $0,9 + 0,9 = 1,8$), lembre-se que **NÃO EXISTE** probabilidade maior que $1$ ($100\\%$). O próprio resultado absurdo de "180%" te obriga a apagar a conta e multiplicar! ✅`,
+    },
+    tags: ['Matemática', 'Probabilidade', 'Regras', 'ANSA 2026'],
+  },
+  {
+    id: 295,
+    front: {
+      title: 'Matemática: Análise Combinatória (A Regra da Fila) 🧍‍♂️🧍‍♀️',
+      subtitle: 'Qual é a palavra-chave no enunciado que te obriga a usar o Fatorial (!)?',
+    },
+    back: {
+      body: `**O Gatilho Mental (A Regra de Ouro):**
+Sempre que o enunciado te der uma quantidade de elementos e pedir para organizar **TODOS** eles em uma **FILA**, ordem ou anagrama, a conta é puramente uma **Permutação (Fatorial)**.
+
+**A Mecânica (O que é o Fatorial?):**
+É multiplicar o número por todos os seus antecessores inteiros até chegar no 1.
+• Organizar 5 técnicos na fila = **5!**
+• Conta: $$5! = 5 \\times 4 \\times 3 \\times 2 \\times 1 = 120$$
+
+**Por que multiplicamos assim?**
+Porque as suas opções de escolha vão diminuindo a cada lugar ocupado na fila (5 opções para o 1º lugar, 4 opções para o 2º, etc.). O Princípio Multiplicativo exige que você multiplique essas opções residuais.
+
+**Cilada Cebraspe:** A banca afirmará um número menor (como 60) torcendo para que você erre a conta de cabeça ou confunda a situação com uma fórmula complexa de Arranjo. Viu a palavra "fila" envolvendo todos os elementos listados? Puxe o ponto de exclamação (!). ✅`,
+    },
+    tags: ['Matemática', 'Análise Combinatória', 'Fatorial', 'Permutação', 'ANSA 2026'],
+  },
+  {
+    id: 296,
+    front: {
+      title: 'Informática: Ecossistema Microsoft 365 💻',
+      subtitle: 'Qual a diferença exata entre SharePoint, Teams e OneDrive na prova?',
+    },
+    back: {
+      body: `**A Troca de Crachás (Pegadinha Clássica do Cebraspe):**
+A banca sempre tentará misturar as funções dos três principais aplicativos corporativos da Microsoft. Grave a "tradução" de cada um:
+
+**1. SharePoint = O Arquivo da Empresa (Intranet)**
+• **Função:** Armazenamento, gestão de documentos corporativos e criação de sites internos (intranet) para as equipes trabalharem juntas nos mesmos arquivos.
+• *Cilada:* Dizer que ele faz videoconferência.
+
+**2. Teams = A Sala de Reuniões (Comunicação)**
+• **Função:** Videoconferências, chat corporativo, chamadas de voz e integração de equipes.
+• *Cilada:* Dizer que é apenas um chat off-line.
+
+**3. OneDrive = A Mochila do Funcionário (Nuvem Pessoal)**
+• **Função:** Armazenamento em nuvem dos arquivos pessoais do usuário.
+• *Cilada:* Confundir com o SharePoint (que é focado na corporação inteira). ✅`,
+    },
+    tags: ['Informática', 'Microsoft 365', 'SharePoint', 'Teams', 'ANSA 2026'],
+  },
+  {
+    id: 297,
+    front: {
+      title: 'Soluções: Efeito da Temperatura na Solubilidade 🌡️',
+      subtitle: 'Como a temperatura afeta a dissolução de sólidos e gases na água?',
+    },
+    back: {
+      body: `**Comportamentos Opostos (A Regra do Churrasco):**
+
+**1. Para SÓLIDOS (Açúcar/Sal no líquido):**
+• **AUMENTA** com a temperatura. 
+• *Lógica:* Água quente agita as moléculas e facilita a quebra e a mistura do sólido (processo geralmente endotérmico). Ex: Achocolatado dissolve melhor no leite quente.
+
+**2. Para GASES ($O_2$ ou $CO_2$ no líquido):**
+• **DIMINUI** com o aumento da temperatura.
+• *Lógica:* O calor dá tanta energia cinética às moléculas de gás que elas conseguem "fugir" do líquido para a atmosfera. Ex: Refrigerante quente perde o gás rápido; água quente de caldeira tem menos oxigênio.
+
+**Cilada Cebraspe:** A banca dirá que o aumento da temperatura favorece a solubilidade de **qualquer** substância. **ERRADO.** Favorece sólidos, mas prejudica os gases. ✅`,
+    },
+    tags: ['Química', 'Físico-Química', 'Soluções', 'Solubilidade', 'ANSA 2026'],
+  },
+  {
+    id: 299,
+    front: {
+      title: 'Química: Síntese da Amônia e Le Chatelier ⚗️',
+      subtitle: 'Como o rendimento da amônia ($NH_3$) reage à pressão e à temperatura?',
+    },
+    back: {
+      body: `**A Regra do Equilíbrio (Processo Haber-Bosch):**
+Equação: $$N_2(g) + 3H_2(g) \\rightleftharpoons 2NH_3(g) \\quad (\\Delta H < 0)$$
+
+**1. Efeito da PRESSÃO (Lado Magro):**
+• **Ação:** Aumento da pressão.
+• **Resultado:** O equilíbrio vai para o lado com **menor** número de mols (2 mols de $NH_3$).
+• **Impacto:** Produz **MAIS** amônia. ✅
+
+**2. Efeito da TEMPERATURA (Lado Frio):**
+• **Ação:** Aumento da temperatura.
+• **Resultado:** Como a reação é exotérmica (libera calor), o sistema foge do calor e vai para o sentido inverso (endotérmico).
+• **Impacto:** Produz **MENOS** amônia (decomposição do produto). ❌
+
+**O Dilema Industrial:** Na prática, as fábricas usam pressões altíssimas para favorecer o produto e uma temperatura moderada (nem tão fria que a reação pare, nem tão quente que destrua a amônia).`,
+    },
+    tags: ['Química', 'Equilíbrio Químico', 'Le Chatelier', 'Amônia', 'ANSA 2026'],
+  },
+  {
+    id: 300,
+    front: {
+      title: 'Físico-Química: Propriedades Coligativas 💧',
+      subtitle: 'Qual é a regra de ouro das propriedades coligativas? O que importa: quantidade ou natureza?',
+    },
+    back: {
+      body: `**A Regra da Multidão:**
+Nas Propriedades Coligativas, o efeito causado no líquido depende **EXCLUSIVAMENTE do número de partículas** do soluto (a concentração), e **NÃO da sua natureza química**.
+*Exemplo prático:* Jogar 100 moléculas de açúcar ou 100 moléculas de sal na água causará exatamente o mesmo atraso no ponto de fervura, pois a quantidade de "obstáculos" é a mesma.
+
+**Quais são as 4 Propriedades Coligativas?**
+1. **Tonoscopia:** Diminui a pressão de vapor (evapora menos).
+2. **Ebulioscopia:** Aumenta o ponto de ebulição (demora mais pra ferver).
+3. **Crioscopia:** Diminui o ponto de congelamento (demora mais pra virar gelo).
+4. **Osmometria:** Aumenta a pressão osmótica (força da água para diluir o meio mais concentrado).
+
+**Cilada Cebraspe:** A banca afirmará que a pressão osmótica ou o ponto de ebulição mudam dependendo de "qual" é a substância química dissolvida. **ERRADO.** Só depende do número (quantidade) de partículas dissolvidas. ✅`,
+    },
+    tags: ['Química', 'Físico-Química', 'Soluções', 'Propriedades Coligativas', 'Osmose', 'ANSA 2026'],
+  },
+  {
+    id: 301,
+    front: {
+      title: 'Termoquímica: Lei de Hess 🏔️',
+      subtitle: 'O que a Lei de Hess diz sobre o caminho de uma reação e a sua entalpia ($\\Delta H$)?',
+    },
+    back: {
+      body: `**A Regra do Elevador (Lei de Hess):**
+A variação de energia ($\\Delta H$) de uma reação química depende **APENAS** do estado inicial (reagentes) e do estado final (produtos). 
+Ela é totalmente **INDEPENDENTE** do caminho percorrido (seja em 1 etapa ou em 10 etapas).
+
+**Para que serve na prática?**
+Como a entalpia é uma "função de estado" (só liga para o início e o fim), nós podemos usar a Lei de Hess para calcular o $\\Delta H$ de reações difíceis, perigosas ou impossíveis de medir no laboratório.
+*Como?* Somando e subtraindo equações matemáticas de reações menores conhecidas até chegarmos na reação principal.
+
+**Cilada Cebraspe:** A banca afirmará que se uma reação for dividida em várias etapas, a energia total será diferente ou maior do que a reação direta. **ERRADO.** O $\\Delta H$ global será exatamente a soma dos $\\Delta H$ das etapas, mantendo a energia final igual. ✅`,
+    },
+    tags: ['Química', 'Físico-Química', 'Termoquímica', 'Lei de Hess', 'ANSA 2026'],
+  },
+  {
+    id: 302,
+    front: {
+      title: 'Física: Linhas de Campo Elétrico ⚡',
+      subtitle: 'Para onde apontam as setas do campo em cargas positivas e negativas?',
+    },
+    back: {
+      body: `**A Regra Visual (Chafariz e Ralo):**
+
+**1. Carga POSITIVA ($+$):**
+• Pense em um **Chafariz**.
+• O campo elétrico é de **AFASTAMENTO**.
+• As setas apontam para **FORA** da carga, em todas as direções.
+
+**2. Carga NEGATIVA ($-$):**
+• Pense em um **Ralo**.
+• O campo elétrico é de **APROXIMAÇÃO**.
+• As setas apontam para **DENTRO** (em direção à carga).
+
+**O Porquê (A Carga de Prova):**
+Essa convenção existe porque o sentido do campo é o mesmo sentido da força que atuaria sobre uma pequena carga de teste *positiva* (que seria repelida pela carga $+$ e atraída pela carga $-$). ✅`,
+    },
+    tags: ['Física', 'Eletromagnetismo', 'Campo Elétrico', 'Cargas', 'ANSA 2026'],
+  },
+  {
+    id: 303,
+    front: {
+      title: 'Eletricidade: 2ª Lei de Ohm (Resistência dos Fios) 🔌',
+      subtitle: 'O que acontece com a resistência elétrica se o fio for muito LONGO e muito FINO?',
+    },
+    back: {
+      body: `**A Regra do Corredor Lotado:**
+A resistência elétrica ($R$) é a dificuldade que os elétrons encontram para atravessar um material. 
+Fórmula: $$R = \\rho \\frac{L}{A}$$
+
+**1. Comprimento do Fio ($L$): DIRETAMENTE Proporcional**
+• Fio mais **LONGO** = Caminho maior, mais colisões com átomos = **MAIOR Resistência**.
+• Fio mais **CURTO** = Caminho rápido = **MENOR Resistência**.
+
+**2. Grossura / Área do Fio ($A$): INVERSAMENTE Proporcional**
+• Fio mais **FINO** = Gargalo, os elétrons se espremem = **MAIOR Resistência**.
+• Fio mais **GROSSO** = Avenida larga, passa todo mundo fácil = **MENOR Resistência**.
+
+**Cilada Cebraspe:** A banca afirmará que aumentar o comprimento do fio facilita a passagem da corrente (diminui a resistência). **ERRADO.** Um fio mais longo e mais fino é o "pior cenário" para os elétrons, gerando a maior resistência possível. ✅`,
+    },
+    tags: ['Física', 'Eletricidade', 'Resistência', '2ª Lei de Ohm', 'ANSA 2026'],
+  },
+  {
+    id: 306,
+    front: {
+      title: 'Eletricidade: Frequência da Rede Elétrica (CA) no Brasil 🇧🇷',
+      subtitle: 'Qual é a frequência padrão da Corrente Alternada no Brasil e como ela se compara aos EUA e Europa?',
+    },
+    back: {
+      body: `**O Padrão Brasileiro:**
+A frequência da rede elétrica no Brasil é de **60 Hz** (Hertz).
+
+**Comparação com o Mundo:**
+• **60 Hz:** Brasil, Estados Unidos, Canadá e alguns outros países das Américas.
+• **50 Hz:** Europa, Ásia, África e países vizinhos ao Brasil (Argentina, Paraguai, Uruguai).
+
+**O Macete da Usina de Itaipu:**
+A Usina de Itaipu gera nas duas frequências. Metade das turbinas gera em 50 Hz para o Paraguai, e a outra metade gera em **60 Hz para o Brasil**.
+
+**Cilada Cebraspe:** A banca tentará afirmar que o Brasil usa 50 Hz ou que nosso padrão é diferente do padrão norte-americano. **ERRADO.** Nós e os EUA usamos os mesmos 60 Hz. ✅`,
+    },
+    tags: ['Física', 'Eletricidade', 'Corrente Alternada', 'Frequência', 'ANSA 2026'],
+  },
+  {
+    id: 307,
+    front: {
+      title: 'Instrumentação: Termopar e Efeito Seebeck 🌡️⚡',
+      subtitle: 'O que é um Termopar e como o Efeito Seebeck mede a temperatura?',
+    },
+    back: {
+      body: `**O que é um Termopar?**
+É um sensor de temperatura industrial extremamente robusto, feito pela união de **dois metais DIFERENTES** soldados em uma das pontas.
+
+**O Efeito Seebeck (A Teoria):**
+Quando existe uma diferença de temperatura ($\\Delta T$) entre a ponta que está no forno (junção quente) e a ponta que está no painel (junção fria), essa diferença de calor excita os elétrons dos metais de forma desigual. 
+
+**O Resultado:**
+Isso gera uma **Força Eletromotriz / Tensão (Voltagem)**. 
+A voltagem gerada é diretamente proporcional à diferença de temperatura. O aparelho lê os "milivolts" e converte o valor para Graus Celsius.
+
+**Cilada Cebraspe:** A banca pode tentar dizer que o termopar precisa ser ligado na tomada para injetar energia no forno, ou que ele é feito de metais iguais. **ERRADO.** Ele mesmo *Gera* a sua própria mini-energia (tensão) a partir do calor, e os metais precisam ser obrigatoriamente diferentes. ✅`,
+    },
+    tags: ['Física', 'Instrumentação', 'Termopar', 'Efeito Seebeck', 'ANSA 2026'],
+  },
+  {
+    id: 308,
+    front: {
+      title: 'Instrumentação: Manômetro de Bourdon ⏱️',
+      subtitle: 'O que esse instrumento mede e qual é o seu princípio físico de funcionamento?',
+    },
+    back: {
+      body: `**O que ele mede?**
+Mede **PRESSÃO** (Lembre-se: Manômetro = Pressão / Termômetro = Temperatura).
+
+**O Princípio de Funcionamento (A "Língua de Sogra"):**
+Ele **NÃO** usa líquidos que se dilatam. O funcionamento é puramente mecânico.
+Possui um tubo metálico achatado e curvado em formato de "C" (Tubo de Bourdon). Quando o fluido (ar, gás, água) entra com pressão, o tubo tenta se "desentortar" (esticar). Esse movimento mecânico de expansão puxa uma engrenagem que gira o ponteiro no mostrador.
+
+**Cilada Cebraspe:** A banca afirmará que ele mede temperatura, ou que ele funciona através da dilatação térmica de um líquido em um vidro. **ERRADO.** Ele mede pressão através da deformação mecânica elástica de um tubo de metal. ✅`,
+    },
+    tags: ['Física', 'Instrumentação', 'Manômetro', 'Tubo de Bourdon', 'Pressão', 'ANSA 2026'],
+  },
+  {
+    id: 309,
+    front: {
+      title: 'Química/Física: Lei de Dalton das Pressões Parciais 🎈',
+      subtitle: 'O que acontece com a pressão de um tanque quando misturamos vários gases diferentes?',
+    },
+    back: {
+      body: `**A Regra dos Gases Antissociais:**
+Em uma mistura de gases ideais, um gás não interage com o outro. Cada um faz a sua própria força contra a parede do tanque como se estivesse sozinho lá dentro.
+
+**A Fórmula da Lei de Dalton:**
+A pressão total do recipiente é simplesmente a **SOMA** das pressões parciais de cada gás.
+$$P_{total} = P_1 + P_2 + P_3 ...$$
+
+**O que é "Pressão Parcial"?**
+É a pressão que aquele gás específico exerceria se estivesse ocupando todo o volume do tanque **sozinho**, na mesma temperatura.
+
+**Cilada Cebraspe:** A banca afirmará que a pressão total é uma média das pressões, ou que um gás diminui a pressão do outro porque eles "competem" por espaço. **ERRADO.** Os gases ideais não competem, as pressões apenas se somam. ✅`,
+    },
+    tags: ['Química', 'Física', 'Gases Ideais', 'Lei de Dalton', 'Pressão', 'ANSA 2026'],
+  },
+  {
+    id: 310,
+    front: {
+      title: 'Química: Produto de Solubilidade ($K_{ps}$) 🧂',
+      subtitle: 'O que o valor do $K_{ps}$ nos diz sobre a capacidade de um sal se dissolver na água?',
+    },
+    back: {
+      body: `**A Regra da Lotação da Balada:**
+O $K_{ps}$ (Produto de Solubilidade) é um número que indica o "limite máximo" de pó que a água consegue dissolver antes de começar a sobrar resto no fundo do copo (precipitar).
+
+**A Relação Direta:**
+• **$K_{ps}$ MENOR (Baixo):** O limite é pequeno. O sal é **MENOS solúvel**. Ele empedra e vai para o fundo do copo muito rápido. (Ex: Giz na água).
+• **$K_{ps}$ MAIOR (Alto):** O limite é grande. O sal é **MAIS solúvel**. A água aceita dissolver muita quantidade. (Ex: Sal de cozinha).
+
+**Cilada Cebraspe:** A banca afirmará de forma invertida que sais com $K_{ps}$ muito baixos são altamente solúveis e não formam corpo de fundo (precipitado). **ERRADO.** $K_{ps}$ baixo significa que ele é péssimo de dissolver. ✅`,
+    },
+    tags: ['Química', 'Físico-Química', 'Equilíbrio Químico', 'Solubilidade', 'Kps', 'ANSA 2026'],
+  },
+  {
+    id: 311,
+    front: {
+      title: 'Química Orgânica: Reação de Saponificação 🧼',
+      subtitle: 'Qual é a "receita química" para a fabricação industrial de sabão?',
+    },
+    back: {
+      body: `**A Tradução da Receita Caseira:**
+A saponificação é simplesmente o ato de fabricar sabão misturando gordura com soda cáustica.
+
+**A Equação Química (O que a banca cobra):**
+• **Éster** (Óleo / Gordura / Triglicerídeo) 
+• **+ Meio Alcalino** (Base Forte, ex: Soda Cáustica / $NaOH$)
+• **$\\rightarrow$ Sal de Ácido Carboxílico** (O próprio Sabão)
+• **+ Álcool** (A Glicerina / Glicerol que sobra)
+
+**Resumo da Reação:**
+$$Éster + Base \\rightarrow Sal \\, Orgânico + Álcool$$
+
+**Cilada Cebraspe:** A banca tentará afirmar que a saponificação produz um ácido (e não um sal) ou que ela ocorre em meio ácido (e não alcalino/básico). **ERRADO.** Sabão precisa de soda (base) e o resultado é um sal orgânico. ✅`,
+    },
+    tags: ['Química', 'Química Orgânica', 'Saponificação', 'Ésteres', 'Sabão', 'ANSA 2026'],
+  },
+  {
+    id: 313,
+    front: {
+      title: 'Física/Termologia: Escalas Termométricas (°C e °F) 🌡️',
+      subtitle: 'Qual é a fórmula de conversão entre Celsius e Fahrenheit e como resolver a conta rápido?',
+    },
+    back: {
+      body: `**A Fórmula de Ouro:**
+$$\\frac{C}{5} = \\frac{F - 32}{9}$$
+
+**O Passo a Passo para não errar a matemática:**
+1. Subtraia 32 do valor em Fahrenheit primeiro.
+2. Pegue o resultado e **divida por 9**.
+3. Pegue esse novo resultado e **multiplique por 5**.
+
+*Exemplo Prático (68 °F para °C):*
+• $68 - 32 = 36$
+• $36 \\div 9 = 4$
+• $4 \\times 5 = 20 \\, ^\\circ C$
+
+**Os 3 Pontos Cardeais para Memorizar:**
+• Congelamento da Água: **0 °C** = **32 °F**
+• Temperatura Ambiente: **20 °C** = **68 °F**
+• Fervura da Água: **100 °C** = **212 °F** ✅`,
+    },
+    tags: ['Física', 'Termologia', 'Escalas de Temperatura', 'Celsius', 'Fahrenheit', 'ANSA 2026'],
+  },
+  {
+    id: 314,
+    front: {
+      title: 'Física: Energia Potencial Elástica (A Fórmula da Mola) 📏',
+      subtitle: 'Como calcular a energia armazenada em uma mola quando ela é esticada ou comprimida?',
+    },
+    back: {
+      body: `**A Fórmula da Mola:**
+$$E_{pe} = \\frac{k \\cdot x^2}{2}$$
+
+**O que significa cada letra?**
+• **$E_{pe}$**: Energia Potencial Elástica (medida em Joules - J).
+• **$k$**: Constante Elástica (A "dureza" da mola. Medida em N/m).
+• **$x$**: Deformação (O quanto a mola foi esticada ou apertada. Sempre use em Metros!).
+
+**A Pegadinha Matemática (Decimais ao quadrado):**
+O Cebraspe adora dar o valor de $x$ em decimais (ex: $0,1$ m). Não esqueça que a fórmula exige elevar o $x$ ao quadrado **PRIMEIRO** antes de multiplicar pelo $k$.
+• Cuidado: $0,1^2 = 0,01$ (e não 0,2 ou 0,1). ✅`,
+    },
+    tags: ['Física', 'Mecânica', 'Energia', 'Potencial Elástica', 'Molas', 'ANSA 2026'],
+  },
+  {
+    id: 315,
+    front: {
+      title: 'Física/Hidrostática: Pressão Absoluta vs. Manométrica 🌊',
+      subtitle: 'Qual é a diferença entre essas duas medições e qual a fórmula que as une?',
+    },
+    back: {
+      body: `**A Diferença de Referência:**
+
+**1. Pressão Manométrica ($P_{man}$):** É a pressão medida em relação à atmosfera local. O "zero" do aparelho é o ar que nos rodeia. É a pressão "relativa".
+
+**2. Pressão Absoluta ($P_{abs}$):** É a pressão total real. O "zero" dela é o vácuo absoluto. Ela soma a pressão do fluido com a pressão do ar.
+
+**A Fórmula Definitiva:**
+$$P_{abs} = P_{man} + P_{atm}$$
+
+**Exemplo prático:** Se um pneu marca 30 psi no manômetro ($P_{man}$), a pressão absoluta lá dentro é 30 + 14,7 (atmosfera) = 44,7 psi.
+
+**Cilada Cebraspe:** A banca afirmará que elas são iguais ou que a absoluta ignora a atmosfera. **ERRADO.** A absoluta é sempre MAIOR que a manométrica (em ambientes com atmosfera), pois ela é a soma de tudo. ✅`,
+    },
+    tags: ['Física', 'Hidrostática', 'Pressão', 'Manômetro', 'ANSA 2026'],
+  },
+  {
+    id: 316,
+    front: {
+      title: 'Operações Unitárias: Destilação por Arraste de Vapor 🌿💨',
+      subtitle: 'Para que serve e por que ela ocorre em temperaturas baixas?',
+    },
+    back: {
+      body: `**O Objetivo (Proteção Térmica):**
+Serve para separar substâncias com **alto ponto de ebulição** que são sensíveis ao calor (se decomporiam se fossem fervidas sozinhas). Muito usada para extrair **óleos essenciais**.
+
+**O Princípio Físico (Lei de Dalton):**
+Como o vapor d'água e o óleo são imiscíveis, as suas pressões de vapor se **somam**.
+• **Resultado:** A mistura entra em ebulição a uma temperatura **INFERIOR a 100 °C** (menor que o ponto de ebulição da água pura).
+
+**Vantagem Industrial:**
+Permite "arrastar" o óleo para fora da planta sem precisar fritar ou queimar a substância original.
+
+**Cilada Cebraspe:** A banca afirmará que a temperatura precisa ser superior a 100 °C para o vapor funcionar. **ERRADO.** A grande vantagem é justamente ocorrer abaixo dos 100 °C para não estragar o produto. ✅`,
+    },
+    tags: ['Química', 'Operações Unitárias', 'Destilação', 'Arraste de Vapor', 'ANSA 2026'],
   }
-
-
 
 
 
