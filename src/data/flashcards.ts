@@ -3279,22 +3279,29 @@ export const mapaDeMaterias: Record<string, string[]> = {
   "Direito, Informática e Redação": [
     "Direito Constitucional", "Direito do Trabalho", "Constituição", "Direito",
     "Direitos do Titular", "Informática", "LGPD", "Redes", "IP", "Internet", "Dados",
-    "Agronegócio", "Fertilizantes", "OIT", "Redação", "ANSA", "ANSA 2026"
+    "Agronegócio", "Fertilizantes", "OIT", "Redação", "LAI", "Legislação",
+    "Segurança da Informação", "Malware", "Phishing", "Computação em Nuvem",
+    "SaaS", "Pacote Office", "Windows", "Atalhos"
   ]
 };
 
 export function getSubjectForCard(card: Flashcard): string {
   if (!card.tags || card.tags.length === 0) return "Outros";
 
-  for (const tag of card.tags) {
-    for (const [subject, tags] of Object.entries(mapaDeMaterias)) {
-      if (tags.includes(tag)) {
-        return subject;
-      }
+  // Count how many of the card's tags match each subject.
+  // The subject with the most matching tags wins (best-match scoring).
+  let bestSubject = "Outros";
+  let bestScore = 0;
+
+  for (const [subject, subjectTags] of Object.entries(mapaDeMaterias)) {
+    const score = card.tags.filter((t) => subjectTags.includes(t)).length;
+    if (score > bestScore) {
+      bestScore = score;
+      bestSubject = subject;
     }
   }
 
-  return "Outros";
+  return bestSubject;
 }
 
 export const SUBJECT_LIST = Object.keys(mapaDeMaterias).concat(["Outros"]);
