@@ -1,6 +1,6 @@
 "use client";
 
-import { useState, useMemo } from "react";
+import { useState, useMemo, useRef, useEffect } from "react";
 import { motion, AnimatePresence } from "framer-motion";
 import FlashcardCard from "@/components/FlashcardCard";
 import Quiz from "@/components/Quiz";
@@ -13,14 +13,13 @@ import {
   BrainCircuit,
   RotateCcw,
   Trophy,
-  Clock,
   Sparkles,
   BookOpen,
+  RotateCw,
 } from "lucide-react";
 import Link from "next/link";
 import { Question, QuizResult } from "@/types";
-import { useFlashcardProgress } from "@/lib/useFlashcardProgress";
-import { DifficultyRating, getNextReviewLabel } from "@/lib/srs";
+import { useSimpleMastery } from "@/lib/useSimpleMastery";
 
 type PageState = "SELECT_SUBJECT" | "REVIEW" | "QUIZ" | "RESULTS";
 
@@ -28,8 +27,6 @@ type PageState = "SELECT_SUBJECT" | "REVIEW" | "QUIZ" | "RESULTS";
 function cardBackToText(body: string): string {
   return body.replace(/\*\*/g, "").replace(/\*/g, "").trim();
 }
-
-
 
 export default function FlashcardsPage() {
   const [pageState, setPageState] = useState<PageState>("SELECT_SUBJECT");
@@ -40,49 +37,50 @@ export default function FlashcardsPage() {
     return flashcards.filter((c) => getSubjectForCard(c) === selectedSubject);
   }, [selectedSubject]);
 
-  const { sessionDeck, allProgress, getProgress, rateCard, stats, resetProgress, refreshSession } =
-    useFlashcardProgress(filteredFlashcards);
+  const { deck, masteredCount, markMastered, restoreAll, reshuffleDeck } =
+    useSimpleMastery(filteredFlashcards);
 
   const [currentIdx, setCurrentIdx] = useState(0);
   const [direction, setDirection] = useState(1);
-  const [isFlipped, setIsFlipped] = useState(false); // card was flipped
+  const [isFlipped, setIsFlipped] = useState(false);
 
   // Quiz state
   const [questions, setQuestions] = useState<Question[]>([]);
   const [results, setResults] = useState<QuizResult[]>([]);
   const [isLoadingQuestions, setIsLoadingQuestions] = useState(false);
 
-  // Derived
-  const card = sessionDeck[currentIdx] ?? sessionDeck[0];
+  // Re-shuffle when entering a subject
+  const prevSubject = useRef<string | null>(null);
+  useEffect(() => {
+    if (selectedSubject && selectedSubject !== prevSubject.current) {
+      reshuffleDeck();
+      setCurrentIdx(0);
+      prevSubject.current = selectedSubject;
+    }
+  }, [selectedSubject, reshuffleDeck]);
 
-  // Subject Stats
+  // Subject stats for the select screen
   const subjectStats = useMemo(() => {
+    // We need to read mastered state — but useSimpleMastery is per-subject.
+    // For the grid we'll load mastered IDs directly from localStorage.
+    let masteredSet: Set<number> = new Set();
+    try {
+      const raw = localStorage.getItem("mastered_cards_v2");
+      if (raw) masteredSet = new Set(JSON.parse(raw) as number[]);
+    } catch {}
+
     return SUBJECT_LIST.map((subject) => {
       const subjectCards = flashcards.filter((c) => getSubjectForCard(c) === subject);
       if (subjectCards.length === 0) return null;
-
-      const subjectProgress = allProgress.filter((p) =>
-        subjectCards.some((c) => c.id === p.flashcardId)
-      );
-
-      const mastered = subjectProgress.filter(
-        (p) => p.difficultyLevel === "facil" || p.streak >= 2
-      ).length;
-
-      const due = subjectProgress.filter(
-        (p) => !p.isNew && p.nextReviewAt && new Date(p.nextReviewAt) <= new Date()
-      ).length;
-      
-      const newCards = subjectCards.length - subjectProgress.filter((p) => !p.isNew).length;
-
-      return {
-        subject,
-        total: subjectCards.length,
-        mastered,
-        actionable: due + newCards,
-      };
+      const mastered = subjectCards.filter((c) => masteredSet.has(c.id)).length;
+      const remaining = subjectCards.length - mastered;
+      return { subject, total: subjectCards.length, mastered, remaining };
     }).filter(Boolean);
-  }, [allProgress]);
+  }, [pageState]); // re-compute when returning to SELECT_SUBJECT
+
+  // Derived
+  const card = deck[currentIdx] ?? deck[0];
+  const isLastCard = currentIdx >= deck.length - 1;
 
   // ── Handlers ────────────────────────────────────────────────────────────────
 
@@ -94,13 +92,12 @@ export default function FlashcardsPage() {
     setResults([]);
     setIsFlipped(false);
 
-    if (currentIdx < sessionDeck.length - 1) {
+    if (currentIdx < deck.length - 1) {
       setDirection(1);
       setCurrentIdx((i) => i + 1);
     } else {
-      // session complete — restart from top (deck will be re-ordered by SRS)
+      // Wrap to beginning
       setCurrentIdx(0);
-      refreshSession();
     }
   };
 
@@ -111,7 +108,7 @@ export default function FlashcardsPage() {
     setQuestions([]);
     setResults([]);
     setIsFlipped(false);
-    refreshSession();
+    reshuffleDeck();
   };
 
   // ── Question Generation ────────────────────────────────────────────────────
@@ -152,22 +149,14 @@ export default function FlashcardsPage() {
     setResults(finalResults);
     setPageState("RESULTS");
 
-    // Auto-rate based on quiz score
+    // Mark as mastered if 100%
     if (card && finalResults.length > 0) {
       const correctAnswers = finalResults.filter((r) => r.isCorrect).length;
-      const percentage = correctAnswers / finalResults.length;
-
-      let autoRating: DifficultyRating = "errei";
-      if (percentage === 1) autoRating = "facil";           // 100% (5/5)
-      else if (percentage >= 0.8) autoRating = "medio";      // 80% (4/5)
-      else if (percentage >= 0.4) autoRating = "dificil";    // 40-60% (2-3/5)
-      else autoRating = "errei";                            // 0-20% (0-1/5)
-
-      rateCard(card.id, autoRating);
+      if (correctAnswers === finalResults.length) {
+        markMastered(card.id);
+      }
     }
   };
-
-  const isLastCard = currentIdx >= sessionDeck.length - 1;
 
   // ── UI ────────────────────────────────────────────────────────────────────
 
@@ -182,6 +171,7 @@ export default function FlashcardsPage() {
               e.preventDefault();
               setPageState("SELECT_SUBJECT");
               setSelectedSubject(null);
+              prevSubject.current = null;
             }
           }}>
             <Button variant="ghost" className="gap-2 rounded-2xl px-3">
@@ -192,17 +182,24 @@ export default function FlashcardsPage() {
           <div className="flex items-center gap-2">
             <Layers className="w-5 h-5 text-primary" />
             <span className="font-bold text-lg text-center leading-tight">
-              {pageState === "SELECT_SUBJECT" ? "Flashcards SRS" : selectedSubject}
+              {pageState === "SELECT_SUBJECT" ? "Flashcards" : selectedSubject}
             </span>
           </div>
-          <Button
-            variant="ghost"
-            onClick={resetProgress}
-            className="gap-2 rounded-2xl px-3 text-muted-foreground"
-            title="Resetar progresso"
-          >
-            <RotateCcw className="w-4 h-4" />
-          </Button>
+          {/* Restore mastered button (only inside a subject) */}
+          {pageState !== "SELECT_SUBJECT" && masteredCount > 0 && (
+            <Button
+              variant="ghost"
+              onClick={restoreAll}
+              className="gap-2 rounded-2xl px-3 text-muted-foreground text-xs"
+              title="Restaurar cards dominados"
+            >
+              <RotateCw className="w-4 h-4" />
+              Restaurar ({masteredCount})
+            </Button>
+          )}
+          {pageState === "SELECT_SUBJECT" && (
+            <div className="w-20" /> /* Spacer to keep title centered */
+          )}
         </div>
 
         {/* ── SUBJECT SELECTION STATE ── */}
@@ -211,7 +208,7 @@ export default function FlashcardsPage() {
             <div className="mb-2">
               <h2 className="text-xl font-bold">Escolha a Matéria</h2>
               <p className="text-sm text-muted-foreground mt-1">
-                Foque seus estudos onde você mais precisa. O SRS cuidará do resto.
+                Cards embaralhados a cada entrada. Gabarite um card para dominá-lo.
               </p>
             </div>
 
@@ -225,7 +222,6 @@ export default function FlashcardsPage() {
                       setSelectedSubject(item.subject);
                       setCurrentIdx(0);
                       setPageState("REVIEW");
-                      refreshSession(); // Force a fresh deck for the new subject
                     }}
                     className="flex flex-col text-left bg-white dark:bg-neutral-900 border rounded-3xl p-5 shadow-sm hover:shadow-md hover:border-primary/50 transition-all group"
                   >
@@ -254,12 +250,18 @@ export default function FlashcardsPage() {
                       </div>
                     </div>
 
-                    {item.actionable > 0 && (
-                      <div className="mt-4 flex items-center gap-1.5 text-xs font-semibold text-amber-600 dark:text-amber-500 bg-amber-50 dark:bg-amber-500/10 self-start px-2 py-1 rounded-md">
-                        <Clock className="w-3.5 h-3.5" />
-                        {item.actionable} para revisar/aprender
+                    <div className="mt-4 flex items-center gap-3">
+                      <div className="flex items-center gap-1.5 text-xs font-semibold text-blue-600 dark:text-blue-400 bg-blue-50 dark:bg-blue-500/10 px-2 py-1 rounded-md">
+                        <BookOpen className="w-3.5 h-3.5" />
+                        {item.remaining} restantes
                       </div>
-                    )}
+                      {item.mastered > 0 && (
+                        <div className="flex items-center gap-1.5 text-xs font-semibold text-emerald-600 dark:text-emerald-400 bg-emerald-50 dark:bg-emerald-500/10 px-2 py-1 rounded-md">
+                          <Trophy className="w-3.5 h-3.5" />
+                          {item.mastered} dominados
+                        </div>
+                      )}
+                    </div>
                   </button>
                 );
               })}
@@ -267,60 +269,40 @@ export default function FlashcardsPage() {
           </div>
         )}
 
-        {/* ── SRS Stats Bar ── */}
-        {pageState !== "SELECT_SUBJECT" && (
-          <div className="grid grid-cols-4 gap-2 mb-5">
-          <StatChip
-            icon={<Clock className="w-3.5 h-3.5" />}
-            value={stats.due}
-            label="Vencer hoje"
-            color="text-red-500"
-            bg="bg-red-50 dark:bg-red-950/30"
-          />
-          <StatChip
-            icon={<Sparkles className="w-3.5 h-3.5" />}
-            value={stats.newToday}
-            label="Novos"
-            color="text-blue-500"
-            bg="bg-blue-50 dark:bg-blue-950/30"
-          />
-          <StatChip
-            icon={<BookOpen className="w-3.5 h-3.5" />}
-            value={stats.learning}
-            label="Aprendendo"
-            color="text-amber-500"
-            bg="bg-amber-50 dark:bg-amber-950/30"
-          />
-          <StatChip
-            icon={<Trophy className="w-3.5 h-3.5" />}
-            value={stats.mastered}
-            label="Dominados"
-            color="text-emerald-500"
-            bg="bg-emerald-50 dark:bg-emerald-950/30"
-          />
-        </div>
-        )}
-
-        {/* ── Progress bar (REVIEW mode) ── */}
-        {pageState === "REVIEW" && (
+        {/* ── Counter bar (inside a subject) ── */}
+        {pageState === "REVIEW" && deck.length > 0 && (
           <div className="flex items-center justify-between mb-4 px-1">
             <span className="text-xs font-medium text-muted-foreground">
-              {currentIdx + 1} / {sessionDeck.length}
+              {currentIdx + 1} / {deck.length}
             </span>
             <div className="flex-1 mx-3 h-1.5 bg-muted rounded-full overflow-hidden">
               <motion.div
                 className="h-full bg-primary rounded-full"
-                animate={{ width: `${((currentIdx + 1) / sessionDeck.length) * 100}%` }}
+                animate={{ width: `${((currentIdx + 1) / deck.length) * 100}%` }}
                 transition={{ type: "spring", stiffness: 200, damping: 30 }}
               />
             </div>
             <span className="text-xs text-muted-foreground font-medium">
-              {sessionDeck.length - currentIdx - 1} restantes
+              {deck.length - currentIdx - 1} restantes
             </span>
           </div>
         )}
 
         {/* ── REVIEW STATE ── */}
+        {pageState === "REVIEW" && deck.length === 0 && (
+          <div className="flex-1 flex flex-col items-center justify-center gap-6 text-center">
+            <Trophy className="w-16 h-16 text-emerald-500" />
+            <h2 className="text-2xl font-bold">Todos os cards dominados! 🎉</h2>
+            <p className="text-muted-foreground">
+              Você dominou todos os cards desta matéria.
+            </p>
+            <Button onClick={restoreAll} className="gap-2 rounded-2xl">
+              <RotateCw className="w-4 h-4" />
+              Restaurar todos os cards
+            </Button>
+          </div>
+        )}
+
         {pageState === "REVIEW" && card && (
           <>
             <div className="flex-1 flex flex-col items-center justify-center">
@@ -364,13 +346,12 @@ export default function FlashcardsPage() {
                       size="lg"
                       className="w-full h-14 text-base font-bold rounded-[1.75rem] shadow-xl shadow-primary/20 hover:-translate-y-1 transition-all gap-2"
                     >
-                      {isLastCard ? "Finalizar Sessão 🎉" : "Próximo Card →"}
+                      {isLastCard ? "Voltar ao início 🔁" : "Próximo Card →"}
                     </Button>
                   </motion.div>
                 )}
               </AnimatePresence>
 
-              {/* Hint if not yet flipped */}
               {!isFlipped && (
                 <p className="text-center text-xs text-muted-foreground mt-1">
                   Toque no card para revelar o verso
@@ -402,31 +383,5 @@ export default function FlashcardsPage() {
 
       </div>
     </main>
-  );
-}
-
-// ── Sub-component: StatChip ────────────────────────────────────────────────
-
-function StatChip({
-  icon,
-  value,
-  label,
-  color,
-  bg,
-}: {
-  icon: React.ReactNode;
-  value: number;
-  label: string;
-  color: string;
-  bg: string;
-}) {
-  return (
-    <div className={`flex flex-col items-center justify-center py-2.5 px-1 rounded-2xl ${bg} gap-0.5`}>
-      <div className={`flex items-center gap-1 ${color}`}>
-        {icon}
-        <span className="text-base font-bold leading-none">{value}</span>
-      </div>
-      <span className="text-[10px] text-muted-foreground text-center leading-tight">{label}</span>
-    </div>
   );
 }
