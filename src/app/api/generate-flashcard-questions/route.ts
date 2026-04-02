@@ -44,9 +44,9 @@ Cada questão deve ter exatamente:
 - Justificativa: explicação técnica detalhada, com a correção explícita quando ERRADO
 
 2. DISTRIBUIÇÃO ALEATÓRIA DE GABARITO E ORDEM
-A distribuição da quantidade de itens CERTOS e ERRADOS deve ser decidida por você de forma aleatória e imprevisível a cada requisição.
-- Pode ser (2 CERTOS e 1 ERRADO), (1 CERTO e 2 ERRADOS), etc.
-- É OBRIGATÓRIO ter pelo menos 1 item CERTO e pelo menos 1 item ERRADO. Nunca faça 3 alternativas iguais.
+A distribuição da quantidade de itens CERTOS e ERRADOS deve ser decidida por você de forma totalmente livre e aleatória a cada requisição.
+- Pode ser (3 CERTOS e 0 ERRADOS), (0 CERTOS e 3 ERRADOS), (2 CERTOS e 1 ERRADO), (1 CERTO e 2 ERRADOS) ou qualquer outra combinação.
+- NÃO há obrigatoriedade de ter ao menos 1 CERTO e 1 ERRADO. Você decide.
 - A ORDEM do gabarito das 3 questões deve ser totalmente EMBARALHADA.
 
 3. TÉCNICAS PARA ITENS ERRADOS (use técnicas diferentes em cada):
@@ -101,7 +101,7 @@ Retorne APENAS um JSON válido neste formato exato:
 }
 
 VALIDAÇÃO ANTES DE RESPONDER:
-- Há exatamente 3 questões (pelo menos 1 CERTA e 1 ERRADA) misturadas em ordem aleatória?
+- Há exatamente 3 questões com gabarito aleatório (qualquer combinação de CERTOS/ERRADOS) em ordem aleatória?
 - Cada item ERRADO usa uma técnica diferente?
 - O erro das questões ERRADAS está estritamente baseado no conceito do flashcard e NÃO na lógica do cenário inventado?
 - TODAS as questões são inéditas, não copiam exemplos do flashcard, formam cenários novos e possuem nível DIFÍCIL?
