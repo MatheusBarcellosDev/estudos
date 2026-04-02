@@ -139,7 +139,11 @@ export function selectSessionCards(
     ) {
       dueCards.push(card);
     } else {
-      upcomingCards.push(card);
+      // Exclude mastered cards from upcoming so they stop appearing immediately
+      const isMastered = progress.difficultyLevel === "facil" || progress.streak >= 2;
+      if (!isMastered) {
+        upcomingCards.push(card);
+      }
     }
   }
 
