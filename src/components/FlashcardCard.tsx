@@ -4,51 +4,15 @@ import { useState } from "react";
 import { motion } from "framer-motion";
 import { Flashcard } from "@/data/flashcards";
 import { RotateCw } from "lucide-react";
+import ReactMarkdown from "react-markdown";
+import remarkMath from "remark-math";
+import rehypeKatex from "rehype-katex";
+import "katex/dist/katex.min.css";
 
 interface FlashcardCardProps {
   card: Flashcard;
   /** Called the first time the card is flipped to the back */
   onFlip?: () => void;
-}
-
-/** Simple inline markdown: **bold**, *italic*, ✅ emoji passthrough */
-function renderLine(line: string, idx: number) {
-  // Split by **bold** or *italic*
-  const parts = line.split(/(\*\*[^*]+\*\*|\*[^*]+\*)/g);
-  return (
-    <span key={idx}>
-      {parts.map((part, i) => {
-        if (part.startsWith("**") && part.endsWith("**")) {
-          return <strong key={i} className="font-bold">{part.slice(2, -2)}</strong>;
-        }
-        if (part.startsWith("*") && part.endsWith("*")) {
-          return <em key={i} className="italic">{part.slice(1, -1)}</em>;
-        }
-        return <span key={i}>{part}</span>;
-      })}
-    </span>
-  );
-}
-
-function renderBody(body: string) {
-  const lines = body.split("\n");
-  return lines.map((line, idx) => {
-    const trimmed = line.trim();
-    if (!trimmed) return <div key={idx} className="h-2" />;
-    if (trimmed.startsWith("•") || trimmed.startsWith("-")) {
-      return (
-        <div key={idx} className="flex items-start gap-2 my-1">
-          <span className="mt-1 text-primary">•</span>
-          <span>{renderLine(trimmed.replace(/^[•\-]\s*/, ""), idx)}</span>
-        </div>
-      );
-    }
-    return (
-      <p key={idx} className="my-1 leading-relaxed">
-        {renderLine(trimmed, idx)}
-      </p>
-    );
-  });
 }
 
 export default function FlashcardCard({ card, onFlip }: FlashcardCardProps) {
@@ -103,8 +67,13 @@ export default function FlashcardCard({ card, onFlip }: FlashcardCardProps) {
           <div className="inline-block px-4 py-1 bg-primary/10 text-primary rounded-full text-xs font-bold uppercase tracking-widest mb-6 self-start">
             Verso
           </div>
-          <div className="text-sm sm:text-base text-foreground leading-relaxed flex-1">
-            {renderBody(card.back.body)}
+          <div className="text-sm sm:text-base text-foreground leading-relaxed flex-1 prose prose-sm dark:prose-invert max-w-none prose-strong:text-foreground prose-p:my-1 prose-ul:my-1 prose-li:my-0 prose-headings:text-foreground prose-headings:font-bold">
+            <ReactMarkdown
+              remarkPlugins={[remarkMath]}
+              rehypePlugins={[rehypeKatex]}
+            >
+              {card.back.body}
+            </ReactMarkdown>
           </div>
           {card.tags && card.tags.length > 0 && (
             <div className="flex flex-wrap gap-2 mt-6 pt-4 border-t">
