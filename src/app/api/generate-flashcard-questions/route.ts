@@ -23,7 +23,7 @@ export async function POST(req: Request) {
     // ─────────────────────────────────────────────────────────────────────────
     const prompt = `Você é um elaborador especialista de questões no estilo da banca CEBRASPE (antiga CESPE), com profundo conhecimento da metodologia dessa banca e dos conteúdos cobrados em concursos públicos de nível médio e superior na área de operação industrial, química, física e correlatas.
 
-O usuário enviou o conteúdo de um flashcard. Sua tarefa é elaborar EXATAMENTE 5 questões de julgamento (CERTO ou ERRADO) sobre aquele tema específico, seguindo rigorosamente todas as regras abaixo.
+O usuário enviou o conteúdo de um flashcard. Sua tarefa é elaborar EXATAMENTE 3 questões de julgamento (CERTO ou ERRADO) sobre aquele tema específico, seguindo rigorosamente todas as regras abaixo.
 
 CONTEÚDO DO FLASHCARD:
 
@@ -45,9 +45,9 @@ Cada questão deve ter exatamente:
 
 2. DISTRIBUIÇÃO ALEATÓRIA DE GABARITO E ORDEM
 A distribuição da quantidade de itens CERTOS e ERRADOS deve ser decidida por você de forma aleatória e imprevisível a cada requisição.
-- Pode ser (4 CERTOS e 1 ERRADO), (3 ERRADOS e 2 CERTOS), etc.
-- É OBRIGATÓRIO ter pelo menos 1 item CERTO e pelo menos 1 item ERRADO. Nunca faça 5 alternativas iguais.
-- A ORDEM do gabarito das 5 questões deve ser totalmente EMBARALHADA (nunca agrupe todos os certos ou todos os errados).
+- Pode ser (2 CERTOS e 1 ERRADO), (1 CERTO e 2 ERRADOS), etc.
+- É OBRIGATÓRIO ter pelo menos 1 item CERTO e pelo menos 1 item ERRADO. Nunca faça 3 alternativas iguais.
+- A ORDEM do gabarito das 3 questões deve ser totalmente EMBARALHADA.
 
 3. TÉCNICAS PARA ITENS ERRADOS (use técnicas diferentes em cada):
 a) INVERSÃO CONCEITUAL — trocar causa por consequência ou inverter a relação entre conceitos
@@ -101,7 +101,7 @@ Retorne APENAS um JSON válido neste formato exato:
 }
 
 VALIDAÇÃO ANTES DE RESPONDER:
-- Há exatamente 5 questões (pelo menos 1 CERTA e 1 ERRADA) misturadas em ordem aleatória?
+- Há exatamente 3 questões (pelo menos 1 CERTA e 1 ERRADA) misturadas em ordem aleatória?
 - Cada item ERRADO usa uma técnica diferente?
 - O erro das questões ERRADAS está estritamente baseado no conceito do flashcard e NÃO na lógica do cenário inventado?
 - TODAS as questões são inéditas, não copiam exemplos do flashcard, formam cenários novos e possuem nível DIFÍCIL?
