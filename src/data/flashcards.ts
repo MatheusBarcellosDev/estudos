@@ -3225,7 +3225,1168 @@ Permite "arrastar" o óleo para fora da planta sem precisar fritar ou queimar a 
 **Cilada Cebraspe:** A banca afirmará que a temperatura precisa ser superior a 100 °C para o vapor funcionar. **ERRADO.** A grande vantagem é justamente ocorrer abaixo dos 100 °C para não estragar o produto. ✅`,
     },
     tags: ['Química', 'Operações Unitárias', 'Destilação', 'Arraste de Vapor', 'ANSA 2026'],
-  }
+  },
+  // ─────────────────────────────────────────────
+  // FLASHCARDS URGENTES — Revisão Pós-Simulado
+  // Tag: 'Urgente' | ANSA 2026
+  // ─────────────────────────────────────────────
+
+  {
+    id: 401,
+    front: {
+      title: "Língua Portuguesa: 'Operação' como Substantivo e Verbo 📝",
+      subtitle: "A palavra 'operação' pode funcionar como verbo no imperativo?",
+    },
+    back: {
+      body: `**A Resposta Correta: NÃO — o item é ERRADO.**
+
+**O que 'operação' é:**
+'Operação' é um **substantivo** — sempre. Não existe forma de usá-la como verbo.
+
+**O erro do item:**
+A frase 'operação imediata dos sistemas' usa 'operação' como **substantivo** (núcleo de um sintagma nominal), NÃO como verbo no imperativo.
+
+**O verbo correspondente é 'operar':**
+- Imperativo afirmativo (3.ª pessoa singular): **"opere"** (formado pelo presente do subjuntivo)
+- Ex. correto: "Opere os sistemas imediatamente."
+
+**Cilada Cebraspe:** A banca mistura a palavra com sua classe gramatical para confundir. Substantivos derivados de verbos (nominalização) **nunca** exercem função verbal. ✅`,
+    },
+    tags: ['Urgente'],
+  },
+
+  {
+    id: 402,
+    front: {
+      title: "Língua Portuguesa: Imperativo Afirmativo de 3.ª Pessoa 📝",
+      subtitle: "De onde vem a forma do imperativo afirmativo para 'você/ele'?",
+    },
+    back: {
+      body: `**A Resposta Correta: SIM — o item é CERTO.**
+
+**A Regra do Imperativo Afirmativo:**
+Para as pessoas **você, ele/ela, vocês, eles/elas**, o imperativo afirmativo é formado a partir do **presente do subjuntivo**.
+
+**Conjugação de 'entregar':**
+| Modo | Forma |
+|------|-------|
+| Presente do subjuntivo (ele) | que ele **entregue** |
+| Imperativo afirmativo (você) | **Entregue** o relatório! ✔ |
+
+**Exceção importante (tu):**
+Para **"tu"**, o imperativo vem do presente do indicativo, sem o -s final:
+- Indicativo: tu entregas → Imperativo: **entrega** (tu)
+
+**Cilada Cebraspe:** A banca frequentemente afirma que o imperativo de "você" vem do indicativo. **ERRADO.** Só "tu" usa o indicativo; "você" sempre usa o subjuntivo. ✅`,
+    },
+    tags: ['Urgente'],
+  },
+
+  {
+    id: 403,
+    front: {
+      title: "Informática: Lei n.º 14.129/2021 — Governo Digital 💻",
+      subtitle: "A lei exige prestação preferencial digital dos serviços públicos?",
+    },
+    back: {
+      body: `**A Resposta Correta: SIM — o item é CERTO.**
+
+**O que diz a Lei n.º 14.129/2021:**
+- Dispõe sobre princípios, regras e instrumentos para o **Governo Digital**.
+- Determina que os serviços públicos devem ser prestados **preferencialmente de forma digital**.
+- O atendimento presencial é admitido de forma **residual** (complementar, não principal).
+
+**Pontos-chave para memorizar:**
+✔ Digital = regra geral / preferencial
+✔ Presencial = exceção / residual
+✔ Garante acesso a quem não tem meios digitais
+✔ Prevê uso de assinatura eletrônica e identidade digital
+
+**Cilada Cebraspe:** A banca pode inverter e dizer que o presencial é a regra e o digital é residual. **ERRADO.** É o contrário. ✅`,
+    },
+    tags: ['Urgente'],
+  },
+
+  {
+    id: 404,
+    front: {
+      title: "Raciocínio Lógico: Probabilidade sem Reposição 🎲",
+      subtitle: "Urna com 4 bolas vermelhas e 6 azuis — P(2 azuis seguidas sem reposição) = 1/3?",
+    },
+    back: {
+      body: `**A Resposta Correta: SIM — o item é CERTO.**
+
+**O Cálculo Passo a Passo:**
+
+**1ª retirada (azul):**
+- Total de bolas: 10 → Bolas azuis: 6
+- P(1ª azul) = 6/10 = **3/5**
+
+**2ª retirada (azul) — sem reposição:**
+- Total restante: 9 → Bolas azuis restantes: 5
+- P(2ª azul | 1ª azul) = 5/9
+
+**Probabilidade conjunta:**
+P(2 azuis) = 3/5 × 5/9 = **15/45 = 1/3** ✔
+
+**Regra geral — Probabilidade sem reposição:**
+P(A e B) = P(A) × P(B|A)
+Os denominadores diminuem a cada extração.
+
+**Cilada Cebraspe:** Usar o denominador fixo (10×10) ao invés de decrementar. Sem reposição = denominador cai a cada etapa. ✅`,
+    },
+    tags: ['Urgente'],
+  },
+
+  {
+    id: 405,
+    front: {
+      title: "Raciocínio Lógico: Média = Mediana em Consecutivos? 📊",
+      subtitle: "Para 10 inteiros consecutivos a partir de 1, média aritmética = mediana?",
+    },
+    back: {
+      body: `**A Resposta Correta: SIM — o item é CERTO.**
+
+**O Conjunto:** {1, 2, 3, 4, 5, 6, 7, 8, 9, 10}
+
+**Média Aritmética:**
+Soma = (1+10) × 10 / 2 = **55**
+Média = 55 / 10 = **5,5**
+
+**Mediana (n par = média dos dois centrais):**
+Posições 5 e 6 → valores **5** e **6**
+Mediana = (5 + 6) / 2 = **5,5** ✔
+
+**Resultado:** Média = Mediana = **5,5**
+
+**Regra geral:**
+Em qualquer sequência de inteiros consecutivos (distribuição simétrica), a média **sempre** será igual à mediana, pois a distribuição é perfeitamente simétrica.
+
+**Cilada Cebraspe:** Afirmar que mediana de n par é um dos dois valores centrais (ex: 5 ou 6), sem fazer a média entre eles. ✅`,
+    },
+    tags: ['Urgente'],
+  },
+
+  {
+    id: 406,
+    front: {
+      title: "Química: Neutralização H₂SO₄ + NaOH 🧪",
+      subtitle: "A neutralização total de H₂SO₄ com NaOH produz sulfeto de sódio (Na₂S)?",
+    },
+    back: {
+      body: `**A Resposta Correta: NÃO — o item é ERRADO.**
+
+**A Reação Correta:**
+H₂SO₄ + 2 NaOH → **Na₂SO₄** + 2 H₂O
+
+- Ácido sulfúrico + hidróxido de sódio = **sulfato de sódio** + água
+- O sal formado é **Na₂SO₄** (sulfato), NÃO Na₂S (sulfeto)
+
+**Por que o erro é grave?**
+- **Sulfato (SO₄²⁻):** ânion do ácido sulfúrico (H₂SO₄) — reação de neutralização normal
+- **Sulfeto (S²⁻):** ânion do ácido sulfídrico (H₂S) — substância completamente diferente
+
+**Regra de nomenclatura de sais:**
+Ácido terminado em **-ico** → sal terminado em **-ato**
+H₂SO₄ (sulfúrico) → Na₂**SO₄** (sulfato de sódio) ✅
+
+**Cilada Cebraspe:** Trocar o ânion do sal (sulfato ↔ sulfeto). São íons e compostos totalmente diferentes. ✅`,
+    },
+    tags: ['Urgente'],
+  },
+
+  {
+    id: 407,
+    front: {
+      title: "Química: pH de NaOH 0,01 mol/L 🧪",
+      subtitle: "NaOH 0,01 mol/L tem pH = 12? Como calcular?",
+    },
+    back: {
+      body: `**A Resposta Correta: SIM — o item é CERTO.**
+
+**O Raciocínio Completo:**
+
+**1. NaOH é base forte → ionização total:**
+NaOH → Na⁺ + OH⁻
+[OH⁻] = 0,01 mol/L = 10⁻² mol/L
+
+**2. Calcular o pOH:**
+pOH = -log[OH⁻] = -log(10⁻²) = **2**
+
+**3. Calcular o pH (a 25°C):**
+pH + pOH = 14
+pH = 14 - 2 = **12** ✔
+
+**Resumo da relação:**
+| [OH⁻] | pOH | pH (25°C) |
+|--------|-----|-----------|
+| 10⁻¹ | 1 | 13 |
+| 10⁻² | 2 | **12** |
+| 10⁻³ | 3 | 11 |
+
+**Cilada Cebraspe:** Calcular pH diretamente como -log[NaOH] e obter 2, confundindo com pOH. A relação pH + pOH = 14 é válida apenas a 25°C. ✅`,
+    },
+    tags: ['Urgente'],
+  },
+
+  {
+    id: 408,
+    front: {
+      title: "Química: Equilíbrio Químico — Concentrações dos Reagentes ⚗️",
+      subtitle: "No equilíbrio, as concentrações dos reagentes chegam a zero?",
+    },
+    back: {
+      body: `**A Resposta Correta: NÃO — o item é ERRADO.**
+
+**O Conceito Correto de Equilíbrio Dinâmico:**
+O equilíbrio químico é atingido quando as **velocidades** da reação direta e inversa se **igualam** — isso é verdadeiro.
+
+**MAS — o erro crucial:**
+As concentrações dos reagentes **NÃO chegam a zero**. Elas atingem um valor **constante e diferente de zero**.
+
+**O que acontece de fato:**
+- Reagentes e produtos **coexistem** na mistura de equilíbrio
+- As concentrações de todas as espécies permanecem **constantes** (não nulas)
+- A reação continua ocorrendo nos dois sentidos, em taxas iguais
+
+**Quando reagentes → zero:**
+Isso ocorre apenas em **reações irreversíveis** (que "vão até o fim"), não em equilíbrio.
+
+**Cilada Cebraspe:** Confundir equilíbrio (concentrações constantes ≠ 0) com reação completa (reagentes → 0). ✅`,
+    },
+    tags: ['Urgente'],
+  },
+
+  {
+    id: 409,
+    front: {
+      title: "Química: Princípio de Le Chatelier — Aumento de Produto ⚗️",
+      subtitle: "Aumentar a concentração de um produto desloca o equilíbrio para os reagentes?",
+    },
+    back: {
+      body: `**A Resposta Correta: SIM — o item é CERTO.**
+
+**O Princípio de Le Chatelier:**
+"Quando um sistema em equilíbrio sofre uma perturbação, ele reage de forma a **minimizar essa perturbação**."
+
+**Aplicação ao item:**
+Se a concentração de um **produto** aumenta → o sistema fica "sobrecarregado" do lado dos produtos → o equilíbrio se desloca no sentido **inverso** (← reagentes) para consumir o excesso.
+
+**Tabela de perturbações:**
+| Perturbação | Deslocamento |
+|-------------|-------------|
+| ↑ concentração de reagente | → direita (produtos) |
+| ↑ concentração de produto | ← esquerda (reagentes) ✔ |
+| ↑ temperatura (reação exotérmica) | ← esquerda |
+| ↑ pressão (reação com ↓ mol de gás) | → direita |
+
+**Cilada Cebraspe:** Inverter o sentido do deslocamento ou confundir com o efeito da temperatura. ✅`,
+    },
+    tags: ['Urgente'],
+  },
+
+  {
+    id: 410,
+    front: {
+      title: "Física: Pressão Absoluta vs Pressão Manométrica 🔧",
+      subtitle: "Pressão absoluta = pressão manométrica + pressão atmosférica?",
+    },
+    back: {
+      body: `**A Resposta Correta: SIM — o item é CERTO.**
+
+**As Três Pressões — Definições:**
+
+- **Pressão Absoluta (Pabs):** pressão total medida em relação ao vácuo absoluto (zero absoluto de pressão)
+- **Pressão Manométrica (Pman):** pressão medida em relação à pressão atmosférica local (é o que manômetros comuns indicam)
+- **Pressão Atmosférica (Patm):** ~101,325 kPa = ~1 atm = ~14,7 psi ao nível do mar
+
+**A Relação:**
+**Pabs = Pman + Patm** ✔
+
+**Exemplo prático:**
+Um manômetro indica 2 bar (Pman) → Pabs = 2 + 1 = **3 bar**
+
+**Pressão de vácuo (negativa):**
+Quando Pabs < Patm → Pman é negativa → chamada de **pressão de vácuo**
+Pvácuo = Patm − Pabs
+
+**Cilada Cebraspe:** Afirmar que manômetros medem pressão absoluta (falso — medem manométrica) ou inverter a fórmula. ✅`,
+    },
+    tags: ['Urgente'],
+  },
+
+  {
+    id: 411,
+    front: {
+      title: "Física: Potência Elétrica em Resistor ⚡",
+      subtitle: "Resistor de 10 Ω com corrente de 2 A dissipa 40 W?",
+    },
+    back: {
+      body: `**A Resposta Correta: SIM — o item é CERTO.**
+
+**As Fórmulas de Potência Elétrica:**
+| Fórmula | Variáveis |
+|---------|-----------|
+| P = V × I | tensão e corrente |
+| P = I² × R | corrente e resistência ✔ |
+| P = V² / R | tensão e resistência |
+
+**O Cálculo:**
+P = I² × R = (2)² × 10 = 4 × 10 = **40 W** ✔
+
+**Verificação pela Lei de Ohm:**
+V = I × R = 2 × 10 = 20 V
+P = V × I = 20 × 2 = 40 W ✔
+
+**Ponto de atenção:**
+A potência varia com o **quadrado** da corrente. Dobrando I, a potência **quadruplica**.
+Ex: I = 4 A → P = 16 × 10 = 160 W
+
+**Cilada Cebraspe:** Usar P = I × R (sem elevar ao quadrado) e obter 20 W. A fórmula correta é I **²** × R. ✅`,
+    },
+    tags: ['Urgente'],
+  },
+
+  {
+    id: 412,
+    front: {
+      title: "Física: Zero Absoluto na Escala Kelvin 🌡️",
+      subtitle: "O zero absoluto = −273,15 °C e representa cessação total da energia cinética molecular?",
+    },
+    back: {
+      body: `**A Resposta Correta: SIM — o item é CERTO (com ressalva da mecânica quântica).**
+
+**Os Fatos:**
+- Zero absoluto = **0 K = −273,15 °C** ✔
+- **Pela teoria clássica dos gases:** no zero absoluto, toda energia cinética translacional molecular cessa (moléculas param de se mover) ✔
+- O item qualifica corretamente com "segundo a teoria clássica"
+
+**A ressalva quântica (para aprofundamento):**
+Pela mecânica quântica, mesmo a 0 K existe a **energia de ponto zero** (zero-point energy) — as partículas nunca param completamente. Mas isso está além do escopo da prova de nível médio.
+
+**Conversões importantes:**
+- T(K) = T(°C) + 273,15
+- T(°C) = T(K) − 273,15
+- 0 K = −273,15 °C = zero absoluto
+
+**Cilada Cebraspe:** Afirmar que zero absoluto = 0 °C (errado — é −273,15 °C) ou trocar o sinal da conversão. ✅`,
+    },
+    tags: ['Urgente'],
+  },
+
+  {
+    id: 413,
+    front: {
+      title: "Física: Hidrostática — Fluidos em Movimento ou Repouso? 💧",
+      subtitle: "A hidrostática estuda fluidos em movimento?",
+    },
+    back: {
+      body: `**A Resposta Correta: NÃO — o item é ERRADO.**
+
+**A Distinção Fundamental:**
+
+| Área | Estuda |
+|------|--------|
+| **Hidrostática** | Fluidos em **repouso** (estáticos) ✔ |
+| **Hidrodinâmica / Fluidodinâmica** | Fluidos em **movimento** |
+
+**O que a Hidrostática estuda:**
+- Pressão hidrostática: P = ρ × g × h
+- Empuxo (Princípio de Arquimedes)
+- Equilíbrio de fluidos em recipientes
+- Comunicação de vasos
+
+**O que a Hidrodinâmica estuda:**
+- Equação de Bernoulli
+- Número de Reynolds
+- Perfis de velocidade
+- Perda de carga em tubulações
+
+**Cilada Cebraspe:** Trocar hidrostática (repouso) por hidrodinâmica (movimento). São ramos distintos da mecânica dos fluidos. ✅`,
+    },
+    tags: ['Urgente'],
+  },
+
+  {
+    id: 414,
+    front: {
+      title: "Física: Lei dos Gases Ideais — Dobrar Temperatura 🌡️",
+      subtitle: "Na equação PV = nRT, dobrando T a pressão constante, o volume dobra?",
+    },
+    back: {
+      body: `**A Resposta Correta: SIM — o item é CERTO.**
+
+**A Equação dos Gases Ideais:**
+PV = nRT
+
+**Isolando o volume:**
+V = nRT / P
+
+**Se T dobra (P, n, R constantes):**
+V_novo = nR(2T) / P = **2 × (nRT/P) = 2V** ✔
+
+**Isso é a Lei de Charles:**
+A pressão constante, o volume de um gás ideal é **diretamente proporcional** à temperatura absoluta (Kelvin).
+V₁/T₁ = V₂/T₂
+
+**⚠️ Atenção crítica — Temperatura KELVIN:**
+A lei só funciona com temperatura em **Kelvin**.
+Se T = 27°C = 300 K → "dobrar" = 600 K (não 54°C!)
+
+**Cilada Cebraspe:** Aplicar a lei com temperatura em Celsius. Dobrar 27°C daria 54°C (327 K), não 600 K — resultado completamente diferente. ✅`,
+    },
+    tags: ['Urgente'],
+  },
+
+  {
+    id: 415,
+    front: {
+      title: "Física: Circuito em Série — Corrente e Tensão ⚡",
+      subtitle: "Em circuito série, a corrente é igual em todos os componentes e a tensão total é a soma das parciais?",
+    },
+    back: {
+      body: `**A Resposta Correta: SIM — o item é CERTO.**
+
+**As Leis Fundamentais dos Circuitos:**
+
+**Circuito em SÉRIE:**
+- ✅ Corrente (I): **igual** em todos os componentes (único caminho)
+- ✅ Tensão (V): **soma** das tensões parciais = Vtotal = V₁ + V₂ + V₃
+- Resistência total: Rtotal = R₁ + R₂ + R₃
+
+**Circuito em PARALELO (para comparar):**
+- ✅ Tensão (V): **igual** em todos os ramos
+- ✅ Corrente (I): **soma** das correntes dos ramos = Itotal = I₁ + I₂ + I₃
+- Resistência total: 1/Rtotal = 1/R₁ + 1/R₂ + ...
+
+**Macete:**
+| Grandeza | Série | Paralelo |
+|----------|-------|---------|
+| Corrente | Igual | Soma |
+| Tensão | Soma | Igual |
+
+**Cilada Cebraspe:** Inverter as propriedades de série e paralelo. ✅`,
+    },
+    tags: ['Urgente'],
+  },
+
+  {
+    id: 416,
+    front: {
+      title: "Instrumentação: Transmissor Piezoresistivo 🔧",
+      subtitle: "Transmissores piezoresistivos convertem pressão em variação de resistência elétrica?",
+    },
+    back: {
+      body: `**A Resposta Correta: SIM — o item é CERTO.**
+
+**O Efeito Piezoresistivo:**
+É a propriedade de certos materiais (silício, germânio, metais) de **alterar sua resistência elétrica** quando submetidos a deformações mecânicas (tensão/compressão) causadas pela pressão aplicada.
+
+**Como funciona o transmissor:**
+1. Pressão aplicada → deforma o elemento sensor (diafragma)
+2. Deformação → altera a resistência do material piezoresistivo
+3. Variação de resistência → sinal elétrico proporcional à pressão
+4. Sinal condicionado → saída 4–20 mA para o sistema de controle
+
+**Comparação com outros tipos:**
+| Tipo | Princípio |
+|------|-----------|
+| Piezoresistivo | Variação de **resistência** |
+| Capacitivo | Variação de **capacitância** |
+| Piezoelétrico | Geração de **carga elétrica** (para pressão dinâmica) |
+
+**Cilada Cebraspe:** Confundir piezoresistivo (resistência) com piezoelétrico (gera tensão) — são princípios diferentes. ✅`,
+    },
+    tags: ['Urgente'],
+  },
+
+  {
+    id: 417,
+    front: {
+      title: "Instrumentação: Simbologia ISA 5.1 — Sigla FIC 🏭",
+      subtitle: "Na norma ISA 5.1, 'FIC' em um círculo indica controlador-indicador de temperatura?",
+    },
+    back: {
+      body: `**A Resposta Correta: NÃO — o item é ERRADO.**
+
+**A Norma ISA 5.1 — Letras de Identificação:**
+
+**Primeira letra = Variável medida:**
+| Letra | Variável |
+|-------|----------|
+| **F** | **Vazão** (Flow) ✔ |
+| T | Temperatura (Temperature) |
+| P | Pressão (Pressure) |
+| L | Nível (Level) |
+
+**Letras seguintes = Função:**
+| Letra | Função |
+|-------|--------|
+| I | Indicação (Indicator) |
+| C | Controle (Controller) |
+| T | Transmissor (Transmitter) |
+| R | Registro (Recorder) |
+
+**Portanto: FIC =**
+**F**low **I**ndicator **C**ontroller = **Controlador-indicador de VAZÃO** (não temperatura!)
+
+Para temperatura seria: **TIC** = Temperature Indicator Controller
+
+**Cilada Cebraspe:** Substituir a variável correta (F=vazão) pela errada (T=temperatura). Decore a tabela de letras da ISA 5.1. ✅`,
+    },
+    tags: ['Urgente'],
+  },
+
+  {
+    id: 418,
+    front: {
+      title: "Instrumentação: Termopar Tipo K — Efeito Seebeck 🌡️",
+      subtitle: "O termopar tipo K opera pelo efeito Seebeck, gerando FEM proporcional à diferença de temperatura?",
+    },
+    back: {
+      body: `**A Resposta Correta: SIM — o item é CERTO.**
+
+**O Efeito Seebeck (1821):**
+Quando dois metais diferentes são unidos em duas junções a temperaturas diferentes, surge uma **força eletromotriz (FEM)** proporcional à **diferença de temperatura** entre as junções.
+
+**O Termopar Tipo K:**
+- Composição: **Chromel** (liga Ni-Cr) e **Alumel** (liga Ni-Al)
+- Faixa de operação: −200 °C a **+1260 °C** (grande amplitude)
+- É o tipo mais usado na indústria
+
+**Tabela dos tipos mais comuns:**
+| Tipo | Metais | Faixa |
+|------|--------|-------|
+| **K** | Chromel / Alumel | −200 a +1260 °C |
+| J | Ferro / Constantan | −40 a +750 °C |
+| T | Cobre / Constantan | −200 a +350 °C |
+| E | Chromel / Constantan | −40 a +900 °C |
+
+**Junções do termopar:**
+- **Junção quente (medição):** inserida no processo
+- **Junção fria (referência):** temperatura conhecida (compensada)
+
+**Cilada Cebraspe:** Afirmar que o termopar gera corrente (não — gera tensão/FEM) ou trocar os metais do tipo K. ✅`,
+    },
+    tags: ['Urgente'],
+  },
+
+  {
+    id: 419,
+    front: {
+      title: "Instrumentação: Orifício de Placa — Para que Serve? 🔧",
+      subtitle: "Orifício de placa mede nível de líquido por diferença de pressão hidrostática?",
+    },
+    back: {
+      body: `**A Resposta Correta: NÃO — o item é ERRADO.**
+
+**O que é o Orifício de Placa:**
+É um **instrumento de medição de VAZÃO** (não de nível).
+
+**Como funciona:**
+1. Uma placa com orifício calibrado é inserida na tubulação
+2. O fluido passa pelo orifício → cria uma **queda de pressão** (efeito Venturi)
+3. Um transmissor de pressão diferencial mede ΔP
+4. A vazão é calculada pela equação de Bernoulli: Q ∝ √ΔP
+
+**Medição de Nível — instrumentos corretos:**
+| Instrumento | Princípio |
+|-------------|-----------|
+| Transmissor de pressão hidrostática | ΔP = ρ × g × h |
+| Medidor por bóia (float) | Flutuação |
+| Radar / Ultrassônico | Tempo de voo |
+| Visor de nível | Visual direto |
+
+**Resumo da confusão:**
+- Orifício de placa → **medição de VAZÃO** por ΔP na linha ✔
+- Pressão hidrostática → **medição de NÍVEL** em tanques
+
+**Cilada Cebraspe:** Associar qualquer instrumento que use ΔP a medição de nível. O contexto (linha vs. tanque) define a grandeza medida. ✅`,
+    },
+    tags: ['Urgente'],
+  },
+
+  {
+    id: 420,
+    front: {
+      title: "Instrumentação: Ação Derivativa (D) no Controlador PID 🎛️",
+      subtitle: "A ação derivativa antecipa correções mas pode amplificar ruídos?",
+    },
+    back: {
+      body: `**A Resposta Correta: SIM — o item é CERTO.**
+
+**As Três Ações do Controlador PID:**
+
+**P (Proporcional):**
+- Responde ao **erro atual**
+- Rápido, mas deixa erro residual (offset)
+
+**I (Integral):**
+- Responde ao **erro acumulado** no tempo
+- Elimina o offset, mas pode causar instabilidade (windup)
+
+**D (Derivativo):**
+- Responde à **taxa de variação do erro** (derivada)
+- ✅ Antecipa correções → reduz overshoot
+- ✅ Melhora resposta a perturbações bruscas
+- ⚠️ **Amplifica ruídos** do sinal de medição (problema real!)
+
+**Por isso na prática:**
+- Ação D raramente usada isolada
+- Frequentemente usa-se um **filtro derivativo** para limitar a amplificação de ruído
+- Muitos processos industriais usam apenas PI (sem D)
+
+**Cilada Cebraspe:** Afirmar que a ação D elimina o offset (falso — isso é a integral) ou que não tem desvantagens. ✅`,
+    },
+    tags: ['Urgente'],
+  },
+
+  {
+    id: 421,
+    front: {
+      title: "Instrumentação: Malha Aberta vs. Malha Fechada (Feedback) 🔄",
+      subtitle: "Um sistema de controle em malha aberta usa retroalimentação para corrigir desvios?",
+    },
+    back: {
+      body: `**A Resposta Correta: NÃO — o item é ERRADO.**
+
+**A Distinção Fundamental:**
+
+**Malha ABERTA (sem feedback):**
+- ❌ **Não possui** retroalimentação
+- O controlador age baseado apenas no sinal de entrada (setpoint)
+- Não "sabe" se a saída atingiu o valor desejado
+- Ex.: temporizador de lavadora (não verifica se a roupa está limpa)
+
+**Malha FECHADA (com feedback):**
+- ✅ **Possui** retroalimentação (feedback)
+- O sinal de saída é medido e comparado ao setpoint
+- O controlador corrige o erro continuamente
+- Ex.: controle de temperatura de um reator com termopar
+
+**Diagrama simplificado:**
+Setpoint → [Controlador] → Processo → Saída
+                ↑__________________________|
+                    (feedback — malha fechada)
+
+**Vantagem da malha fechada:**
+Corrige automaticamente perturbações e variações do processo.
+
+**Cilada Cebraspe:** Atribuir feedback à malha aberta ou vice-versa. ✅`,
+    },
+    tags: ['Urgente'],
+  },
+
+  {
+    id: 422,
+    front: {
+      title: "Instrumentação: Sinal 4–20 mA — Por que Corrente? 📡",
+      subtitle: "Transmissores 4–20 mA são menos suscetíveis a interferências que sinais de tensão em longas distâncias?",
+    },
+    back: {
+      body: `**A Resposta Correta: SIM — o item é CERTO.**
+
+**Por que o Sinal de Corrente é Superior para Longas Distâncias:**
+
+**Sinais de tensão (0–10 V):**
+- Sofrem **queda de tensão** ao longo do cabo (resistência do condutor)
+- Susceptíveis a **interferências eletromagnéticas** (ruído induzido)
+- Erro aumenta com a distância
+
+**Sinais de corrente (4–20 mA):**
+- A corrente é **igual em todo o circuito em série** (lei dos nós)
+- Resistência do cabo não afeta a leitura (apenas a tensão de alimentação)
+- Muito mais **imune a ruído eletromagnético**
+- Detecção de falha: corrente = 0 mA → fio partido (abaixo dos 4 mA mínimos)
+
+**A inteligência do 4 mA (não começa no zero):**
+- 0 mA = **falha de instrumento** ou fio rompido
+- 4 mA = **zero de processo** (sinal vivo mínimo)
+- 20 mA = **fundo de escala** (100% do processo)
+
+**Cilada Cebraspe:** Afirmar que sinal de tensão é mais robusto para longas distâncias ou que o sinal começa em 0 mA. ✅`,
+    },
+    tags: ['Urgente'],
+  },
+
+  {
+    id: 423,
+    front: {
+      title: "Operações Unitárias: Destilação Fracionada 🏭",
+      subtitle: "A destilação fracionada separa componentes com pontos de ebulição próximos por múltiplos estágios?",
+    },
+    back: {
+      body: `**A Resposta Correta: SIM — o item é CERTO.**
+
+**Por que a Destilação Fracionada Funciona:**
+
+**O Princípio:**
+Cada estágio (prato ou recheio) realiza um ciclo de **vaporização + condensação parcial**, enriquecendo progressivamente o vapor com o componente mais volátil.
+
+**Eficiência em pontos de ebulição próximos:**
+- Destilação simples (1 estágio): inadequada para componentes com ΔTeb pequeno
+- Destilação fracionada (múltiplos estágios): aumenta a **seletividade** repetindo o equilíbrio vapor-líquido
+
+**Parâmetros importantes:**
+| Parâmetro | Descrição |
+|-----------|-----------|
+| Pratos teóricos | Número de estágios ideais de equilíbrio |
+| Refluxo | Retorno de parte do condensado para a coluna |
+| Refluxo mínimo | Mínimo de refluxo para a separação desejada |
+| Prato de alimentação | Prato onde a carga é inserida |
+
+**Aplicações industriais:**
+- Refinação do petróleo (separação de frações)
+- Produção de etanol
+- Purificação de solventes
+
+**Cilada Cebraspe:** Afirmar que destilação simples é adequada para componentes com pontos de ebulição próximos. ✅`,
+    },
+    tags: ['Urgente'],
+  },
+
+  {
+    id: 424,
+    front: {
+      title: "Operações Unitárias: Escoamento Turbulento — Reynolds e Perfil de Velocidade 💧",
+      subtitle: "No escoamento turbulento (Re > 4000), o perfil de velocidade é mais uniforme que no laminar?",
+    },
+    back: {
+      body: `**A Resposta Correta: SIM — o item é CERTO.**
+
+**Os Regimes de Escoamento:**
+
+| Regime | Reynolds | Perfil de Velocidade |
+|--------|----------|---------------------|
+| **Laminar** | Re < 2300 | **Parabólico** (pontudo no centro) |
+| Transição | 2300–4000 | Instável |
+| **Turbulento** | Re > 4000 | **Mais uniforme / plano** ✔ |
+
+**Por que o turbulento é mais uniforme:**
+A mistura intensa de fluido (redemoinhos, vórtices) transfere quantidade de movimento entre as camadas, **nivelando** as velocidades radiais.
+
+**Número de Reynolds:**
+Re = ρVD/μ = VD/ν
+Onde: ρ = densidade, V = velocidade, D = diâmetro, μ = viscosidade dinâmica
+
+**Implicações práticas:**
+- Turbulento → melhor transferência de calor e massa
+- Laminar → menor perda de carga por atrito
+- Indústria: maioria dos escoamentos em tubulações é turbulenta
+
+**Cilada Cebraspe:** Inverter os perfis (afirmar que o laminar é plano e o turbulento é parabólico). ✅`,
+    },
+    tags: ['Urgente'],
+  },
+
+  {
+    id: 425,
+    front: {
+      title: "Operações Unitárias: Permutadores de Placas vs. Casco e Tubo 🏭",
+      subtitle: "Permutadores de placas são inadequados para alta pressão e fluidos com sólidos em suspensão?",
+    },
+    back: {
+      body: `**A Resposta Correta: SIM — o item é CERTO.**
+
+**Comparativo dos Tipos de Permutadores:**
+
+**Permutador de PLACAS:**
+✅ Alta eficiência em pequenas diferenças de temperatura
+✅ Compacto e leve
+✅ Fácil desmontagem e limpeza (placas separáveis)
+❌ **Inadequado para alta pressão** (vedações nas bordas)
+❌ **Inadequado para fluidos com sólidos** (canais estreitos entopem)
+❌ Limitado a temperaturas moderadas
+
+**Permutador CASCO E TUBO:**
+✅ Suporta **alta pressão e alta temperatura**
+✅ Aceita fluidos com sólidos em suspensão
+✅ Grande variedade de materiais e configurações
+❌ Menos eficiente para ΔT pequenos
+❌ Maior volume e peso
+
+**Aplicações típicas na indústria:**
+| Aplicação | Tipo preferido |
+|-----------|---------------|
+| Resfriamento de leite, cerveja | Placas |
+| Reboilers, condensadores de refino | Casco e tubo |
+| Aquecimento de fluidos limpos | Ambos |
+
+**Cilada Cebraspe:** Afirmar que permutadores de placas são adequados para qualquer condição operacional. ✅`,
+    },
+    tags: ['Urgente'],
+  },
+
+  {
+    id: 426,
+    front: {
+      title: "Operações Unitárias: Absorção Gás-Líquido — Contracorrente 🏭",
+      subtitle: "Na absorção gás-líquido, a operação em contracorrente maximiza a transferência de massa?",
+    },
+    back: {
+      body: `**A Resposta Correta: SIM — o item é CERTO.**
+
+**O Processo de Absorção Gás-Líquido:**
+- Um **gás** contendo componentes indesejados (ex: H₂S, CO₂) sobe pela coluna
+- Um **líquido absorvente** (ex: aminas, água) desce pela coluna
+- O componente indesejado é transferido do gás para o líquido
+
+**Por que a Contracorrente é Superior:**
+
+**Contracorrente (gás ↑ / líquido ↓):**
+- O gás mais concentrado encontra o líquido mais concentrado (entrada do líquido)
+- O gás mais puro encontra o líquido mais puro (saída do gás)
+- Mantém a **força motriz de transferência de massa (ΔC) elevada** em toda a coluna
+- **Maior eficiência** ✔
+
+**Co-corrente (ambos na mesma direção):**
+- Rapidamente equilibram as concentrações → força motriz cai a zero
+- Menor eficiência
+
+**Aplicações industriais:**
+- Remoção de CO₂ e H₂S do gás natural
+- Tratamento de gases de combustão
+- Scrubbers industriais
+
+**Cilada Cebraspe:** Afirmar que co-corrente é mais eficiente para absorção, ou que o gás é a fase dispersa. ✅`,
+    },
+    tags: ['Urgente'],
+  },
+
+  {
+    id: 427,
+    front: {
+      title: "Equipamentos: Válvula de Segurança (PSV) — Função Real 🔧",
+      subtitle: "A PSV serve para regular a vazão em condições normais de operação?",
+    },
+    back: {
+      body: `**A Resposta Correta: NÃO — o item é ERRADO.**
+
+**A Função Real da PSV (Pressure Safety Valve):**
+A válvula de segurança é um **dispositivo de proteção contra sobrepressão** — ela **NÃO opera em condições normais**.
+
+**Como funciona:**
+- Permanece **fechada** durante operação normal
+- Abre **automaticamente** quando a pressão do sistema atinge o valor de set-point (pressão de abertura calibrada)
+- Alivia o excesso de pressão descarregando fluido
+- Fecha quando a pressão retorna ao nível seguro
+
+**Diferença entre dispositivos:**
+| Dispositivo | Função | Operação |
+|-------------|--------|----------|
+| **PSV / Válvula de Segurança** | Proteção contra sobrepressão | Emergencial |
+| **Válvula de Controle** | Regular vazão/pressão | Contínua (normal) |
+| **Disco de Ruptura** | Proteção (não reclosing) | Emergencial — não fecha de novo |
+
+**Norma aplicável:**
+A NR-13 exige que vasos de pressão possuam dispositivos de segurança contra sobrepressão (PSV/disco de ruptura).
+
+**Cilada Cebraspe:** Confundir PSV (proteção emergencial) com válvula de controle (operação normal). ✅`,
+    },
+    tags: ['Urgente'],
+  },
+
+  {
+    id: 428,
+    front: {
+      title: "Equipamentos: Classes de Pressão ASME/ANSI — 150 lb vs 300 lb 🔧",
+      subtitle: "A classe 300 lb suporta pressões maiores que a classe 150 lb?",
+    },
+    back: {
+      body: `**A Resposta Correta: SIM — o item é CERTO.**
+
+**Classes de Pressão (Pressure Rating) ASME/ANSI:**
+As classes indicam a **pressão máxima de trabalho admissível** do componente (flange, válvula, etc.) a uma temperatura de referência (geralmente 38 °C / 100 °F).
+
+**Escala crescente de pressão:**
+| Classe | Pressão admissível (aprox. a 38°C, aço carbono) |
+|--------|------------------------------------------------|
+| 150 lb | ~19,6 bar (~285 psi) |
+| **300 lb** | ~51 bar (~740 psi) ✔ |
+| 600 lb | ~102 bar (~1480 psi) |
+| 900 lb | ~153 bar (~2220 psi) |
+| 1500 lb | ~255 bar (~3705 psi) |
+| 2500 lb | ~425 bar (~6170 psi) |
+
+**Importante:** A classe de pressão **diminui com o aumento da temperatura** (o material perde resistência).
+
+**Diâmetro Nominal (DN / NPS):**
+É o diâmetro de referência da tubulação (não é a dimensão real).
+Ex: DN 100 = NPS 4 = ~4 polegadas nominais
+
+**Cilada Cebraspe:** Inverter a hierarquia (afirmar que 150 lb > 300 lb) ou confundir DN com diâmetro real. ✅`,
+    },
+    tags: ['Urgente'],
+  },
+
+  {
+    id: 429,
+    front: {
+      title: "Equipamentos: Chicanas (Baffles) em Permutador Casco e Tubo 🏭",
+      subtitle: "As chicanas aumentam a turbulência no lado do casco, melhorando a transferência de calor?",
+    },
+    back: {
+      body: `**A Resposta Correta: SIM — o item é CERTO.**
+
+**Função das Chicanas (Baffles):**
+
+**Onde ficam:** Instaladas no **interior do casco** (lado externo dos tubos)
+
+**O que fazem:**
+✅ Forçam o fluido do casco a escoar **perpendicularmente** aos tubos (não em paralelo)
+✅ Aumentam a **turbulência** → eleva o coeficiente convectivo de transferência de calor (h)
+✅ Aumentam o **tempo de contato** do fluido com os tubos
+✅ Sustentam mecanicamente os tubos (evitam vibração)
+
+**Resultado:** Maior coeficiente global de transferência de calor (U) → permutador mais eficiente
+
+**Parâmetros das chicanas:**
+- **Espaçamento:** menor espaçamento = maior turbulência (mas maior perda de carga)
+- **Corte (baffle cut):** porcentagem do diâmetro do casco que é o espaço livre de passagem (tipicamente 20–49%)
+
+**Cilada Cebraspe:** Afirmar que as chicanas ficam no lado dos tubos, ou que são usadas para aumentar a pressão no casco. ✅`,
+    },
+    tags: ['Urgente'],
+  },
+
+  {
+    id: 430,
+    front: {
+      title: "Equipamentos: Flanges Weld Neck — Integridade Mecânica 🔧",
+      subtitle: "Flanges weld neck têm a maior integridade mecânica para alta pressão e temperatura?",
+    },
+    back: {
+      body: `**A Resposta Correta: SIM — o item é CERTO.**
+
+**Tipos de Flanges e Suas Características:**
+
+**Weld Neck (Colo de Solda):**
+✅ Maior integridade mecânica
+✅ Distribui as tensões ao longo do colo (neck) → reduz concentração de tensão na solda
+✅ Ideal para alta pressão, alta temperatura e ciclos térmicos severos
+✅ Solda de topo (butt weld) — mais resistente
+⚠️ Mais caro e pesado
+
+**Outros tipos (para comparação):**
+| Tipo | Aplicação | Limitação |
+|------|-----------|-----------|
+| Slip-on | Baixa/média pressão | Solda de filete (menos resistente) |
+| Socket Weld | Pequenos diâmetros, alta pressão | Não recomendado para ciclos severos |
+| Threaded | Baixa pressão, sem solda | Não para temperaturas elevadas |
+| Blind | Fechamento de linha | N/A (não conecta tubulações) |
+| Lap Joint | Com stub end (borda solta) | Baixa integridade |
+
+**Cilada Cebraspe:** Afirmar que slip-on ou socket weld têm maior integridade que weld neck para serviços severos. ✅`,
+    },
+    tags: ['Urgente'],
+  },
+
+  {
+    id: 431,
+    front: {
+      title: "Equipamentos: Bomba Centrífuga à Direita do BEP — Cavitação? 🔧",
+      subtitle: "Operar à direita do BEP causa cavitação por NPSH disponível < NPSH requerido?",
+    },
+    back: {
+      body: `**A Resposta Correta: NÃO — o item é ERRADO (a explicação está incorreta).**
+
+**O BEP (Best Efficiency Point):**
+Ponto de operação com **máxima eficiência** da bomba.
+
+**Operação à DIREITA do BEP (vazão > BEP):**
+- A bomba trabalha com **vazão excessiva**
+- Isso causa **sobrecarga** no motor, aquecimento e desgaste
+- Pode ocorrer **recirculação interna** e turbulência na descarga
+- **NÃO é necessariamente cavitação por NPSH**
+
+**O erro do item:**
+A cavitação por NPSH (NPSHd < NPSHr) está mais associada a:
+- Temperatura elevada do fluido
+- Sucção muito longa ou com muitas perdas
+- Operar à **esquerda do BEP** (baixa vazão → recirculação na sucção → queda de pressão local)
+- Alta altitude (Patm reduzida)
+
+**Resumo:**
+| Posição | Principal problema |
+|---------|--------------------|
+| ← Esquerda do BEP | Recirculação na sucção → risco de cavitação |
+| → Direita do BEP | Sobrecarga, recirculação na descarga, desgaste |
+
+**Cilada Cebraspe:** A relação BEP-cavitação é mais complexa — o item simplifica erroneamente a causa. ✅`,
+    },
+    tags: ['Urgente'],
+  },
+
+  {
+    id: 432,
+    front: {
+      title: "Mecânica dos Fluidos: Pressão Hidrostática e a Forma do Recipiente 💧",
+      subtitle: "A pressão hidrostática depende da profundidade, da densidade e de g — independente da forma do recipiente?",
+    },
+    back: {
+      body: `**A Resposta Correta: SIM — o item é CERTO.**
+
+**A Fórmula da Pressão Hidrostática:**
+**P = ρ × g × h**
+
+Onde:
+- ρ = densidade do fluido (kg/m³)
+- g = aceleração gravitacional (≈ 9,81 m/s²)
+- h = profundidade abaixo da superfície livre (m)
+
+**O Paradoxo Hidrostático:**
+A pressão em um ponto depende **apenas da profundidade h**, e NÃO:
+- ❌ Do volume do fluido
+- ❌ Da forma do recipiente
+- ❌ Da área da superfície
+
+**Demonstração visual:**
+Três vasos com formatos diferentes (cilíndrico, cônico, irregular) contendo o mesmo fluido até a mesma altura **h** exercem a mesma pressão no fundo.
+
+**Aplicação prática:**
+A pressão no fundo de um tanque alto e estreito pode ser maior do que num tanque baixo e largo — o que importa é apenas a **altura** (coluna) de fluido.
+
+**Cilada Cebraspe:** Afirmar que a forma ou o volume do recipiente influenciam a pressão hidrostática. ✅`,
+    },
+    tags: ['Urgente'],
+  },
+
+  {
+    id: 433,
+    front: {
+      title: "Mecânica dos Fluidos: Equação da Continuidade — Escoamento Incompressível 💧",
+      subtitle: "Para escoamento incompressível, A × V = constante ao longo da tubulação?",
+    },
+    back: {
+      body: `**A Resposta Correta: SIM — o item é CERTO.**
+
+**A Equação da Continuidade:**
+Para escoamento **incompressível** (ρ = constante) em regime permanente:
+
+**A₁ × V₁ = A₂ × V₂ = Q (vazão volumétrica)**
+
+Onde:
+- A = área da seção transversal (m²)
+- V = velocidade média do fluido (m/s)
+- Q = vazão volumétrica (m³/s) — **constante ao longo da tubulação**
+
+**O Princípio:**
+A massa de fluido que entra em qualquer seção deve sair pela seção seguinte (conservação de massa).
+
+**Consequência prática:**
+Se a tubulação **estreita** (A diminui) → a velocidade **aumenta**
+Se a tubulação **alarga** (A aumenta) → a velocidade **diminui**
+
+**Exemplo:**
+Tubo de 4" reduz para 2" → área cai 4× → velocidade **quadruplica**
+
+**Relação com Bernoulli:**
+A continuidade alimenta a equação de Bernoulli: onde V é maior (tubo estreito) → P é menor.
+
+**Cilada Cebraspe:** Afirmar que a pressão é constante ao longo da tubulação (falso — varia) ou que Q varia com o diâmetro. ✅`,
+    },
+    tags: ['Urgente'],
+  },
+
+  {
+    id: 434,
+    front: {
+      title: "Eletricidade: Circuito Trifásico Estrela — Tensão de Linha vs. Fase ⚡",
+      subtitle: "Em circuito trifásico equilibrado em estrela (Y), tensão de linha = tensão de fase × √3?",
+    },
+    back: {
+      body: `**A Resposta Correta: SIM — o item é CERTO.**
+
+**As Relações no Circuito Trifásico Equilibrado:**
+
+**Ligação ESTRELA (Y):**
+- **Tensão:** Vlinha = Vfase × **√3** ≈ 1,732 × Vfase ✔
+- **Corrente:** Ilinha = Ifase (iguais)
+
+**Ligação TRIÂNGULO (Δ):**
+- **Tensão:** Vlinha = Vfase (iguais)
+- **Corrente:** Ilinha = Ifase × √3
+
+**Exemplo prático (sistema 380/220 V brasileiro):**
+- Tensão de fase (Y): 220 V
+- Tensão de linha: 220 × √3 = **380 V** ✔
+
+**Macete para não confundir:**
+| Ligação | Tensão | Corrente |
+|---------|--------|---------|
+| **Estrela (Y)** | Linha = Fase × √3 | Linha = Fase |
+| **Triângulo (Δ)** | Linha = Fase | Linha = Fase × √3 |
+
+**√3 aparece uma vez em cada ligação — no lugar trocado!**
+
+**Cilada Cebraspe:** Inverter — afirmar que em estrela Vlinha = Vfase (sem o √3) ou aplicar o √3 na corrente da estrela. ✅`,
+    },
+    tags: ['Urgente'],
+  },
+
+  {
+    id: 435,
+    front: {
+      title: "Eletricidade: Inversão de Giro do Motor de Indução Trifásico ⚡",
+      subtitle: "Inverte-se o sentido de rotação de motor de indução trifásico trocando duas das três fases?",
+    },
+    back: {
+      body: `**A Resposta Correta: SIM — o item é CERTO.**
+
+**O Princípio:**
+O motor de indução trifásico gira no sentido do **campo magnético girante**, que é determinado pela **sequência de fases** aplicada aos terminais.
+
+**Como inverter o sentido de rotação:**
+Basta trocar **quaisquer duas das três fases** de alimentação.
+- Ex: sequência A-B-C → trocar B e C → sequência A-C-B → campo gira no sentido contrário → rotor inverte
+
+**Por que só duas fases:**
+Trocar 3 fases entre si (rotação completa da sequência) mantem o mesmo sentido.
+Apenas inversão de **2 fases** muda a sequência de fase efetivamente.
+
+**Aplicação prática (partida direta com inversão):**
+Usam-se dois contatores (K1 = sentido direto, K2 = sentido inverso) com intertravamento elétrico e mecânico para segurança.
+
+**Atenção à segurança:**
+O intertravamento entre os contatores K1 e K2 é obrigatório para evitar curto-circuito entre fases ao acionar os dois simultaneamente.
+
+**Cilada Cebraspe:** Afirmar que é necessário trocar as três fases, ou que é necessário abrir e religar o motor de forma especial. ✅`,
+    },
+    tags: ['Urgente'],
+  },
+
+  {
+    id: 436,
+    front: {
+      title: "Segurança: NR-10 — Trabalho em Instalações Energizadas ⚡🦺",
+      subtitle: "A NR-10 exige EPI e trabalhadores habilitados para trabalho acima de 50 V CA energizado?",
+    },
+    back: {
+      body: `**A Resposta Correta: SIM — o item é CERTO.**
+
+**NR-10 — Segurança em Instalações e Serviços em Eletricidade:**
+
+**O limite de 50 V CA:**
+A NR-10 considera que instalações elétricas com tensão **superior a 50 V em corrente alternada** (CA) ou 120 V em corrente contínua (CC) representam risco elétrico e requerem controles específicos.
+
+**Para trabalho em instalações ENERGIZADAS:**
+✅ Trabalhadores devem ser **habilitados e autorizados** (treinamento NR-10)
+✅ Uso obrigatório de **EPI específico**: luvas isolantes, capacete com jugular, óculos, protetor facial, manga isolante, calçado de segurança dielétrico
+✅ Uso de **ferramentas isoladas**
+✅ Emissão de **permissão de trabalho** (PT)
+✅ Aplicação do procedimento de **LOTO** quando possível
+
+**Classificação dos trabalhadores (NR-10):**
+| Nível | Descrição |
+|-------|-----------|
+| Qualificado | Formação técnica na área |
+| Habilitado | Qualificado + treinamento NR-10 |
+| Autorizado | Habilitado + autorização formal da empresa |
+
+**Cilada Cebraspe:** Alterar o limite (ex: dizer 110 V ou 220 V) ou omitir a necessidade de habilitação e autorização. ✅`,
+    },
+    tags: ['Urgente'],
+  },
 
 
 
@@ -3233,6 +4394,10 @@ Permite "arrastar" o óleo para fora da planta sem precisar fritar ou queimar a 
 ];
 
 export const mapaDeMaterias: Record<string, string[]> = {
+  "🚨 Urgente": [
+    "Urgente"
+  ],
+
   "Português": [
     "Português", "Pronome Relativo", "Sintaxe", "Concordância Verbal", "Pontuação",
     "Vírgula", "Regência", "Regência Verbal", "Vícios de Linguagem", "Conjunções",
@@ -3304,4 +4469,4 @@ export function getSubjectForCard(card: Flashcard): string {
   return bestSubject;
 }
 
-export const SUBJECT_LIST = Object.keys(mapaDeMaterias).concat(["Outros"]);
+export const SUBJECT_LIST = ["🚨 Urgente", ...Object.keys(mapaDeMaterias).filter(k => k !== "🚨 Urgente")].concat(["Outros"]);

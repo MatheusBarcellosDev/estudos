@@ -7,6 +7,9 @@ const PdfReview = dynamic(() => import("@/components/PdfReview"), { ssr: false }
 import Quiz from "@/components/Quiz";
 import Results from "@/components/Results";
 import { Question, QuizResult, Material, AppState } from "@/types";
+import { useTheme } from "@/components/ThemeProvider";
+import { Button } from "@/components/ui/button";
+import { Sun, Moon } from "lucide-react";
 
 export default function Home() {
   const [appState, setAppState] = useState<AppState>("DASHBOARD");
@@ -131,8 +134,21 @@ export default function Home() {
     setResults([]);
   };
 
+  const { theme, toggle: toggleTheme } = useTheme();
+
   return (
     <main className="min-h-screen bg-[#FDFDFD] dark:bg-[#0A0A0A] text-neutral-900 dark:text-neutral-50 font-sans transition-colors duration-300">
+      {/* Theme toggle — fixed top-right */}
+      <div className="fixed top-4 right-4 z-50">
+        <Button
+          variant="ghost"
+          onClick={toggleTheme}
+          className="rounded-2xl px-3 text-muted-foreground backdrop-blur-sm bg-background/60 border border-border/50 shadow-sm"
+          title="Alternar tema"
+        >
+          {theme === "dark" ? <Sun className="w-4 h-4" /> : <Moon className="w-4 h-4" />}
+        </Button>
+      </div>
       <div className="container mx-auto p-4 sm:p-6 lg:p-8 flex flex-col items-center justify-center">
         {appState === "DASHBOARD" && (
           <Dashboard 

@@ -11,15 +11,16 @@ import {
   ArrowLeft,
   Layers,
   BrainCircuit,
-  RotateCcw,
   Trophy,
-  Sparkles,
   BookOpen,
   RotateCw,
+  Moon,
+  Sun,
 } from "lucide-react";
 import Link from "next/link";
 import { Question, QuizResult } from "@/types";
 import { useSimpleMastery } from "@/lib/useSimpleMastery";
+import { useTheme } from "@/components/ThemeProvider";
 
 type PageState = "SELECT_SUBJECT" | "REVIEW" | "QUIZ" | "RESULTS";
 
@@ -39,6 +40,8 @@ export default function FlashcardsPage() {
 
   const { deck, masteredCount, markMastered, restoreAll, reshuffleDeck } =
     useSimpleMastery(filteredFlashcards);
+
+  const { theme, toggle: toggleTheme } = useTheme();
 
   const [currentIdx, setCurrentIdx] = useState(0);
   const [direction, setDirection] = useState(1);
@@ -185,21 +188,27 @@ export default function FlashcardsPage() {
               {pageState === "SELECT_SUBJECT" ? "Flashcards" : selectedSubject}
             </span>
           </div>
-          {/* Restore mastered button (only inside a subject) */}
-          {pageState !== "SELECT_SUBJECT" && masteredCount > 0 && (
+          <div className="flex items-center gap-1">
+            {pageState !== "SELECT_SUBJECT" && masteredCount > 0 && (
+              <Button
+                variant="ghost"
+                onClick={restoreAll}
+                className="gap-1.5 rounded-2xl px-3 text-muted-foreground text-xs"
+                title="Restaurar cards dominados"
+              >
+                <RotateCw className="w-4 h-4" />
+                ({masteredCount})
+              </Button>
+            )}
             <Button
               variant="ghost"
-              onClick={restoreAll}
-              className="gap-2 rounded-2xl px-3 text-muted-foreground text-xs"
-              title="Restaurar cards dominados"
+              onClick={toggleTheme}
+              className="rounded-2xl px-3 text-muted-foreground"
+              title="Alternar tema"
             >
-              <RotateCw className="w-4 h-4" />
-              Restaurar ({masteredCount})
+              {theme === "dark" ? <Sun className="w-4 h-4" /> : <Moon className="w-4 h-4" />}
             </Button>
-          )}
-          {pageState === "SELECT_SUBJECT" && (
-            <div className="w-20" /> /* Spacer to keep title centered */
-          )}
+          </div>
         </div>
 
         {/* ── SUBJECT SELECTION STATE ── */}
@@ -215,6 +224,7 @@ export default function FlashcardsPage() {
             <div className="grid grid-cols-1 sm:grid-cols-2 gap-4 pb-12">
               {subjectStats.map((item: any) => {
                 const percent = Math.round((item.mastered / item.total) * 100);
+                const isUrgent = item.subject === "🚨 Urgente";
                 return (
                   <button
                     key={item.subject}
@@ -223,13 +233,18 @@ export default function FlashcardsPage() {
                       setCurrentIdx(0);
                       setPageState("REVIEW");
                     }}
-                    className="flex flex-col text-left bg-white dark:bg-neutral-900 border rounded-3xl p-5 shadow-sm hover:shadow-md hover:border-primary/50 transition-all group"
+                    className={
+                      isUrgent
+                        ? "col-span-1 sm:col-span-2 flex flex-col text-left rounded-3xl p-5 shadow-md transition-all group border-2 border-red-400/60 bg-gradient-to-br from-red-500/10 via-orange-500/5 to-transparent dark:from-red-900/30 dark:via-orange-900/10 hover:shadow-red-500/20 hover:shadow-lg hover:border-red-500/80 ring-2 ring-red-400/30 ring-offset-2 ring-offset-background"
+                        : "flex flex-col text-left bg-white dark:bg-neutral-900 border rounded-3xl p-5 shadow-sm hover:shadow-md hover:border-primary/50 transition-all group"
+                    }
                   >
                     <div className="flex justify-between items-start mb-4 w-full">
-                      <h3 className="font-bold text-lg text-neutral-800 dark:text-neutral-100 group-hover:text-primary transition-colors pr-2">
+                      <h3 className={`font-bold text-lg pr-2 transition-colors ${isUrgent ? "text-red-600 dark:text-red-400 group-hover:text-red-500" : "text-neutral-800 dark:text-neutral-100 group-hover:text-primary"}`}>
                         {item.subject}
+                        {isUrgent && <span className="ml-2 text-xs font-semibold bg-red-500 text-white px-2 py-0.5 rounded-full animate-pulse">PRIORIDADE</span>}
                       </h3>
-                      <div className="bg-primary/10 text-primary text-xs font-bold px-2.5 py-1 rounded-full whitespace-nowrap">
+                      <div className={`text-xs font-bold px-2.5 py-1 rounded-full whitespace-nowrap ${isUrgent ? "bg-red-500/15 text-red-600 dark:text-red-400" : "bg-primary/10 text-primary"}`}>
                         {item.total} cards
                       </div>
                     </div>
@@ -242,7 +257,7 @@ export default function FlashcardsPage() {
                       </div>
                       <div className="h-2 w-full bg-neutral-100 dark:bg-neutral-800 rounded-full overflow-hidden">
                         <motion.div
-                          className="h-full bg-emerald-500 rounded-full"
+                          className={`h-full rounded-full ${isUrgent ? "bg-red-500" : "bg-emerald-500"}`}
                           initial={{ width: 0 }}
                           animate={{ width: `${percent}%` }}
                           transition={{ duration: 0.8, ease: "easeOut" }}
@@ -251,7 +266,7 @@ export default function FlashcardsPage() {
                     </div>
 
                     <div className="mt-4 flex items-center gap-3">
-                      <div className="flex items-center gap-1.5 text-xs font-semibold text-blue-600 dark:text-blue-400 bg-blue-50 dark:bg-blue-500/10 px-2 py-1 rounded-md">
+                      <div className={`flex items-center gap-1.5 text-xs font-semibold px-2 py-1 rounded-md ${isUrgent ? "text-red-600 dark:text-red-400 bg-red-50 dark:bg-red-500/10" : "text-blue-600 dark:text-blue-400 bg-blue-50 dark:bg-blue-500/10"}`}>
                         <BookOpen className="w-3.5 h-3.5" />
                         {item.remaining} restantes
                       </div>
