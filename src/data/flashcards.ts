@@ -11,7 +11,7 @@ export interface Flashcard {
   tags?: string[];
 }
 
-export const flashcards: Flashcard[] = [
+export const flashcards1: Flashcard[] = [
   {
     id: 1,
     front: {
@@ -3866,6 +3866,2227 @@ Total: (6/10) * (5/9) = 30/90 = **1/3**. ✅`,
 
 
 ];
+
+export const flashcards: Flashcard[] = [
+  // ═══════════════════════════════════════════════════════════════
+  // FLASHCARDS ANSA 2026 — OPERAÇÃO
+  // Baseado nas provas reais Petrobras 2023 + Edital ANSA
+  // ═══════════════════════════════════════════════════════════════
+
+  // ─────────────────────────────────────────────────────────────
+  // LÍNGUA PORTUGUESA
+  // ─────────────────────────────────────────────────────────────
+
+  {
+    "id": 501,
+    "front": {
+      "title": "LP: Substituição 'por onde' → 'pelas quais' 🔄",
+      "subtitle": "Quando 'por onde' pode ser substituído por 'pelas quais'?"
+    },
+    "back": {
+      "body": `**A Regra:**
+'Por onde' é um pronome relativo que se refere a um antecedente com ideia de **lugar ou via**.
+Pode ser substituído por **'pelas quais'** quando o antecedente for feminino plural.
+
+**Exemplo da prova real Petrobras 2023:**
+'...as rotas **por onde** ele é transportado...'
+→ '...as rotas **pelas quais** ele é transportado...' ✅
+
+**Por quê funciona?**
+- 'rotas' = feminino plural → artigo 'as' + preposição 'por' = **pelas**
+- 'as quais' substitui o antecedente feminino plural
+
+**Se o antecedente fosse masculino plural:**
+'os caminhos por onde' → 'pelos quais'
+
+**Cilada Cebraspe:** A banca oferece 'pelas quais' para antecedente masculino ou singular. Sempre cheque gênero e número do antecedente. ✅`
+    },
+    "tags": ["Língua Portuguesa", "Pronome Relativo", "ANSA 2026"]
+  },
+
+  {
+    "id": 502,
+    "front": {
+      "title": "LP: 'Dia a dia' ou 'dia-a-dia'? ✏️",
+      "subtitle": "O Novo Acordo Ortográfico aceita as duas formas?"
+    },
+    "back": {
+      "body": `**A Resposta: NÃO — apenas uma forma é correta.**
+
+**Regra do Novo Acordo (vigente desde 2009):**
+O hífen em locuções substantivas/adverbiais formadas por palavras repetidas **foi eliminado** pelo Acordo Ortográfico de 1990 (em vigor no Brasil desde 2009).
+
+**Forma correta: dia a dia** (sem hífen) ✅
+**Forma incorreta: ~~dia-a-dia~~** ❌
+
+**Outros exemplos da mesma regra:**
+- frente a frente (não frente-a-frente)
+- cara a cara (não cara-a-cara)
+- gota a gota (não gota-a-gota)
+
+**Exceção — mantém hífen:**
+Compostos com sentidos distintos ou consagrados pelo uso:
+- guarda-chuva, beija-flor (não são repetições)
+
+**Cilada Cebraspe:** A banca afirma que as duas formas são aceitas. **ERRADO.** Apenas 'dia a dia' (sem hífen) está correto pelo Acordo Ortográfico vigente. ✅`
+    },
+    "tags": ["Língua Portuguesa", "Ortografia", "ANSA 2026"]
+  },
+
+  {
+    "id": 503,
+    "front": {
+      "title": "LP: 'Pois' vs 'Porque' — São Intercambiáveis? 🔄",
+      "subtitle": "Qual a diferença entre 'pois' e 'porque' como conjunções causais?"
+    },
+    "back": {
+      "body": `**Resposta: SIM, são intercambiáveis quando causais — item CERTO.**
+
+**'Pois' causal:**
+- Introduz explicação/causa
+- Equivale a 'porque', 'visto que', 'já que'
+- Posição: **após** a oração principal
+- Ex: 'Reduzir esses conflitos seria um erro, **pois** questões outras estavam envolvidas.'
+
+**'Porque' causal:**
+- Também introduz explicação/causa
+- Pode aparecer antes ou depois da principal
+- Ex: 'Seria um erro **porque** questões outras estavam envolvidas.'
+
+**Quando NÃO são intercambiáveis:**
+| Uso | 'Pois' | 'Porque' |
+|-----|--------|----------|
+| Causal (explicação) | ✅ | ✅ |
+| Consecutivo ('então') | ✅ | ❌ |
+| Interrogativa indireta | ❌ | ✅ |
+
+**Macete:**
+'pois' causal = 'porque' = substituição sempre válida ✅`
+    },
+    "tags": ["Língua Portuguesa", "Conjunções", "ANSA 2026"]
+  },
+
+  {
+    "id": 504,
+    "front": {
+      "title": "LP: Verbos 'Fazer' e 'Haver' Indicando Tempo ⏱️",
+      "subtitle": "Esses verbos concordam com o sujeito ou são impessoais?"
+    },
+    "back": {
+      "body": `**A Regra: São IMPESSOAIS — ficam sempre na 3ª pessoa do SINGULAR.**
+
+**Verbo HAVER (tempo decorrido):**
+- ✅ 'Há dois anos que...' (correto)
+- ❌ 'Hão dois anos que...' (errado)
+- Equivale a 'Faz dois anos que...'
+
+**Verbo FAZER (tempo decorrido):**
+- ✅ 'Faz três dias que o operador não aparece.'
+- ❌ 'Fazem três dias que...' (errado — não tem sujeito)
+
+**Por que são impessoais?**
+Não têm sujeito. 'anos' e 'dias' são objetos diretos, não sujeitos.
+
+**Teste rápido:**
+'Há/Faz + tempo + que...' → sempre singular ✅
+
+**Cilada Cebraspe:**
+A banca escreve 'Fazem dois meses...' e pergunta se está correto. **ERRADO.** A forma correta é 'Faz dois meses...' ✅
+
+**Atenção:**
+Diferente de 'existir' onde HAVER concorda:
+'Havia muitos problemas' (impessoal) ✅
+'Existiam muitos problemas' (pessoal) ✅`
+    },
+    "tags": ["Língua Portuguesa", "Concordância Verbal", "ANSA 2026"]
+  },
+
+  {
+    "id": 505,
+    "front": {
+      "title": "LP: Próclise — Quando é Obrigatória? 📌",
+      "subtitle": "Quais palavras 'atraem' o pronome para antes do verbo?"
+    },
+    "back": {
+      "body": `**PRÓCLISE = pronome ANTES do verbo**
+
+**Palavras que OBRIGAM a próclise:**
+
+| Atrator | Exemplo |
+|---------|---------|
+| Palavras negativas (não, nunca, jamais, nada, ninguém) | 'Não **se** deve esquecer.' |
+| Conjunções subordinativas (que, se, porque, quando...) | 'Espero **que se** resolva.' |
+| Pronomes relativos (que, quem, onde...) | 'O operador **que se** destacou.' |
+| Pronomes indefinidos (alguém, ninguém, tudo...) | 'Tudo **se** perdeu.' |
+| Pronomes demonstrativos (isso, aquilo...) | 'Isso **me** preocupa.' |
+| Advérbios (sempre, já, ainda, só, bem...) | 'Sempre **se** preocupou.' |
+| Expressões adverbiais ('muitas vezes', 'às vezes'...) | 'Muitas vezes **se** adiou.' |
+
+**Cilada Cebraspe:**
+'Em Estes, muitas vezes, se situam em regiões remotas, é OBRIGATÓRIA a próclise em razão da expressão adverbial "muitas vezes".'
+→ **ERRADO.** 'Muitas vezes' está intercalado (entre vírgulas), não precede o verbo. A próclise aqui é facultativa, não obrigatória. ✅`
+    },
+    "tags": ["Língua Portuguesa", "Colocação Pronominal", "ANSA 2026"]
+  },
+
+  {
+    "id": 506,
+    "front": {
+      "title": "LP: Crase — Regras Essenciais ✅❌",
+      "subtitle": "Quando é obrigatória, facultativa e proibida?"
+    },
+    "back": {
+      "body": `**CRASE = preposição 'a' + artigo 'a(s)'**
+
+**OBRIGATÓRIA:**
+- Antes de substantivo feminino com artigo: 'às normas', 'à cidade' ✅
+- Antes de horas: 'às 14h', 'à meia-noite' ✅
+- Locuções prepositivas/adverbiais: 'à frente', 'às vezes', 'à medida que' ✅
+
+**FACULTATIVA:**
+- Antes de nome próprio feminino: 'Vou à/a Paris' (ambas corretas)
+- Antes de pronome possessivo: 'à/a minha supervisora'
+
+**PROIBIDA:**
+- Antes de masculino: 'a cargo', 'a pedido' ❌ (sem crase)
+- Antes de verbos: 'começou a trabalhar' ❌
+- Antes de 'uma': 'a uma hora' ❌
+- Antes de pronomes: 'a ela', 'a você', 'a quem' ❌
+- Preposição 'a' isolada: 'a serviço' ❌
+
+**Teste prático:**
+Troque o substantivo feminino por masculino.
+Se aparecer 'ao' → usa crase.
+'Refere-se à norma' → 'Refere-se **ao** regulamento' → tem 'ao' → **crase obrigatória** ✅`
+    },
+    "tags": ["Língua Portuguesa", "Crase", "ANSA 2026"]
+  },
+
+  {
+    "id": 507,
+    "front": {
+      "title": "LP: Oração Adjetiva Restritiva vs Explicativa 🔍",
+      "subtitle": "Qual delas leva vírgula? Como diferenciar?"
+    },
+    "back": {
+      "body": `**EXPLICATIVA = com vírgulas | RESTRITIVA = sem vírgulas**
+
+**Oração Adjetiva RESTRITIVA:**
+- Identifica / restringe o antecedente (qual dos?)
+- Indispensável ao sentido
+- **SEM vírgulas**
+- Ex: 'Os operadores **que trabalham no turno noturno** receberam treinamento.' (só os do noturno)
+
+**Oração Adjetiva EXPLICATIVA:**
+- Acrescenta informação extra sobre o antecedente (já identificado)
+- Dispensável ao sentido
+- **COM vírgulas** (isola a oração)
+- Ex: 'Os operadores**, que trabalham no turno noturno,** receberam treinamento.' (todos os operadores, que por acaso trabalham à noite)
+
+**Como identificar na prova:**
+- Antecedente = pronome pessoal ou nome próprio → sempre EXPLICATIVA (com vírgula)
+  Ex: 'Ele, que é operador, recebeu treinamento.' ✅
+- Antecedente = substantivo comum sem determinante → geralmente RESTRITIVA
+
+**Cilada Cebraspe:**
+A banca omite ou adiciona vírgulas e pede se a correção foi mantida. Verifique se a retirada/adição muda o sentido. ✅`
+    },
+    "tags": ["Língua Portuguesa", "Orações Adjetivas", "Pontuação", "ANSA 2026"]
+  },
+
+  {
+    "id": 508,
+    "front": {
+      "title": "LP: Imperativo — Formação para 'Você' e 'Tu' 📋",
+      "subtitle": "De onde vem o imperativo afirmativo para cada pessoa?"
+    },
+    "back": {
+      "body": `**Imperativo Afirmativo — Duas origens diferentes:**
+
+**Para 'TU' → vem do INDICATIVO (sem -s):**
+Tu falas → fala (tu) ✅
+Tu comes → come (tu) ✅
+Tu abres → abre (tu) ✅
+
+**Para 'VOCÊ / ELE / NÓS / VOCÊS / ELES' → vem do SUBJUNTIVO PRESENTE:**
+Que você fale → fale (você) ✅
+Que você entregue → entregue (você) ✅
+Que nós falemos → falemos ✅
+Que vocês falem → falem ✅
+
+**Exemplo da prova Petrobras 2023:**
+'Em Entregue o relatório ao gerente, o modo imperativo afirmativo de entregar para a 3ª pessoa do singular é formado a partir do presente do subjuntivo.'
+→ **CERTO** ✅ (você = subjuntivo = entregue)
+
+**Verbos irregulares — atenção:**
+| Verbo | Tu (indicativo) | Você (subjuntivo) |
+|-------|-----------------|-------------------|
+| Ser | sê | seja |
+| Estar | está | esteja |
+| Ter | tem | tenha |
+| Fazer | faz | faça |
+| Ir | vai | vá |`
+    },
+    "tags": ["Língua Portuguesa", "Modo Imperativo", "ANSA 2026"]
+  },
+
+  {
+    "id": 509,
+    "front": {
+      "title": "LP: Regência de Verbos Importantes 🎯",
+      "subtitle": "Quais verbos exigem preposição? Quais não exigem?"
+    },
+    "back": {
+      "body": `**Verbos de REGÊNCIA COBRADA na prova:**
+
+**Transitivos INDIRETOS (exigem preposição):**
+- **Assistir** (presenciar) → assiste **a** algo
+  'Assistiu **ao** acidente' ✅
+- **Obedecer** → obedece **a** algo
+- **Responder** (replicar) → responde **a** alguém
+- **Visar** (objetivar) → visa **a** algo
+- **Aspirar** (almejar) → aspira **a** algo
+- **Preferir** → prefere A **a** B (não usa 'do que')
+
+**Transitivos DIRETOS (sem preposição):**
+- **Assistir** (ajudar) → assiste alguém
+- **Querer** → quer algo (não 'quer de')
+- **Amar** → ama alguém
+
+**Dupla regência (muda o sentido):**
+| Verbo | Com preposição | Sem preposição |
+|-------|---------------|----------------|
+| Assistir | presenciar (a) | ajudar (sem) |
+| Visar | objetivar (a) | pôr visto (sem) |
+| Aspirar | almejar (a) | inalar (sem) |
+
+**Cilada Cebraspe:**
+'Os operadores assistiram **o** treinamento' → ERRADO (presenciar exige 'a')
+'Os operadores assistiram **ao** treinamento' → CERTO ✅`
+    },
+    "tags": ["Língua Portuguesa", "Regência Verbal", "ANSA 2026"]
+  },
+
+  {
+    "id": 510,
+    "front": {
+      "title": "LP: Concordância Verbal — Casos Especiais 📐",
+      "subtitle": "Sujeito composto, coletivo, partitivo e 'se' apassivador"
+    },
+    "back": {
+      "body": `**Casos que mais caem na prova:**
+
+**1. Sujeito com 'um dos que':**
+'Foi um dos operadores **que mais trabalharam**.' (plural) ✅
+
+**2. Partitivo (parte de, a maioria de...):**
+'A maioria dos operadores **chegou** cedo.' (singular) ✅
+'A maioria dos operadores **chegaram** cedo.' (também aceito) ✅
+
+**3. Coletivo:**
+'A equipe **trabalhou** bem.' (singular obrigatório quando sem especificação)
+
+**4. 'Mais de um' → singular:**
+'Mais de um operador **foi** aprovado.' ✅
+
+**5. 'Se' apassivador → verbo concorda com sujeito paciente:**
+'Contratam-se **operadores**.' → sujeito = operadores (plural) ✅
+'Contrata-se **um operador**.' → sujeito = um operador (singular) ✅
+
+**6. 'Se' índice de indeterminação → verbo sempre singular:**
+'Precisa-se **de técnicos**.' → sempre singular ✅
+(aqui 'técnicos' é objeto, não sujeito)
+
+**Cilada clássica:**
+'Precisa-se de técnicos especializados' → sujeito indeterminado → singular ✅
+NÃO é apassivador porque 'precisar de' é transitivo indireto. ✅`
+    },
+    "tags": ["Língua Portuguesa", "Concordância Verbal", "ANSA 2026"]
+  },
+
+  // ─────────────────────────────────────────────────────────────
+  // RACIOCÍNIO LÓGICO E MATEMÁTICA
+  // ─────────────────────────────────────────────────────────────
+
+  {
+    "id": 511,
+    "front": {
+      "title": "Lógica: Tabela-Verdade do Condicional P → Q 🔀",
+      "subtitle": "Quando P → Q é FALSO? E quais são suas equivalências?"
+    },
+    "back": {
+      "body": `**P → Q ('Se P, então Q')**
+
+**Tabela-Verdade:**
+| P | Q | P → Q |
+|---|---|-------|
+| V | V | **V** |
+| V | F | **F** ← único caso FALSO |
+| F | V | **V** |
+| F | F | **V** |
+
+**Macete:** P → Q é FALSO somente quando P é Verdadeiro e Q é Falso.
+('Promessa não cumprida = mentira')
+
+**Equivalências fundamentais:**
+- P → Q ≡ ¬P ∨ Q
+- P → Q ≡ ¬Q → ¬P (CONTRAPOSITIVA — sempre verdadeira juntas)
+- P → Q ≠ Q → P (converse — pode ser falsa)
+- P → Q ≠ ¬P → ¬Q (inversa — pode ser falsa)
+
+**Cilada Cebraspe:**
+'P → Q é equivalente a Q → P.' → **ERRADO** ❌
+'P → Q é equivalente a ¬Q → ¬P.' → **CERTO** ✅
+
+**Aplicação direta:**
+'Se a pressão aumentar, a temperatura aumentará.'
+Contrapositiva: 'Se a temperatura NÃO aumentou, a pressão NÃO aumentou.' ✅`
+    },
+    "tags": ["Raciocínio Lógico", "Lógica Proposicional", "ANSA 2026"]
+  },
+
+  {
+    "id": 512,
+    "front": {
+      "title": "Lógica: Negações das Proposições Categóricas 🔄",
+      "subtitle": "Como negar 'Todo', 'Nenhum', 'Algum', 'Algum não'?"
+    },
+    "back": {
+      "body": `**As 4 proposições categóricas e suas negações:**
+
+| Proposição | Negação |
+|-----------|---------|
+| **Todo A é B** | Algum A não é B (existe pelo menos um) |
+| **Nenhum A é B** | Algum A é B |
+| **Algum A é B** | Nenhum A é B |
+| **Algum A não é B** | Todo A é B |
+
+**Regra prática:**
+'Todo' ↔ nega com 'Algum não'
+'Nenhum' ↔ nega com 'Algum'
+
+**Cilada Cebraspe:**
+'A negação de Todo equipamento foi calibrado é Nenhum equipamento foi calibrado.'
+→ **ERRADO** ❌
+A negação correta é: '**Algum** equipamento **não** foi calibrado.' ✅
+
+**Exemplo real da prova:**
+'Todo operador está habilitado.'
+Negação: 'Algum operador não está habilitado.' ✅
+
+**Leis de De Morgan (proposicionais):**
+- ¬(P ∧ Q) ≡ ¬P ∨ ¬Q
+- ¬(P ∨ Q) ≡ ¬P ∧ ¬Q`
+    },
+    "tags": ["Raciocínio Lógico", "Negação", "ANSA 2026"]
+  },
+
+  {
+    "id": 513,
+    "front": {
+      "title": "Matemática: Progressão Aritmética (PA) 📈",
+      "subtitle": "Fórmulas do termo geral e soma dos termos"
+    },
+    "back": {
+      "body": `**PROGRESSÃO ARITMÉTICA — Fórmulas essenciais:**
+
+**Termo geral:**
+aₙ = a₁ + (n − 1) · r
+
+Onde:
+- aₙ = n-ésimo termo
+- a₁ = primeiro termo
+- r = razão (diferença entre termos consecutivos)
+- n = posição do termo
+
+**Soma dos n primeiros termos:**
+Sₙ = n · (a₁ + aₙ) / 2
+
+**Exemplo da prova (Petrobras 2023):**
+PA com a₁ = 120.000 e r = 5.000 (m³/dia mensais)
+- Dezembro = 12º mês → a₁₂ = 120.000 + 11 × 5.000 = **175.000** ✅
+- Soma total = 12 × (120.000 + 175.000) / 2 = 12 × 147.500 = **1.770.000** ✅
+
+**Propriedade útil:**
+Numa PA finita, a soma de termos equidistantes dos extremos é sempre igual:
+a₁ + aₙ = a₂ + aₙ₋₁ = a₃ + aₙ₋₂ ...
+
+**Cilada Cebraspe:**
+Confundir o índice (n-ésimo) com o valor do termo. O 12º mês não é n = 12 e aₙ = 12 — cuidado com a interpretação do problema. ✅`
+    },
+    "tags": ["Matemática", "Progressão Aritmética", "ANSA 2026"]
+  },
+
+  {
+    "id": 514,
+    "front": {
+      "title": "Matemática: Progressão Geométrica (PG) 📊",
+      "subtitle": "Fórmulas do termo geral e soma dos termos"
+    },
+    "back": {
+      "body": `**PROGRESSÃO GEOMÉTRICA — Fórmulas essenciais:**
+
+**Termo geral:**
+aₙ = a₁ · q^(n−1)
+
+Onde:
+- aₙ = n-ésimo termo
+- a₁ = primeiro termo
+- q = razão (quociente entre termos consecutivos)
+- n = posição do termo
+
+**Soma dos n primeiros termos (q ≠ 1):**
+Sₙ = a₁ · (qⁿ − 1) / (q − 1)
+
+**Exemplo da prova (Petrobras 2023):**
+Reservatório de 1,6 milhão de barris. Produção inicial = 150.000 barris/dia, q = √2.
+a₁ = 150.000 · S₄ = a₁(q⁴ - 1)/(q - 1)?
+a₁(1 + q + q² + q³) = 150.000(1 + √2 + 2 + 2√2) = 150.000(3 + 3√2)
+= 450.000(1 + √2) ≈ 450.000 × 2,414 ≈ 1.086.300 < 1.600.000
+→ 4 dias NÃO preenche o reservatório → item **ERRADO** ❌
+
+**Cilada Cebraspe:**
+Calcular a potência q^n sem ajustar o expoente (n−1 no termo, mas n na soma).
+Verificar se pede dias PARA PREENCHER ou se a soma é inferior/superior ao total. ✅`
+    },
+    "tags": ["Matemática", "Progressão Geométrica", "ANSA 2026"]
+  },
+
+  {
+    "id": 515,
+    "front": {
+      "title": "Matemática: Análise Combinatória — C, A e P 🎲",
+      "subtitle": "Quando usar combinação, arranjo ou permutação?"
+    },
+    "back": {
+      "body": `**A PERGUNTA-CHAVE: A ORDEM IMPORTA?**
+
+**PERMUTAÇÃO — todos os elementos, ordem importa:**
+P(n) = n!
+Ex: 5 técnicos em fila → 5! = 120 formas
+
+**ARRANJO — k de n, ordem importa:**
+A(n,k) = n! / (n−k)!
+Ex: 3 operadores de 10 para cargos distintos → A(10,3) = 720
+
+**COMBINAÇÃO — k de n, ordem NÃO importa:**
+C(n,k) = n! / [k! · (n−k)!]
+Ex: 2 operadores de 10 para inspecionar juntos:
+C(10,2) = 10!/(2!·8!) = **45**
+
+**Exemplos da prova Petrobras 2023:**
+- '5 passageiros de 10 (5H+5M), 3 mulheres obrigatórias':
+  C(5,3) × C(5,2) = 10 × 10 = **100** → item dizia 10 → **ERRADO** ❌
+- '2 pintores e 2 soldadores de 8+10':
+  C(8,2) × C(10,2) = 28 × 45 = 1260 > 1200 → item dizia <1200 → **ERRADO** ❌
+
+**Cilada Cebraspe:**
+Misturar C com A quando o enunciado cita 'formas distintas de escolher grupo' → é C (ordem irrelevante) ✅`
+    },
+    "tags": ["Matemática", "Combinatória", "ANSA 2026"]
+  },
+
+  {
+    "id": 516,
+    "front": {
+      "title": "Matemática: Probabilidade — Conceitos Essenciais 🎯",
+      "subtitle": "Probabilidade simples, condicional e multiplicação"
+    },
+    "back": {
+      "body": `**FÓRMULAS FUNDAMENTAIS:**
+
+**Probabilidade simples:**
+P(A) = casos favoráveis / casos totais
+
+**Probabilidade de eventos independentes (multiplicação):**
+P(A e B) = P(A) × P(B)
+
+**Probabilidade sem reposição (dependentes):**
+P(A e B) = P(A) × P(B|A)
+(o denominador diminui a cada extração)
+
+**Probabilidade do complementar:**
+P(A') = 1 − P(A)
+
+**Exemplos reais:**
+
+**Prova 2023:** P(atraso 3 dias) = (0,2)³ = 0,008 = 0,8% < 1%
+→ item dizia 'superior a 1%' → **ERRADO** ❌
+
+**Simulado ANSA:** Urna 4 vermelhas + 6 azuis, 2 azuis sem reposição:
+P = 6/10 × 5/9 = 30/90 = **1/3** ✅
+
+**"Pelo menos um":**
+P(pelo menos 1 coroa em 2 lançamentos) = 1 − P(nenhuma coroa)
+= 1 − (1/2)² = 1 − 1/4 = **3/4** ✅
+
+**Cilada Cebraspe:**
+Usar denominador fixo (com reposição) em problema SEM reposição. ❌
+Sempre cheque se é COM ou SEM reposição! ✅`
+    },
+    "tags": ["Matemática", "Probabilidade", "ANSA 2026"]
+  },
+
+  {
+    "id": 517,
+    "front": {
+      "title": "Matemática: Funções Exponencial e Logarítmica 📐",
+      "subtitle": "Propriedades essenciais para a prova"
+    },
+    "back": {
+      "body": `**EXPONENCIAL: f(x) = aˣ**
+
+Propriedades:
+- aˣ · aʸ = a^(x+y)
+- aˣ / aʸ = a^(x−y)
+- (aˣ)ʸ = a^(xy)
+- a⁰ = 1
+- a⁻ˣ = 1/aˣ
+
+**LOGARÍTMICA: log_a(x) = y ↔ aʸ = x**
+
+Propriedades:
+- log(A·B) = log A + log B
+- log(A/B) = log A − log B
+- log(Aⁿ) = n·log A
+- log_a(a) = 1
+- log_a(1) = 0
+- ln(eˣ) = x
+
+**Exemplo da prova Petrobras 2023:**
+C(t) = 5 · e^(0,05t) — quando C(10) = dobro do inicial?
+C(10) = 5e^(0,5) = 5 · e^(1/2)
+Para dobrar: e^(0,05t) = 2 → 0,05t = ln 2 ≈ 0,5
+→ t = 0,5/0,05 = **10 anos** ✅ (ln(8/5) ≈ 0,5... verificar com dado)
+
+**Cilada Cebraspe:**
+Confundir log natural (ln, base e) com log decimal (base 10).
+Sempre observe qual base está sendo usada. ✅`
+    },
+    "tags": ["Matemática", "Funções", "Logaritmo", "ANSA 2026"]
+  },
+
+  {
+    "id": 518,
+    "front": {
+      "title": "Matemática: Matrizes — Produto e Inversa 🔢",
+      "subtitle": "Quando é possível multiplicar matrizes? Como calcular a inversa?"
+    },
+    "back": {
+      "body": `**PRODUTO DE MATRIZES A × B:**
+Só é possível se: n° de COLUNAS de A = n° de LINHAS de B
+Resultado: dimensão (linhas de A) × (colunas de B)
+
+**Determinante de ordem 2:**
+|a b|
+|c d| = ad − bc
+
+**Inversa de matriz 2×2:**
+Se A = |a b|, então A⁻¹ = (1/det A) · |d  −b|
+       |c d|                              |−c   a|
+
+**Exemplo da prova Petrobras 2023:**
+C = |415  2|
+    |  1  1|
+
+det(C) = 415·1 − 2·1 = 413
+
+C⁻¹ = (1/413) · | 1  −2|
+                  |−1 415|
+
+A prova apresentou C⁻¹ = |1  −2| (sem o fator 1/413) → **ERRADO** ❌
+                          |−1 415|
+
+**Dimensões — regra:**
+A₂ₓ₃: determinante NÃO existe (só quadradas têm det)
+B₃ₓ₃: det existe ✅
+C₃ₓ₂: det NÃO existe ✅
+
+**Cilada Cebraspe:**
+Afirmar que é possível calcular o determinante de matriz não quadrada. ❌
+Ou apresentar a inversa sem dividir pelo determinante. ❌ ✅`
+    },
+    "tags": ["Matemática", "Matrizes", "ANSA 2026"]
+  },
+
+  // ─────────────────────────────────────────────────────────────
+  // QUÍMICA
+  // ─────────────────────────────────────────────────────────────
+
+  {
+    "id": 519,
+    "front": {
+      "title": "Química: Estequiometria do n-Heptano (C₇H₁₆) ⚗️",
+      "subtitle": "Combustão completa — balanceamento e cálculos"
+    },
+    "back": {
+      "body": `**Equação BALANCEADA da combustão do n-heptano:**
+
+**C₇H₁₆ + 11 O₂ → 7 CO₂ + 8 H₂O**
+
+Verificação:
+- C: 7 = 7 ✅
+- H: 16 = 2×8 = 16 ✅
+- O: 22 = 14 + 8 = 22 ✅
+
+**Massas molares:**
+- C₇H₁₆ = 7×12 + 16×1 = 84 + 16 = **100 g/mol**
+- O₂ = 32 g/mol
+- CO₂ = 44 g/mol
+- H₂O = 18 g/mol
+
+**Relações estequiométricas:**
+1 mol C₇H₁₆ → 11 mol O₂ → 7 mol CO₂ → 8 mol H₂O
+
+**Exercício-tipo da prova:**
+500 g de n-heptano → quantos g de H₂O?
+- Mols de C₇H₁₆ = 500/100 = 5 mol
+- Mols de H₂O = 5 × 8 = 40 mol
+- Massa de H₂O = 40 × 18 = **720 g** > 700 g ✅
+
+**Cilada Cebraspe:**
+'Quando 1 mol do GÁS n-heptano é queimado, 5 mol de CO₂ são formados.'
+→ **ERRADO** ❌ (são 7 mol de CO₂, não 5) ✅`
+    },
+    "tags": ["Química", "Estequiometria", "Combustão", "ANSA 2026"]
+  },
+
+  {
+    "id": 520,
+    "front": {
+      "title": "Química: Equilíbrio Químico — Constante Kc 🔬",
+      "subtitle": "Como calcular Kc e o que significa?"
+    },
+    "back": {
+      "body": `**CONSTANTE DE EQUILÍBRIO (Kc):**
+
+Para: aA + bB ⇌ cC + dD
+
+Kc = [C]ᶜ · [D]ᵈ / [A]ᵃ · [B]ᵇ
+
+(concentrações molares no equilíbrio)
+
+**Regras importantes:**
+- Sólidos e líquidos puros **NÃO entram** na expressão
+- Kc depende apenas da **temperatura**
+- Kc NÃO depende das concentrações iniciais
+- Kc NÃO depende de catalisadores
+
+**Exemplo da prova Petrobras 2023:**
+Reação I: A₂ + B₂ ⇌ 2AB
+Kc₁ = [AB]² / ([A₂][B₂])
+
+Reação II: 4AB ⇌ 2A₂ + 2B₂ (inversa + dobrada da I)
+K₂ = (K₁⁻¹)² = K₁⁻² ✅
+
+**Regras de manipulação:**
+- Inverter a reação → K_novo = 1/K
+- Multiplicar por n → K_novo = K^n
+- Somar reações → K_total = K₁ × K₂
+
+**Kc vs Kp:**
+Kp = Kc · (RT)^Δn_gás
+onde Δn = mols gasosos produtos − mols gasosos reagentes ✅`
+    },
+    "tags": ["Química", "Equilíbrio Químico", "ANSA 2026"]
+  },
+
+  {
+    "id": 521,
+    "front": {
+      "title": "Química: Le Chatelier — Perturbações no Equilíbrio ⚖️",
+      "subtitle": "Como o sistema responde a pressão, temperatura e concentração?"
+    },
+    "back": {
+      "body": `**PRINCÍPIO DE LE CHATELIER:**
+'Quando uma perturbação é aplicada a um sistema em equilíbrio, ele se desloca para minimizá-la.'
+
+**TABELA DE PERTURBAÇÕES:**
+
+| Perturbação | Deslocamento |
+|-------------|-------------|
+| ↑ concentração de REAGENTE | → direita (forma produtos) |
+| ↑ concentração de PRODUTO | ← esquerda (forma reagentes) ✅ |
+| ↑ pressão (reação com Δn < 0) | → lado de menor n mol gás |
+| ↑ temperatura em reação **exotérmica** | ← esquerda (desfavorece formação) |
+| ↑ temperatura em reação **endotérmica** | → direita (favorece formação) |
+| Catalisador | Sem deslocamento (só acelera o equilíbrio) |
+
+**Aplicação à síntese da amônia (Haber-Bosch):**
+N₂ + 3H₂ ⇌ 2NH₃    ΔH = −92 kJ/mol (exotérmica)
+
+- ↑ pressão → favorece NH₃ (lado com menos mols: 4→2) ✅
+- ↑ temperatura → desfavorece NH₃ (é exotérmica) ❌
+- Catalisador de Fe → acelera, não desloca ✅
+
+**Cilada Cebraspe:**
+'O aumento de temperatura favorece a formação de NH₃ no processo Haber-Bosch.'
+→ **ERRADO** ❌ (reação é exotérmica → T alto desfavorece produtos) ✅`
+    },
+    "tags": ["Química", "Le Chatelier", "Equilíbrio", "ANSA 2026"]
+  },
+
+  {
+    "id": 522,
+    "front": {
+      "title": "Química: pH, pOH e Força de Ácidos/Bases 🧪",
+      "subtitle": "Cálculos de pH e classificação de ácidos e bases"
+    },
+    "back": {
+      "body": `**DEFINIÇÕES:**
+- pH = −log[H⁺] ou [H₃O⁺]
+- pOH = −log[OH⁻]
+- pH + pOH = 14 (a 25°C)
+- pH < 7 → ácido | pH = 7 → neutro | pH > 7 → base
+
+**ÁCIDOS E BASES FORTES (ionização completa):**
+Ácidos fortes: HCl, HBr, HI, HNO₃, H₂SO₄, HClO₄
+Bases fortes: NaOH, KOH, Ca(OH)₂, Ba(OH)₂
+
+**CÁLCULO DIRETO — Bases fortes:**
+NaOH 0,01 mol/L:
+- [OH⁻] = 0,01 = 10⁻² → pOH = 2 → pH = 14 − 2 = **12** ✅
+
+HCl 0,001 mol/L:
+- [H⁺] = 10⁻³ → pH = **3** ✅
+
+**ÁCIDOS FRACOS — usar Ka:**
+pH = ½(pKa − log C)
+
+**Cilada Cebraspe:**
+'pH de NaOH 0,01 mol/L = 12.' → **CERTO** ✅
+'A solução com pH 8 é ácida.' → **ERRADO** ❌ (8 > 7 = básica)
+'pH de solução ácida fraca = pKa (sempre).' → **ERRADO** ❌ (depende da concentração) ✅`
+    },
+    "tags": ["Química", "pH", "Ácidos e Bases", "ANSA 2026"]
+  },
+
+  {
+    "id": 523,
+    "front": {
+      "title": "Química: Número de Oxidação (NOX) — Regras 🔢",
+      "subtitle": "Como determinar o NOX em compostos?"
+    },
+    "back": {
+      "body": `**REGRAS PARA DETERMINAR O NOX:**
+
+| Regra | Valor |
+|-------|-------|
+| Substância simples | 0 (ex: Fe, O₂, N₂) |
+| Íon monoatômico | = carga (ex: Na⁺ = +1) |
+| Oxigênio em compostos | −2 (exceto peróxidos: −1) |
+| Hidrogênio em compostos | +1 (exceto hidretos metálicos: −1) |
+| Fluoreto | sempre −1 |
+| Metais alcalinos (Gr.1) | +1 |
+| Metais alcalino-terrosos (Gr.2) | +2 |
+| Soma dos NOX em molécula neutra | = 0 |
+| Soma dos NOX em íon | = carga do íon |
+
+**Exemplos cobrados:**
+- KMnO₄: K=+1, O=−2 → +1 + Mn + 4(−2) = 0 → Mn = **+7** ✅
+- NH₃: H=+1 → N + 3(+1) = 0 → N = **−3** ✅
+- Na reação Fe + H₂S → FeS + H₂:
+  • Fe: 0 → +2 (oxidado) | H: +1 → 0 (reduzido)
+  • Agente oxidante: H₂S (oxida o Fe) ✅
+
+**Cilada Cebraspe:**
+'O NOX do Mn no KMnO₄ é +5.' → **ERRADO** ❌ (é +7) ✅`
+    },
+    "tags": ["Química", "Oxirredução", "NOX", "ANSA 2026"]
+  },
+
+  {
+    "id": 524,
+    "front": {
+      "title": "Química: Sistemas Dispersos — Classificação 🔬",
+      "subtitle": "Solução verdadeira, coloide e suspensão"
+    },
+    "back": {
+      "body": `**CLASSIFICAÇÃO PELO TAMANHO DAS PARTÍCULAS:**
+
+| Sistema | Tamanho | Características |
+|---------|---------|-----------------|
+| **Solução verdadeira** | < 1 nm (< 10⁻⁹ m) | Transparente, não sedimenta, não filtrável |
+| **Coloide / Sol coloidal** | 1 nm a 1 μm | Efeito Tyndall, não filtrável, não sedimenta espontaneamente |
+| **Suspensão** | > 1 μm (> 10⁻⁶ m) | Turva, sedimenta, filtrável |
+
+**Efeito Tyndall:**
+Dispersão de luz por partículas coloidais.
+Permite distinguir solução verdadeira (sem efeito) de coloide (com efeito). ✅
+
+**Tipos de coloides:**
+- **Emulsão:** líquido disperso em líquido (ex: leite, petróleo + água)
+- **Aerossol:** sólido ou líquido disperso em gás (ex: névoa, fumaça)
+- **Espuma:** gás disperso em líquido
+- **Gel:** líquido disperso em sólido
+
+**Cilada Cebraspe:**
+'Os sais presentes na água podem ser separados por filtração pois têm partículas < 1 nm.'
+→ **ERRADO** ❌ (< 1 nm = solução verdadeira → NÃO é filtrável) ✅
+
+'Emulsão tem LÍQUIDOS IMISCÍVEIS tanto na fase dispersa quanto na dispersante.' ✅`
+    },
+    "tags": ["Química", "Sistemas Dispersos", "Coloides", "ANSA 2026"]
+  },
+
+  {
+    "id": 525,
+    "front": {
+      "title": "Química: Hidrocarbonetos — Classificação e Fórmulas 🛢️",
+      "subtitle": "Alcanos, alcenos, alcinos, ciclos e aromáticos"
+    },
+    "back": {
+      "body": `**FAMÍLIA DOS HIDROCARBONETOS:**
+
+| Família | Fórmula geral | Ligações | Exemplo |
+|---------|--------------|----------|---------|
+| Alcanos (parafinas) | CₙH₂ₙ₊₂ | simples | CH₄ (metano) |
+| Alcenos (olefinas) | CₙH₂ₙ | 1 dupla | C₂H₄ (etileno) |
+| Alcinos (acetilênicos) | CₙH₂ₙ₋₂ | 1 tripla | C₂H₂ (acetileno) |
+| Cicloalcanos | CₙH₂ₙ | simples (anel) | C₆H₁₂ (ciclohexano) |
+| Aromáticos | CₙH₂ₙ₋₆ | anel benzênico | C₆H₆ (benzeno) |
+
+**Fontes e aplicações:**
+- Gás natural: metano (CH₄), etano, propano
+- GLP (gás de cozinha): propano (C₃H₈) + butano (C₄H₁₀)
+- Gasolina: C₅ a C₁₀ (mistura de alcanos e cicloalcanos)
+- n-heptano (C₇H₁₆): componente da gasolina, M = 100 g/mol
+
+**Cilada Cebraspe:**
+'Os alcanos têm fórmula geral CₙH₄ₙ' → **ERRADO** ❌ (é CₙH₂ₙ₊₂) ✅
+'O benzeno é instável por ter 3 duplas ligações isoladas.' → **ERRADO** ❌ (é estável por deslocalização eletrônica) ✅`
+    },
+    "tags": ["Química", "Orgânica", "Hidrocarbonetos", "ANSA 2026"]
+  },
+
+  {
+    "id": 526,
+    "front": {
+      "title": "Química: Termoquímica — Exo vs Endotérmica 🔥",
+      "subtitle": "Como interpretar o sinal de ΔH?"
+    },
+    "back": {
+      "body": `**SINAL DE ΔH:**
+
+| ΔH | Tipo | O que acontece |
+|----|------|----------------|
+| ΔH < 0 (negativo) | **Exotérmica** | Libera calor para o ambiente |
+| ΔH > 0 (positivo) | **Endotérmica** | Absorve calor do ambiente |
+
+**Exemplos industriais:**
+- Combustão (sempre exotérmica): CH₄ + 2O₂ → CO₂ + H₂O  ΔH < 0 ✅
+- Síntese da amônia: N₂ + 3H₂ → 2NH₃  ΔH = −92 kJ/mol (exotérmica) ✅
+- Calcinação do calcário: CaCO₃ → CaO + CO₂  ΔH > 0 (endotérmica)
+
+**Valor calorífico:**
+Quantidade de energia liberada pela combustão de 1 unidade de massa do combustível.
+Quanto MAIOR o valor calorífico → mais energia por kg ✅
+
+**Cilada Cebraspe:**
+'Reações endotérmicas liberam calor' → **ERRADO** ❌ (libera = exo; absorve = endo)
+'A combustão é fortemente endotérmica' → **ERRADO** ❌ (é exotérmica) ✅
+
+**Regra de Hess:**
+ΔH da reação = Σ ΔHf(produtos) − Σ ΔHf(reagentes)
+Reação inversa → ΔH muda de sinal ✅`
+    },
+    "tags": ["Química", "Termoquímica", "ANSA 2026"]
+  },
+
+  // ─────────────────────────────────────────────────────────────
+  // FÍSICA
+  // ─────────────────────────────────────────────────────────────
+
+  {
+    "id": 527,
+    "front": {
+      "title": "Física: 1ª Lei da Termodinâmica — ΔU = Q − W 🔥",
+      "subtitle": "Como aplicar a 1ª Lei nos processos termodinâmicos?"
+    },
+    "back": {
+      "body": `**1ª LEI DA TERMODINÂMICA:**
+ΔU = Q − W
+
+- ΔU = variação da energia interna
+- Q = calor (+ se absorvido pelo sistema; − se cedido)
+- W = trabalho (+ se feito pelo sistema; − se feito sobre o sistema)
+
+**PROCESSOS ESPECIAIS:**
+
+| Processo | Constante | Consequência |
+|----------|-----------|-------------|
+| **Isotérmico** | T | ΔU = 0 → Q = W |
+| **Adiabático** | Q = 0 | ΔU = −W |
+| **Isocórico** | V | W = 0 → ΔU = Q |
+| **Isobárico** | P | W = PΔV |
+
+**Exemplo de cálculo (prova 2023):**
+Compressão isobárica: ΔV = −0,1 m³, P = 10³ Pa, Q = −10³ J
+W = P·ΔV = 10³ × (−0,1) = −100 J (trabalho feito SOBRE o gás)
+ΔU = Q − W = (−1000) − (−100) = −900 J
+→ 'variação foi SUPERIOR a 900 J' → **ERRADO** ❌ (é exatamente −900 J) ✅
+
+**Cilada Cebraspe:**
+Confundir sinal de W (convencão: trabalho DO SISTEMA é positivo).
+Confundir compressão (ΔV < 0) com expansão. ✅`
+    },
+    "tags": ["Física", "Termodinâmica", "1ª Lei", "ANSA 2026"]
+  },
+
+  {
+    "id": 528,
+    "front": {
+      "title": "Física: 2ª Lei da Termodinâmica — Eficiência de Carnot 🔄",
+      "subtitle": "Qual a eficiência máxima de uma máquina térmica?"
+    },
+    "back": {
+      "body": `**2ª LEI DA TERMODINÂMICA:**
+'É impossível converter TODA a energia térmica em trabalho em um ciclo.'
+'O calor flui espontaneamente do quente para o frio, nunca o inverso.'
+
+**EFICIÊNCIA DE CARNOT (máxima possível):**
+η = 1 − Tf/Tq
+
+Onde (em KELVIN obrigatoriamente):
+- Tf = temperatura do reservatório frio
+- Tq = temperatura do reservatório quente
+
+**Relações:**
+Q_quente = W + Q_fria
+η = W / Q_quente = 1 − Q_fria / Q_quente
+
+**Exemplo da prova 2023:**
+'Máquina realiza 1.000 J de trabalho retirando 3.000 J a 750 K':
+η = W/Q_q = 1.000/3.000 = 33,3% < 35% ✅ (item CERTO)
+
+**Cilada Cebraspe:**
+'Máquina de 100% de eficiência é possível se T_fria = 0 K.'
+→ **ERRADO** ❌ (a 2ª lei não permite isso na prática; é teoricamente o limite, mas fisicamente inatingível)
+'O calor flui espontaneamente do frio para o quente.'
+→ **ERRADO** ❌ ✅`
+    },
+    "tags": ["Física", "Termodinâmica", "2ª Lei", "Carnot", "ANSA 2026"]
+  },
+
+  {
+    "id": 529,
+    "front": {
+      "title": "Física: Gases Ideais — Lei Geral e Transformações 🌡️",
+      "subtitle": "PV = nRT e as leis de Boyle, Charles e Gay-Lussac"
+    },
+    "back": {
+      "body": `**LEI GERAL DOS GASES IDEAIS:**
+PV = nRT
+- P = pressão (Pa ou atm)
+- V = volume (m³ ou L)
+- n = quantidade de matéria (mol)
+- R = 8,314 J/(mol·K) ou 0,082 atm·L/(mol·K)
+- T = temperatura em **KELVIN** (obrigatório!)
+
+**TRANSFORMAÇÕES:**
+
+| Lei | Constante | Relação |
+|-----|-----------|---------|
+| **Boyle** | T, n | P₁V₁ = P₂V₂ |
+| **Charles** | P, n | V₁/T₁ = V₂/T₂ |
+| **Gay-Lussac** | V, n | P₁/T₁ = P₂/T₂ |
+
+**Atenção ao KELVIN:**
+T(K) = T(°C) + 273,15
+Nunca use Celsius nas fórmulas dos gases!
+
+**Exemplo:**
+'Dobrando T absoluta a P constante, o volume dobra.'
+Charles: V₁/T₁ = V₂/2T₁ → V₂ = 2V₁ ✅ (item CERTO)
+
+**Cilada Cebraspe:**
+'Dobrando a temperatura de 27°C para 54°C, o volume dobra a P constante.'
+27°C = 300 K; 54°C = 327 K (não dobrou!) → **ERRADO** ❌
+Dobrar K: 300 K → 600 K = 327°C ✅`
+    },
+    "tags": ["Física", "Gases Ideais", "Termodinâmica", "ANSA 2026"]
+  },
+
+  {
+    "id": 530,
+    "front": {
+      "title": "Física: Bernoulli e Continuidade — Escoamento de Fluidos 💧",
+      "subtitle": "Como aplicar as equações em tubulações industriais?"
+    },
+    "back": {
+      "body": `**EQUAÇÃO DA CONTINUIDADE (escoamento incompressível):**
+A₁·v₁ = A₂·v₂ = Q (constante)
+
+Se A₂ = A₁/2 → v₂ = 2·v₁ (área cai → velocidade sobe)
+
+**EQUAÇÃO DE BERNOULLI (fluido ideal, sem perdas):**
+P + ½ρv² + ρgh = constante
+
+ou comparando dois pontos:
+P₁ + ½ρv₁² + ρgh₁ = P₂ + ½ρv₂² + ρgh₂
+
+**Consequência principal:**
+Onde velocidade AUMENTA → pressão DIMINUI
+(divergente do que parece intuitivo!)
+
+**Exemplo numérico (prova 2023):**
+A₁ = 0,40 m², v₁ = 4 m/s, P₁ = 10⁵ Pa, ρ = 800 kg/m³
+A₂ = 0,20 m² → v₂ = A₁v₁/A₂ = 0,40×4/0,20 = **8 m/s** ✅
+
+Bernoulli (horizontal, h₁=h₂):
+P₂ = P₁ + ½ρ(v₁²−v₂²) = 10⁵ + ½×800×(16−64)
+= 10⁵ + 400×(−48) = 10⁵ − 19.200 = **80.800 Pa ≈ 8,08×10⁴ Pa** ✅
+
+**Cilada Cebraspe:**
+'Onde a velocidade é maior, a pressão também é maior.' → **ERRADO** ❌ ✅`
+    },
+    "tags": ["Física", "Mecânica dos Fluidos", "Bernoulli", "ANSA 2026"]
+  },
+
+  {
+    "id": 531,
+    "front": {
+      "title": "Física: Pressão Hidrostática e o Paradoxo dos Vasos 🏺",
+      "subtitle": "P = ρgh — o que influencia e o que NÃO influencia?"
+    },
+    "back": {
+      "body": `**FÓRMULA DA PRESSÃO HIDROSTÁTICA:**
+P = ρ·g·h
+
+- ρ = densidade do fluido (kg/m³)
+- g = aceleração gravitacional (≈ 10 m/s²)
+- h = profundidade abaixo da superfície livre (m)
+
+**O QUE INFLUENCIA A PRESSÃO:**
+✅ Profundidade (h)
+✅ Densidade do fluido (ρ)
+✅ Gravidade (g)
+
+**O QUE NÃO INFLUENCIA:**
+❌ Forma do recipiente
+❌ Volume total do líquido
+❌ Área da superfície
+
+**Paradoxo de Pascal:**
+Recipientes de formas diferentes com o mesmo fluido à mesma altura → **mesma pressão no fundo** ✅
+
+**Vasos comunicantes:**
+Fluido em equilíbrio → mesma pressão na mesma altura (mesmo fluido) ✅
+
+**Oceano — regra prática:**
+A cada ~10 m de profundidade → +1 atm de pressão
+A 200 m: P = 20 atm (hidrostática) + 1 atm (atmosfera) = **21 atm** (total)
+Diferença interior (1 atm) e exterior (21 atm) = **20 atm** > 19 atm ✅
+
+**Cilada Cebraspe:**
+'Diferença de pressão a 200 m é inferior a 19 atm.' → **ERRADO** ❌ (é 20 atm) ✅`
+    },
+    "tags": ["Física", "Hidrostática", "ANSA 2026"]
+  },
+
+  {
+    "id": 532,
+    "front": {
+      "title": "Física: Circuitos em Série e Paralelo ⚡",
+      "subtitle": "Resistência, corrente e tensão em cada configuração"
+    },
+    "back": {
+      "body": `**SÉRIE:**
+- Corrente: **igual** em todos os componentes (I₁ = I₂ = I₃)
+- Tensão: **soma** (V_total = V₁ + V₂ + V₃)
+- Resistência: R_total = R₁ + R₂ + R₃
+
+**PARALELO:**
+- Tensão: **igual** em todos os ramos (V₁ = V₂ = V₃)
+- Corrente: **soma** (I_total = I₁ + I₂ + I₃)
+- Resistência: 1/R_total = 1/R₁ + 1/R₂ + 1/R₃
+
+**MACETE:**
+| Grandeza | Série | Paralelo |
+|----------|-------|---------|
+| Corrente | Igual | Soma |
+| Tensão | Soma | Igual |
+
+**Lei de Ohm:**
+V = R·I (tensão = resistência × corrente)
+
+**Potência:**
+P = V·I = I²·R = V²/R
+
+**Exemplo:** Resistor 10 Ω, corrente 2 A:
+P = I²·R = 4 × 10 = **40 W** ✅
+
+**Circuito trifásico — Estrela (Y):**
+V_linha = V_fase × √3 ≈ 1,732 × V_fase
+Exemplo: V_fase = 220 V → V_linha = 220√3 ≈ **380 V** ✅`
+    },
+    "tags": ["Física", "Eletricidade", "Circuitos", "ANSA 2026"]
+  },
+
+  {
+    "id": 533,
+    "front": {
+      "title": "Física: Leis de Newton — Referenciais Inerciais ⚙️",
+      "subtitle": "Quando as leis de Newton são válidas?"
+    },
+    "back": {
+      "body": `**1ª LEI (Inércia):**
+Um corpo em repouso ou MRU permanece nesse estado enquanto a resultante das forças for nula.
+
+**2ª LEI (Força resultante):**
+F = m·a (força resultante = massa × aceleração)
+
+**3ª LEI (Ação e reação):**
+Para toda força de ação, existe uma força de reação igual, oposta e aplicada em corpos diferentes.
+
+**REFERENCIAL INERCIAL:**
+Aquele em repouso ou em MRU (velocidade constante, sem aceleração).
+As leis de Newton são válidas APENAS nesses referenciais.
+
+**Referencial NÃO inercial (acelerado):**
+Surgem 'forças fictícias' (ex: força centrífuga, força de Coriolis).
+
+**Exemplo da prova 2023:**
+'Trem T₁ em MRU é referencial inercial para a máquina X.' ✅ (item CERTO)
+'Se T₂ se move a 2v₁ em sentido contrário, a máquina sofre aceleração não nula em relação a T₂.'
+→ T₂ também é MRU → referencial inercial → a aceleração de X em relação a T₂ = 0 → **ERRADO** ❌
+
+**Cilada Cebraspe:**
+Confundir velocidade relativa (que pode ser diferente de zero) com aceleração (que é zero entre dois MRU). ✅`
+    },
+    "tags": ["Física", "Mecânica", "Newton", "ANSA 2026"]
+  },
+
+  {
+    "id": 534,
+    "front": {
+      "title": "Física: Ondas Eletromagnéticas vs Mecânicas 🌊",
+      "subtitle": "Diferenças fundamentais e exemplos de cada tipo"
+    },
+    "back": {
+      "body": `**ONDAS MECÂNICAS:**
+- Precisam de meio material para se propagar
+- Exemplos: som, ultrassom, sísmicas, ondas no mar
+- O som é uma onda mecânica LONGITUDINAL (compressão/rarefação)
+
+**ONDAS ELETROMAGNÉTICAS:**
+- Não precisam de meio material (propagam no vácuo)
+- Velocidade no vácuo: c = 3×10⁸ m/s
+- Frequência NÃO muda ao mudar de meio (apenas velocidade e comprimento de onda)
+- Exemplos: luz, rádio, micro-ondas, raios X, infravermelho, ultravioleta
+
+**Aplicação da prova (comunicação subaquática):**
+- Ondas sonoras (A e B) = mecânicas ✅
+- Micro-ondas (C) = eletromagnéticas ✅
+
+**Frequência ao mudar de meio:**
+Onda EM ao passar de M₁ para M₂:
+- Frequência = **CONSTANTE** (f₂ = f₁, não f₂ = n₂/n₁ · f₁)
+- Velocidade muda: v = c/n
+- Comprimento de onda muda: λ = v/f
+
+**Cilada Cebraspe:**
+'A onda no meio M₂ terá frequência (n₂/n₁)·f₁.' → **ERRADO** ❌ (frequência é constante ao mudar de meio) ✅`
+    },
+    "tags": ["Física", "Ondas", "Eletromagnetismo", "ANSA 2026"]
+  },
+
+  // ─────────────────────────────────────────────────────────────
+  // INSTRUMENTAÇÃO E CONTROLE
+  // ─────────────────────────────────────────────────────────────
+
+  {
+    "id": 535,
+    "front": {
+      "title": "Instrumentação: Tubo de Bourdon — O Que É? 🔧",
+      "subtitle": "Para que serve e como funciona esse instrumento?"
+    },
+    "back": {
+      "body": `**TUBO DE BOURDON = MEDIDOR DE PRESSÃO**
+
+(Não é medidor de temperatura!)
+
+**Como funciona:**
+- Tubo metálico de seção elíptica curvado em arco
+- Quando a pressão interna aumenta, o tubo TENDE A SE ENDIREITAR
+- Esse movimento é transmitido por engrenagem a um ponteiro sobre escala graduada
+- Quanto maior a pressão → maior o deslocamento → maior a indicação
+
+**Características:**
+- Instrumento simples, robusto e barato
+- Não requer energia externa para operar
+- Mede pressão manométrica (em relação à atmosfera)
+- Aplicável a gases e líquidos não corrosivos ao material do tubo
+
+**Variações do Bourdon:**
+- Espiral (maiores pressões)
+- Hélice (maiores deflexões)
+- Diafragma (baixas pressões)
+
+**Cilada Cebraspe (caiu na prova real 2023!):**
+'O tubo de Bourdon consiste em instrumento de medição de **temperatura** por dilatação de líquido...'
+→ **ERRADO** ❌
+
+Correto: O tubo de Bourdon mede **pressão** por deformação mecânica do tubo metálico. ✅`
+    },
+    "tags": ["Instrumentação", "Medição de Pressão", "ANSA 2026"]
+  },
+
+  {
+    "id": 536,
+    "front": {
+      "title": "Instrumentação: Simbologia ISA 5.1 — Letras e Funções 🏭",
+      "subtitle": "Decore as letras mais cobradas na prova"
+    },
+    "back": {
+      "body": `**NORMA ISA 5.1 — IDENTIFICAÇÃO DE INSTRUMENTOS**
+
+**1ª LETRA = Variável medida:**
+| Letra | Variável |
+|-------|----------|
+| **F** | Vazão (Flow) |
+| **T** | Temperatura (Temperature) |
+| **P** | Pressão (Pressure) |
+| **L** | Nível (Level) |
+| **A** | Análise / Qualidade |
+| **I** | Corrente Elétrica |
+| **S** | Velocidade / Rotação |
+
+**LETRAS SUBSEQUENTES = Função:**
+| Letra | Função |
+|-------|--------|
+| **I** | Indicação (Indicator) |
+| **C** | Controle (Controller) |
+| **T** | Transmissão (Transmitter) |
+| **R** | Registro (Recorder) |
+| **A** | Alarme (Alarm) |
+| **E** | Elemento sensor (Element) |
+| **V** | Válvula (Valve) |
+
+**Exemplos:**
+- FIC = Controlador-Indicador de **Vazão** ✅ (não temperatura!)
+- TIC = Controlador-Indicador de **Temperatura** ✅
+- PT = Transmissor de **Pressão** ✅
+- LIT = Transmissor-Indicador de **Nível** ✅
+- PAH = Alarme de Alta **Pressão** ✅
+
+**Círculo no P&ID:**
+- Sem linha = instrumento de campo
+- Com linha sólida = painel do operador
+- Com linha tracejada = sala de controle (DCS) ✅`
+    },
+    "tags": ["Instrumentação", "ISA 5.1", "Simbologia", "ANSA 2026"]
+  },
+
+  {
+    "id": 537,
+    "front": {
+      "title": "Instrumentação: Metrologia — Span, Range, Exatidão 📏",
+      "subtitle": "Definições e cálculos de erros de instrumentos"
+    },
+    "back": {
+      "body": `**DEFINIÇÕES FUNDAMENTAIS:**
+
+**Range (Faixa de medição):**
+Intervalo entre o limite inferior (LI) e superior (LS) de medição.
+Ex: 0 a 100 °C = range de 0–100 °C
+
+**Span (Alcance):**
+Span = Limite Superior − Limite Inferior
+Ex: span = 100 − 0 = 100 °C
+Ex: span de −50°C a 200°C = **250°C** ✅
+
+**Exatidão (Accuracy):**
+Proximidade entre o valor medido e o valor real.
+Expressa como % do fundo de escala (Full Scale):
+
+Erro máximo = (% exatidão / 100) × Span
+
+Exemplo (prova 2023):
+Range: 100 mA a 20 A, exatidão 10% de fundo de escala
+Fundo de escala = 20 A
+Erro = 10% × 20 = **±2 A** → 15 A medido → real: 13 a 17 A ✅
+
+**Sensibilidade:**
+Menor variação da grandeza detectável pelo instrumento
+
+**Repetibilidade:**
+Capacidade de dar a mesma leitura nas mesmas condições
+
+**Reprodutibilidade:**
+Mesma leitura em condições diferentes (operadores/equipamentos distintos) ✅`
+    },
+    "tags": ["Instrumentação", "Metrologia", "ANSA 2026"]
+  },
+
+  {
+    "id": 538,
+    "front": {
+      "title": "Instrumentação: PID — Cada Ação e Sua Função 🎛️",
+      "subtitle": "P, I e D: quando usar cada ação?"
+    },
+    "back": {
+      "body": `**CONTROLADOR PID — 3 AÇÕES:**
+
+**P (Proporcional):**
+- Responde ao **erro atual**: saída = Kp × erro
+- Rápido, mas deixa **offset** (erro residual permanente)
+- Ganho alto → resposta rápida, mas pode oscilar
+
+**I (Integral):**
+- Responde ao **erro acumulado** ao longo do tempo
+- **Elimina o offset** (erro em regime permanente) ✅
+- Pode causar **windup** (acúmulo excessivo → overshoot)
+- Chave: 'I elimina o erro permanente'
+
+**D (Derivativo):**
+- Responde à **taxa de variação** do erro (derivada)
+- **Antecipa** correções → reduz overshoot
+- **Amplifica ruídos** do sinal (desvantagem!) ⚠️
+- Raramente usado isolado → filtro derivativo minimiza ruído
+
+**Sintonização — Método Ziegler-Nichols em malha ABERTA:**
+Usa curva de reação (ganho estático K, tempo morto θ, constante de tempo τ)
+
+**Método em malha FECHADA (critério de estabilidade):**
+Usa ganho crítico Ku e período crítico Pu (na fronteira de estabilidade)
+
+**Cilada Cebraspe:**
+'A ação derivativa elimina o offset.' → **ERRADO** ❌ (quem elimina é a integral)
+'Ziegler-Nichols em malha aberta usa Ku e Pu.' → **ERRADO** ❌ (malha aberta usa curva de reação) ✅`
+    },
+    "tags": ["Instrumentação", "Controle PID", "ANSA 2026"]
+  },
+
+  {
+    "id": 539,
+    "front": {
+      "title": "Instrumentação: Medição de Vazão — Instrumentos 💧",
+      "subtitle": "Qual instrumento mede vazão e como funciona cada um?"
+    },
+    "back": {
+      "body": `**PRINCIPAIS MEDIDORES DE VAZÃO:**
+
+**Orifício de Placa (diferencial de pressão):**
+- Princípio: ΔP ∝ Q² (vazão ao quadrado)
+- Insere placa com orifício na tubulação
+- Simples, barato, mas causa perda de carga permanente
+- Mede VAZÃO (não nível!) ✅
+
+**Tubo de Venturi:**
+- Também por diferencial de pressão
+- Menor perda de carga que orifício de placa
+- Mede velocidade → calcula vazão
+- 'Pode ser utilizado para aferir a velocidade de escoamento' ✅
+
+**Tubo de Pitot:**
+- Mede velocidade pontual por pressão dinâmica
+- Muito usado em aviação
+
+**Rotâmetro (área variável):**
+- Flutuador sobe em tubo cônico com escoamento ascendente
+- Leitura visual da posição do flutuador
+- Adequado para baixas vazões e fluidos limpos
+
+**Medidor Coriolis:**
+- Mede MASSA diretamente (não volume)
+- Princípio: deflexão do tubo pela força de Coriolis
+- Alta precisão, alto custo
+
+**Cilada Cebraspe:**
+'Orifício de placa mede nível em tanques.' → **ERRADO** ❌ (mede VAZÃO em tubulações) ✅
+'A vazão medida pelo orifício de placa é diretamente proporcional a ΔP.' → **ERRADO** ❌ (Q ∝ √ΔP) ✅`
+    },
+    "tags": ["Instrumentação", "Medição de Vazão", "ANSA 2026"]
+  },
+
+  {
+    "id": 540,
+    "front": {
+      "title": "Instrumentação: Sinal 4–20 mA vs 3–15 psi 📡",
+      "subtitle": "Por que esses padrões? Diferenças entre eletrônico e pneumático"
+    },
+    "back": {
+      "body": `**SINAL ELETRÔNICO PADRÃO: 4–20 mA**
+- 4 mA = zero de processo (0%)
+- 20 mA = fundo de escala (100%)
+- 0 mA = FALHA (fio rompido ou instrumento morto) → detecção de falha!
+
+**Por que 4 mA e não 0 mA?**
+- Permite distinguir 'zero de processo' de 'falha do instrumento'
+- Alimenta o transmissor com a própria corrente (loop de 2 fios)
+- Imune a interferências EM em longas distâncias ✅
+
+**SINAL PNEUMÁTICO PADRÃO: 3–15 psi**
+- 3 psi = zero de processo
+- 15 psi = fundo de escala
+- Vantagem: intrínsecamente seguro em áreas classificadas (sem faísca)
+- Desvantagem: limitado a curtas distâncias, resposta mais lenta
+
+**Comparativo:**
+| Característica | Eletrônico (4–20 mA) | Pneumático (3–15 psi) |
+|----------------|---------------------|----------------------|
+| Distância | Longa | Curta |
+| Área classificada | Barreira Zener necessária | Intrinsecamente seguro |
+| Resposta | Rápida | Mais lenta |
+| Faixa de medição | Mais ampla | Menor |
+
+**Cilada Cebraspe:**
+'O sinal padrão eletrônico varia de 0 a 20 mA.' → **ERRADO** ❌ (é 4 a 20 mA) ✅`
+    },
+    "tags": ["Instrumentação", "Transmissores", "Sinais", "ANSA 2026"]
+  },
+
+  // ─────────────────────────────────────────────────────────────
+  // OPERAÇÕES UNITÁRIAS
+  // ─────────────────────────────────────────────────────────────
+
+  {
+    "id": 541,
+    "front": {
+      "title": "Operações Unitárias: Destilação — Tipos e Princípios 🏭",
+      "subtitle": "Destilação simples, fracionada, azeotrópica e por arraste"
+    },
+    "back": {
+      "body": `**DESTILAÇÃO — Princípio geral:**
+Separação baseada na **diferença de volatilidade** (pressão de vapor) dos componentes.
+Componente mais volátil → maior pressão de vapor → sai pelo TOPO.
+
+**TIPOS:**
+
+**1. Destilação Simples:**
+- 1 único estágio de vaporização-condensação
+- Para componentes com pontos de ebulição muito diferentes (>100°C)
+
+**2. Destilação Fracionada:**
+- Múltiplos estágios (pratos ou recheio)
+- Para componentes com pontos de ebulição PRÓXIMOS
+- Refluxo: parte do condensado retorna à coluna
+- Quanto maior o refluxo → melhor a separação (mas maior consumo de energia)
+
+**3. Destilação Azeotrópica:**
+- Adiciona terceiro componente (solvente) para alterar a volatilidade relativa
+- Permite separar misturas azeotrópicas (ex: etanol 95,6% + água)
+
+**4. Destilação por Arraste de Vapor:**
+- Vapor d'água 'arrasta' compostos de alto ponto de ebulição
+- Mistura entra em ebulição ABAIXO de 100°C (Lei de Dalton das pressões parciais)
+- Protege compostos termossensíveis (ex: óleos essenciais)
+
+**HETP (Height Equivalent to a Theoretical Plate):**
+Altura de recheio equivalente a 1 prato teórico.
+Quanto MENOR o HETP → MAIS eficiente o recheio ✅`
+    },
+    "tags": ["Operações Unitárias", "Destilação", "ANSA 2026"]
+  },
+
+  {
+    "id": 542,
+    "front": {
+      "title": "Operações Unitárias: Bombas Centrífugas vs Alternativas ⚙️",
+      "subtitle": "Princípio de funcionamento, curvas e aplicações"
+    },
+    "back": {
+      "body": `**BOMBA CENTRÍFUGA:**
+- Princípio: **força centrípeta/centrífuga** no rotor (impelidor)
+- Converte energia cinética em energia de pressão no volute
+- NÃO é deslocamento positivo! ❌
+- Curva de desempenho: Q ↑ → H (head) ↓ (curva descendente)
+- Adequada para: grandes vazões, baixa a média viscosidade
+- Problema: CAVITAÇÃO (P < Pv do líquido → bolhas → danos ao rotor)
+
+**NPSH (Net Positive Suction Head):**
+- NPSH_disponível > NPSH_requerido → sem cavitação ✅
+- NPSH_disponível < NPSH_requerido → cavitação ❌
+
+**BEP (Best Efficiency Point):**
+- Ponto de operação com máxima eficiência
+- Operar muito à esquerda → recirculação na sucção
+- Operar muito à direita → sobrecarga, recirculação na descarga
+
+**BOMBA ALTERNATIVA (Pistão/Reciprocante):**
+- Princípio: **deslocamento positivo** (câmaras de volume variável)
+- Curva de desempenho: Q praticamente constante com variação de pressão
+- Adequada para: alta pressão, alta viscosidade, pequenas vazões
+- Possui válvulas de sucção e descarga automáticas (por diferencial de pressão)
+
+**Cilada Cebraspe:**
+'Bomba centrífuga funciona por deslocamento positivo.' → **ERRADO** ❌ ✅`
+    },
+    "tags": ["Operações Unitárias", "Equipamentos", "Bombas", "ANSA 2026"]
+  },
+
+  {
+    "id": 543,
+    "front": {
+      "title": "Operações Unitárias: Permutadores de Calor — Tipos 🌡️",
+      "subtitle": "Casco e tubo, placas, duplo tubo — diferenças e aplicações"
+    },
+    "back": {
+      "body": `**PERMUTADOR DE CASCO E TUBO:**
+- Um fluido no INTERIOR dos tubos
+- Outro fluido no EXTERIOR (lado do casco)
+- Chicanas (baffles) no casco: aumentam a turbulência → melhoram coeficiente de troca
+- Vantagens: alta pressão, alta temperatura, fluidos sujos/corrosivos
+- O calor é transferido por CONDUÇÃO + CONVECÇÃO (não por mistura!) ✅
+
+**Importante:** Os fluidos NÃO se misturam — separados pela parede do tubo
+
+**PERMUTADOR DE PLACAS:**
+- Vantagens: eficiente para ΔT pequenos, compacto, fácil limpeza
+- Desvantagens: inadequado para alta pressão e fluidos com sólidos
+- Vedação pelas placas → limite de pressão e temperatura
+
+**Configurações de escoamento:**
+- **Contracorrente:** fluidos em sentidos opostos → MAIOR eficiência (maior ΔT médio)
+- **Paralelo (co-corrente):** fluidos no mesmo sentido → MENOR eficiência
+
+**Cilada Cebraspe:**
+'O permutador casco-tubo aproveita a diferença de temperatura misturando os fluidos.'
+→ **ERRADO** ❌ (os fluidos NÃO se misturam — separados pela parede do tubo) ✅`
+    },
+    "tags": ["Operações Unitárias", "Equipamentos", "Trocadores de Calor", "ANSA 2026"]
+  },
+
+  {
+    "id": 544,
+    "front": {
+      "title": "Operações Unitárias: Definição e Exemplos 📚",
+      "subtitle": "O que são operações unitárias e como se classificam?"
+    },
+    "back": {
+      "body": `**DEFINIÇÃO:**
+Operações unitárias são **processos físicos** (e às vezes físico-químicos) que ocorrem em escala industrial, podendo funcionar em **regime contínuo OU batelada**, usados para obtenção ou purificação de produtos.
+
+**Principais operações unitárias:**
+
+| Operação | Princípio | Aplicação |
+|----------|-----------|-----------|
+| Destilação | Volatilidade | Refino do petróleo |
+| Absorção | Solubilidade gás-líquido | Remoção de H₂S |
+| Extração | Solubilidade líquido-líquido | Recuperação de solvente |
+| Filtração | Tamanho de partícula | Remoção de sólidos |
+| Secagem | Evaporação de solvente | Produtos sólidos |
+| Evaporação | Remoção de solvente | Concentração de soluções |
+| Cristalização | Supersaturação | Purificação de sais |
+| Agitação/Mistura | Turbulência | Homogeneização |
+
+**Cilada Cebraspe (caiu na prova 2023!):**
+'Operações unitárias ocorrem SOMENTE em sistemas de batelada, intermitentes, controláveis por circuitos on-off.'
+→ **ERRADO** ❌ (podem ser contínuas OU batelada) ✅
+
+'A agitação tem finalidade de promover transferência de massa APENAS.'
+→ **ERRADO** ❌ (também serve para transferência de calor, suspensão de sólidos e mistura) ✅`
+    },
+    "tags": ["Operações Unitárias", "Definição", "ANSA 2026"]
+  },
+
+  // ─────────────────────────────────────────────────────────────
+  // EQUIPAMENTOS E TUBULAÇÕES
+  // ─────────────────────────────────────────────────────────────
+
+  {
+    "id": 545,
+    "front": {
+      "title": "Equipamentos: Válvulas Industriais — Tipos e Funções 🔧",
+      "subtitle": "Quais são as principais válvulas e para que servem?"
+    },
+    "back": {
+      "body": `**VÁLVULAS INDUSTRIAIS — CLASSIFICAÇÃO:**
+
+**Por FUNÇÃO:**
+
+| Válvula | Função principal |
+|---------|-----------------|
+| **Bloqueio (gate, esfera, macho)** | Abrir/fechar (on/off) — não controla vazão |
+| **Controle (globo, borboleta)** | Regular vazão/pressão continuamente |
+| **Segurança / Alívio (PSV, PRV)** | Proteção contra sobrepressão — abre automaticamente quando P > set |
+| **Retenção (check valve)** | Impede refluxo — fluxo em um sentido apenas |
+| **Redutora de pressão (PRV)** | Mantém P de saída constante < P de entrada |
+
+**Ciladas frequentes:**
+- 'Válvula de retenção serve para reter sujeiras.' → **ERRADO** ❌ (retém fluxo reverso, não sujeiras) ✅
+- 'PSV regula a vazão em operação normal.' → **ERRADO** ❌ (PSV protege contra sobrepressão — emergência) ✅
+- 'Válvulas de bloqueio são usadas para impedir sobrecarga de pressão.' → **ERRADO** ❌ (isso é função da PSV) ✅
+- 'Válvula de retenção reduz a pressão do fluido.' → **ERRADO** ❌ (quem reduz P é a PRV) ✅
+
+**Flange cego (blind flange):**
+Fecha (blinda) a extremidade de uma tubulação — NÃO conecta diâmetros diferentes ✅`
+    },
+    "tags": ["Equipamentos", "Válvulas", "Tubulações", "ANSA 2026"]
+  },
+
+  {
+    "id": 546,
+    "front": {
+      "title": "Equipamentos: NR-13 — Caldeiras e Vasos de Pressão 📋",
+      "subtitle": "Requisitos essenciais e o que cai na prova"
+    },
+    "back": {
+      "body": `**NR-13 — CALDEIRAS, VASOS DE PRESSÃO E TUBULAÇÕES**
+
+**Caldeiras a vapor:**
+- Devem ter: válvula de segurança, manômetro calibrado, indicador de nível d'água
+- Mínimo de 2 válvulas de segurança (caldeiras acima de certo porte)
+- Operador habilitado por curso aprovado pelo MTE
+
+**Vasos de Pressão — Categorias de risco:**
+Determinadas pelo produto P × V (pressão × volume)
+Quanto maior o produto → mais crítico → inspeções mais frequentes
+
+**Prontuário (obrigatório):**
+Documentação completa que deve ficar na instalação:
+- Projeto de construção
+- Especificação de materiais
+- Manual do fabricante
+- Laudos e certificados de inspeção
+- Histórico de manutenção e reparos
+
+**Teste hidrostático:**
+Realizado com água a **1,5× a PMTA** (Pressão Máxima de Trabalho Admissível)
+Objetivo: verificar integridade estrutural
+
+**Cilada Cebraspe:**
+'Todo vaso de pressão deve possuir prontuário com histórico de inspeções.' ✅ (CERTO)
+'O teste hidrostático é feito a 2× a PMTA.' → **ERRADO** ❌ (é 1,5×) ✅`
+    },
+    "tags": ["Segurança", "NR-13", "Equipamentos", "ANSA 2026"]
+  },
+
+  // ─────────────────────────────────────────────────────────────
+  // SEGURANÇA DO TRABALHO
+  // ─────────────────────────────────────────────────────────────
+
+  {
+    "id": 547,
+    "front": {
+      "title": "Segurança: Classificação dos Riscos Ocupacionais 🦺",
+      "subtitle": "Físico, químico, biológico, ergonômico, acidente"
+    },
+    "back": {
+      "body": `**OS 5 GRUPOS DE RISCOS (conforme NR-9/NR-1):**
+
+**FÍSICOS (grupo 1):** Formas de energia no ambiente
+- Ruído ✅ | Vibrações | Calor | Frio | Pressões anormais
+- Radiações ionizantes e não ionizantes | Umidade ✅
+
+**QUÍMICOS (grupo 2):** Substâncias e compostos que penetram no organismo
+- Poeiras ✅ | Fumos | Névoas ✅ | Neblinas
+- Gases | Vapores | Substâncias químicas em geral
+
+**BIOLÓGICOS (grupo 3):** Microrganismos
+- Bactérias | Vírus | Fungos | Parasitas | Protozoários
+
+**ERGONÔMICOS (grupo 4):** Fatores psicossociais e de organização
+- Levantamento de peso | Postura inadequada | Ritmo excessivo
+- Monotonia | Trabalho noturno
+
+**DE ACIDENTES (grupo 5):** Condições inseguras
+- Máquinas sem proteção | Piso escorregadio | Incêndio/explosão
+
+**CILADAS CLÁSSICAS (caíram na prova Petrobras 2023!):**
+- 'Poeira de lixadeira = risco FÍSICO.' → **ERRADO** ❌ (poeira = QUÍMICO) ✅
+- 'Névoa = risco BIOLÓGICO.' → **ERRADO** ❌ (névoa = QUÍMICO) ✅
+- 'Umidade = risco FÍSICO.' → **CERTO** ✅
+- 'Ruído = risco FÍSICO.' → **CERTO** ✅`
+    },
+    "tags": ["Segurança", "Riscos Ocupacionais", "NR-9", "ANSA 2026"]
+  },
+
+  {
+    "id": 548,
+    "front": {
+      "title": "Segurança: NR-33 — Espaços Confinados 🚧",
+      "subtitle": "Definição, riscos, PET e responsabilidades"
+    },
+    "back": {
+      "body": `**NR-33 — SEGURANÇA E SAÚDE NOS TRABALHOS EM ESPAÇOS CONFINADOS**
+
+**Definição de Espaço Confinado:**
+- Espaço não projetado para ocupação humana contínua
+- Com meios limitados de entrada e saída
+- Pode ter acúmulo de contaminantes e/ou deficiência de O₂
+
+**Exemplos industriais:**
+Tanques, vasos, silos, poços, galerias, dutos, caldeiras
+
+**PERMISSÃO DE ENTRADA E TRABALHO (PET):**
+Documento obrigatório, assinado pelo supervisor de entrada, que deve conter:
+- Identificação do espaço e data
+- Avaliação atmosférica (O₂, gases inflamáveis, tóxicos)
+- Medidas de controle e EPI necessários
+- Lista de trabalhadores autorizados
+
+**Funções obrigatórias:**
+- **Supervisor de entrada:** responsável pela segurança e pela PET
+- **Vigia:** permanece fora, monitora, comunica emergências
+- **Trabalhador autorizado:** entra no espaço
+
+**Cilada Cebraspe:**
+'A entrada em espaço confinado dispensa PET quando a atmosfera é considerada segura antes da entrada.'
+→ **ERRADO** ❌ (PET é sempre obrigatória) ✅
+
+'A NR-33 exige que o vigia entre no espaço em caso de emergência.'
+→ **ERRADO** ❌ (o vigia NUNCA deve entrar sem auxílio; deve acionar resgate) ✅`
+    },
+    "tags": ["Segurança", "NR-33", "Espaço Confinado", "ANSA 2026"]
+  },
+
+  {
+    "id": 549,
+    "front": {
+      "title": "Segurança: LOTO — Lockout/Tagout 🔒",
+      "subtitle": "O que é, quando aplicar e quais as etapas?"
+    },
+    "back": {
+      "body": `**LOTO = LOCKOUT / TAGOUT**
+
+**Definição:**
+Procedimento de **bloqueio e sinalização** de todas as fontes de energia perigosas antes de atividades de manutenção em equipamentos.
+
+**Objetivo:**
+Impedir o acionamento acidental de equipamento durante manutenção, protegendo os trabalhadores.
+
+**Fontes de energia bloqueadas:**
+- Elétrica (desliga disjuntor + coloca cadeado)
+- Pneumática (fecha válvula + despressuriza)
+- Hidráulica (fecha válvula + despressuriza)
+- Gravitacional (suportar cargas suspensas)
+- Térmica (resfriamento antes da manutenção)
+- Mecânica (travamento de partes móveis)
+
+**Etapas do LOTO:**
+1. Notificar os trabalhadores afetados
+2. Identificar todas as fontes de energia
+3. Desligar o equipamento
+4. Isolar (bloquear) todas as fontes de energia
+5. Sinalizar (tagout) — etiqueta de bloqueio
+6. Verificar a ausência de energia residual
+7. Executar o trabalho
+
+**Cilada Cebraspe:**
+'O LOTO aplica-se apenas a fontes de energia elétrica.' → **ERRADO** ❌ (todas as energias) ✅
+'Após o LOTO, outros trabalhadores podem remover o cadeado para testar o equipamento.' → **ERRADO** ❌ ✅`
+    },
+    "tags": ["Segurança", "LOTO", "Manutenção Segura", "ANSA 2026"]
+  },
+
+  {
+    "id": 550,
+    "front": {
+      "title": "Segurança: Triângulo do Fogo e Combate a Incêndios 🔥",
+      "subtitle": "Elementos do fogo, classes e agentes extintores"
+    },
+    "back": {
+      "body": `**TRIÂNGULO DO FOGO (3 elementos necessários):**
+- **Combustível** (material que queima)
+- **Comburente** (geralmente O₂ do ar, ≥ 16%)
+- **Energia de ignição** (calor, faísca, chama)
+
+Remover qualquer elemento → extingue o fogo ✅
+
+**CLASSES DE INCÊNDIO:**
+
+| Classe | Material | Agente extintor |
+|--------|----------|-----------------|
+| **A** | Sólidos comuns (madeira, papel, tecido) | Água, pó ABC |
+| **B** | Líquidos e gases inflamáveis | Pó BC, CO₂, espuma, halon |
+| **C** | Equipamentos elétricos energizados | CO₂, pó BC (NÃO usar água) |
+| **D** | Metais combustíveis (magnésio, sódio) | Pó especial |
+| **K** | Óleos vegetais (cozinha) | Acetato de potássio |
+
+**LIE e LSE (limites de explosividade):**
+- **LIE** (Limite Inferior de Explosividade): abaixo do LIE → muito pobre para queimar
+- **LSE** (Limite Superior de Explosividade): acima do LSE → muito rico para queimar
+- Entre LIE e LSE → **zona de explosão** ⚠️
+
+**Cilada Cebraspe:**
+'Pode-se usar água em incêndio de equipamento elétrico energizado.' → **ERRADO** ❌ ✅`
+    },
+    "tags": ["Segurança", "Incêndio", "Combate a Incêndio", "ANSA 2026"]
+  },
+
+  {
+    "id": 551,
+    "front": {
+      "title": "Segurança: NR-35 — Trabalho em Altura 🏗️",
+      "subtitle": "Definição, requisitos e EPI obrigatório"
+    },
+    "back": {
+      "body": `**NR-35 — TRABALHO EM ALTURA**
+
+**Definição:**
+Qualquer atividade executada **acima de 2,0 metros** do nível inferior (piso, plataforma, etc.) onde haja risco de queda.
+
+**Requisitos do trabalhador:**
+- Capacitação em NR-35 (treinamento mínimo de 8 horas)
+- Aptidão física e mental (avaliação médica)
+- Autorização do empregador
+
+**EPI obrigatório para trabalho em altura:**
+- Cinto de segurança tipo paraquedista ✅
+- Talabarte (com absorvedor de energia)
+- Capacete com jugular
+- Calçado de segurança
+
+**Ponto de ancoragem:**
+- Resistência mínima de 15 kN (ou seguro para suportar o impacto da queda)
+- Localizado acima do trabalhador (para minimizar a distância de queda)
+
+**Permissão de trabalho (PT):**
+Obrigatória para trabalho em altura não rotineiro ou de risco elevado
+
+**Cilada Cebraspe:**
+'Trabalho em altura é qualquer atividade acima de **1,5 m**.' → **ERRADO** ❌ (é 2,0 m) ✅
+'O cinto de segurança tipo abdominal é suficiente para trabalho em altura.' → **ERRADO** ❌ (obrigatório o tipo paraquedista) ✅`
+    },
+    "tags": ["Segurança", "NR-35", "Trabalho em Altura", "ANSA 2026"]
+  },
+
+  {
+    "id": 552,
+    "front": {
+      "title": "Segurança: FACET e Ruído Ocupacional 🔊",
+      "subtitle": "Quando o empregador deve pagar FACET? Limite é 85 dB?"
+    },
+    "back": {
+      "body": `**FACET — Financiamento de Aposentadoria por Condições Especiais de Trabalho**
+
+**Definição:**
+Contribuição social adicional paga pelo empregador quando expõe trabalhadores a **agentes nocivos** de forma **permanente**.
+
+**Ruído — Nível de ação:**
+- **85 dB** = nível de ação (início das medidas preventivas)
+- Acima de 85 dB (exposição normalizada) → obrigação de PCA (Programa de Conservação Auditiva)
+- Acima de 85 dB = atividade especial → pode gerar obrigação de FACET ✅
+
+**Intensidade Sonora — fórmula:**
+β = 10 · log₁₀(I / I₀)
+- I₀ = 10⁻¹² W/m² (limiar da audição)
+- β em decibéis (dB)
+
+**Diferença de intensidade:**
+Cada 10 dB → intensidade 10× maior
+70 dB para 120 dB = 50 dB de diferença → 10⁵ = **100.000 vezes** ✅
+
+**Exemplo da prova 2023:**
+'Helicóptero: 120 dB | Limite seguro: 70 dB → helicóptero é 100.000× mais intenso.' ✅
+
+**Cilada Cebraspe:**
+'O empregador paga FACET se expuser permanentemente trabalhadores a ruído > 85 dB.' ✅ (CERTO)
+'O limite de 85 dB é o limite máximo de exposição.' → **ERRADO** ❌ (é o nível de AÇÃO, não o máximo) ✅`
+    },
+    "tags": ["Segurança", "Ruído", "FACET", "ANSA 2026"]
+  },
+
+  // ─────────────────────────────────────────────────────────────
+  // NOÇÕES DE INFORMÁTICA
+  // ─────────────────────────────────────────────────────────────
+
+  {
+    "id": 553,
+    "front": {
+      "title": "Informática: Funções Excel Essenciais para a Prova 📊",
+      "subtitle": "SOMA, MÉDIA, SOMASE, PROCV — como funcionam?"
+    },
+    "back": {
+      "body": `**FUNÇÕES MAIS COBRADAS:**
+
+**SOMASE(intervalo_critério; critério; intervalo_soma):**
+- Soma valores de 'intervalo_soma' apenas quando 'intervalo_critério' atende ao 'critério'
+- Ex: SOMASE(A1:A20;">100";B1:B20) → soma B quando A > 100 ✅
+
+**PROCV(valor_proc; tabela; col_índice; [procurar_intervalo]):**
+- Busca 'valor_proc' na 1ª coluna da 'tabela'
+- Retorna valor da coluna 'col_índice' da mesma linha
+- Último argumento: FALSO = busca exata | VERDADEIRO = aproximada
+
+**Cilada Cebraspe:**
+'PROCV sempre faz busca exata quando o último argumento é VERDADEIRO.'
+→ **ERRADO** ❌ (VERDADEIRO = busca aproximada; FALSO = busca exata) ✅
+
+**MÉDIA vs MEDIANA:**
+- MÉDIA: soma / n → afetada por valores extremos (outliers)
+- MEDIANA: valor central da distribuição → NÃO afetada por outliers
+- Para distribuições simétricas: MÉDIA = MEDIANA ✅
+
+**Teclas de atalho úteis:**
+- Ctrl+C/V/X: copiar/colar/recortar
+- Ctrl+Z: desfazer | Ctrl+Y: refazer
+- F2: editar célula no Excel
+- Ctrl+Shift+Enter: fórmula matricial ✅`
+    },
+    "tags": ["Informática", "Excel", "M365", "ANSA 2026"]
+  },
+
+  {
+    "id": 554,
+    "front": {
+      "title": "Informática: LGPD — Pontos Essenciais (Lei 13.709/2018) 🔐",
+      "subtitle": "Dados pessoais sensíveis, titular, controlador, DPO"
+    },
+    "back": {
+      "body": `**LGPD — LEI GERAL DE PROTEÇÃO DE DADOS (Lei 13.709/2018)**
+
+**Dados pessoais SENSÍVEIS (proteção reforçada):**
+- Origem racial ou étnica
+- Convicção religiosa ou filosófica
+- Opinião política
+- Filiação sindical
+- Dados de saúde ou vida sexual
+- Dados genéticos ou biométricos
+- Registro de filho menor de idade
+
+**Agentes de tratamento:**
+- **Controlador:** quem decide O QUE tratar e PARA QUE (responsável principal)
+- **Operador:** quem trata os dados por conta do controlador
+- **Encarregado (DPO):** canal entre empresa, titulares e ANPD
+
+**Cilada Cebraspe:**
+'O encarregado (DPO) é responsável por realizar o tratamento efetivo dos dados.'
+→ **ERRADO** ❌ (quem trata é o operador/controlador; o DPO é o intermediário) ✅
+
+**Bases legais para tratamento:**
+- Consentimento do titular
+- Obrigação legal
+- Execução de contrato
+- Legítimo interesse
+- Proteção da vida
+
+**Direitos do titular:**
+Acesso, correção, exclusão, portabilidade, revogação do consentimento ✅`
+    },
+    "tags": ["Informática", "LGPD", "Segurança da Informação", "ANSA 2026"]
+  },
+
+  {
+    "id": 555,
+    "front": {
+      "title": "Informática: Segurança da Informação — Ataques e Defesas 🛡️",
+      "subtitle": "Phishing, ransomware, vírus, backup, MFA"
+    },
+    "back": {
+      "body": `**PRINCIPAIS AMEAÇAS:**
+
+| Ameaça | Descrição |
+|--------|-----------|
+| **Phishing** | Engenharia social: engana o usuário para roubar credenciais (e-mail/link falso) |
+| **Ransomware** | Criptografa os dados e exige resgate (pagamento) para decriptografar |
+| **Vírus** | Código malicioso que se replica e infecta arquivos/sistemas |
+| **Trojan** | Programa aparentemente legítimo com código malicioso oculto |
+| **SQL Injection** | Insere comandos SQL maliciosos em campos de entrada → ataca banco de dados |
+| **DDoS** | Sobrecarga de servidores por requisições massivas |
+
+**Ciladas:**
+- 'Phishing explora vulnerabilidades técnicas no código-fonte.' → **ERRADO** ❌ (usa engenharia social)
+- 'UDP garante entrega ordenada e sem erros.' → **ERRADO** ❌ (UDP é não confiável; TCP garante entrega)
+
+**DEFESAS:**
+- **MFA (Autenticação Multifator):** algo que você SABE + TEM + É
+- **Backup incremental:** copia apenas o que mudou desde o último backup
+- **Backup completo:** copia tudo
+- **Antivírus:** detecta e remove malwares
+- **Firewall:** filtra tráfego de rede por regras ✅`
+    },
+    "tags": ["Informática", "Segurança da Informação", "ANSA 2026"]
+  },
+
+  // ─────────────────────────────────────────────────────────────
+  // ESCALAS DE TEMPERATURA E PROPRIEDADES DOS GASES
+  // ─────────────────────────────────────────────────────────────
+
+  {
+    "id": 556,
+    "front": {
+      "title": "Física: Escalas de Temperatura — Conversões e Zero Absoluto 🌡️",
+      "subtitle": "Celsius, Fahrenheit, Kelvin — relações e armadilhas"
+    },
+    "back": {
+      "body": `**CONVERSÕES:**
+- K = °C + 273,15 (sempre positivo!)
+- °F = (9/5) × °C + 32
+- °C = (°F − 32) × 5/9
+
+**PONTOS DE REFERÊNCIA:**
+
+| Ponto | Celsius | Kelvin | Fahrenheit |
+|-------|---------|--------|-----------|
+| Fusão da água | 0 °C | 273,15 K | 32 °F |
+| Ebulição da água | 100 °C | 373,15 K | 212 °F |
+| Zero absoluto | −273,15 °C | 0 K | −459,67 °F |
+
+**ZERO ABSOLUTO:**
+- K = 0 → T = −273,15 °C
+- Pela teoria clássica: movimentos moleculares cessam (ΔU = 0 de translação)
+- Pela mecânica quântica: existe energia de ponto zero (mas irrelevante para a prova)
+
+**Ciladas Cebraspe:**
+- 'Zero absoluto = 0 °C' → **ERRADO** ❌ (é −273,15 °C) ✅
+- 'Na escala Kelvin, zero absoluto = −273 K' → **ERRADO** ❌ (0 K = zero absoluto; não existe K negativo) ✅
+- 'Temperatura em Kelvin é inversamente proporcional à energia cinética.' → **ERRADO** ❌ (é DIRETAMENTE proporcional) ✅
+
+**100 °C → 212 °F:**
+F = 9/5 × 100 + 32 = 180 + 32 = **212 °F** ✅`
+    },
+    "tags": ["Física", "Temperatura", "Termodinâmica", "ANSA 2026"]
+  },
+
+  {
+    "id": 557,
+    "front": {
+      "title": "Física: Volume Molar e Cálculos nas CNTP 🧪",
+      "subtitle": "22,4 L/mol — como usar nos cálculos?"
+    },
+    "back": {
+      "body": `**CNTP (Condições Normais de Temperatura e Pressão):**
+- T = 0 °C = 273,15 K
+- P = 1 atm = 101,325 kPa
+
+**Volume molar nas CNTP:**
+1 mol de qualquer gás ideal = **22,4 L** nas CNTP ✅
+
+**CÁLCULOS FREQUENTES:**
+
+**Massa molar → volume:**
+n = massa / M_molar
+V = n × 22,4 (nas CNTP)
+
+**Exemplo (prova Petrobras 2023):**
+'Combustão completa de 0,2 kg de n-heptano (M = 100 g/mol):
+n = 200 g / 100 g/mol = 2 mol
+1 mol C₇H₁₆ → 11 mol O₂
+2 mol C₇H₁₆ → 22 mol O₂
+V(O₂) = 22 × 22,4 = **492,8 L**'
+O item dizia 44,8 L → **ERRADO** ❌ (44,8 L = volume para 0,2 mol, não 0,2 kg) ✅
+
+**Atenção:**
+Volume molar nas CNTP é diferente nas CTP (25°C, 1 atm):
+- CNTP: 22,4 L/mol
+- CTP: 24,5 L/mol
+Sempre observe qual condição o enunciado especifica! ✅`
+    },
+    "tags": ["Química", "Gases", "Estequiometria", "ANSA 2026"]
+  },
+
+  // ─────────────────────────────────────────────────────────────
+  // MECÂNICA DOS FLUIDOS — AVANÇADO
+  // ─────────────────────────────────────────────────────────────
+
+  {
+    "id": 558,
+    "front": {
+      "title": "Fluidos: Número de Reynolds — Laminar vs Turbulento 🌊",
+      "subtitle": "Cálculo, interpretação e perfis de velocidade"
+    },
+    "back": {
+      "body": `**NÚMERO DE REYNOLDS:**
+Re = ρ·v·D / μ = v·D / ν
+
+Onde:
+- ρ = densidade (kg/m³)
+- v = velocidade média (m/s)
+- D = diâmetro da tubulação (m)
+- μ = viscosidade dinâmica (Pa·s)
+- ν = viscosidade cinemática (m²/s)
+
+**REGIMES DE ESCOAMENTO:**
+
+| Regime | Re | Perfil de velocidade |
+|--------|-----|---------------------|
+| **Laminar** | < 2.300 | Parabólico (pontudo no centro) |
+| Transição | 2.300–4.000 | Instável |
+| **Turbulento** | > 4.000 | Mais uniforme (plano/chapado) ✅ |
+
+**Por que turbulento é mais uniforme?**
+A mistura intensa entre as camadas de fluido equaliza as velocidades radiais.
+
+**Velocidade média no laminar:**
+v_média = v_máx / 2 (perfil parabólico)
+
+**Re é DIRETAMENTE proporcional a:**
+- Velocidade do fluido
+- Diâmetro da tubulação
+- Densidade do fluido
+
+**Re é INVERSAMENTE proporcional a:**
+- Viscosidade do fluido
+
+**Cilada Cebraspe:**
+'Re é inversamente proporcional ao diâmetro → tubulações menores sempre terão escoamento laminar.'
+→ **ERRADO** ❌ (Re ∝ D; diâmetro menor → Re MENOR, mas não necessariamente laminar) ✅`
+    },
+    "tags": ["Mecânica dos Fluidos", "Reynolds", "ANSA 2026"]
+  },
+
+  {
+    "id": 559,
+    "front": {
+      "title": "Fluidos: Compressores — Centrífugo vs Alternativo 🔧",
+      "subtitle": "Diferenças, curvas de desempenho e problemas típicos"
+    },
+    "back": {
+      "body": `**COMPRESSOR CENTRÍFUGO:**
+- Princípio: força centrífuga (dinâmico, não deslocamento positivo)
+- Curva de desempenho: similar à bomba centrífuga (Q ↑ → ΔP ↓)
+- Adequado para: grandes vazões, pressões moderadas
+- Problema característico: **SURGE** (pompagem)
+
+**SURGE (instabilidade):**
+Ocorre quando a vazão cai abaixo do mínimo estável
+→ Reversão intermitente do fluxo de gás dentro do compressor
+→ Vibração severa, ruído e danos ao equipamento
+→ Prevenção: controle anti-surge (reciclo de gás) ✅
+
+**COMPRESSOR ALTERNATIVO (reciprocante):**
+- Princípio: deslocamento positivo (pistão em cilindro)
+- Válvulas de sucção e descarga: automáticas por diferencial de pressão ✅
+- NÃO são acionadas hidraulicamente ❌
+- Curva de desempenho: Q constante com variação de P
+- Adequado para: alta pressão, baixas/médias vazões
+
+**Cilada Cebraspe:**
+'Compressor centrífugo opera por deslocamento positivo.' → **ERRADO** ❌ ✅
+'Válvulas do compressor alternativo são acionadas hidraulicamente.' → **ERRADO** ❌ ✅
+'Surge em compressores centrífugos ocorre em alta vazão.' → **ERRADO** ❌ (ocorre em BAIXA vazão) ✅`
+    },
+    "tags": ["Mecânica dos Fluidos", "Compressores", "Equipamentos", "ANSA 2026"]
+  },
+
+  {
+    "id": 560,
+    "front": {
+      "title": "Controle: Controle Feedforward vs Feedback 🔄",
+      "subtitle": "Diferenças, vantagens e quando usar cada um"
+    },
+    "back": {
+      "body": `**CONTROLE FEEDBACK (malha fechada — retroalimentação):**
+- Mede o ERRO (desvio da variável controlada do setpoint)
+- Age APÓS a perturbação já ter afetado o processo
+- Necessita de medição da variável controlada (saída)
+- Pode eliminar qualquer perturbação → mais robusto
+- Pode causar instabilidade se mal sintonizado
+
+**CONTROLE FEEDFORWARD (pré-alimentação — antecipativo):**
+- Age ANTES que a perturbação afete a saída
+- Mede a variável de perturbação (não a variável controlada)
+- NÃO necessita medir o erro → não usa retroalimentação
+- Rápido, mas depende de modelo preciso do processo
+- Não corrige erros de modelo ou perturbações não medidas
+
+**CONTROLE EM CASCATA:**
+- Dois controladores: primário (mestre) e secundário (escravo)
+- O setpoint do secundário é a saída do primário
+- O laço INTERNO (secundário) deve ser **mais rápido** que o externo (primário) ✅
+
+**Cilada Cebraspe:**
+'O controle feedforward usa retroalimentação do sinal de saída para corrigir desvios.'
+→ **ERRADO** ❌ (isso é feedback; feedforward age antes pela perturbação) ✅
+'No controle cascata, o laço interno é mais lento que o externo.'
+→ **ERRADO** ❌ (interno deve ser mais RÁPIDO) ✅`
+    },
+    "tags": ["Controle de Processo", "Feedforward", "Feedback", "ANSA 2026"]
+  },
+]
 
 export const mapaDeMaterias: Record<string, string[]> = {
   "🚨 Urgente": [

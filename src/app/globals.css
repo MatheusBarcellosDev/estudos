@@ -1,6 +1,7 @@
 @import "tailwindcss";
 @import "tw-animate-css";
 @import "shadcn/tailwind.css";
+@plugin "@tailwindcss/typography";
 
 @custom-variant dark (&:is(.dark *));
 
@@ -125,5 +126,62 @@
   }
   html {
     @apply font-sans;
+  }
+}
+
+/* ── Markdown table styles inside flashcard back ── */
+@layer components {
+  .prose table {
+    width: 100%;
+    border-collapse: collapse;
+    font-size: 0.85em;
+    margin: 0.75rem 0;
+    border-radius: 0.5rem;
+    overflow: hidden;
+  }
+  .prose thead {
+    background-color: color-mix(in oklch, var(--primary) 12%, transparent);
+  }
+  .prose th {
+    text-align: left;
+    font-weight: 700;
+    padding: 0.6rem 0.85rem;
+    line-height: 1.6;
+    color: var(--foreground);
+    border-bottom: 2px solid color-mix(in oklch, var(--border) 80%, transparent);
+  }
+  .prose td {
+    padding: 0.6rem 0.85rem;
+    line-height: 1.7;
+    border-bottom: 1px solid color-mix(in oklch, var(--border) 60%, transparent);
+    vertical-align: top;
+  }
+  .prose tr:last-child td {
+    border-bottom: none;
+  }
+  .prose tr:nth-child(even) td {
+    background-color: color-mix(in oklch, var(--muted) 50%, transparent);
+  }
+  .prose tr:hover td {
+    background-color: color-mix(in oklch, var(--primary) 6%, transparent);
+  }
+
+  /* General prose spacing for card back */
+  .prose p {
+    margin-top: 0.6rem;
+    margin-bottom: 0.6rem;
+    line-height: 1.75;
+  }
+  .prose ul, .prose ol {
+    margin-top: 0.5rem;
+    margin-bottom: 0.5rem;
+  }
+  .prose li {
+    margin-top: 0.3rem;
+    margin-bottom: 0.3rem;
+    line-height: 1.7;
+  }
+  .prose strong {
+    font-weight: 700;
   }
 }

@@ -6,6 +6,7 @@ import { Flashcard } from "@/data/flashcards";
 import { RotateCw } from "lucide-react";
 import ReactMarkdown from "react-markdown";
 import remarkMath from "remark-math";
+import remarkGfm from "remark-gfm";
 import rehypeKatex from "rehype-katex";
 import "katex/dist/katex.min.css";
 
@@ -67,9 +68,9 @@ export default function FlashcardCard({ card, onFlip }: FlashcardCardProps) {
           <div className="inline-block px-4 py-1 bg-primary/10 text-primary rounded-full text-xs font-bold uppercase tracking-widest mb-6 self-start">
             Verso
           </div>
-          <div className="text-sm sm:text-base text-foreground leading-relaxed flex-1 prose prose-sm dark:prose-invert max-w-none prose-strong:text-foreground prose-p:my-1 prose-ul:my-1 prose-li:my-0 prose-headings:text-foreground prose-headings:font-bold">
+          <div className="text-sm sm:text-base text-foreground leading-relaxed flex-1 prose prose-sm dark:prose-invert max-w-none prose-strong:text-foreground prose-headings:text-foreground prose-headings:font-bold">
             <ReactMarkdown
-              remarkPlugins={[remarkMath]}
+              remarkPlugins={[remarkMath, remarkGfm]}
               rehypePlugins={[rehypeKatex]}
             >
               {card.back.body}
