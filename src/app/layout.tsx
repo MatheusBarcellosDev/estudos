@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import { Geist, Geist_Mono } from "next/font/google";
 import "./globals.css";
 import { ThemeProvider } from "@/components/ThemeProvider";
+import { ConcursoProvider } from "@/context/ConcursoContext";
 
 const geistSans = Geist({
   variable: "--font-geist-sans",
@@ -14,8 +15,8 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata: Metadata = {
-  title: "Concurso Trainer — ANSA 2026",
-  description: "Flashcards e questões no padrão Cebraspe para a prova ANSA 2026",
+  title: "Concurso Trainer",
+  description: "Flashcards e questões no padrão Cebraspe para concursos públicos",
 };
 
 export default function RootLayout({
@@ -34,7 +35,9 @@ export default function RootLayout({
         />
       </head>
       <body className={`${geistSans.variable} ${geistMono.variable} antialiased`}>
-        <ThemeProvider>{children}</ThemeProvider>
+        <ThemeProvider>
+          <ConcursoProvider>{children}</ConcursoProvider>
+        </ThemeProvider>
       </body>
     </html>
   );

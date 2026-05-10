@@ -94,8 +94,9 @@ export default function Home() {
       // Error fallback
       setQuestions([
         { 
+          mode: 'cebraspe' as const,
           afirmacao: "Erro ao gerar questões. Por favor, tente novamente.", 
-          resposta: "ERRADO", 
+          resposta: "ERRADO" as const, 
           explicacao: "Houve uma falha na comunicação com a IA." 
         }
       ]);

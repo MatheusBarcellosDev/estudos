@@ -3,8 +3,6 @@
 import { useState, useCallback, useEffect } from "react";
 import { Flashcard } from "@/data/flashcards";
 
-const STORAGE_KEY = "mastered_cards_v2";
-
 function shuffle<T>(arr: T[]): T[] {
   const a = [...arr];
   for (let i = a.length - 1; i > 0; i--) {
@@ -14,54 +12,47 @@ function shuffle<T>(arr: T[]): T[] {
   return a;
 }
 
-function loadMastered(): Set<number> {
+function loadMastered(key: string): Set<number> {
   if (typeof window === "undefined") return new Set();
   try {
-    const raw = localStorage.getItem(STORAGE_KEY);
+    const raw = localStorage.getItem(key);
     return raw ? new Set(JSON.parse(raw) as number[]) : new Set();
   } catch {
     return new Set();
   }
 }
 
-function saveMastered(ids: Set<number>): void {
+function saveMastered(ids: Set<number>, key: string): void {
   if (typeof window === "undefined") return;
   try {
-    localStorage.setItem(STORAGE_KEY, JSON.stringify([...ids]));
+    localStorage.setItem(key, JSON.stringify([...ids]));
   } catch {}
 }
 
 export interface UseSimpleMasteryReturn {
-  /** Shuffled deck of non-mastered cards for this subject */
   deck: Flashcard[];
-  /** IDs of mastered cards in this subject */
   masteredIds: Set<number>;
-  /** Total mastered count for this subject */
   masteredCount: number;
-  /** Mark a card as mastered */
   markMastered: (id: number) => void;
-  /** Restore all mastered cards for this subject back to the deck */
   restoreAll: () => void;
-  /** Re-shuffle the current deck (call on subject entry) */
   reshuffleDeck: () => void;
 }
 
 export function useSimpleMastery(
-  allSubjectCards: Flashcard[]
+  allSubjectCards: Flashcard[],
+  storageKey = "mastered_cards_v2"
 ): UseSimpleMasteryReturn {
   const [masteredIds, setMasteredIds] = useState<Set<number>>(new Set());
   const [deck, setDeck] = useState<Flashcard[]>([]);
 
-  // Load persisted mastery on mount
   useEffect(() => {
-    const loaded = loadMastered();
+    const loaded = loadMastered(storageKey);
     setMasteredIds(loaded);
-
     const subjectIds = new Set(allSubjectCards.map((c) => c.id));
     const remaining = allSubjectCards.filter((c) => !loaded.has(c.id));
     setDeck(shuffle(remaining.filter((c) => subjectIds.has(c.id))));
     // eslint-disable-next-line react-hooks/exhaustive-deps
-  }, []);
+  }, [storageKey]);
 
   const masteredCount = allSubjectCards.filter((c) => masteredIds.has(c.id)).length;
 
@@ -70,24 +61,23 @@ export function useSimpleMastery(
       setMasteredIds((prev) => {
         const next = new Set(prev);
         next.add(id);
-        saveMastered(next);
-        // Remove from deck immediately
+        saveMastered(next, storageKey);
         setDeck((d) => d.filter((c) => c.id !== id));
         return next;
       });
     },
-    []
+    [storageKey]
   );
 
   const restoreAll = useCallback(() => {
     setMasteredIds((prev) => {
       const subjectIds = new Set(allSubjectCards.map((c) => c.id));
       const next = new Set([...prev].filter((id) => !subjectIds.has(id)));
-      saveMastered(next);
+      saveMastered(next, storageKey);
       setDeck(shuffle(allSubjectCards));
       return next;
     });
-  }, [allSubjectCards]);
+  }, [allSubjectCards, storageKey]);
 
   const reshuffleDeck = useCallback(() => {
     setMasteredIds((prev) => {

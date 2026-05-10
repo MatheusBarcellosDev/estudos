@@ -1,0 +1,858 @@
+import { Flashcard } from "./flashcards";
+export type { Flashcard };
+
+// ── Flashcards do TJ-SC (Auxiliar) ─────────────────────────────────────────
+// Adicione seus cards abaixo seguindo o modelo do card de demonstração.
+export const flashcardsTJSC: Flashcard[] = [
+
+    {
+        id: 10002,
+        front: {
+            title: 'Ética vs Moral 🧠',
+            subtitle: 'Qual a diferença fundamental entre Ética e Moral na prova?',
+        },
+        back: {
+            body: `**Ética**: É a ciência, a teoria, universal, atemporal. Reflete sobre o comportamento. Vem do grego *ethos* (modo de ser/caráter).
+**Moral**: É a prática, cultural, temporal (muda com o tempo/lugar), regras de conduta de um grupo. Vem do latim *mos* (costumes).
+
+**Macete:** Ética é o **Princípio (Teoria)**, Moral é a **Ação (Prática)**.
+
+**Cuidado na prova:** A FGV adora inverter os conceitos! Se a questão falar de "hábitos e costumes de uma cultura", é Moral. Se falar de "disciplina filosófica que estuda o comportamento humano", é Ética!`,
+        },
+        tags: ['Ética', 'Conceitos'],
+    },
+    {
+        id: 10003,
+        front: {
+            title: 'Lei Anticorrupção (L. 12.846) — Responsabilidade da PJ 🏢',
+            subtitle: 'Como a Pessoa Jurídica (Empresa) responde por atos de corrupção?',
+        },
+        back: {
+            body: `A Pessoa Jurídica responde de forma **OBJETIVA** nas esferas administrativa e civil.
+
+Isso significa que **não precisa comprovar dolo ou culpa** da empresa. Basta provar que o ato lesivo foi praticado em seu **interesse ou benefício** (direto ou indireto).
+
+**Cuidado na prova:** A banca vai dizer que se o dirigente não teve culpa, a empresa é absolvida. **Falso!** A responsabilidade da empresa (objetiva) é independente da culpa dos diretores.`,
+        },
+        tags: ['Lei Anticorrupção', 'Responsabilidade Objetiva'],
+    },
+    {
+        id: 10004,
+        front: {
+            title: 'Improbidade Adm. — O Fim do "Sem Querer" 🚨',
+            subtitle: 'A Lei de Improbidade (LIA) pune atos culposos (negligência, imprudência)?',
+        },
+        back: {
+            body: `**NÃO EXISTE MAIS IMPROBIDADE CULPOSA!**
+
+Com a Nova LIA (Lei 14.230/2021), a punição exige a comprovação de **DOLO ESPECÍFICO**.
+Ou seja, tem que haver a vontade consciente, intencional e deliberada de obter vantagem ou prejudicar o Estado.
+
+**Cuidado na prova:** Se a historinha da FGV usar as palavras "por descuido", "negligência", "imperícia" ou "sem querer", você **já elimina a alternativa**. Não é improbidade administrativa!`,
+        },
+        tags: ['Improbidade Administrativa', 'Dolo Específico'],
+    },
+    {
+        id: 10005,
+        front: {
+            title: 'Improbidade Adm. — Gaveta 1 (Art. 9º) 💰',
+            subtitle: 'Como identificar o Enriquecimento Ilícito nas questões da FGV?',
+        },
+        back: {
+            body: `Ocorre quando o agente usa o cargo para **obter vantagem patrimonial indevida** para si (encher o próprio bolso).
+
+**Exemplos clássicos:**
+- Receber propina;
+- Usar veículos ou servidores públicos para fins particulares;
+- Receber grana para tolerar jogos de azar ou contrabando.
+
+**Macete:** Faça a pergunta: *"O agente ganhou alguma coisa? Aumentou o próprio patrimônio ou economizou dinheiro?"* Se **SIM**, é Enriquecimento Ilícito!`,
+        },
+        tags: ['Improbidade Administrativa', 'Enriquecimento Ilícito'],
+    },
+    {
+        id: 10006,
+        front: {
+            title: 'Improbidade Adm. — Gaveta 2 (Art. 10) 📉',
+            subtitle: 'O que caracteriza o Prejuízo ao Erário?',
+        },
+        back: {
+            body: `É a ação dolosa que causa **rombo/dano financeiro direto aos cofres públicos**, sem que o agente necessariamente embolse a grana.
+
+**Exemplos clássicos:**
+- Superfaturamento em licitação;
+- Pagar por uma obra ou serviço não realizado;
+- Conceder benefício financeiro ou tributário indevido.
+
+**Macete:** *"O Estado perdeu dinheiro, mas o agente NÃO botou no bolso?"* = **Prejuízo ao Erário!**`,
+        },
+        tags: ['Improbidade Administrativa', 'Prejuízo ao Erário'],
+    },
+    {
+        id: 10007,
+        front: {
+            title: 'Improbidade Adm. — Gaveta 3 (Art. 11) 📜',
+            subtitle: 'Quais são os casos clássicos de Atentado aos Princípios da Adm. Pública?',
+        },
+        back: {
+            body: `São condutas dolosas que violam a honestidade e imparcialidade, mas que **NÃO geram prejuízo financeiro direto e nem enriquecimento**.
+
+**O que mais cai na FGV (Rol Taxativo):**
+- **Nepotismo** (nomear parente até 3º grau);
+- **Promoção pessoal** (usar recursos para exaltar próprio nome/imagem);
+- **Vazar informações sigilosas**.
+
+**Cuidado:** A nova lei **revogou** condutas genéricas! "Retardar ato de ofício" ou "demorar para despachar" por preguiça **não** é mais improbidade.`,
+        },
+        tags: ['Improbidade Administrativa', 'Princípios'],
+    },
+    {
+        id: 10008,
+        front: {
+            title: 'Improbidade Adm. — As Punições (P.I.R.S.) ⚖️',
+            subtitle: 'Quais são as 4 grandes punições da Improbidade e o que exige Trânsito em Julgado?',
+        },
+        back: {
+            body: `Lembre-se do macete **P.I.R.S.**!
+**P** - Perda da função pública.
+**I** - Indisponibilidade dos bens.
+**R** - Ressarcimento ao erário.
+**S** - Suspensão dos direitos políticos.
+
+🚨 **A Pegadinha Suprema:** A Perda da Função Pública e a Suspensão dos Direitos Políticos **EXIGEM o trânsito em julgado** (o processo tem que acabar de vez, sem caber mais recursos) para serem efetivadas.`,
+        },
+        tags: ['Improbidade Administrativa', 'Sanções'],
+    },
+    {
+        id: 10009,
+        front: {
+            title: 'Improbidade Adm. — A Herança da Corrupção ⚰️',
+            subtitle: 'Se o corrupto morrer, o filho precisa pagar a dívida do próprio bolso?',
+        },
+        back: {
+            body: `**NÃO! A responsabilidade tem um limite!**
+
+Os herdeiros do agente que causou dano ou enriqueceu ilicitamente respondem pela dívida (ressarcimento e sanções pecuniárias), mas **APENAS até o limite do valor da herança recebida**.
+
+**Cuidado na prova:** A banca vai dizer que a suspensão dos direitos políticos ou a perda do cargo passam para o filho. **Mentira!** Penas pessoais **nunca** se transferem, apenas as sanções no "bolso" limitadas à herança.`,
+        },
+        tags: ['Improbidade Administrativa', 'Herdeiros'],
+    },
+    {
+        id: 10010,
+        front: {
+            title: 'Improbidade Adm. — Absolvição Criminal 🔓',
+            subtitle: 'Ser absolvido por "falta de provas" no crime salva o servidor na improbidade?',
+        },
+        back: {
+            body: `**NÃO SALVA!** As instâncias são independentes.
+
+O servidor **só se safa** da improbidade administrativa por conta do juiz criminal se a sentença penal provar:
+1. A **Inexistência do Fato** (o crime nunca ocorreu).
+2. A **Negativa de Autoria** (provou-se que não foi ele).
+3. Absolvição criminal por **decisão colegiada**.
+
+**Macete:** "Falta de provas" apenas solta da cadeia, mas não impede a demissão e a devolução da grana no processo de improbidade!`,
+        },
+        tags: ['Improbidade Administrativa', 'Independência das Instâncias'],
+    },
+    {
+        id: 10011,
+        front: {
+            title: 'Improbidade Adm. — Prazos de Prescrição ⏳',
+            subtitle: 'Em quanto tempo a improbidade prescreve e o que é IMPRESCRITÍVEL?',
+        },
+        back: {
+            body: `**A Regra Geral:** As punições da improbidade prescrevem em **8 anos**, contados da data do fato. (Se for infração permanente, conta a partir do dia que o fato cessar).
+
+🚨 **A Exceção de Ouro:** A ação de **Ressarcimento ao Erário** (obrigação de devolver o dinheiro) decorrente de um ato **DOLOSO** é **IMPRESCRITÍVEL**.
+
+**Macete:** O castigo (multa, perda do cargo) "caduca" em 8 anos, mas a dívida para devolver o dinheiro roubado intencionalmente é eterna!`,
+        },
+        tags: ['Improbidade Administrativa', 'Prescrição'],
+    },
+    {
+        id: 10012,
+        front: {
+            title: 'Português — Letras, Fonemas e Dígrafos 🔤',
+            subtitle: 'Qual a diferença entre Letra e Fonema? E o que é um Dígrafo?',
+        },
+        back: {
+            body: `**Letras**: O sinal gráfico (o desenho).
+**Fonemas**: O som da fala.
+**Dígrafo**: É o encontro de duas letras que representam **apenas UM fonema (som)**. Ex: CH, LH, NH, RR, SS, QU, GU.
+
+**Pegadinha FGV:** Na palavra "Chuva", temos 5 letras, mas apenas 4 fonemas! O "CH" é um dígrafo consonantal (tem som de X).`,
+        },
+        tags: ['Língua Portuguesa', 'Fonologia'],
+    },
+    {
+        id: 10013,
+        front: {
+            title: 'Português — Acentuação das Proparoxítonas 📖',
+            subtitle: 'Qual é a regra mágica de acentuação para palavras proparoxítonas?',
+        },
+        back: {
+            body: `A regra é simples e direta: **TODAS SÃO ACENTUADAS!**
+A sílaba tônica é a antepenúltima.
+
+**Exemplos:** 
+- Mú-si-ca
+- Plás-ti-co
+- Úl-ti-mo
+- Dí-vi-da
+
+**Exceção de prova:** Apenas palavras de origem estrangeira não aportuguesadas (ex: *performance*) são proparoxítonas e não levam acento.`,
+        },
+        tags: ['Língua Portuguesa', 'Acentuação'],
+    },
+    {
+        id: 10014,
+        front: {
+            title: 'Português — Acentuação: Paroxítonas e o Novo Acordo 📝',
+            subtitle: 'Qual regra de acentuação das paroxítonas MAIS CAI devido ao Novo Acordo Ortográfico?',
+        },
+        back: {
+            body: `As bancas amam cobrar a perda do acento nos **Ditongos Abertos (EI, OI)** em palavras **PAROXÍTONAS**!
+
+Isso significa que perderam o acento:
+- I-d**ei**-a
+- Ji-b**oi**-a
+- As-sem-bl**ei**-a
+- Pla-t**ei**-a
+- He-r**oi**-co
+
+**Cuidado:** Se o ditongo aberto estiver em uma palavra **Oxítona** (última sílaba), o acento **continua**! (Ex: He-r**ói**, cha-p**éu**, pa-p**éis**).`,
+        },
+        tags: ['Língua Portuguesa', 'Acentuação', 'Novo Acordo'],
+    },
+    {
+        id: 10015,
+        front: {
+            title: 'Português — Monossílabos Tônicos 🗣️',
+            subtitle: 'Quais monossílabos tônicos devem ser acentuados graficamente?',
+        },
+        back: {
+            body: `Acentuam-se os monossílabos tônicos terminados em:
+- **A(s)**: pá, gás, lá.
+- **E(s)**: pé, mês, três.
+- **O(s)**: pó, dó, nós.
+- **Ditongos Abertos (ÉU, ÉI, ÓI)**: véu, réis, dói.
+
+**Macete para a prova:** Eles seguem quase a mesma regra das Oxítonas, **mas monossílabos não se acentuam em EM/ENS!** Por isso, "trem" e "bem" não levam acento (o acento em "têm" é diferencial de plural).`,
+        },
+        tags: ['Língua Portuguesa', 'Acentuação'],
+    },
+    {
+        id: 10002,
+        front: {
+            title: 'Ética vs Moral 🧠',
+            subtitle: 'Qual a diferença fundamental entre Ética e Moral na prova?',
+        },
+        back: {
+            body: `**Ética**: É a ciência, a teoria, universal, atemporal. Reflete sobre o comportamento. Vem do grego *ethos* (modo de ser/caráter).
+**Moral**: É a prática, cultural, temporal (muda com o tempo/lugar), regras de conduta de um grupo. Vem do latim *mos* (costumes).
+
+**Macete:** Ética é o **Princípio (Teoria)**, Moral é a **Ação (Prática)**.
+
+**Cuidado na prova:** A FGV adora inverter os conceitos! Se a questão falar de "hábitos e costumes de uma cultura", é Moral. Se falar de "disciplina filosófica que estuda o comportamento humano", é Ética!`,
+        },
+        tags: ['Ética', 'Conceitos'],
+    },
+    {
+        id: 10003,
+        front: {
+            title: 'Lei Anticorrupção (L. 12.846) — Responsabilidade da PJ 🏢',
+            subtitle: 'Como a Pessoa Jurídica (Empresa) responde por atos de corrupção?',
+        },
+        back: {
+            body: `A Pessoa Jurídica responde de forma **OBJETIVA** nas esferas administrativa e civil.
+
+Isso significa que **não precisa comprovar dolo ou culpa** da empresa. Basta provar que o ato lesivo foi praticado em seu **interesse ou benefício** (direto ou indireto).
+
+**Cuidado na prova:** A banca vai dizer que se o dirigente não teve culpa, a empresa é absolvida. **Falso!** A responsabilidade da empresa (objetiva) é independente da culpa dos diretores.`,
+        },
+        tags: ['Lei Anticorrupção', 'Responsabilidade Objetiva'],
+    },
+    {
+        id: 10004,
+        front: {
+            title: 'Improbidade Adm. — O Fim do "Sem Querer" 🚨',
+            subtitle: 'A Lei de Improbidade (LIA) pune atos culposos (negligência, imprudência)?',
+        },
+        back: {
+            body: `**NÃO EXISTE MAIS IMPROBIDADE CULPOSA!**
+
+Com a Nova LIA (Lei 14.230/2021), a punição exige a comprovação de **DOLO ESPECÍFICO**.
+Ou seja, tem que haver a vontade consciente, intencional e deliberada de obter vantagem ou prejudicar o Estado.
+
+**Cuidado na prova:** Se a historinha da FGV usar as palavras "por descuido", "negligência", "imperícia" ou "sem querer", você **já elimina a alternativa**. Não é improbidade administrativa!`,
+        },
+        tags: ['Improbidade Administrativa', 'Dolo Específico'],
+    },
+    {
+        id: 10005,
+        front: {
+            title: 'Improbidade Adm. — Gaveta 1 (Art. 9º) 💰',
+            subtitle: 'Como identificar o Enriquecimento Ilícito nas questões da FGV?',
+        },
+        back: {
+            body: `Ocorre quando o agente usa o cargo para **obter vantagem patrimonial indevida** para si (encher o próprio bolso).
+
+**Exemplos clássicos:**
+- Receber propina;
+- Usar veículos ou servidores públicos para fins particulares;
+- Receber grana para tolerar jogos de azar ou contrabando.
+
+**Macete:** Faça a pergunta: *"O agente ganhou alguma coisa? Aumentou o próprio patrimônio ou economizou dinheiro?"* Se **SIM**, é Enriquecimento Ilícito!`,
+        },
+        tags: ['Improbidade Administrativa', 'Enriquecimento Ilícito'],
+    },
+    {
+        id: 10006,
+        front: {
+            title: 'Improbidade Adm. — Gaveta 2 (Art. 10) 📉',
+            subtitle: 'O que caracteriza o Prejuízo ao Erário?',
+        },
+        back: {
+            body: `É a ação dolosa que causa **rombo/dano financeiro direto aos cofres públicos**, sem que o agente necessariamente embolse a grana.
+
+**Exemplos clássicos:**
+- Superfaturamento em licitação;
+- Pagar por uma obra ou serviço não realizado;
+- Conceder benefício financeiro ou tributário indevido.
+
+**Macete:** *"O Estado perdeu dinheiro, mas o agente NÃO botou no bolso?"* = **Prejuízo ao Erário!**`,
+        },
+        tags: ['Improbidade Administrativa', 'Prejuízo ao Erário'],
+    },
+    {
+        id: 10007,
+        front: {
+            title: 'Improbidade Adm. — Gaveta 3 (Art. 11) 📜',
+            subtitle: 'Quais são os casos clássicos de Atentado aos Princípios da Adm. Pública?',
+        },
+        back: {
+            body: `São condutas dolosas que violam a honestidade e imparcialidade, mas que **NÃO geram prejuízo financeiro direto e nem enriquecimento**.
+
+**O que mais cai na FGV (Rol Taxativo):**
+- **Nepotismo** (nomear parente até 3º grau);
+- **Promoção pessoal** (usar recursos para exaltar próprio nome/imagem);
+- **Vazar informações sigilosas**.
+
+**Cuidado:** A nova lei **revogou** condutas genéricas! "Retardar ato de ofício" ou "demorar para despachar" por preguiça **não** é mais improbidade.`,
+        },
+        tags: ['Improbidade Administrativa', 'Princípios'],
+    },
+    {
+        id: 10008,
+        front: {
+            title: 'Improbidade Adm. — As Punições (P.I.R.S.) ⚖️',
+            subtitle: 'Quais são as 4 grandes punições da Improbidade e o que exige Trânsito em Julgado?',
+        },
+        back: {
+            body: `Lembre-se do macete **P.I.R.S.**!
+**P** - Perda da função pública.
+**I** - Indisponibilidade dos bens.
+**R** - Ressarcimento ao erário.
+**S** - Suspensão dos direitos políticos.
+
+🚨 **A Pegadinha Suprema:** A Perda da Função Pública e a Suspensão dos Direitos Políticos **EXIGEM o trânsito em julgado** (o processo tem que acabar de vez, sem caber mais recursos) para serem efetivadas.`,
+        },
+        tags: ['Improbidade Administrativa', 'Sanções'],
+    },
+    {
+        id: 10009,
+        front: {
+            title: 'Improbidade Adm. — A Herança da Corrupção ⚰️',
+            subtitle: 'Se o corrupto morrer, o filho precisa pagar a dívida do próprio bolso?',
+        },
+        back: {
+            body: `**NÃO! A responsabilidade tem um limite!**
+
+Os herdeiros do agente que causou dano ou enriqueceu ilicitamente respondem pela dívida (ressarcimento e sanções pecuniárias), mas **APENAS até o limite do valor da herança recebida**.
+
+**Cuidado na prova:** A banca vai dizer que a suspensão dos direitos políticos ou a perda do cargo passam para o filho. **Mentira!** Penas pessoais **nunca** se transferem, apenas as sanções no "bolso" limitadas à herança.`,
+        },
+        tags: ['Improbidade Administrativa', 'Herdeiros'],
+    },
+    {
+        id: 10010,
+        front: {
+            title: 'Improbidade Adm. — Absolvição Criminal 🔓',
+            subtitle: 'Ser absolvido por "falta de provas" no crime salva o servidor na improbidade?',
+        },
+        back: {
+            body: `**NÃO SALVA!** As instâncias são independentes.
+
+O servidor **só se safa** da improbidade administrativa por conta do juiz criminal se a sentença penal provar:
+1. A **Inexistência do Fato** (o crime nunca ocorreu).
+2. A **Negativa de Autoria** (provou-se que não foi ele).
+3. Absolvição criminal por **decisão colegiada**.
+
+**Macete:** "Falta de provas" apenas solta da cadeia, mas não impede a demissão e a devolução da grana no processo de improbidade!`,
+        },
+        tags: ['Improbidade Administrativa', 'Independência das Instâncias'],
+    },
+    {
+        id: 10011,
+        front: {
+            title: 'Improbidade Adm. — Prazos de Prescrição ⏳',
+            subtitle: 'Em quanto tempo a improbidade prescreve e o que é IMPRESCRITÍVEL?',
+        },
+        back: {
+            body: `**A Regra Geral:** As punições da improbidade prescrevem em **8 anos**, contados da data do fato. (Se for infração permanente, conta a partir do dia que o fato cessar).
+
+🚨 **A Exceção de Ouro:** A ação de **Ressarcimento ao Erário** (obrigação de devolver o dinheiro) decorrente de um ato **DOLOSO** é **IMPRESCRITÍVEL**.
+
+**Macete:** O castigo (multa, perda do cargo) "caduca" em 8 anos, mas a dívida para devolver o dinheiro roubado intencionalmente é eterna!`,
+        },
+        tags: ['Improbidade Administrativa', 'Prescrição'],
+    },
+    {
+        id: 10012,
+        front: {
+            title: 'Português — Letras, Fonemas e Dígrafos 🔤',
+            subtitle: 'Qual a diferença entre Letra e Fonema? E o que é um Dígrafo?',
+        },
+        back: {
+            body: `**Letras**: O sinal gráfico (o desenho).
+**Fonemas**: O som da fala.
+**Dígrafo**: É o encontro de duas letras que representam **apenas UM fonema (som)**. Ex: CH, LH, NH, RR, SS, QU, GU.
+
+**Pegadinha FGV:** Na palavra "Chuva", temos 5 letras, mas apenas 4 fonemas! O "CH" é um dígrafo consonantal (tem som de X).`,
+        },
+        tags: ['Língua Portuguesa', 'Fonologia'],
+    },
+    {
+        id: 10013,
+        front: {
+            title: 'Português — Acentuação das Proparoxítonas 📖',
+            subtitle: 'Qual é a regra mágica de acentuação para palavras proparoxítonas?',
+        },
+        back: {
+            body: `A regra é simples e direta: **TODAS SÃO ACENTUADAS!**
+A sílaba tônica é a antepenúltima.
+
+**Exemplos:** 
+- Mú-si-ca
+- Plás-ti-co
+- Úl-ti-mo
+- Dí-vi-da
+
+**Exceção de prova:** Apenas palavras de origem estrangeira não aportuguesadas (ex: *performance*) são proparoxítonas e não levam acento.`,
+        },
+        tags: ['Língua Portuguesa', 'Acentuação'],
+    },
+    {
+        id: 10014,
+        front: {
+            title: 'Português — Acentuação: Paroxítonas e o Novo Acordo 📝',
+            subtitle: 'Qual regra de acentuação das paroxítonas MAIS CAI devido ao Novo Acordo Ortográfico?',
+        },
+        back: {
+            body: `As bancas amam cobrar a perda do acento nos **Ditongos Abertos (EI, OI)** em palavras **PAROXÍTONAS**!
+
+Isso significa que perderam o acento:
+- I-d**ei**-a
+- Ji-b**oi**-a
+- As-sem-bl**ei**-a
+- Pla-t**ei**-a
+- He-r**oi**-co
+
+**Cuidado:** Se o ditongo aberto estiver em uma palavra **Oxítona** (última sílaba), o acento **continua**! (Ex: He-r**ói**, cha-p**éu**, pa-p**éis**).`,
+        },
+        tags: ['Língua Portuguesa', 'Acentuação', 'Novo Acordo'],
+    },
+    {
+        id: 10015,
+        front: {
+            title: 'Português — Monossílabos Tônicos 🗣️',
+            subtitle: 'Quais monossílabos tônicos devem ser acentuados graficamente?',
+        },
+        back: {
+            body: `Acentuam-se os monossílabos tônicos terminados em:
+- **A(s)**: pá, gás, lá.
+- **E(s)**: pé, mês, três.
+- **O(s)**: pó, dó, nós.
+- **Ditongos Abertos (ÉU, ÉI, ÓI)**: véu, réis, dói.
+
+**Macete para a prova:** Eles seguem quase a mesma regra das Oxítonas, **mas monossílabos não se acentuam em EM/ENS!** Por isso, "trem" e "bem" não levam acento (o acento em "têm" é diferencial de plural).`,
+        },
+        tags: ['Língua Portuguesa', 'Acentuação'],
+    },
+    {
+        id: 10024,
+        front: {
+            title: 'Improbidade Adm. — Perda da Função Pública 📉',
+            subtitle: 'A perda da função na Nova LIA atinge automaticamente todos os cargos do servidor?',
+        },
+        back: {
+            body: `**NÃO! A perda de múltiplos cargos NUNCA é automática!** 🚨
+
+**➡️ REGRA:** Atinge **APENAS** o cargo/vínculo de mesma natureza e entidade que o agente mantinha na época da improbidade.
+**➡️ EXCEÇÃO:** Pode atingir outros cargos do servidor? **SIM!** Mas para isso, o juiz precisa dar uma **DECISÃO EXPRESSAMENTE MOTIVADA** justificando a gravidade.
+
+**Cuidado na FGV:** Se a alternativa usar as palavras "perda automática de todos os vínculos", ela está ERRADA!`,
+        },
+        tags: ['Improbidade Administrativa', 'Sanções', 'Nova LIA', 'Pegadinha FGV'],
+    },
+    {
+        id: 10025,
+        front: {
+            title: 'Improbidade Adm. — Art. 11 (Princípios) 📜',
+            subtitle: 'O rol de condutas que atentam contra os princípios da Administração Pública (Art. 11) é exemplificativo ou taxativo na Nova LIA?',
+        },
+        back: {
+            body: `**É TAXATIVO!** 🚨
+
+**A Regra Atual:** Com a Nova LIA, não existe mais "improbidade genérica". Para ser punido no Art. 11, a conduta do agente tem que estar **exatamente escrita** (tipificada) em um dos incisos da lei (ex: nepotismo, vazar informação sigilosa, etc.).
+
+**Cuidado na FGV:** Se a banca disser que "qualquer violação ética" ou conduta "não prevista expressamente na lei" gera improbidade, a alternativa está **ERRADA**! O juiz não pode usar interpretação extensiva. O que não está na lista fechada da lei pode até ser infração disciplinar no RH, mas NÃO é improbidade.`,
+        },
+        tags: ['Improbidade Administrativa', 'Artigo 11', 'Rol Taxativo', 'Nova LIA', 'Pegadinha FGV'],
+    },
+    {
+        id: 10026,
+        front: {
+            title: 'Lei Anticorrupção — Interposta Pessoa 🍊',
+            subtitle: 'O que significa usar uma "interposta pessoa" para fins da Lei 12.846/2013?',
+        },
+        back: {
+            body: `Significa usar um famoso **"Laranja"** (ou testa de ferro) [2]. 
+
+**O objetivo proibido pela lei:** Ocultar ou dissimular (esconder) a verdadeira identidade dos reais beneficiários da corrupção ou o real interesse da empresa no ato ilícito [2].
+
+**Cuidado na FGV:** A banca vai tentar te enganar dizendo que se a empresa não pagou a propina "diretamente", ela não pode ser punida. **ERRADO!** O uso de laranjas atrai a **responsabilidade objetiva** da empresa que se beneficiou nas esferas civil e administrativa [2, 3].`,
+        },
+        tags: ['Lei Anticorrupção', 'Atos Lesivos', 'Interposta Pessoa', 'Pegadinha FGV', 'Dia 3'],
+    },
+    {
+        id: 10033,
+        front: {
+            title: 'Informática — Conceitos Básicos (Hardware) 🖥️',
+            subtitle: 'Qual é a definição de Hardware e quais são seus exemplos clássicos?',
+        },
+        back: {
+            body: `**Hardware é a parte FÍSICA e TANGÍVEL do computador.** (Tudo aquilo que você pode tocar/chutar).
+
+**Sua Função:** Executar as operações físicas, processar dados, armazenar informações e permitir a interação com o usuário.
+
+**Exemplos clássicos que caem em prova:**
+- **Processador (CPU):** Executa os cálculos.
+- **Memória RAM:** Armazena dados temporariamente.
+- **Disco Rígido (HD / SSD):** Armazena arquivos permanentemente.
+- **Periféricos:** Monitor, teclado, mouse, placa-mãe, placa de vídeo.`,
+        },
+        tags: ['Informática', 'Hardware', 'Conceitos Básicos', 'Dia 4'],
+    },
+    {
+        id: 10035,
+        front: {
+            title: 'Informática — Windows (Caracteres Inválidos) 🚫',
+            subtitle: 'Quais são os 9 caracteres PROIBIDOS ao nomear arquivos e pastas no Windows?',
+        },
+        back: {
+            body: `**Os caracteres que NÃO podem ser usados são:**
+**< > : " / \\ | ? ***
+
+**🧠 Macete de Memorização (Um rosto):**
+**< >** (são os olhinhos)
+**:** (é o nariz)
+**"** (é o cabelinho)
+**/ \\ |** (são os bracinhos e o corpo)
+**? *** (é a confusão na cabeça dele!)
+
+🚨 **Cuidado com a FGV:** A banca vai tentar te enganar dizendo que o @, o hífen (-), o sublinhado (_), os parênteses ( ) ou as letras acentuadas (ç, á) são proibidos. **Eles SÃO PERMITIDOS!**`,
+        },
+        tags: ['Informática', 'Windows', 'Arquivos', 'Dia 4', 'Pegadinha FGV'],
+    },
+    {
+        id: 10036,
+        front: {
+            title: 'Informática — Comandos Básicos do CMD (Windows) 💻',
+            subtitle: 'Quais são os principais comandos do CMD (MS-DOS) que caem na FGV?',
+        },
+        back: {
+            body: `Decorebe a lista oficial do Windows:
+
+**➡️ DIR:** Lista arquivos e pastas do diretório.
+**➡️ CD:** Muda de diretório (*Change Directory*).
+**➡️ COPY:** Copia arquivos.
+**➡️ REN:** Renomeia arquivos ou pastas (*Rename*).
+**➡️ DEL:** Exclui arquivos (*Delete*).
+**➡️ MD / MKDIR:** Cria uma nova pasta (*Make Directory*).
+
+🚨 **Pegadinha da FGV para o pessoal da TI:** O CMD do Windows **NÃO** usa os comandos do Linux! (Esqueça *ls, mv, rm, mkdir* se a questão falar estritamente do CMD clássico).`,
+        },
+        tags: ['Informática', 'Windows', 'CMD', 'MS-DOS', 'Pegadinha FGV'],
+    },
+    {
+        id: 10037,
+        front: {
+            title: 'Informática — Arrastar Arquivos + Teclado 🖱️',
+            subtitle: 'No Windows, qual é a função ao arrastar um arquivo segurando as teclas Ctrl, Alt ou Shift?',
+        },
+        back: {
+            body: `O comportamento do Windows muda dependendo da tecla pressionada durante o arrasto:
+
+**➡️ Arrasta + CTRL:** **COPIA** o arquivo (C de Copiar).
+**➡️ Arrasta + ALT:** Cria um **ATALHO** (A e T de Atalho).
+**➡️ Arrasta + SHIFT:** **MOVE** o arquivo (S de Sair do lugar).
+
+🚨 **Cuidado com a FGV:** A banca adora dizer que arrastar segurando o Ctrl move o arquivo. **ERRADO!** Ctrl sempre Copia!`,
+        },
+        tags: ['Informática', 'Windows', 'Gerenciamento de Arquivos', 'Dia 4', 'Pegadinha FGV'],
+    },
+    {
+        id: 10038,
+        front: {
+            title: 'Informática — Exclusão de Arquivos no Windows 🗑️',
+            subtitle: 'Qual é a diferença entre excluir usando [Shift + Delete] e [Arrastar para a Lixeira segurando Shift]?',
+        },
+        back: {
+            body: `Ambas as ações excluem o arquivo **permanentemente** (sem passar pela lixeira), mas há um detalhe crucial:
+
+**➡️ Shift + Delete (Teclado):** Exibe uma **TELA DE CONFIRMAÇÃO** antes de apagar.
+**➡️ Arrasta para a Lixeira + Shift (Mouse + Teclado):** Apaga direto, **SEM tela de confirmação**.
+
+🚨 **Cuidado com a FGV:** Pressionar apenas o "Delete" manda o arquivo para a Lixeira e pode ser recuperado!`,
+        },
+        tags: ['Informática', 'Windows', 'Exclusão de Arquivos', 'Dia 4', 'Pegadinha FGV'],
+    },
+    {
+        id: 10039,
+        front: {
+            title: 'Informática — Atalhos do Windows (Gerenciador de Tarefas) ⌨️',
+            subtitle: 'Qual é o atalho que abre o Gerenciador de Tarefas de forma DIRETA no Windows?',
+        },
+        back: {
+            body: `**Ctrl + Shift + Esc** 🚨
+
+**O Macete:** Esse atalho abre o Gerenciador de Tarefas **diretamente**, sem passar por nenhuma tela intermediária.
+
+**Cuidado com a FGV:** A banca vai tentar te oferecer duas iscas:
+❌ *Ctrl + Alt + Del* (Abre uma tela de segurança cheia de opções antes).
+❌ *Ctrl + Alt + Esc* (Atalho falso/misturado para confundir a sua memória).`,
+        },
+        tags: ['Informática', 'Windows', 'Teclas de Atalho', 'Dia 4', 'Pegadinha FGV'],
+    },
+    {
+        id: 10040,
+        front: {
+            title: 'Direitos Humanos — Natureza Jurídica da DUDH 📜',
+            subtitle: 'A Declaração Universal dos Direitos Humanos (DUDH) é considerada um Tratado Internacional?',
+        },
+        back: {
+            body: `**NÃO!** 🚨
+
+A DUDH é uma **Resolução da Assembleia Geral da ONU** (aprovada em 1948).
+
+**Consequências para a prova:**
+1. ❌ Não é um tratado internacional.
+2. ❌ Não possui força vinculante formal (embora tenha altíssimo valor normativo/moral).
+3. ❌ Não exige ratificação (assinatura de concordância) pelos Estados.
+
+**O que ela protege?** Direitos Civis e Políticos (Liberdade) + Direitos Econômicos, Sociais e Culturais (Igualdade).
+**Nenhum direito nela é absoluto!**`,
+        },
+        tags: ['Direitos Humanos', 'DUDH', 'Natureza Jurídica', 'Pegadinha FGV'],
+    },
+    {
+        id: 10041,
+        front: {
+            title: 'Direitos Humanos — Estrutura e Limites da DUDH 🧱',
+            subtitle: 'Como a DUDH é estruturada e os seus direitos são absolutos?',
+        },
+        back: {
+            body: `**A Estrutura Lógica (30 Artigos):**
+🔹 **Art. 1º e 2º:** Princípios Gerais.
+🔹 **Art. 3º a 21:** Direitos Civis e Políticos (Liberdade).
+🔹 **Art. 22 a 30:** Direitos Econômicos, Sociais e Culturais (Igualdade/Efetivação Progressiva).
+
+🚨 **PEGADINHA DE PROVA:** Os direitos da DUDH **NÃO SÃO ABSOLUTOS**! 
+Eles podem sofrer limitações legais para respeitar a moral, a ordem pública e o bem-estar geral da sociedade.`,
+        },
+        tags: ['Direitos Humanos', 'DUDH', 'Estrutura', 'Pegadinha FGV', 'Não Absoluto'],
+    },
+    {
+        id: 10042,
+        front: {
+            title: 'Direitos Humanos — Dimensões e Princípios 🏛️',
+            subtitle: 'Como funcionam as Dimensões e quais os 3 princípios fundamentais cobrados pela FGV?',
+        },
+        back: {
+            body: `**AS DIMENSÕES (Não se excluem, coexistem!):**
+🔹 **1ª Dimensão (Liberdade):** Direitos Civis e Políticos (Limitação do Estado).
+🔹 **2ª Dimensão (Igualdade):** Direitos Sociais, Econômicos e Culturais (Prestação do Estado).
+🔹 **3ª Dimensão (Fraternidade):** Direitos Difusos e Coletivos (Meio ambiente, paz).
+
+**OS 3 PRINCÍPIOS E PEGADINHAS:**
+🌍 **Universalidade (Quem é titular):** Valem para TODOS. *Pegadinha:* Não variam conforme cultura/religião!
+🧩 **Indivisibilidade (Valor igual):** Formam um conjunto único. *Pegadinha:* NÃO existe hierarquia entre direitos (civis não são "mais importantes" que sociais).
+🔗 **Interdependência (Funcionamento):** Estão interligados. Violar um afeta os demais.`,
+        },
+        tags: ['Direitos Humanos', 'Dimensões', 'Princípios', 'Pegadinha FGV', 'Dia 5'],
+    },
+    {
+        id: 10043,
+        front: {
+            title: 'Direitos Humanos — Direitos Específicos da DUDH (Parte II) 📜',
+            subtitle: 'Lazer, Propriedade e Asilo são expressamente previstos na DUDH?',
+        },
+        back: {
+            body: `**SIM! Todos estão expressamente previstos!**
+
+**Foco FGV - O que a banca tenta afirmar que NÃO está na DUDH:**
+- **Lazer:** É garantido o direito ao repouso, lazer e férias remuneradas.
+- **Propriedade:** Protege a propriedade individual e coletiva.
+- **Asilo:** É garantido o direito de buscar asilo em caso de perseguição.
+- **Nacionalidade:** Ninguém pode ser privado arbitrariamente da sua.
+- **Presunção de Inocência:** Todo acusado é presumido inocente até prova em contrário.
+
+**Regra Final:** Nenhum direito pode ser usado para destruir outro direito da DUDH.`,
+        },
+        tags: ['Direitos Humanos', 'DUDH', 'Direitos Específicos', 'Dia 5', 'Direto ao Ponto'],
+    },
+    {
+        id: 10044,
+        front: {
+            title: 'Direitos Humanos — Institucionalização e Tratados 🏛️',
+            subtitle: 'Qual é o status hierárquico dos Tratados Internacionais de Direitos Humanos no Brasil?',
+        },
+        back: {
+            body: `**A CF/88 é a norma máxima (Soberana)!** [1]
+
+Os Tratados Internacionais de Direitos Humanos podem ter dois status no Brasil [2]:
+🔹 **Status Supralegal:** (Regra). Fica acima das leis comuns, mas **Abaixo da Constituição** [2].
+🔹 **Status Constitucional:** Quando aprovado com quórum qualificado (equivale a uma Emenda Constitucional) [2].
+
+🚨 **Pegadinha da FGV:** A banca costuma dizer que tratados têm força "supraconstitucional" (acima da CF). **ERRADO!** O STF entende que a Constituição Federal é a norma suprema [1].`,
+        },
+        tags: ['Direitos Humanos', 'Institucionalização', 'Tratados Internacionais', 'STF', 'Dia 5'],
+    },
+    {
+        id: 10046,
+        front: {
+            title: 'Direitos Humanos — Conceitos 🌍 x 🇧🇷',
+            subtitle: 'Qual é a diferença exata entre Direitos Humanos e Direitos Fundamentais?',
+        },
+        back: {
+            body: `A distinção central está apenas no **ÂMBITO NORMATIVO** (onde estão escritos):
+
+🌍 **Direitos Humanos:** Reconhecidos no **Plano Internacional** (Tratados, Pactos e Declarações).
+🇧🇷 **Direitos Fundamentais:** Positivados no **Plano Interno/Nacional** (Constituição Federal).
+
+🚨 **Pegadinha da FGV:** Não há diferença de conteúdo ou importância. A diferença é apenas a "esfera" de proteção (Internacional x Constitucional).`,
+        },
+        tags: ['Direitos Humanos', 'Conceitos', 'Direitos Fundamentais', 'Dia 5', 'Direto ao Ponto'],
+    },
+    {
+        id: 10048,
+        front: {
+            title: 'Direitos Humanos — As 5 Dimensões (Gerações) 📚',
+            subtitle: 'Quais são as 5 dimensões dos Direitos Humanos e qual a regra de coexistência entre elas?',
+        },
+        back: {
+            body: `**Regra de Ouro:** As dimensões **não se excluem e coexistem** (não há substituição temporal).
+
+**O Conteúdo de cada Dimensão:**
+🔹 **1ª Dimensão:** Direitos Civis e Políticos (Liberdade / Limitação do Estado).
+🔹 **2ª Dimensão:** Direitos Sociais, Econômicos e Culturais (Igualdade / Prestação do Estado).
+🔹 **3ª Dimensão:** Direitos Difusos e Coletivos (Solidariedade / Meio ambiente e Paz).
+🔹 **4ª Dimensão:** Democracia, Informação e Pluralismo.
+🔹 **5ª Dimensão:** Direito à Paz ou à Bioética.`,
+        },
+        tags: ['Direitos Humanos', 'Dimensões', 'Gerações', 'Dia 5', 'Direto ao Ponto'],
+    },
+    {
+        id: 10049,
+        front: {
+            title: 'Direitos Humanos — Corte Interamericana 🏛️',
+            subtitle: 'Quem a Corte Interamericana de Direitos Humanos julga e qual a força de suas decisões?',
+        },
+        back: {
+            body: `**A regra de ouro da FGV:**
+A Corte **NÃO JULGA INDIVÍDUOS**, ela julga apenas **ESTADOS** (países)!
+
+**Competências:**
+1. Julgar os Estados por violações de direitos humanos.
+2. Interpretar a Convenção Americana.
+
+**Força das Decisões:**
+São **OBRIGATÓRIAS** (vinculantes) e produzem efeitos internos para os países que aceitaram sua jurisdição (como o Brasil, desde 1998).`,
+        },
+        tags: ['Direitos Humanos', 'Sistema Interamericano', 'Corte Interamericana', 'Dia 5', 'Pegadinha FGV'],
+    }
+
+]
+
+// ── Mapa de Matérias ────────────────────────────────────────────────────────
+export const mapaTJSC: Record<string, string[]> = {
+    "Português": [
+        "Portugues", "Português", "Língua Portuguesa", "Lingua Portuguesa",
+        "Crase", "Concordancia Verbal", "Concordância Verbal",
+        "Concordancia Nominal", "Concordância Nominal", "Pronomes", "Regencia Verbal",
+        "Regência Verbal", "Sintaxe", "Pontuacao", "Pontuação", "Morfologia",
+        "Colocacao Pronominal", "Colocação Pronominal", "Ortografia", "Semântica",
+        "Conjuncoes", "Conjunções", "Fonologia", "Acentuação", "Acentuacao",
+        "Novo Acordo", "Interpretação de Texto", "Redação"
+    ],
+    "Ética e Gestão": [
+        "Ética", "Etica", "Moral", "Conceitos", "Gestão Pública", "Gestao Publica",
+        "Lei Anticorrupção", "Lei Anticorrupcao", "Responsabilidade Objetiva",
+        "Improbidade Administrativa", "Dolo Específico", "Enriquecimento Ilícito",
+        "Prejuízo ao Erário", "Sanções", "Herdeiros",
+        "Independência das Instâncias", "Prescrição", "Prescricao",
+        "Servidor Público", "Serviço Público"
+    ],
+    "Raciocínio Lógico": [
+        "Logica", "Lógica", "Condicional", "Tabela-Verdade", "Quantificadores",
+        "Conjuntos", "Probabilidade", "Sequencias", "Sequências", "Raciocinio Logico",
+        "Raciocínio Lógico", "Argumentação"
+    ],
+    "Dir. Constitucional": [
+        "Constitucional", "Direitos Fundamentais", "Federacao", "Federação",
+        "Remedios Constitucionais", "Remédios Constitucionais", "Poderes da Republica",
+        "Poderes da República", "CF/88"
+    ],
+    "Dir. Administrativo": [
+        "Administrativo", "Principios", "Princípios", "Atos Administrativos",
+        "Licitacao", "Licitação", "Servicos Publicos", "Serviços Públicos",
+        "Agentes Publicos", "Agentes Públicos", "Poderes", "Contratos"
+    ],
+    "Informática": [
+        "Informatica", "Informática", "Windows", "Internet", "Seguranca da Informacao",
+        "Segurança da Informação", "Excel", "Pacote Office", "Redes", "IP",
+        "Atalhos", "SaaS", "Computacao em Nuvem", "Computação em Nuvem"
+    ],
+    "Legislação TJ-SC": [
+        "TJ-SC", "Estrutura", "Regimento", "Estatuto", "Legislacao", "Legislação",
+        "LOMAN", "Codigo de Etica", "Código de Ética"
+    ],
+    "Direitos Humanos": [
+        "Direitos Humanos", "DH", "DUDH", "Pacto de São José",
+        "Pacto de San José", "CEDH", "Convenção Europeia",
+        "Pacto Internacional", "PIDCP", "PIDESC", "Direitos Civis",
+        "Direitos Políticos", "Direitos Sociais", "Direitos Econômicos",
+        "Direitos Culturais", "Direito à Vida", "Direito à Liberdade",
+        "Dignidade da Pessoa Humana", "Natureza Jurídica"
+    ]
+
+};
+
+export const SUBJECT_LIST_TJSC = Object.keys(mapaTJSC);
+
+export function getSubjectForCardTJSC(card: Flashcard): string {
+    if (!card.tags || card.tags.length === 0) return "Outros";
+    let bestSubject = "Outros";
+    let bestScore = 0;
+    for (const [subject, subjectTags] of Object.entries(mapaTJSC)) {
+        const score = card.tags.filter((t) => subjectTags.includes(t)).length;
+        if (score > bestScore) {
+            bestScore = score;
+            bestSubject = subject;
+        }
+    }
+    return bestSubject;
+}

@@ -18,12 +18,13 @@ export async function POST(req: Request) {
     }
 
     // ─────────────────────────────────────────────────────────────────────────
-    // PROMPT CEBRASPE — Elaborador especialista de questões de julgamento.
-    // Regras: Distribuição aleatória CERTO/ERRADO | 5 técnicas | nível DIFÍCIL apenas | sem repetição de exemplos
+    // PROMPT FGV — Elaborador especialista em múltipla escolha estilo FGV
+    // Regras: alternativas sofisticadas | interpretação | pegadinhas semânticas | nível DIFÍCIL
     // ─────────────────────────────────────────────────────────────────────────
-    const prompt = `Você é um elaborador especialista de questões no estilo da banca CEBRASPE (antiga CESPE), com profundo conhecimento da metodologia dessa banca e dos conteúdos cobrados em concursos públicos de nível médio e superior na área de operação industrial, química, física e correlatas.
 
-O usuário enviou o conteúdo de um flashcard. Sua tarefa é elaborar EXATAMENTE 3 questões de julgamento (CERTO ou ERRADO) sobre aquele tema específico, seguindo rigorosamente todas as regras abaixo.
+    const prompt = `Você é um elaborador especialista em questões da banca FGV (Fundação Getulio Vargas), com profundo conhecimento do padrão linguístico, estrutural e psicológico utilizado pela banca em concursos públicos.
+
+O usuário enviou o conteúdo de um flashcard. Sua tarefa é elaborar EXATAMENTE 3 questões inéditas de múltipla escolha no estilo FGV sobre o tema específico do flashcard, seguindo rigorosamente todas as regras abaixo.
 
 CONTEÚDO DO FLASHCARD:
 
@@ -34,79 +35,164 @@ VERSO DO CARD (Resposta/Explicação):
 ${cardBack}
 
 ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
-REGRAS DE ESTILO E ELABORAÇÃO CEBRASPE
+REGRAS DE ESTILO E ELABORAÇÃO FGV
 ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
 
 1. ESTRUTURA DE CADA QUESTÃO
-Cada questão deve ter exatamente:
-- Enunciado: afirmação declarativa clara, precisa e autossuficiente
-- Gabarito: CERTO ou ERRADO
-- Justificativa: explicação técnica detalhada, com a correção explícita quando ERRADO
 
-2. DISTRIBUIÇÃO ALEATÓRIA DE GABARITO E ORDEM
-A distribuição da quantidade de itens CERTOS e ERRADOS deve ser decidida por você de forma totalmente livre e aleatória a cada requisição.
-- Pode ser (3 CERTOS e 0 ERRADOS), (0 CERTOS e 3 ERRADOS), (2 CERTOS e 1 ERRADO), (1 CERTO e 2 ERRADOS) ou qualquer outra combinação.
-- NÃO há obrigatoriedade de ter ao menos 1 CERTO e 1 ERRADO. Você decide.
-- A ORDEM do gabarito das 3 questões deve ser totalmente EMBARALHADA.
+Cada questão deve conter exatamente:
 
-3. TÉCNICAS PARA ITENS ERRADOS (use técnicas diferentes em cada):
-a) INVERSÃO CONCEITUAL — trocar causa por consequência ou inverter a relação entre conceitos
-b) TROCA DE TERMO-CHAVE — substituir uma palavra essencial por sinônimo incorreto ou oposto
-c) GENERALIZAÇÃO INDEVIDA — usar "sempre", "nunca", "apenas", "somente", "todo" para tornar uma verdade parcial em falsidade
-d) DADO NUMÉRICO ERRADO — resultado incorreto, fórmula invertida, unidade errada ou valor trocado
-e) CLASSIFICAÇÃO TROCADA — atribuir a um conceito a definição ou característica de outro relacionado
+- Contexto ou texto-base (quando pertinente)
+- Enunciado completo
+- 5 alternativas (A, B, C, D, E)
+- Apenas UMA alternativa correta
+- Comentário técnico detalhado da alternativa correta
+- Explicação objetiva do erro das alternativas incorretas
 
-4. TÉCNICAS PARA ITENS CERTOS:
-- Afirmações tecnicamente precisas e completas
-- Usar paráfrase (não copiar literalmente o flashcard)
-- Incluir ao menos uma informação complementar verdadeira
-- Redigidos de forma que pareçam "suspeitos" ao candidato despreparado, mas sejam inequivocamente corretos
+2. PERFIL ESTILÍSTICO DA FGV
 
-5. LINGUAGEM E REGISTRO
+As questões DEVEM reproduzir fielmente o estilo da banca FGV:
+
+- Enunciados longos e interpretativos
 - Linguagem formal e técnica
-- Frases na voz ativa ou passiva analítica, sujeito claro
-- Entre 20 e 60 palavras por enunciado
-- Incluir dados, fórmulas ou reações químicas quando pertinente
-- Se o tema envolver cálculo, ao menos 1 item deve conter cálculo numérico explícito
+- Alternativas semanticamente próximas
+- Pegadinhas sutis
+- Forte uso de interpretação textual e inferência
+- Distratores plausíveis
+- Trocas mínimas de palavras que alterem completamente o sentido
+- Uso frequente de termos como:
+  - "apenas"
+  - "somente"
+  - "necessariamente"
+  - "sempre"
+  - "exclusivamente"
+  - "predominantemente"
 
-6. NÍVEL DE DIFICULDADE E INEDITISMO (MUITO IMPORTANTE)
-- TODAS as 5 questões devem ter nível DIFÍCIL (exigindo análise crítica detalhada, interpretação aprofundada, cálculo complexo ou contendo armadilhas sutis e pegadinhas linguísticas avançadas típicas do Cebraspe).
-- É ESTRITAMENTE PROIBIDO usar os mesmos exemplos citados no texto do flashcard. Se houver um exemplo ali, crie uma situação hipotética NOVA e INÉDITA que aplique a mesma regra ou conceito, forçando o candidato a pensar e não apenas lembrar da frase decorada. Nenhuma pergunta pode ser óbvia.
+3. DISTRATORES (ALTERNATIVAS ERRADAS)
 
-7. FOCO ESTRITO NO CONCEITO (CRÍTICO)
-- A questão deve testar ÚNICA E EXCLUSIVAMENTE a regra gramatical, fórmula ou definição ensinada no flashcard.
-- NUNCA avalie o "bom senso", a lógica factual do cenário criado ou conhecimentos gerais.
-  - Exemplo do Erro que você não deve cometer: Se o card ensina a diferença entre "iminente" e "eminente", o item ERRADO deve consistir em usar a palavra errada na frase. O item NÃO deve ser considerado errado debatendo se "todo evento iminente ocorre sem aviso pério" faz sentido lógico ou não.
-- O cenário fictício inventado serve apenas como pretexto para usar a palavra/fórmula. Assuma que o contexto do cenário é sempre verdadeiro.
+As alternativas erradas devem parecer altamente plausíveis.
 
-8. INDEPENDÊNCIA: cada item deve ser completamente independente dos demais.
+Utilize técnicas como:
+
+a) GENERALIZAÇÃO INDEVIDA
+b) TROCA SUTIL DE TERMO TÉCNICO
+c) INVERSÃO DE CAUSA E CONSEQUÊNCIA
+d) ALTERAÇÃO SEMÂNTICA MÍNIMA
+e) EXCEÇÃO TRANSFORMADA EM REGRA
+f) INTERPRETAÇÃO PARCIALMENTE CORRETA
+g) ERRO DE CONTEXTUALIZAÇÃO
+
+IMPORTANTE:
+- As alternativas erradas NÃO podem ser absurdas ou facilmente elimináveis.
+- Todas devem parecer defensáveis para um candidato mediano.
+
+4. ALTERNATIVA CORRETA
+
+A alternativa correta deve:
+
+- Ser tecnicamente impecável
+- Exigir interpretação cuidadosa
+- Não ser óbvia
+- Evitar redação excessivamente “limpa”
+- Parecer tão suspeita quanto as erradas
+
+5. NÍVEL DE DIFICULDADE
+
+TODAS as questões devem possuir nível DIFÍCIL.
+
+Cada questão deve exigir pelo menos um dos seguintes:
+
+- interpretação refinada
+- análise semântica
+- comparação entre conceitos próximos
+- atenção extrema a detalhes
+- aplicação contextualizada
+- raciocínio lógico da norma/regra
+- eliminação técnica de alternativas
+
+6. CONTEXTUALIZAÇÃO
+
+A FGV frequentemente contextualiza questões.
+
+Por isso:
+- Utilize cenários hipotéticos inéditos
+- Crie pequenos textos, trechos, situações práticas ou fragmentos argumentativos
+- NÃO reutilize exemplos presentes no flashcard
+- NÃO copie frases do material-base
+
+7. FOCO ESTRITO NO CONCEITO
+
+A questão deve avaliar EXCLUSIVAMENTE o conceito central do flashcard.
+
+NÃO:
+- cobre conhecimentos externos
+- transforme a questão em debate de bom senso
+- exija informações não contidas ou inferíveis do conteúdo
+
+8. QUESTÕES INDEPENDENTES
+
+Cada questão deve ser totalmente independente das demais.
+
+9. DISTRIBUIÇÃO OBRIGATÓRIA DA RESPOSTA CORRETA
+
+Cada questão DEVE ter a resposta correta em uma letra DIFERENTE.
+As 3 questões devem ter as respostas corretas em 3 letras distintas (ex: A, C, E — ou B, D, A — nunca todas iguais).
+IMPORTANTE: É PROIBIDO colocar a resposta correta na mesma letra em mais de uma questão.
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+ESTILO ESPECÍFICO DE PORTUGUÊS FGV
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+Quando o tema envolver Língua Portuguesa:
+
+- priorize interpretação e inferência
+- explore reescrita de frases
+- preserve ou altere sentido propositalmente
+- trabalhe efeitos semânticos
+- utilize ambiguidades sutis
+- cobre conectivos, pontuação e valor discursivo
+- utilize textos curtos com linguagem jornalística, institucional ou argumentativa
 
 ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
 FORMATO DE SAÍDA OBRIGATÓRIO (JSON)
 ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
 
-Retorne APENAS um JSON válido neste formato exato:
+Retorne APENAS um JSON válido no formato:
 
 {
   "questions": [
     {
       "dificuldade": "DIFÍCIL",
-      "tecnica": "Nome da técnica usada (apenas para itens ERRADOS, caso contrário omita)",
-      "contexto": "Texto de apoio opcional (omitir se desnecessário)",
-      "afirmacao": "Enunciado da questão (entre 20 e 60 palavras).",
-      "resposta": "CERTO ou ERRADO",
-      "explicacao": "Justificativa técnica detalhada. Se ERRADO, indicar o erro e apresentar a afirmação correta."
+      "contexto": "Texto-base opcional",
+      "enunciado": "Texto completo da questão",
+      "alternativas": {
+        "A": "Texto da alternativa A",
+        "B": "Texto da alternativa B",
+        "C": "Texto da alternativa C",
+        "D": "Texto da alternativa D",
+        "E": "Texto da alternativa E"
+      },
+      "resposta_correta": "A",
+      "comentario": "Explicação COMPLETA e DETALHADA de POR QUE a alternativa correta está certa: fundamento jurídico/técnico, regra aplicada, e por que as demais estão erradas em comparação direta."
     }
   ]
 }
 
-VALIDAÇÃO ANTES DE RESPONDER:
-- Há exatamente 3 questões com gabarito aleatório (qualquer combinação de CERTOS/ERRADOS) em ordem aleatória?
-- Cada item ERRADO usa uma técnica diferente?
-- O erro das questões ERRADAS está estritamente baseado no conceito do flashcard e NÃO na lógica do cenário inventado?
-- TODAS as questões são inéditas, não copiam exemplos do flashcard, formam cenários novos e possuem nível DIFÍCIL?
-- Nenhum item depende de outro?
-- O JSON está válido e completo?`;
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+VALIDAÇÃO ANTES DE RESPONDER
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+- Há exatamente 3 questões?
+- Todas possuem 5 alternativas?
+- Apenas UMA alternativa está correta?
+- O campo "correta" explica COMPLETAMENTE por que a alternativa é correta (não apenas repete o enunciado)?
+- As alternativas erradas são plausíveis e sofisticadas?
+- O estilo está compatível com a FGV?
+- As questões estão difíceis?
+- Não houve reutilização literal do flashcard?
+- O foco está exclusivamente no conceito central?
+- O JSON está válido?
+`;
 
     console.log('[Flashcard] Calling OpenAI API...');
     const result = await openai.chat.completions.create({
@@ -118,8 +204,8 @@ VALIDAÇÃO ANTES DE RESPONDER:
         },
       ],
       response_format: { type: 'json_object' },
-      temperature: 0.4,
-      max_completion_tokens: 3000,
+      temperature: 1.0,
+      max_completion_tokens: 4000,
     });
 
     const rawContent = result.choices[0]?.message?.content || '{}';
@@ -135,13 +221,19 @@ VALIDAÇÃO ANTES DE RESPONDER:
       }
 
       questions = items.map((item: any) => ({
+        mode: 'fgv',
+        dificuldade: item.dificuldade || 'DIFÍCIL',
         context: item.contexto || item.context || '',
-        afirmacao: item.afirmacao || item.text || item.question || '',
-        resposta: (item.resposta || item.answer || '').toUpperCase(),
-        explicacao: item.explicacao || item.explanation || item.reason || '',
-        dificuldade: item.dificuldade || '',
-        tecnica: item.tecnica || '',
+        enunciado: item.enunciado || item.text || item.question || '',
+        alternativas: item.alternativas || { A: '', B: '', C: '', D: '', E: '' },
+        resposta_correta: (item.resposta_correta || item.resposta || 'A').toUpperCase(),
+        // comentario can be a plain string (new) or object with .correta (old)
+        comentario: typeof item.comentario === 'string'
+          ? item.comentario
+          : (item.comentario?.correta || item.explicacao || item.explanation || ''),
       }));
+
+
     } catch (e: any) {
       console.error('[Flashcard] JSON Parse Fail:', rawContent);
       throw new Error('Erro ao processar resposta da IA: ' + e.message);

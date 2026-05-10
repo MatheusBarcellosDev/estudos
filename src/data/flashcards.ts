@@ -6086,11 +6086,269 @@ Ocorre quando a vazão cai abaixo do mínimo estável
     },
     "tags": ["Controle de Processo", "Feedforward", "Feedback", "ANSA 2026"]
   },
+
+  // ─────────────────────────────────────────────────────────────
+  // DIA DE PROVA
+  // ─────────────────────────────────────────────────────────────
+
+  {
+    id: 561,
+    front: {
+      title: '🏠 Processo ANSA — Visão Geral',
+      subtitle: 'Qual é a cadeia completa de transformação da matéria-prima até a uréia?',
+    },
+    back: {
+      body: `**A ANSA transforma:**
+Gás Natural → Hidrogênio (H₂) → Amônia (NH₃) → Uréia
+
+**As 4 etapas cobráveis:**
+
+| Etapa | Nome | Reação principal |
+|---|---|---|
+| 1 | Reforma a Vapor | CH₄ + H₂O ⇌ CO + 3H₂ |
+| 2 | Water-gas shift | CO + H₂O ⇌ CO₂ + H₂ |
+| 3 | Haber-Bosch ⭐ | N₂ + 3H₂ ⇌ 2NH₃ |
+| 4 | Síntese da Uréia ⭐ | 2NH₃ + CO₂ → uréia + H₂O |
+
+**Fluxo simplificado:**
+CH₄ (gás natural) → H₂ (reforma) → NH₃ (Haber-Bosch) → CO(NH₂)₂ (uréia)
+
+**Dica de prova:** A banca pode perguntar qual etapa usa cat. de Ni → Reforma. Cat. de Fe → Haber-Bosch.`,
+    },
+    tags: ['Dia de Prova', 'ANSA 2026', 'Química', 'Indústria'],
+  },
+
+  {
+    id: 562,
+    front: {
+      title: '⚗️ Reação 1 — Reforma a Vapor',
+      subtitle: 'Por que o gás natural é aquecido com vapor? O que acontece nessa etapa?',
+    },
+    back: {
+      body: `**OBJETIVO:** Extrair hidrogênio (H₂) do gás natural para depois fazer amônia.
+
+**AS DUAS ETAPAS DA REFORMA:**
+
+| Etapa | Equação | ΔH | Tipo |
+|---|---|---|---|
+| Reforma primária | CH₄ + H₂O ⇌ CO + 3H₂ | +206 kJ/mol | **ENDOTÉRMICA** 🔥 |
+| Water-gas shift | CO + H₂O ⇌ CO₂ + H₂ | −41 kJ/mol | **EXOTÉRMICA** |
+
+**O que a endotérmica significa na prática?**
+A reforía primária PRECISA de calor externo → por isso existe o **forno de reforma**.
+A ANSA queima gás natural nesse forno para alimentar a reacção.
+
+**Condições operacionais:**
+- Catalisador: **Níquel (Ni)** — é específico desta etapa
+- Temperatura: **800–900 °C** (alta, pois a reação é endotérmica)
+- Pressão: **20–35 bar**
+
+**Le Chatelier — o que favorece a produção de H₂:**
+- ↑ Temperatura → favorece H₂ (endo absorve calor como &quot;reagente&quot;)
+- ↑ Pressão → **desfavorece** H₂ (esq: 2 mols → dir: 4 mols, pressão vai para o lado de MENOS mols)
+
+**Ciladas frequentes da banca:**
+- Trocar o catalisador: Ni → Fe (Fe é do Haber-Bosch) ❌
+- Dizer que a reforma primária é exotérmica ❌
+- Dizer que alta pressão favorece a reforma ❌`,
+    },
+    tags: ['Dia de Prova', 'ANSA 2026', 'Química', 'Le Chatelier'],
+  },
+
+  {
+    id: 563,
+    front: {
+      title: '⚗️ Reação 2 — Haber-Bosch: Le Chatelier ⭐',
+      subtitle: 'N₂ + 3H₂ ⇌ 2NH₃ (exotérmica) — o que cada variável faz com o equilíbrio?',
+    },
+    back: {
+      body: `**EQUAÇÃO:** N₂ + 3H₂ ⇌ 2NH₃  ΔH = −92 kJ/mol (EXOTÉRMICA)
+
+**Moles de gás:** 4 mols (esq) → 2 mols (dir)
+
+**Le Chatelier — o que FAVORECE NH₃:**
+
+| Variável | Mudança | Efeito sobre NH₃ | Por quê? |
+|---|---|---|---|
+| Pressão | ↑ sobe | ✅ FAVORECE | Vai para o lado com MENOS mols (2) |
+| Pressão | ↓ cai | ❌ Desfavorece | Vai para o lado com MAIS mols (4) |
+| Temperatura | ↑ sobe | ❌ DESFAVORECE | Reação exo: calor é produzido, sist. tenta consumi-lo |
+| Temperatura | ↓ cai | ✅ Favorece | Sist. tenta produzir mais calor (mais NH₃) |
+| Catalisador (Fe) | adicionado | ⚠️ Só acelera | NÃO desloca o equilíbrio |
+| Conc. N₂ ou H₂ | ↑ sobe | ✅ FAVORECE | Equil. desloca para consumir o excesso |
+| Pressão | ↑ aumento | ✅ Favorece (vai para o lado com MENOS mols: 2) |
+| Temperature | ↓ redução | ✅ Favorece (reação exo, calor é “produto”) |
+| Catalisador (Fe) | adicionado | ❌ NÃO desloca equilíbrio, só acelera |
+| Conc. N₂ ou H₂ | ↑ aumento | ✅ Favorece NH₃ |
+
+**O dilema industrial:**
+T baixa = mais NH₃ (favorável), mas reação lenta demais.
+Solução de compromisso: **~450 °C** + **~200 atm** + catalisador de **Ferro (Fe)**.`,
+    },
+    tags: ['Dia de Prova', 'ANSA 2026', 'Química', 'Le Chatelier', 'Haber-Bosch'],
+  },
+
+  {
+    id: 564,
+    front: {
+      title: '⚗️ Reação 2 — Haber-Bosch: Informações-Chave ⭐',
+      subtitle: 'Equação, balanceamento e termoquimica — o que reconhecer na prova',
+    },
+    back: {
+      body: `**MASSAS MOLARES:**
+- N₂ = **28 g/mol**
+- H₂ = **2 g/mol**
+- NH₃ = **17 g/mol**
+
+**Exemplo 1 — gramas de NH₃ com 14 g de N₂:**
+1. 14 g ÷ 28 g/mol = **0,5 mol de N₂**
+2. 1 mol N₂ → 2 mol NH₃
+3. 0,5 mol N₂ → 1 mol NH₃
+4. 1 mol × 17 g/mol = **17 g de NH₃** ✅
+
+**Exemplo 2 — litros de H₂ (CNTP) para 34 g de NH₃:**
+1. 34 g ÷ 17 g/mol = **2 mol de NH₃**
+2. 2 mol NH₃ ← 3 mol H₂
+3. 3 mol × 22,4 L = **67,2 L de H₂** ✅
+
+**Termoquímica:**
+- ΔH = −92 kJ/mol de reação = −92 kJ/ 2 mol NH₃
+- Por mol de NH₃: **−46 kJ/mol** ✅`,
+    },
+    tags: ['Dia de Prova', 'ANSA 2026', 'Química', 'Haber-Bosch'],
+  },
+
+  {
+    id: 565,
+    front: {
+      title: '⚗️ Reação 3 — Síntese da Ureia ⭐',
+      subtitle: '2NH₃ + CO₂ → CO(NH₂)₂ + H₂O — o que você precisa saber?',
+    },
+    back: {
+      body: `**A EQUAÇÃO:** 2NH₃ + CO₂ → CO(NH₂)₂ + H₂O
+**Resultado:** Ureia + água
+
+**O QUE É A UREIA?**
+O produto final da ANSA. É o fertilizante nitrogenado mais produzido no mundo.
+Fórmula: CO(NH₂)₂ (também escrita como CH₄N₂O)
+
+**MASSAS MOLARES (para reconhecer):**
+
+| Substância | Fórmula | Massa molar |
+|---|---|---|
+| Amônia | NH₃ | 17 g/mol |
+| Dióxido de carbono | CO₂ | 44 g/mol |
+| **Ureia** | CO(NH₂)₂ | **60 g/mol** ⚠️ |
+| Água | H₂O | 18 g/mol |
+
+**POR QUE A UREIA VALE 60 g/mol?**
+C=12 + O=16 + 2×N(14)=28 + 4×H(1)=4 → **total = 60** ✅
+A banca adora dizer 58 g/mol → **ERRADO** ❌
+
+**VERIFICÇÃO DO BALANCEAMENTO:**
+
+| Elemento | Reagentes | Produtos |
+|---|---|---|
+| N | 2×1 = **2** | **2** ✅ |
+| H | 2×3 = **6** | 4+2 = **6** ✅ |
+| C | **1** | **1** ✅ |
+| O | **2** | 1+1 = **2** ✅ |
+
+**Sem catalisador** — a siníntese da ureia ocorre diretamente, sem catalisador.`,
+    },
+    tags: ['Dia de Prova', 'ANSA 2026', 'Química', 'Ureia'],
+  },
+
+  {
+    id: 566,
+    front: {
+      title: '⚗️ Reação 4 — Combustão do Gás Natural',
+      subtitle: 'CH₄ + 2O₂ → CO₂ + 2H₂O — como usar na prova?',
+    },
+    back: {
+      body: `**EQUAÇÕES DE COMBUSTÃO:**
+
+| Combustível | Equação | ΔH |
+|---|---|---|
+| Metano (CH₄) | CH₄ + 2O₂ → CO₂ + 2H₂O | −890 kJ/mol |
+| Propano (C₃H₈) | C₃H₈ + 5O₂ → 3CO₂ + 4H₂O | −2.220 kJ/mol |
+
+**Ambas são EXOTÉRMICAS (ΔH < 0).**
+
+**Como balancear a combustão de alcanos (CₙH₂ₙ₊₂):**
+1. O carbono do combustível vira CO₂
+2. O hidrogênio vira H₂O
+3. Ajuste o O₂ por último
+
+**Contexto ANSA:**
+A ANSA queima gás natural (principalmente CH₄) como combustível nos fornos da reforma a vapor.
+A banca explora: balanceamento, tipo térmico e relação estequiométrica O₂/combustível.`,
+    },
+    tags: ['Dia de Prova', 'ANSA 2026', 'Química', 'Combustão', 'Estequiometria'],
+  },
+
+  {
+    id: 567,
+    front: {
+      title: '🎯 Tabela-Resumo — Cola Rápida das Reações ⭐',
+      subtitle: 'Todas as reações do processo ANSA em uma tabela para revisar',
+    },
+    back: {
+      body: `| Reação | Equação | ΔH | Catalisador |
+|---|---|---|---|
+| Reforma a vapor | CH₄ + H₂O ⇌ CO + 3H₂ | +206 kJ (endo) | **Ni** |
+| Water-gas shift | CO + H₂O ⇌ CO₂ + H₂ | −41 kJ (exo) | Fe₂O₃/Cr₂O₃ |
+| Haber-Bosch | N₂ + 3H₂ ⇌ 2NH₃ | −92 kJ (exo) | **Fe** |
+| Síntese Uréia | 2NH₃ + CO₂ → uréia + H₂O | — | sem cat. |
+| Combustão metano | CH₄ + 2O₂ → CO₂ + 2H₂O | −890 kJ (exo) | — |
+
+**Massas molares chave:**
+- N₂ = 28 g/mol | H₂ = 2 g/mol | NH₃ = 17 g/mol
+- CO₂ = 44 g/mol | **Uréia = 60 g/mol** | H₂O = 18 g/mol
+
+**Temperatura/Pressão Haber-Bosch:** ~450 °C, ~200 atm, catalisador Fe`,
+    },
+    tags: ['Dia de Prova', 'ANSA 2026', 'Química', 'Haber-Bosch', 'Ureia'],
+  },
+
+  {
+    id: 568,
+    front: {
+      title: '🧠 Armadilhas da Banca — Reações ANSA ⭐',
+      subtitle: '5 itens Cebraspe que a banca VAI colocar — Certo ou Errado?',
+    },
+    back: {
+      body: `**1.** "O aumento de temperatura favorece a produção de amônia no Haber-Bosch."
+→ **ERRADO** ❌ (reação exotérmica — T alta desfavorece NH₃)
+
+**2.** "O catalisador de ferro desloca o equilíbrio para a direita, aumentando o rendimento de NH₃."
+→ **ERRADO** ❌ (catalisador NÃO desloca equilíbrio, só acelera)
+
+**3.** "A massa molar da ureia é 58 g/mol."
+→ **ERRADO** ❌ (é 60 g/mol: C=12 + O=16 + 2N=28 + 4H=4 = **60**)
+
+**4.** "A reação de síntese da amônia é endotérmica."
+→ **ERRADO** ❌ (é exotérmica: ΔH = −92 kJ/mol)
+
+**5.** "O aumento de pressão desfavorece a produção de NH₃."
+→ **ERRADO** ❌ (FAVORECE — reduz de 4 para 2 mols de gás)
+
+**Dica extra:**
+- Cat. reforma a vapor = **Ni** (não Fe)
+- Reforma primária = **endotérmica** (precisa de calor do forno)
+- Water-gas shift = **exotérmica** (libera calor)`,
+    },
+    tags: ['Dia de Prova', 'ANSA 2026', 'Química', 'Le Chatelier'],
+  },
 ]
 
 export const mapaDeMaterias: Record<string, string[]> = {
   "🚨 Urgente": [
     "Urgente"
+  ],
+
+  "📅 Dia de Prova": [
+    "Dia de Prova"
   ],
 
   "Português": [
@@ -6164,4 +6422,4 @@ export function getSubjectForCard(card: Flashcard): string {
   return bestSubject;
 }
 
-export const SUBJECT_LIST = ["🚨 Urgente", ...Object.keys(mapaDeMaterias).filter(k => k !== "🚨 Urgente")].concat(["Outros"]);
+export const SUBJECT_LIST = ["🚨 Urgente", "📅 Dia de Prova", ...Object.keys(mapaDeMaterias).filter(k => k !== "🚨 Urgente" && k !== "📅 Dia de Prova")].concat(["Outros"]);
