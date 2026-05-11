@@ -783,6 +783,73 @@ A Corte **NÃO JULGA INDIVÍDUOS**, ela julga apenas **ESTADOS** (países)!
 São **OBRIGATÓRIAS** (vinculantes) e produzem efeitos internos para os países que aceitaram sua jurisdição (como o Brasil, desde 1998).`,
         },
         tags: ['Direitos Humanos', 'Sistema Interamericano', 'Corte Interamericana', 'Dia 5', 'Pegadinha FGV'],
+    },
+    {
+        id: 10050,
+        front: {
+            title: 'Direitos Humanos — Incorporação de Tratados 🇧🇷',
+            subtitle: 'Quais são os dois status que um Tratado de Direitos Humanos pode ter no Brasil?',
+        },
+        back: {
+            body: `Eles podem ter dois níveis hierárquicos:
+
+🔹 **STATUS CONSTITUCIONAL:** Aprovado em **2 turnos**, por **3/5 dos votos** (Rito Qualificado).
+🔹 **STATUS SUPRALEGAL:** Aprovado pelo rito ordinário (Abaixo da CF, mas **Acima das leis comuns**).
+
+🚨 **Cuidado com a FGV:** 
+1. Nem todo tratado é constitucional! 
+2. A fração exigida é **Três Quintos (3/5)**, e não dois terços!
+3. Em ambos os casos, eles ficam ACIMA das leis ordinárias.`,
+        },
+        tags: ['Direitos Humanos', 'Tratados Internacionais', 'Status Supralegal', 'Quórum 3/5', 'Direto ao Ponto'],
+    },
+    {
+        id: 10051,
+        front: {
+            title: 'Direitos Humanos — Princípios da DUDH ⚖️',
+            subtitle: 'Quais são os 3 princípios fundamentais da DUDH e como diferenciá-los?',
+        },
+        back: {
+            body: `**A Tríade Fundamental:**
+🌍 **Universalidade (Quem):** Pertencem a todos. *Não variam* conforme cultura ou religião!
+🧩 **Indivisibilidade (Valor):** Formam um conjunto único. *Não existe hierarquia* entre direitos civis, políticos, sociais ou culturais.
+🔗 **Interdependência (Funcionamento):** Estão interligados. A violação de um direito compromete os demais (ex: sem educação, falta liberdade).`,
+        },
+        tags: ['Direitos Humanos', 'DUDH', 'Princípios', 'Direto ao Ponto'],
+    },
+    {
+        id: 10052,
+        front: {
+            title: 'Direitos Humanos — Igualdade e Dignidade na DUDH ⚖️',
+            subtitle: 'Como a FGV cobra a Igualdade, a Dignidade e a Não Discriminação na DUDH?',
+        },
+        back: {
+            body: `**1. Igualdade:** É Jurídica e Moral. 
+🚨 *Pegadinha:* A DUDH NÃO garante igualdade material absoluta!
+
+**2. Dignidade da Pessoa Humana:** É inerente e incondicional.
+🚨 *Pegadinha:* Não se perde a dignidade por mau comportamento (presos/estrangeiros continuam protegidos).
+
+**3. Não Discriminação:** O rol de proibições (raça, sexo, religião...) é **EXEMPLIFICATIVO** (não é taxativo).`,
+        },
+        tags: ['Direitos Humanos', 'DUDH', 'Igualdade', 'Dignidade', 'FGV', 'Dica 13'],
+    },
+    {
+        id: 10053,
+        front: {
+            title: 'Direitos Humanos — Direitos Civis e Políticos na DUDH 🗳️',
+            subtitle: 'Quais são os principais direitos civis e políticos na DUDH e quais as pegadinhas de prova?',
+        },
+        back: {
+            body: `**Direitos Civis e Políticos (Liberdade e Limitação do Estado):**
+🔹 **Civis:** Direito à vida, liberdade, proibição de escravidão/tortura, devido processo legal, liberdade de expressão e religião.
+🔹 **Políticos:** Direito de participar do governo, sufrágio universal e voto secreto.
+
+🚨 **Pegadinhas Clássicas da FGV:**
+❌ *Dizer que a DUDH detalha sistemas eleitorais.* (FALSO: Ela apenas dita princípios gerais).
+❌ *Dizer que a DUDH não possui direitos políticos.* (FALSO: Ela engloba civis, políticos, sociais, econômicos e culturais).`,
+        },
+        tags: ['Direitos Humanos', 'DUDH', 'Direitos Políticos', 'Direitos Civis', 'Pegadinha FGV'],
     }
 
 ]

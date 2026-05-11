@@ -129,9 +129,22 @@ NÃO:
 - transforme a questão em debate de bom senso
 - exija informações não contidas ou inferíveis do conteúdo
 
-8. QUESTÕES INDEPENDENTES
+8. QUESTÕES INDEPENDENTES E DIVERSAS
 
-Cada questão deve ser totalmente independente das demais.
+Cada questão deve ser totalmente independente das demais E deve avaliar um ÂNGULO DIFERENTE do mesmo conceito.
+
+OBRIGATÓRIO — as 3 questões devem cobrir ângulos distintos, por exemplo:
+- Q1: definição ou conceito puro
+- Q2: aplicação prática / situação hipotética
+- Q3: comparação com conceito correlato, exceção ou pegadinha de banca
+
+PROIBIDO:
+- Repetir a mesma abordagem ou estrutura de enunciado em duas questões
+- Usar o mesmo tipo de pegadinha nas 3 questões
+- Iniciar dois enunciados da mesma forma
+- Questões que pareçam variações mínimas umas das outras
+
+As 3 questões devem parecer retiradas de provas DIFERENTES, não de uma única prova.
 
 9. DISTRIBUIÇÃO OBRIGATÓRIA DA RESPOSTA CORRETA
 
@@ -191,6 +204,7 @@ VALIDAÇÃO ANTES DE RESPONDER
 - As questões estão difíceis?
 - Não houve reutilização literal do flashcard?
 - O foco está exclusivamente no conceito central?
+- As 3 questões cobrem ÂNGULOS DIFERENTES (definição / aplicação / comparação-exceção)? Se duas parecerem semelhantes, reescreva uma delas antes de responder.
 - O JSON está válido?
 `;
 
