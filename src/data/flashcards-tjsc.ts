@@ -850,6 +850,182 @@ São **OBRIGATÓRIAS** (vinculantes) e produzem efeitos internos para os países
 ❌ *Dizer que a DUDH não possui direitos políticos.* (FALSO: Ela engloba civis, políticos, sociais, econômicos e culturais).`,
         },
         tags: ['Direitos Humanos', 'DUDH', 'Direitos Políticos', 'Direitos Civis', 'Pegadinha FGV'],
+    },
+    {
+        id: 10054,
+        front: {
+            title: 'Direitos Humanos — Direitos Econômicos, Sociais e Culturais (DESC) 🏫',
+            subtitle: 'Qual é a principal característica da implementação dos DESC segundo a DUDH?',
+        },
+        back: {
+            body: `**EFETIVAÇÃO PROGRESSIVA!** 🚨
+
+Diferente dos direitos civis, os DESC **não são de implementação imediata plena**. Sua realização depende das condições econômicas do Estado. Eles exigem atuação positiva (políticas públicas).
+
+**Foco FGV:**
+🔹 **Econômicos:** Foco na dignidade no trabalho e proteção contra desemprego.
+🔹 **Sociais:** Saúde, seguridade social, padrão de vida.
+🔹 **Culturais:** Vida cultural e artes.
+📌 *Pulo do Gato:* A EDUCAÇÃO é, ao mesmo tempo, um direito social e cultural!`,
+        },
+        tags: ['Direitos Humanos', 'DUDH', 'DESC', 'Efetivação Progressiva', 'FGV'],
+    },
+    {
+        id: 10055,
+        front: {
+            title: 'Direitos Humanos — Estrutura e Alcance da CADH 🌎',
+            subtitle: 'Qual é o alcance da CADH e qual a sua principal diferença estrutural em relação à DUDH?',
+        },
+        back: {
+            body: `**1. Alcance (Quem é protegido):**
+A CADH protege **TODAS as pessoas** sob a jurisdição do Estado, e não apenas os seus nacionais! 
+🚨 *Pegadinha FGV:* Estrangeiros/Turistas TÊM, sim, a proteção da CADH.
+
+**2. Diferença Estrutural para a DUDH:**
+A CADH não se limita a declarar direitos, ela **cria mecanismos de controle e fiscalização** (Comissão e Corte Interamericana) para responsabilizar os Estados.
+
+**3. Status no Brasil:** Possui hierarquia **Supralegal** (entendimento do STF).`,
+        },
+        tags: ['Direitos Humanos', 'CADH', 'Pacto de São José', 'Estrutura e Alcance', 'FGV'],
+    },
+    {
+        id: 10056,
+        front: {
+            title: 'Direitos Humanos — Vida e Liberdade na CADH 🌎',
+            subtitle: 'Quais são as regras e pegadinhas sobre o Direito à Vida e a Prisão por Dívida na CADH?',
+        },
+        back: {
+            body: `**1. Direito à Vida:** Protegido *desde a concepção*, mas com a ressalva **"em geral"** (não é absoluto, admite exceções legais como no Brasil).
+🔹 *Pena de morte:* Quem aboliu, não pode voltar atrás (vedação ao retrocesso).
+
+**2. Prisão por Dívida (A maior pegadinha):**
+A CADH proíbe a prisão por dívida civil.
+🚨 **A ÚNICA EXCEÇÃO:** Devedor de pensão alimentícia.
+📌 *Foco FGV (Súmula Vinculante 25):* É ILÍCITA a prisão do depositário infiel, prevalecendo a regra do Pacto de São José da Costa Rica!`,
+        },
+        tags: ['Direitos Humanos', 'CADH', 'Direito à Vida', 'Prisão por Dívida', 'Depositário Infiel', 'FGV'],
+    },
+    {
+        id: 10057,
+        front: {
+            title: 'Direitos Humanos — Liberdade de Expressão na CADH 🗣️',
+            subtitle: 'A CADH permite a censura prévia ou a responsabilização pelas opiniões emitidas?',
+        },
+        back: {
+            body: `🚨 **REGRA DE OURO DA FGV:**
+❌ **É VEDADA (PROIBIDA)** a censura prévia [3]! O Estado não pode impedir a publicação de informações ou ideias.
+✅ **É ADMITIDA** a responsabilização posterior [3]! Quem abusar do direito de expressão responderá legalmente após o ato.
+
+**Limitações à liberdade de expressão podem ocorrer para proteger [2]:**
+🔹 Direitos/reputação de terceiros [2].
+🔹 Segurança nacional e ordem pública [2].
+🔹 Saúde ou moral públicas [2].`,
+        },
+        tags: ['Direitos Humanos', 'CADH', 'Liberdade de Expressão', 'Censura Prévia', 'FGV'],
+    },
+    {
+        id: 10058,
+        front: {
+            title: 'Direitos Humanos — Suspensão de Garantias e Direitos Inderrogáveis 🛑',
+            subtitle: 'Quando ocorre a suspensão de garantias na CADH e todos os direitos podem ser suspensos?',
+        },
+        back: {
+            body: `A suspensão ocorre apenas em **situações excepcionais** (guerra, perigo público ou emergência) [1].
+
+🚨 **PEGADINHA FGV:** Nem todos os direitos podem ser suspensos! Existem os **Direitos Inderrogáveis (Intocáveis)**.
+Mesmo em guerra, o Estado **NÃO PODE** suspender:
+🔹 Vida e Integridade Pessoal
+🔹 Proibição de Escravidão
+🔹 Religião e Consciência
+🔹 Nome, Nacionalidade e Direitos da Família/Criança
+🔹 Direitos Políticos`,
+        },
+        tags: ['Direitos Humanos', 'CADH', 'Suspensão de Garantias', 'Direitos Inderrogáveis', 'FGV'],
+    },
+    {
+        id: 10061,
+        front: {
+            title: 'Direitos Humanos — Estrutura da DUDH 🏗️',
+            subtitle: 'Como os 30 artigos da DUDH estão divididos?',
+        },
+        back: {
+            body: `A divisão lógica da DUDH cobrada em prova:
+🔹 **Art. 1º a 2º:** Princípios Gerais.
+🔹 **Art. 3º a 21:** Direitos Civis e Políticos (Liberdade e Proteção / 1ª Dimensão).
+🔹 **Art. 22 a 30:** Direitos Econômicos, Sociais e Culturais (Prestação do Estado / 2ª Dimensão).
+
+🚨 *Pulo do Gato:* Lembre-se que os direitos sociais e a educação ficam no "final" do documento (22 a 30)!`,
+        },
+        tags: ['Direitos Humanos', 'DUDH', 'Estrutura', 'FGV', 'TJ-SC'],
+    },
+    {
+        id: 10062,
+        front: {
+            title: 'Direitos Humanos — Princípios da DUDH (A Tríade) ⚖️',
+            subtitle: 'Como diferenciar Universalidade, Indivisibilidade e Interdependência na prova?',
+        },
+        back: {
+            body: `**A Marca Mental Infalível:**
+🌍 **Universalidade (QUEM):** Pertencem a TODOS. Não variam conforme cultura, raça ou país.
+🧩 **Indivisibilidade (VALOR):** Formam um conjunto inseparável. **NÃO HÁ HIERARQUIA** entre direitos civis, sociais, etc. (Todos têm a mesma importância).
+🔗 **Interdependência (FUNCIONAMENTO):** Estão interligados. A violação de um direito compromete os outros.`,
+        },
+        tags: ['Direitos Humanos', 'Princípios', 'DUDH', 'Pegadinha', 'TJ-SC'],
+    },
+    {
+        id: 10065,
+        front: {
+            title: 'Direitos Humanos — Suspensão de Garantias (CADH) 🛑',
+            subtitle: 'Quando a CADH permite a suspensão de garantias e o que são Direitos Inderrogáveis?',
+        },
+        back: {
+            body: `A suspensão só é permitida em **situações excepcionais**, como guerra, perigo público ou emergência que ameace o Estado [1, 2].\n\n🚨 **PEGADINHA FGV (Direitos Inderrogáveis):**\nExistem direitos que são intocáveis! Mesmo no pior cenário de guerra, o Estado **NUNCA** pode suspender o direito à vida, à integridade pessoal, a proibição da escravidão, a liberdade de religião e os direitos políticos [2].`,
+        },
+        tags: ['Direitos Humanos', 'CADH', 'Suspensão de Garantias', 'Direitos Inderrogáveis', 'FGV']
+    },
+    {
+        id: 10066,
+        front: {
+            title: 'Direitos Humanos — Comissão Interamericana 🌎',
+            subtitle: 'Quem julga e quem pode apresentar petições (denúncias) à Comissão Interamericana?',
+        },
+        back: {
+            body: `A Comissão é formada por 7 membros de diferentes países e tem a função de promover a defesa dos direitos humanos [3].\n\n🚨 **O PULO DO GATO (Acesso):**\n**Qualquer pessoa ou grupo** pode apresentar petições à Comissão denunciando violações de direitos humanos [3]!\n*(Cuidado para não confundir com a Corte Interamericana, que SÓ julga os Estados e não recebe petições diretas de indivíduos).*`,
+        },
+        tags: ['Direitos Humanos', 'Sistema Interamericano', 'Comissão Interamericana', 'Petição', 'FGV']
+    },
+    {
+        id: 10067,
+        front: {
+            title: 'Direitos Humanos — Pacto de São José (Decreto 678/92) 📜',
+            subtitle: 'Quais as regras de ouro do Pacto sobre o Direito à Vida e a Prisão por Dívida?',
+        },
+        back: {
+            body: `🔹 **Direito à Vida:** É protegido, em regra, *desde a concepção* [4]. A pena de morte é exceção restritíssima e é terminantemente **proibida** para menores de 18 anos, maiores de 70 anos e mulheres grávidas [5].\n\n🔹 **Prisão por Dívida:** Ninguém pode ser preso só porque está devendo [6]. \n🚨 **A ÚNICA EXCEÇÃO:** A prisão do devedor de pensão alimentícia [6]. *(O STF sumulou que a prisão do depositário infiel é ilícita com base neste Pacto!)*.`,
+        },
+        tags: ['Direitos Humanos', 'Pacto de São José', 'Pena de Morte', 'Prisão por Dívida', 'FGV']
+    },
+    {
+        id: 10068,
+        front: {
+            title: 'Direitos Humanos / Constitucional — Individuais x Sociais 🛡️ x 🏗️',
+            subtitle: 'Como o Estado atua nos Direitos Individuais e Sociais? Qual é a pegadinha do Direito de Greve?',
+        },
+        back: {
+            body: `🔹 **Direitos Individuais (1ª Dimensão/Liberdades):** Atuam como **LIMITADORES** da ação do Estado (Direitos Negativos). O Estado *não deve* interferir na sua vida privada (servem como um escudo).\n\n🔹 **Direitos Sociais (2ª Dimensão):** Exigem uma **PRESTAÇÃO** estatal (Direitos Positivos). O Estado precisa *gastar ou agir* para garantir (ex: construir hospitais, escolas).\n\n🚨 **A PEGADINHA SUPREMA DA FGV:**\nO **Direito de Greve** é um Direito Social, mas é a exceção à regra: ele **NÃO DEPENDE** de prestação estatal específica para ser exercido!`,
+        },
+        tags: ['Direitos Humanos', 'Direito Constitucional', 'Direitos Sociais', 'Direito de Greve', 'FGV'],
+    },
+    {
+        id: 10069,
+        front: {
+            title: 'Direito Constitucional — Crimes do Art. 5º ⚖️',
+            subtitle: 'Quais são os crimes Imprescritíveis e quais são os Insuscetíveis de Graça/Anistia?',
+        },
+        back: {
+            body: `🚨 **MACETE DEFINITIVO FGV:**\n\n🔹 **Imprescritíveis (Não prescrevem nunca):**\nLembre de **RAÇÃO**: **RA**cismo e A**ÇÃO** de grupos armados.\n\n🔹 **Insuscetíveis de Graça/Anistia (Não têm perdão):**\nLembre de **3T + H**: **T**ortura, **T**ráfico, **T**errorismo e **H**ediondos.\n\n⚠️ *Pulo do Gato:* Todos eles (RAÇÃO e 3TH) são **Inafiançáveis**! O Racismo é punido com pena de **Reclusão**!`,
+        },
+        tags: ['Direito Constitucional', 'Artigo 5º', 'Crimes', 'Pegadinha', 'FGV'],
     }
 
 ]
