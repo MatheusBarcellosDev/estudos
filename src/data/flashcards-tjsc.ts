@@ -1026,6 +1026,50 @@ Mesmo em guerra, o Estado **NÃO PODE** suspender:
             body: `🚨 **MACETE DEFINITIVO FGV:**\n\n🔹 **Imprescritíveis (Não prescrevem nunca):**\nLembre de **RAÇÃO**: **RA**cismo e A**ÇÃO** de grupos armados.\n\n🔹 **Insuscetíveis de Graça/Anistia (Não têm perdão):**\nLembre de **3T + H**: **T**ortura, **T**ráfico, **T**errorismo e **H**ediondos.\n\n⚠️ *Pulo do Gato:* Todos eles (RAÇÃO e 3TH) são **Inafiançáveis**! O Racismo é punido com pena de **Reclusão**!`,
         },
         tags: ['Direito Constitucional', 'Artigo 5º', 'Crimes', 'Pegadinha', 'FGV'],
+    },
+    {
+        id: 10070,
+        front: {
+            title: 'Língua Portuguesa — Uso do Artigo com "Todo" 📚',
+            subtitle: 'Qual a diferença de sentido entre "Todo [substantivo]" e "Todo o [substantivo]"?',
+        },
+        back: {
+            body: `🚨 **PEGADINHA CLÁSSICA FGV:**\n\n🔹 **Todo (SEM ARTIGO):** Significa *CADA*, *QUALQUER*.\nEx: **Todo** aluno deve estudar. (Cada aluno / Qualquer aluno da escola).\n\n🔹 **Todo + O (COM ARTIGO):** Significa *INTEIRO*, *TOTALIDADE*.\nEx: **Todo o** aluno ficou sujo de tinta. (O aluno inteiro, da cabeça aos pés, ficou sujo).`,
+        },
+        tags: ['Língua Portuguesa', 'Artigo', 'Semântica', 'FGV', 'TJ-SC'],
+    },
+    {
+        id: 10072,
+        front: {
+            title: 'Língua Portuguesa — "A" Artigo x "A" Preposição 🅰️',
+            subtitle: 'Como diferenciar o "A" artigo do "A" preposição na hora da prova?',
+        },
+        back: {
+            body: `🔹 **"A" Artigo:** É **variável** (vai para o plural: "As"). Acompanha o substantivo.\n*Macete:* Trocando a palavra da frente por uma masculina, o "A" vira **"O"**.\n\n🔹 **"A" Preposição:** É **invariável** (NÃO vai para o plural). Serve como ponte entre palavras.\n*Macete:* Trocando a palavra da frente por uma masculina, o "A" **continua "A"** (ou se junta com o 'o' formando "ao").`,
+        },
+        tags: ['Língua Portuguesa', 'Morfologia', 'Artigo', 'Preposição', 'FGV'],
+    },
+    {
+        id: 10073,
+        front: {
+            title: 'Língua Portuguesa — Armadilhas do "A" (Artigo x Preposição) 🪤',
+            subtitle: 'Qual a classificação do "A" antes de VERBOS e do "A" (singular) antes de palavras no PLURAL?',
+        },
+        back: {
+            body: `🚨 **CUIDADO COM A FGV!**\n\n🔹 **"A" antes de Verbo no Infinitivo:** Será **SEMPRE PREPOSIÇÃO**! (Ex: começou *a* chorar, passou *a* entender). Verbo não aceita artigo.\n\n🔹 **"A" (singular) antes de palavra no PLURAL:** Será **SEMPRE PREPOSIÇÃO**! (Ex: referia-se *a* pessoas). Se fosse artigo, seria obrigado a concordar no plural (*as* pessoas).`,
+        },
+        tags: ['Língua Portuguesa', 'Morfologia', 'Pegadinha', 'Artigo', 'Preposição'],
+    },
+    {
+        "id": 10074,
+        "front": {
+            "title": "Língua Portuguesa — Causa x Finalidade 🎯",
+            "subtitle": "Qual a diferença de sentido entre as locuções prepositivas de Causa e de Finalidade?"
+        },
+        "back": {
+            "body": "🔹 **Causa (Motivo / Passado):** Indica a razão pela qual algo aconteceu.\n*Ex:* Aprovado **graças ao** (por causa do) esforço.\n\n🔹 **Finalidade (Objetivo / Futuro):** Indica o propósito da ação.\n*Ex:* Estudou **a fim de** (para) passar.\n\n🚨 **Pega-Ratão FGV:** Cuidado com a grafia! **A fim de** (separado = finalidade). **Afim** (junto = afinidade/semelhança)."
+        },
+        "tags": ["Língua Portuguesa", "Preposições", "Semântica", "FGV", "TJ-SC"]
     }
 
 ]
