@@ -45,6 +45,9 @@ export function useSimpleMastery(
   const [masteredIds, setMasteredIds] = useState<Set<number>>(new Set());
   const [deck, setDeck] = useState<Flashcard[]>([]);
 
+  // Stable key representing the current card set — changes when subject switches
+  const cardSetKey = allSubjectCards.map((c) => c.id).join(",");
+
   useEffect(() => {
     const loaded = loadMastered(storageKey);
     setMasteredIds(loaded);
@@ -52,7 +55,7 @@ export function useSimpleMastery(
     const remaining = allSubjectCards.filter((c) => !loaded.has(c.id));
     setDeck(shuffle(remaining.filter((c) => subjectIds.has(c.id))));
     // eslint-disable-next-line react-hooks/exhaustive-deps
-  }, [storageKey]);
+  }, [storageKey, cardSetKey]);
 
   const masteredCount = allSubjectCards.filter((c) => masteredIds.has(c.id)).length;
 

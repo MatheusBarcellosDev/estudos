@@ -1070,6 +1070,138 @@ Mesmo em guerra, o Estado **NÃO PODE** suspender:
             "body": "🔹 **Causa (Motivo / Passado):** Indica a razão pela qual algo aconteceu.\n*Ex:* Aprovado **graças ao** (por causa do) esforço.\n\n🔹 **Finalidade (Objetivo / Futuro):** Indica o propósito da ação.\n*Ex:* Estudou **a fim de** (para) passar.\n\n🚨 **Pega-Ratão FGV:** Cuidado com a grafia! **A fim de** (separado = finalidade). **Afim** (junto = afinidade/semelhança)."
         },
         "tags": ["Língua Portuguesa", "Preposições", "Semântica", "FGV", "TJ-SC"]
+    },
+    {
+        "id": 10076,
+        "front": {
+            "title": "Língua Portuguesa — Conjunções Adversativas ⚔️",
+            "subtitle": "Quais são as principais conjunções adversativas e qual a regra de ouro da pontuação do 'MAS'?"
+        },
+        "back": {
+            "body": "🔹 **Principais:** Mas, porém, contudo, todavia, entretanto, no entanto, não obstante, senão (quando significar 'mas sim').\n\n🚨 **REGRA DE OURO (Foco FGV):**\nA conjunção **MAS** não aceita deslocamento! Ela deve iniciar a oração adversativa e **NÃO** pode ter vírgula logo após ela (salvo se houver um termo intercalado). As demais (porém, contudo, entretanto) podem ser deslocadas livremente na frase, ficando entre vírgulas."
+        },
+        "tags": ["Língua Portuguesa", "Conjunções", "Sintaxe", "Pontuação", "FGV", "TJ-SC"]
+    },
+    {
+        "id": 10077,
+        "front": {
+            "title": "Língua Portuguesa — Conjunções Alternativas 🔀",
+            "subtitle": "Quais são as principais conjunções alternativas e qual a diferença de sentido que a FGV cobra?"
+        },
+        "back": {
+            "body": "🔹 **Principais:** Ou, ou...ou, ora...ora, quer...quer, seja...seja, já...já.\n\n🚨 **PEGADINHA FGV (Semântica):**\nAs alternativas podem indicar duas coisas diferentes no texto:\n1. **Exclusão Mútua:** Só uma opção é possível, anulando a outra (*Ou estuda, ou dorme*).\n2. **Alternância de Ações:** As ações se sucedem no tempo (*Ora ri, ora chora*)."
+        },
+        "tags": ["Língua Portuguesa", "Conjunções", "Sintaxe", "Semântica", "FGV", "TJ-SC"]
+    },
+    {
+        "id": 10079,
+        "front": {
+            "title": "Língua Portuguesa — Conjunções Explicativas 💡",
+            "subtitle": "Qual a grande dica do Verbo no Imperativo e o que significa 'Porquanto'?"
+        },
+        "back": {
+            "body": "🔹 **A Palavra Mágica:** **PORQUANTO** é conjunção explicativa (formal) e significa exatamente **PORQUE**.\n\n🚨 **MACETE FGV (Verbo no Imperativo):**\nA presença de um verbo no imperativo (ordem/conselho) na primeira oração é o maior indicativo de que a oração seguinte trará uma conjunção **explicativa** (pois, porque, porquanto) para justificar a ordem dada!"
+        },
+        "tags": ["Língua Portuguesa", "Conjunções", "Explicativas", "Semântica", "FGV", "TJ-SC"]
+    },
+    {
+        "id": 10080,
+        "front": {
+            "title": "Língua Portuguesa — Conjunção 'POIS' ⚖️",
+            "subtitle": "Qual a diferença entre o 'POIS' Explicativo e o 'POIS' Conclusivo?"
+        },
+        "back": {
+            "body": "A posição na frase muda tudo para a FGV!\n\n🔹 **POIS (Antes do verbo):** É **Explicativo** (equivale a *porque*).\n*Ex:* Feche a porta, **pois** (porque) está chovendo.\n\n🔹 **POIS (Deslocado / Depois do verbo):** É **Conclusivo** (equivale a *portanto*).\n*Ex:* Choveu muito; ficaremos, **pois**, em casa."
+        },
+        "tags": ["Língua Portuguesa", "Conjunções", "Explicativas", "Conclusivas", "FGV", "TJ-SC"]
+    },
+    {
+        "id": 10081,
+        "front": {
+            "title": "Língua Portuguesa — Conjunção Integrante 🔗",
+            "subtitle": "Quais são as conjunções integrantes e qual é o Macete infalível para identificá-las na prova?"
+        },
+        "back": {
+            "body": "🔹 **Quais são:** **QUE** e **SE** (Elas NÃO possuem valor semântico, apenas conectam orações substantivas).\n\n🚨 **MACETE DO 'ISSO' (Foco FGV):**\nPara ter certeza de que é uma conjunção integrante, substitua a conjunção e todo o restante da frase pela palavra **ISSO** (ou disso, nisso, para isso).\n*Ex:* O juiz decidiu **que o réu é culpado**. -> O juiz decidiu **ISSO**."
+        },
+        "tags": ["Língua Portuguesa", "Conjunções", "Conjunção Integrante", "Sintaxe", "FGV", "TJ-SC"]
+    },
+    {
+        "id": 10082,
+        "front": {
+            "title": "Língua Portuguesa — Conjunções Adverbiais (O 'COMO') 🦎",
+            "subtitle": "Quais são as 3 circunstâncias adverbiais que a palavra 'COMO' pode expressar na prova da FGV?"
+        },
+        "back": {
+            "body": "A palavra 'COMO' é um camaleão e muda de sentido pelo contexto:\n\n🔹 **Causal (Motivo):** Pode ser trocada por *porque/já que*. (Ex: **Como** choveu, o jogo foi cancelado).\n🔹 **Conformativa (Acordo):** Pode ser trocada por *conforme/segundo*. (Ex: Fiz tudo **como** a lei manda).\n🔹 **Comparativa (Comparação):** Estabelece paralelo de igualdade. (Ex: Ele é forte **como** um touro)."
+        },
+        "tags": ["Língua Portuguesa", "Conjunções", "Sintaxe", "Semântica", "FGV", "TJ-SC"]
+    },
+    {
+        "id": 10083,
+        "front": {
+            "title": "Língua Portuguesa — Conjunções Condicionais ⚖️",
+            "subtitle": "Quais são as principais conjunções condicionais e qual é o pega-ratão do 'Desde que'?"
+        },
+        "back": {
+            "body": "🔹 **Principais:** Se, caso, desde que, contanto que, a menos que, a não ser que.\n\n🚨 **PEGADINHAS FGV:**\n1. A troca de **Se** por **Caso** exige alteração no verbo! (*Se eu for* $\\rightarrow$ *Caso eu vá*).\n2. **Desde que + Verbo no Subjuntivo:** É Condição (ex: viajo desde que *faça* sol).\n3. **Desde que + Verbo no Indicativo:** É Tempo (ex: estudo desde que *nasci*)."
+        },
+        "tags": ["Língua Portuguesa", "Conjunções", "Condicionais", "Sintaxe", "FGV", "TJ-SC"]
+    },
+    {
+        "id": 10084,
+        "front": {
+            "title": "Língua Portuguesa — Conjunções Conformativas 📏",
+            "subtitle": "Quais são as principais conjunções e qual é o sinônimo da palavra erudita 'CONSOANTE'?"
+        },
+        "back": {
+            "body": "🔹 **Principais:** Conforme, segundo, como.\n\n🚨 **A PALAVRA MÁGICA DA FGV:**\nA palavra **CONSOANTE** é uma conjunção conformativa!\nEla significa exatamente **'conforme'** ou **'segundo'**.\n*Ex:* O juiz decidiu **consoante** (conforme) a lei."
+        },
+        "tags": ["Língua Portuguesa", "Conjunções", "Conformativas", "Sintaxe", "FGV", "TJ-SC"]
+    },
+    {
+        "id": 10085,
+        "front": {
+            "title": "Língua Portuguesa — Conjunções Finais 🎯",
+            "subtitle": "Quais são as principais conjunções finais e qual é a pegadinha suprema do 'PORQUE'?"
+        },
+        "back": {
+            "body": "🔹 **Principais:** Para que, a fim de que, de sorte que, do modo que.\n\n🚨 **PEGADINHA FGV (O 'Porque' Camaleão):**\nO **'Porque'** pode indicar FINALIDADE quando for sinônimo exato de **'Para que'**.\n*Ex:* Falou bem alto **porque** (para que) todos pudessem ouvir.\n*Dica:* O verbo da frente sempre estará no subjuntivo (pudesse, ouvisse, veja)!"
+        },
+        "tags": ["Língua Portuguesa", "Conjunções", "Finais", "Sintaxe", "FGV", "TJ-SC"]
+    },
+    {
+        "id": 10086,
+        "front": {
+            "title": "Língua Portuguesa — À medida que vs. Na medida em que ⚖️",
+            "subtitle": "Qual a diferença de sentido entre essas duas locuções para a FGV?"
+        },
+        "back": {
+            "body": "🔹 **À medida que:** Indica **PROPORÇÃO** (ideia de simultaneidade/evolução).\n*Ex:* Fica mais inteligente *à medida que* lê.\n\n🔹 **Na medida em que:** Indica **CAUSA** (equivale a *porque/já que*).\n*Ex:* Foi aprovado *na medida em que* estudou muito.\n\n🚨 **ATENÇÃO:** A expressão *'À medida em que'* NÃO EXISTE na Língua Portuguesa!"
+        },
+        "tags": ["Língua Portuguesa", "Conjunções", "Proporcionais", "Causais", "FGV", "TJ-SC"]
+    },
+    {
+        "id": 10087,
+        "front": {
+            "title": "Língua Portuguesa — Conjunções Temporais ⏱️",
+            "subtitle": "Qual é a grande pegadinha da palavra 'MAL' nas provas da FGV?"
+        },
+        "back": {
+            "body": "🚨 **A ARMADILHA DO 'MAL':**\nA palavra **MAL** pode atuar como Conjunção Temporal quando indicar uma ação imediata (sendo sinônimo perfeito de *Assim que* ou *Logo que*).\n*Ex:* **Mal** cheguei a casa, começou a chover. (= *Assim que* cheguei...).\n\n🔹 **Dica Bônus:** 'Enquanto' indica sempre *simultaneidade* (ações ao mesmo tempo)."
+        },
+        "tags": ["Língua Portuguesa", "Conjunções", "Temporais", "FGV", "TJ-SC"]
+    },
+    {
+        "id": 10088,
+        "front": {
+            "title": "Língua Portuguesa — Conjunções Comparativas ⚖️",
+            "subtitle": "Qual é a regra da 'Elipse' (verbo escondido) e a regra do 'DO' facultativo nas comparações?"
+        },
+        "back": {
+            "body": "🔹 **A Elipse do Verbo:** Nas orações comparativas, o verbo da segunda oração quase sempre fica oculto para evitar repetição.\n*Ex:* Ele estuda mais que o irmão [estuda].\n\n🔹 **A Regra do 'DO':** Nas expressões de superioridade/inferioridade, a palavra **'DO'** é partícula de realce (facultativa)!\n*Ex:* Mais inteligente QUE você = Mais inteligente DO QUE você."
+        },
+        "tags": ["Língua Portuguesa", "Conjunções", "Comparativas", "Sintaxe", "FGV", "TJ-SC"]
     }
 
 ]
@@ -1083,7 +1215,10 @@ export const mapaTJSC: Record<string, string[]> = {
         "Regência Verbal", "Sintaxe", "Pontuacao", "Pontuação", "Morfologia",
         "Colocacao Pronominal", "Colocação Pronominal", "Ortografia", "Semântica",
         "Conjuncoes", "Conjunções", "Fonologia", "Acentuação", "Acentuacao",
-        "Novo Acordo", "Interpretação de Texto", "Redação"
+        "Novo Acordo", "Interpretação de Texto", "Redação",
+        "Artigo", "Preposição", "Preposicao", "Preposições", "Preposicoes",
+        "Vozes Verbais", "Verbos", "Adverbios", "Advérbios", "Substantivos",
+        "Adjetivos", "Conectivos", "Coesão", "Coerência"
     ],
     "Ética e Gestão": [
         "Ética", "Etica", "Moral", "Conceitos", "Gestão Pública", "Gestao Publica",
