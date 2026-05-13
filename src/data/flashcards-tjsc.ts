@@ -1202,6 +1202,60 @@ Mesmo em guerra, o Estado **NÃO PODE** suspender:
             "body": "🔹 **A Elipse do Verbo:** Nas orações comparativas, o verbo da segunda oração quase sempre fica oculto para evitar repetição.\n*Ex:* Ele estuda mais que o irmão [estuda].\n\n🔹 **A Regra do 'DO':** Nas expressões de superioridade/inferioridade, a palavra **'DO'** é partícula de realce (facultativa)!\n*Ex:* Mais inteligente QUE você = Mais inteligente DO QUE você."
         },
         "tags": ["Língua Portuguesa", "Conjunções", "Comparativas", "Sintaxe", "FGV", "TJ-SC"]
+    }, {
+        "id": 10090,
+        "front": {
+            "title": "Língua Portuguesa — Porquanto vs Conquanto ⚔️",
+            "subtitle": "Qual a diferença semântica entre essas duas conjunções que a FGV adora cobrar?"
+        },
+        "back": {
+            "body": "🔹 **PORQUANTO:** Indica **CAUSA**.\n(É sinônimo formal de *porque, visto que, já que*).\n\n🔹 **CONQUANTO:** Indica **CONCESSÃO**.\n(É sinônimo formal de *embora, ainda que, mesmo que*)."
+        },
+        "tags": ["Língua Portuguesa", "Conjunções", "Semântica", "FGV", "TJ-SC"]
+    },
+    {
+        "id": 10091,
+        "front": {
+            "title": "Língua Portuguesa — Pronome Adjetivo x Substantivo 🔄",
+            "subtitle": "Qual a diferença morfológica essencial cobrada pela FGV entre esses dois tipos?"
+        },
+        "back": {
+            "body": "🔹 **Pronome Adjetivo:** É aquele que **ACOMPANHA** um substantivo, atribuindo-lhe alguma ideia (posse, demonstração, etc.).\n*Ex:* **Minha** caneta falhou.\n\n🔹 **Pronome Substantivo:** É aquele que **SUBSTITUI** o substantivo, assumindo seu lugar na frase para evitar repetição.\n*Ex:* A caneta falhou, por isso joguei-**a** fora (o 'a' substitui caneta)."
+        },
+        "tags": ["Língua Portuguesa", "Pronomes", "Morfologia", "FGV", "TJ-SC"]
+    },
+    {
+        "id": 10092,
+        "front": {
+            "title": "Língua Portuguesa — Pronomes Interrogativos ❓",
+            "subtitle": "Quais são os principais pronomes interrogativos e como identificar uma Interrogativa Indireta?"
+        },
+        "back": {
+            "body": "🔹 **Principais:** Que, quem, qual(is), quantos [1]. Também podem ser usados onde, quando e por que [2].\n\n🚨 **PEGADINHA FGV (Interrogativa Indireta):**\nÉ uma pergunta disfarçada! Ela **NÃO possui ponto de interrogação**, mas expressa uma dúvida/questionamento [1].\n*Ex:* Ignoro **quantos** processos restam. ('Quantos' atua como pronome interrogativo)."
+        },
+        "tags": ["Língua Portuguesa", "Pronomes", "Pronomes Interrogativos", "Sintaxe", "FGV", "TJ-SC"]
+    },
+    {
+        "id": 10093,
+        "front": {
+            "title": "Língua Portuguesa — Pronome Indefinido vs Adjetivo 🕵️‍♂️",
+            "subtitle": "Qual é a regra de posição das palavras 'CERTO' e 'BASTANTE'?"
+        },
+        "back": {
+            "body": "A posição muda a classe gramatical para a banca FGV!\n\n🔹 **ANTES do substantivo:** Funciona como **Pronome Indefinido** (Ideia vaga/Quantidade).\n*Ex:* Tinha **bastante** trabalho / **Certas** coisas me irritam.\n\n🔹 **DEPOIS do substantivo:** Funciona como **Adjetivo** (Característica/Qualidade).\n*Ex:* Não tenho motivos **bastantes** (suficientes) / Escolheu a resposta **certa** (correta)."
+        },
+        "tags": ["Língua Portuguesa", "Pronomes Indefinidos", "Morfologia", "FGV", "TJ-SC"]
+    },
+    {
+        "id": 10094,
+        "front": {
+            "title": "Língua Portuguesa — Pronome Oblíquo Possessivo 🕵️‍♂️",
+            "subtitle": "Qual é a grande pegadinha da FGV envolvendo pronomes como ME, TE e LHE?"
+        },
+        "back": {
+            "body": "🚨 **A ARMADILHA:**\nOs pronomes pessoais oblíquos (*me, te, se, lhe, o, a, nos, vos*) podem atuar com valor de **Pronome Possessivo** na frase!\n\n🔹 **Macete:** Tente substituir por *meu, seu, dele, nosso*.\n*Ex:* Beijou-**lhe** o rosto. = Beijou o **seu** rosto (rosto dele).\n*Ex:* Roubaram-**nos** o carro. = Roubaram o **nosso** carro."
+        },
+        "tags": ["Língua Portuguesa", "Pronomes Possessivos", "Pronomes Oblíquos", "Sintaxe", "FGV", "TJ-SC"]
     }
 
 ]
