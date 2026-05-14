@@ -1256,6 +1256,248 @@ Mesmo em guerra, o Estado **NÃO PODE** suspender:
             "body": "🚨 **A ARMADILHA:**\nOs pronomes pessoais oblíquos (*me, te, se, lhe, o, a, nos, vos*) podem atuar com valor de **Pronome Possessivo** na frase!\n\n🔹 **Macete:** Tente substituir por *meu, seu, dele, nosso*.\n*Ex:* Beijou-**lhe** o rosto. = Beijou o **seu** rosto (rosto dele).\n*Ex:* Roubaram-**nos** o carro. = Roubaram o **nosso** carro."
         },
         "tags": ["Língua Portuguesa", "Pronomes Possessivos", "Pronomes Oblíquos", "Sintaxe", "FGV", "TJ-SC"]
+    },
+    {
+        "id": 10095,
+        "front": {
+            "title": "Língua Portuguesa — Funções dos Pronomes Demonstrativos 🎯",
+            "subtitle": "Qual a diferença entre a Função Anafórica, Catafórica e Exofórica (Dêitica)?"
+        },
+        "back": {
+            "body": "🔹 **Anafórica:** Retoma algo que *já passou* no texto. (Usa-se E**SS**E / I**SS**O).\n🔹 **Catafórica:** Antecipa o que *vai ser dito*. (Usa-se ES**T**E / IS**T**O).\n🔹 **Exofórica (Dêitica):** Aponta para algo fora do texto, no mundo real (Ex: *Aquela* nuvem).\n\n🚨 **Macete FGV:** SS = passado. T = esTá por vir."
+        },
+        "tags": ["Língua Portuguesa", "Pronomes Demonstrativos", "Coesão Textual", "FGV", "TJ-SC"]
+    },
+    {
+        "id": 10096,
+        "front": {
+            "title": "Língua Portuguesa — Pronome Relativo 'CUJO' 🔗",
+            "subtitle": "Qual é a dupla regra de ouro do pronome 'CUJO' (e suas flexões) cobrada pela FGV?"
+        },
+        "back": {
+            "body": "🔹 **1. Sentido:** Indica sempre uma relação de **POSSE** entre os termos.\n🔹 **2. Concordância:** Ele NUNCA concorda com o possuidor (o que vem antes), ele sempre concorda em gênero e número com a **COISA POSSUÍDA** (o substantivo que vem *depois* dele) [3].\n\n🚨 *Atenção:* É proibido usar artigo logo após o cujo (Ex: 'cujo o carro' está errado!)."
+        },
+        "tags": ["Língua Portuguesa", "Pronomes Relativos", "Sintaxe", "FGV", "TJ-SC"]
+    },
+    {
+        "id": 10097,
+        "front": {
+            "title": "Língua Portuguesa — Pronomes de Tratamento 👔",
+            "subtitle": "Quais são os pronomes de tratamento usados para JUIZ, REITOR e SACERDOTE?"
+        },
+        "back": {
+            "body": "🔹 **Juiz (Alto Escalão):** Vossa Excelência (V. Exa.)\n🔹 **Reitor de Universidade:** Vossa Magnificência (V. Mag.)\n🔹 **Sacerdote/Clérigo:** Vossa Reverendíssima (V. Revma.)"
+        },
+        "tags": ["Língua Portuguesa", "Pronomes de Tratamento", "FGV", "TJ-SC"]
+    },
+    {
+        "id": 10098,
+        "front": {
+            "title": "Língua Portuguesa — Pronomes Pessoais: EU vs MIM 🥊",
+            "subtitle": "Qual é a regra de ouro para escolher entre 'PARA EU' e 'PARA MIM'?"
+        },
+        "back": {
+            "body": "🔹 **PARA EU:** Usado quando o pronome for o **SUJEITO** de um verbo no infinitivo logo à frente.\n*Ex:* Pediu licença para **EU** *sair*.\n\n🔹 **PARA MIM:** Usado quando for apenas o **OBJETO** da ação (geralmente no final da ideia, sem verbo conjugável depois).\n*Ex:* Ele trouxe o café para **MIM**.\n\n🚨 *Lembre-se do macete:* Índio não faz ação! 'Mim' não conjuga verbo!"
+        },
+        "tags": ["Língua Portuguesa", "Pronomes Pessoais", "Sintaxe", "FGV", "TJ-SC"]
+    },
+    {
+        "id": 10100,
+        "front": {
+            "title": "Língua Portuguesa — Colocação Pronominal I 🚫",
+            "subtitle": "Qual é a regra absoluta e intocável sobre o INÍCIO de frases?"
+        },
+        "back": {
+            "body": "🚨 **REGRA DE OURO:**\n**NUNCA se inicia uma frase com pronome oblíquo átono** (*me, te, se, lhe, nos, vos, o, a*).\n\n🔹 Se a frase começar pelo verbo, você é **obrigado** a usar a ÊNCLISE (pronome depois do verbo).\n*Errado:* Me disseram a verdade.\n*Certo:* Disseram-me a verdade."
+        },
+        "tags": ["Língua Portuguesa", "Colocação Pronominal", "Sintaxe", "FGV", "TJ-SC"]
+    },
+    {
+        "id": 10101,
+        "front": {
+            "title": "Língua Portuguesa — Próclise 🧲",
+            "subtitle": "Quais são as principais 'palavras atrativas' que obrigam o uso da Próclise?"
+        },
+        "back": {
+            "body": "A **Próclise** (pronome ANTES do verbo) é obrigatória quando há palavras atrativas [1].\n\n🔹 **O Trio de Ouro da FGV:**\n1. Palavras Negativas (*não, nunca, ninguém*).\n2. Pronomes Relativos (*que, quem, onde*).\n3. Conjunções Subordinativas (*embora, se, conforme, quando*).\n\n🚨 *Ex:* **Não me** diga mentiras / A mulher **que se** foi."
+        },
+        "tags": ["Língua Portuguesa", "Colocação Pronominal", "Próclise", "Sintaxe", "FGV", "TJ-SC"]
+    },
+    {
+        "id": 10103,
+        "front": {
+            "title": "Língua Portuguesa — Mesóclise ✂️",
+            "subtitle": "Quais são as duas condições para o uso da Mesóclise e qual é a Regra de Desempate da FGV?"
+        },
+        "back": {
+            "body": "🔹 **1.** Verbo no FUTURO do Indicativo (Presente ou Pretérito).\n🔹 **2.** NÃO pode haver palavra atrativa (ímã) antes dele.\n\n🚨 **Regra de Desempate:** Se houver um verbo no futuro E uma palavra atrativa na mesma frase, a **PRÓCLISE É A VENCEDORA!** (Ex: *Não* te avisarei. E nunca 'Não avisar-te-ei')."
+        },
+        "tags": ["Língua Portuguesa", "Colocação Pronominal", "Mesóclise", "FGV", "TJ-SC"]
+    },
+    {
+        "id": 10104,
+        "front": {
+            "title": "Língua Portuguesa — Modos Verbais 🎭",
+            "subtitle": "Qual é a intenção (atitude) transmitida pelos modos Indicativo, Subjuntivo e Imperativo?"
+        },
+        "back": {
+            "body": "🔹 **INDICATIVO:** Exprime **Certeza** (um fato real ou tido como certo).\n🔹 **SUBJUNTIVO:** Exprime **Dúvida, Hipótese ou Desejo** (algo incerto ou irreal).\n🔹 **IMPERATIVO:** Exprime **Ordem, Pedido, Conselho ou Sugestão**."
+        },
+        "tags": ["Língua Portuguesa", "Verbos", "Modos Verbais", "Semântica", "FGV", "TJ-SC"]
+    },
+    {
+        "id": 10105,
+        "front": {
+            "title": "Língua Portuguesa — Presente do Indicativo ⏳",
+            "subtitle": "Além de indicar algo que acontece no momento da fala, quais são os outros 3 usos semânticos do Presente do Indicativo?"
+        },
+        "back": {
+            "body": "Segundo a norma-padrão e a cobrança da FGV, o Presente do Indicativo também expressa:\n\n🔹 **1. Fatos Habituais/Rotina:** (Ex: Ele *estuda* todos os dias).\n🔹 **2. Verdades Universais/Científicas:** (Ex: O homem *é* mortal).\n🔹 **3. Futuro Programado/Certo:** (Ex: Amanhã o diretor *assina* as férias)."
+        },
+        "tags": ["Língua Portuguesa", "Verbos", "Tempos Verbais", "Semântica", "FGV", "TJ-SC"]
+    },
+    {
+        "id": 10107,
+        "front": {
+            "title": "Direitos Humanos — O Princípio da Igualdade na DUDH ⚖️",
+            "subtitle": "Para as provas, a igualdade prevista na DUDH é absoluta/material ou jurídica/moral?"
+        },
+        "back": {
+            "body": "🔹 **A IGUALDADE É JURÍDICA E MORAL.**\n\n🚨 **O Pega-Ratão:** A DUDH *não* estabelece igualdade material absoluta (eliminação total das diferenças econômicas). Ela garante que todos tenham o mesmo valor perante a lei e a mesma dignidade humana, vedando a discriminação."
+        },
+        "tags": ["Direitos Humanos", "DUDH", "Igualdade", "TJ-SC"]
+    },
+    {
+        "id": 10108,
+        "front": {
+            "title": "LGPD — Papéis no Tratamento de Dados 🎭",
+            "subtitle": "Qual é a diferença exata entre Controlador, Operador e Encarregado (DPO)?"
+        },
+        "back": {
+            "body": "🔹 **Controlador:** Toma as DECISÕES sobre o tratamento.\n🔹 **Operador:** EXECUTA as ordens (trata os dados em nome do controlador).\n🔹 **Encarregado:** É o CANAL DE COMUNICAÇÃO (Ponte entre Controlador ↔ Titular ↔ ANPD) e orienta funcionários."
+        },
+        "tags": ["Informática", "LGPD", "Agentes de Tratamento", "FGV", "TJ-SC"]
+    },
+    {
+        "id": 10109,
+        "front": {
+            "title": "Língua Portuguesa — Conjunção 'Sempre que' ⏳",
+            "subtitle": "Qual é o valor semântico (sentido) da locução conjuntiva 'Sempre que'?"
+        },
+        "back": {
+            "body": "🔹 **TEMPO (Frequência/Recorrência).**\n\n🚨 **O Pega-Ratão:** Não confunda com Causa! 'Sempre que' indica *quando* a ação acontece repetidamente.\n*Ex:* **Sempre que** chove, ela fica em casa. (Equivale a: *Toda vez que / Quando*)."
+        },
+        "tags": ["Língua Portuguesa", "Conjunções", "Orações Subordinadas", "Tempo", "TJ-SC"]
+    },
+    {
+        "id": 10110,
+        "front": {
+            "title": "Língua Portuguesa — Expressão 'Cerca de' 📐",
+            "subtitle": "Qual é a lógica semântica para o uso adequado da expressão 'cerca de' nas provas da FGV?"
+        },
+        "back": {
+            "body": "🔹 **CERCA DE = APROXIMADAMENTE.** Exige o acompanhamento de números redondos (10, 50, 100, mil, dúzia).\n\n🚨 **O Pega-Ratão:** É ilógico (impropriedade léxica) usar 'cerca de' junto com números exatos ou 'quebrados'.\n❌ *Errado:* Cerca de 18 / Cerca de 47.\n✅ *Correto:* Cerca de 20 / Cerca de 50."
+        },
+        "tags": ["Língua Portuguesa", "Semântica", "Expressões", "Impropriedade Léxica", "FGV", "TJ-SC"]
+    },
+    {
+        "id": 10111,
+        "front": {
+            "title": "Direito Administrativo — Violação da Moralidade ⚖️",
+            "subtitle": "Um ato administrativo que viola a Moralidade sofre controle de legalidade (Anulação) ou de mérito (Revogação)?"
+        },
+        "back": {
+            "body": "🔹 **Controle de LEGALIDADE (Anulação).**\n\n🚨 **O Pega-Ratão da FGV:** A banca tenta te convencer de que moralidade é só 'conveniência' ou 'ética subjetiva'. Falso! A Moralidade é princípio jurídico. Feriu a moralidade = Feriu a lei = O ato deve ser ANULADO (e não revogado) [1, 2]."
+        },
+        "tags": ["Direito Administrativo", "Princípios", "Moralidade", "Atos Administrativos", "TJ-SC"]
+    },
+    {
+        "id": 10112,
+        "front": {
+            "title": "Língua Portuguesa — Pretérito Perfeito do Indicativo ⏳",
+            "subtitle": "Quais são os dois sentidos possíveis do Pretérito Perfeito segundo a Dica 57?"
+        },
+        "back": {
+            "body": "🔹 **1. Ação 100% concluída no passado:** Fato com início e fim definidos lá atrás (Ex: *Ontem levantei cedo*).\n🔹 **2. Ação concluída com EFEITOS presentes:** O fato acabou, mas as consequências perduram até hoje (Ex: *Aprendi inglês na infância* - o conhecimento continua)."
+        },
+        "tags": ["Língua Portuguesa", "Verbos", "Pretérito Perfeito", "Semântica", "FGV", "TJ-SC"]
+    },
+    {
+        "id": 10113,
+        "front": {
+            "title": "Língua Portuguesa — Pretérito Perfeito Composto ⏳",
+            "subtitle": "Qual é a estrutura de formação e o valor semântico (sentido) do Pretérito Perfeito Composto do Indicativo?"
+        },
+        "back": {
+            "body": "🔹 **Sentido:** Ação que começou no passado e **continua até o presente**.\n🔹 **Estrutura (A Pegadinha):** Verbo Auxiliar no PRESENTE (*Tenho/Tem/Temos*) + Verbo Principal no PARTICÍPIO (*-ado/-ido*).\n*Ex:* O servidor **tem trabalhado** muito."
+        },
+        "tags": ["Língua Portuguesa", "Verbos", "Tempos Compostos", "FGV", "TJ-SC"]
+    },
+    {
+        "id": 10114,
+        "front": {
+            "title": "Língua Portuguesa — Pretérito Imperfeito do Indicativo ⏳",
+            "subtitle": "Quais são as principais funções (valores semânticos) do Pretérito Imperfeito cobradas pela FGV?"
+        },
+        "back": {
+            "body": "🔹 **1. Hábito no passado:** Uma rotina que ficou lá atrás (Ex: *Ele estudava todos os dias*).\n🔹 **2. Ação em andamento/inacabada:** Algo que estava acontecendo (Ex: *Ela tomava banho quando a luz caiu*).\n🔹 **3. Polidez/Educação:** Suavizar um pedido no presente (Ex: *Eu queria um café*)."
+        },
+        "tags": ["Língua Portuguesa", "Verbos", "Pretérito Imperfeito", "Semântica", "FGV", "TJ-SC"]
+    },
+    {
+        "id": 10115,
+        "front": {
+            "title": "Língua Portuguesa — Pretérito Mais-que-perfeito do Indicativo ⏳",
+            "subtitle": "Qual é a principal função semântica (sentido) do Pretérito Mais-que-perfeito?"
+        },
+        "back": {
+            "body": "🔹 **O Passado do Passado:** Indica uma ação que já estava 100% concluída ANTES de outra ação que também ocorreu no passado.\n*Ex:* Quando o juiz entrou na sala, o réu já **tinha confessado**. (A confissão aconteceu ANTES da entrada)."
+        },
+        "tags": ["Língua Portuguesa", "Verbos", "Tempos Verbais", "Semântica", "FGV", "TJ-SC"]
+    },
+    {
+        "id": 10116,
+        "front": {
+            "title": "Língua Portuguesa — Futuro do Presente do Indicativo 🔮",
+            "subtitle": "Quais são os 3 principais valores semânticos (sentidos) desse tempo verbal?"
+        },
+        "back": {
+            "body": "🔹 **1. Ação futura planejada:** Certeza de que vai ocorrer (Ex: *Amanhã viajarei*).\n🔹 **2. Promessas ou Previsões:** Compromisso assumido (Ex: *Eu te ajudarei*).\n🔹 **3. Possibilidades/Conjecturas:** Depende de um fator futuro (Ex: *Eles chegarão a tempo, se não chover*)."
+        },
+        "tags": ["Língua Portuguesa", "Verbos", "Tempos Verbais", "Semântica", "FGV", "TJ-SC"]
+    },
+    {
+        "id": 10117,
+        "front": {
+            "title": "Direito Constitucional — Direitos x Garantias e Alcance ⚖️",
+            "subtitle": "Qual é a diferença entre Direitos e Garantias? O turista estrangeiro possui direitos no Brasil?"
+        },
+        "back": {
+            "body": "🔹 **Direitos:** São os bens protegidos (Ex: Liberdade).\n🔹 **Garantias:** São os instrumentos de proteção (Ex: Habeas Corpus).\n\n🚨 **O Pega-Ratão (Alcance):** A CF fala em 'estrangeiros residentes', mas o STF garante que **QUALQUER PESSOA** em território nacional (inclusive turista de passagem/trânsito) é titular de direitos fundamentais!"
+        },
+        "tags": ["Direito Constitucional", "Artigo 5º", "Direitos e Garantias", "STF", "FGV"]
+    },
+    {
+        "id": 10118,
+        "front": {
+            "title": "Direito Constitucional — Princípio da Igualdade (Isonomia) ⚖️",
+            "subtitle": "Qual a diferença entre Igualdade na Lei e Igualdade perante a Lei? O tratamento diferenciado é permitido?"
+        },
+        "back": {
+            "body": "🔹 **Igualdade NA lei:** Limita o legislador. Ele pode (e deve) criar leis com tratamentos diferenciados para equilibrar desigualdades, desde que haja **razoabilidade**.\n🔹 **Igualdade PERANTE a lei:** Limita o aplicador (juiz/Estado). Ele não pode discriminar quem a lei tratou como igual.\n🚨 **Atenção:** Tratar os desiguais de forma desigual (ex: cotas) é a busca pela **Igualdade Material**."
+        },
+        "tags": ["Direito Constitucional", "Artigo 5º", "Igualdade", "Isonomia", "TJ-SC"]
+    },
+    {
+        "id": 10119,
+        "front": {
+            "title": "Direito Constitucional — Tortura vs. Tratamento Degradante ⚖️",
+            "subtitle": "Qual a diferença conceitual entre Tortura e Tratamento Degradante segundo o nosso material?"
+        },
+        "back": {
+            "body": "🔹 **Tortura:** Ação/omissão que gera INTENSO sofrimento físico ou mental. Tem finalidade (obter confissão, punir, intimidar, discriminar).\n🔹 **Tratamento Degradante:** Focado na HUMILHAÇÃO. A pessoa é diminuída diante dos outros ou de si mesma."
+        },
+        "tags": ["Direito Constitucional", "Artigo 5º", "Tortura", "Direitos Fundamentais", "TJ-SC"]
     }
 
 ]
@@ -1287,12 +1529,13 @@ export const mapaTJSC: Record<string, string[]> = {
         "Conjuntos", "Probabilidade", "Sequencias", "Sequências", "Raciocinio Logico",
         "Raciocínio Lógico", "Argumentação"
     ],
-    "Dir. Constitucional": [
+
+    "Direito Constitucional": [
         "Constitucional", "Direitos Fundamentais", "Federacao", "Federação",
         "Remedios Constitucionais", "Remédios Constitucionais", "Poderes da Republica",
         "Poderes da República", "CF/88"
     ],
-    "Dir. Administrativo": [
+    "Direito Administrativo": [
         "Administrativo", "Principios", "Princípios", "Atos Administrativos",
         "Licitacao", "Licitação", "Servicos Publicos", "Serviços Públicos",
         "Agentes Publicos", "Agentes Públicos", "Poderes", "Contratos"
