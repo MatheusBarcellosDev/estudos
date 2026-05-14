@@ -1531,9 +1531,16 @@ export const mapaTJSC: Record<string, string[]> = {
     ],
 
     "Direito Constitucional": [
-        "Constitucional", "Direitos Fundamentais", "Federacao", "Federação",
+        "Constitucional", "Direito Constitucional", "Direitos Fundamentais", "Federacao", "Federação",
         "Remedios Constitucionais", "Remédios Constitucionais", "Poderes da Republica",
-        "Poderes da República", "CF/88"
+        "Poderes da República", "CF/88", "Artigo 5º", "Art. 5º",
+        "Igualdade", "Isonomia", "Liberdade", "Direitos e Garantias",
+        "Habeas Corpus", "Mandado de Seguranca", "Mandado de Segurança",
+        "Habeas Data", "Mandado de Injuncao", "Mandado de Injunção",
+        "Tortura", "Crimes Hediondos", "Inafiancavel", "Inafiançável",
+        "Imprescritivel", "Imprescritível", "STF", "Controle de Constitucionalidade",
+        "Direitos Sociais", "Direitos Politicos", "Direitos Políticos",
+        "Processo Legislativo", "Emenda Constitucional", "Principio da Legalidade"
     ],
     "Direito Administrativo": [
         "Administrativo", "Principios", "Princípios", "Atos Administrativos",
