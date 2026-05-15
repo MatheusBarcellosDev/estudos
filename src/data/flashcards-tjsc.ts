@@ -1498,6 +1498,28 @@ Mesmo em guerra, o Estado **NÃO PODE** suspender:
             "body": "🔹 **Tortura:** Ação/omissão que gera INTENSO sofrimento físico ou mental. Tem finalidade (obter confissão, punir, intimidar, discriminar).\n🔹 **Tratamento Degradante:** Focado na HUMILHAÇÃO. A pessoa é diminuída diante dos outros ou de si mesma."
         },
         "tags": ["Direito Constitucional", "Artigo 5º", "Tortura", "Direitos Fundamentais", "TJ-SC"]
+    },
+    {
+        "id": 10120,
+        "front": {
+            "title": "Direito Constitucional — Liberdade de Expressão 🗣️",
+            "subtitle": "Quais são as três regras de ouro da manifestação do pensamento no Art. 5º?"
+        },
+        "back": {
+            "body": "🔹 **1. Vedação ao Anonimato:** É livre a manifestação, mas você deve se identificar.\n🔹 **2. Direito de Resposta:** Deve ser proporcional ao agravo + direito à indenização (cabe para PF e PJ).\n🔹 **3. Fim da Censura:** É proibida qualquer censura prévia (a responsabilização ocorre *a posteriori*)."
+        },
+        "tags": ["Direito Constitucional", "Artigo 5º", "Liberdade de Expressão", "TJ-SC", "FGV"]
+    },
+    {
+        "id": 10121,
+        "front": {
+            "title": "Direito Constitucional — Privacidade e Sigilo Bancário 🏦",
+            "subtitle": "Os danos moral e material são cumulativos? Quem tem poderes para determinar a quebra de sigilo bancário?"
+        },
+        "back": {
+            "body": "🔹 **Danos:** Sim! Dano moral e material decorrentes do mesmo fato são **CUMULATIVOS**.\n🔹 **Quebra de Sigilo Bancário:** Pode ser determinada por:\n1) Juiz (Poder Judiciário)\n2) CPIs (Apenas Federais e Estaduais)\n3) Autoridades Fazendárias (Receita)\n4) **Ministério Público: APENAS quando envolver verbas públicas!** (Se for crime comum privado, o MP precisa pedir ao juiz)."
+        },
+        "tags": ["Direito Constitucional", "Artigo 5º", "Privacidade", "Sigilo Bancário", "TJ-SC", "FGV"]
     }
 
 ]
