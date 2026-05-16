@@ -1520,6 +1520,50 @@ Mesmo em guerra, o Estado **NÃO PODE** suspender:
             "body": "🔹 **Danos:** Sim! Dano moral e material decorrentes do mesmo fato são **CUMULATIVOS**.\n🔹 **Quebra de Sigilo Bancário:** Pode ser determinada por:\n1) Juiz (Poder Judiciário)\n2) CPIs (Apenas Federais e Estaduais)\n3) Autoridades Fazendárias (Receita)\n4) **Ministério Público: APENAS quando envolver verbas públicas!** (Se for crime comum privado, o MP precisa pedir ao juiz)."
         },
         "tags": ["Direito Constitucional", "Artigo 5º", "Privacidade", "Sigilo Bancário", "TJ-SC", "FGV"]
+    },
+    {
+        "id": 10122,
+        "front": {
+            "title": "Direito Constitucional — Inviolabilidade Domiciliar 🏠",
+            "subtitle": "O que é 'casa'? Quais são as exceções para entrar sem consentimento (Dia vs Noite)?"
+        },
+        "back": {
+            "body": "🔹 **É Casa:** Quarto de hotel, escritório, consultório, boleia de caminhão.\n🔹 **Qualquer hora (Dia/Noite):** Flagrante delito, desastre ou prestar socorro.\n🔹 **Somente de Dia (05h às 21h):** Determinação Judicial.\n🚨 **Exceção STF (Noturna):** Ordem judicial pode autorizar entrada à noite em escritório/empresa EXCLUSIVAMENTE para plantar **escuta ambiental**."
+        },
+        "tags": ["Direito Constitucional", "Artigo 5º", "Inviolabilidade Domiciliar", "STF", "TJ-SC"]
+    },
+    {
+        "id": 10123,
+        "front": {
+            "title": "Direito Constitucional — Sigilo das Comunicações 📞",
+            "subtitle": "Qual a diferença de autoridade competente entre a Interceptação Telefônica e a Quebra do Sigilo Telefônico?"
+        },
+        "back": {
+            "body": "🔹 **Interceptação Telefônica (Grampo/Ouvir a conversa):** \nSÓ O JUIZ PODE! E apenas para investigação criminal/processual penal.\n\n🔹 **Quebra de Sigilo Telefônico (Extrato com data, hora e duração):** \nJUIZ e CPIs (Federais ou Estaduais) PODEM."
+        },
+        "tags": ["Direito Constitucional", "Artigo 5º", "Sigilo Telefônico", "CPI", "TJ-SC", "FGV"]
+    },
+    {
+        "id": 10124,
+        "front": {
+            "title": "Direito Constitucional — Liberdade de Trabalho 💼",
+            "subtitle": "Qual a classificação dessa norma? Quais são os 2 casos clássicos do STF sobre a exigência de qualificação?"
+        },
+        "back": {
+            "body": "🔹 **Classificação:** Norma de Eficácia Contida.\n🔹 **Regra do STF:** Só se pode exigir qualificação/diploma se a profissão trouxer RISCO COLETIVO (perigo iminente).\n🔹 **Exame da OAB:** É CONSTITUCIONAL (há risco social).\n🔹 **Diploma de Jornalista:** É INCONSTITUCIONAL (não há risco que justifique)."
+        },
+        "tags": ["Direito Constitucional", "Artigo 5º", "Liberdade de Profissão", "STF", "TJ-SC"]
+    },
+    {
+        "id": 10125,
+        "front": {
+            "title": "Direito Constitucional — Direito de Reunião 📢",
+            "subtitle": "Quais são os requisitos constitucionais para reuniões em locais abertos? Qual o remédio cabível em caso de violação?"
+        },
+        "back": {
+            "body": "🔹 **Requisitos (Art. 5º, XVI):** \n1) Fim pacífico e sem armas.\n2) Locais abertos ao público.\n3) Não frustrar outra reunião já agendada.\n4) **INDEPENDE de autorização**, exigindo-se **APENAS prévio aviso** à autoridade.\n\n🚨 **Remédio Cabível:** Mandado de Segurança (NÃO é Habeas Corpus!)."
+        },
+        "tags": ["Direito Constitucional", "Artigo 5º", "Direito de Reunião", "TJ-SC", "FGV"]
     }
 
 ]
