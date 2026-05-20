@@ -1564,6 +1564,259 @@ Mesmo em guerra, o Estado **NÃO PODE** suspender:
             "body": "🔹 **Requisitos (Art. 5º, XVI):** \n1) Fim pacífico e sem armas.\n2) Locais abertos ao público.\n3) Não frustrar outra reunião já agendada.\n4) **INDEPENDE de autorização**, exigindo-se **APENAS prévio aviso** à autoridade.\n\n🚨 **Remédio Cabível:** Mandado de Segurança (NÃO é Habeas Corpus!)."
         },
         "tags": ["Direito Constitucional", "Artigo 5º", "Direito de Reunião", "TJ-SC", "FGV"]
+    },
+    {
+        "id": 10126,
+        "front": {
+            "title": "Direito Constitucional / Direitos Humanos — Prisão por Dívida ⛓️",
+            "subtitle": "Quais são as regras para a prisão civil por dívida no Brasil segundo o STF?"
+        },
+        "back": {
+            "body": "🔹 **Regra Geral:** NINGUÉM será preso por dívida [2].\n🔹 **A ÚNICA EXCEÇÃO VÁLIDA:** Devedor de pensão alimentícia (inadimplemento voluntário e INESCUSÁVEL = sem desculpa) [1].\n🚨 **O Pega-Ratão (Depositário Infiel):** Está escrito na CF, mas o **STF PROIBIU** a prisão dele com base no Pacto de São José da Costa Rica [1]."
+        },
+        "tags": ["Direito Constitucional", "Artigo 5º", "Direitos Humanos", "Pacto de São José", "TJ-SC"]
+    },
+    {
+        "id": 10128,
+        "front": {
+            "title": "Direito Penal — A Guerra dos Verbos 🚔",
+            "subtitle": "Qual a diferença e os verbos de Corrupção Ativa, Corrupção Passiva e Concussão?"
+        },
+        "back": {
+            "body": "🔹 **Corrupção ATIVA (Crime do Particular):** OFERECER ou PROMETER vantagem indevida.\n🔹 **Corrupção PASSIVA (Crime do Servidor Manso):** SOLICITAR, RECEBER ou ACEITAR PROMESSA.\n🔹 **CONCUSSÃO (Crime do Servidor Autoritário):** EXIGIR vantagem indevida."
+        },
+        "tags": ["Direito Penal", "Crimes contra a Administração", "FGV", "TJ-SC"]
+    },
+    {
+        "id": 10129,
+        "front": {
+            "title": "Direito Constitucional — Desapropriação (Art. 5º) 🏡",
+            "subtitle": "Qual a REGRA de pagamento da desapropriação e quais as 3 EXCEÇÕES?"
+        },
+        "back": {
+            "body": "🔹 **A REGRA:** Justa, prévia e em **DINHEIRO**.\n🔹 **Exceção 1 (Urbano sem função social):** Títulos da Dívida Pública.\n🔹 **Exceção 2 (Rural para Reforma Agrária):** Títulos da Dívida Agrária.\n🚨 **Exceção 3 (Trabalho Escravo / Drogas):** Expropriação Confiscatória = **SEM INDENIZAÇÃO (ZERO)**."
+        },
+        "tags": ["Direito Constitucional", "Artigo 5º", "Direito de Propriedade", "Desapropriação", "FGV"]
+    },
+    {
+        "id": 10131,
+        "front": {
+            "title": "Direito Constitucional — Requisição Administrativa 🚨",
+            "subtitle": "Qual é o requisito para acontecer e como funciona a indenização?"
+        },
+        "back": {
+            "body": "🔹 **Requisito:** Iminente Perigo Público (enchentes, desastres, etc.).\n🔹 **O que ocorre:** O Estado usa a propriedade particular temporariamente.\n🔹 **Indenização:** É **ULTERIOR** (paga depois) e **SOMENTE SE HOUVER DANO**. \n🚨 *Atenção:* O Estado não paga 'aluguel' pelo uso do bem."
+        },
+        "tags": ["Direito Constitucional", "Artigo 5º", "Requisição Administrativa", "Propriedade", "TJ-SC"]
+    },
+    {
+        "id": 10134,
+        "front": {
+            "title": "Direito Constitucional — Direito do Autor 📚",
+            "subtitle": "Como funciona o direito exclusivo do Autor vs. do Inventor, e o que ocorre após a morte?"
+        },
+        "back": {
+            "body": "🔹 **Autor (Livros/Músicas):** Direito exclusivo pela **vida toda**.\n🔹 **Herdeiros do Autor:** Recebem o direito, mas APENAS **pelo tempo que a lei fixar** (Não é eterno!).\n🚨 **O Pega-Ratão (O Inventor):** Diferente do autor, o criador de inventos industriais (Propriedade Industrial) ganha um privilégio **APENAS TEMPORÁRIO** desde o início."
+        },
+        "tags": ["Direito Constitucional", "Artigo 5º", "Direitos do Autor", "Propriedade Industrial", "TJ-SC"]
+    },
+    {
+        "id": 10135,
+        "front": {
+            "title": "Direito Constitucional — Direito de Herança ⚰️",
+            "subtitle": "Qual lei regula a sucessão de bens de estrangeiros situados no Brasil (com herdeiros BR)?"
+        },
+        "back": {
+            "body": "🔹 **A REGRA:** Será aplicada a **LEI BRASILEIRA** em benefício do cônjuge ou filhos brasileiros.\n🚨 **A EXCEÇÃO (Pega-ratão):** Aplica-se a lei do estrangeiro falecido (*de cujus*) se ela for **MAIS FAVORÁVEL** aos herdeiros brasileiros."
+        },
+        "tags": ["Direito Constitucional", "Artigo 5º", "Direito de Herança", "Sucessão de Estrangeiro", "TJ-SC"]
+    },
+    {
+        "id": 10136,
+        "front": {
+            "title": "Direito Constitucional — Habeas Data x Mandado de Segurança 🛡️",
+            "subtitle": "Qual remédio constitucional usar quando o Estado nega o acesso a uma informação?"
+        },
+        "back": {
+            "body": "🔹 **Habeas Data:** Usado SOMENTE para acessar ou retificar (corrigir) informações **PESSOAIS (do próprio impetrante)** em bancos de dados do governo ou de caráter público.\n🔹 **Mandado de Segurança:** Usado para acessar informações de interesse **GERAL ou COLETIVO** (ex: contratos da prefeitura, andamento de licitações, gastos públicos, etc.)."
+        },
+        "tags": ["Direito Constitucional", "Artigo 5º", "Remédios Constitucionais", "Habeas Data", "TJ-SC"]
+    },
+    {
+        "id": 10138,
+        "front": {
+            "title": "Direito Constitucional — Direito de Ação ⚖️",
+            "subtitle": "Qual é a REGRA sobre o prévio esgotamento das vias administrativas e quais são as 3 EXCEÇÕES?"
+        },
+        "back": {
+            "body": "🔹 **A REGRA:** NÃO é necessário esgotar a via administrativa para ir ao Judiciário.\n🚨 **AS 3 EXCEÇÕES (Jurisdição Condicionada):** \n1) **Justiça Desportiva** (disciplina/competições).\n2) **Habeas Data** (exige recusa/omissão administrativa).\n3) **Reclamação ao STF** (contra a Adm. Pública por descumprimento de Súmula Vinculante)."
+        },
+        "tags": ["Direito Constitucional", "Artigo 5º", "Direito de Ação", "Inafastabilidade de Jurisdição", "TJ-SC"]
+    },
+    {
+        "id": 10140,
+        "front": {
+            "title": "Direito Constitucional — Segurança Jurídica 🛡️",
+            "subtitle": "O que a lei nova NÃO prejudicará (Art. 5º, XXXVI) e o que é Expectativa de Direito?"
+        },
+        "back": {
+            "body": "A lei nova NÃO prejudicará:\n🔹 **1. Direito Adquirido:** Requisitos já totalmente cumpridos na lei velha.\n🔹 **2. Ato Jurídico Perfeito:** Negócio/contrato já consumado.\n🔹 **3. Coisa Julgada:** Decisão do juiz sem mais recursos.\n🚨 **O Pega-Ratão:** *Expectativa de Direito* (ex: faltava 1 mês para aposentar) **NÃO TEM PROTEÇÃO** contra lei nova!"
+        },
+        "tags": ["Direito Constitucional", "Artigo 5º", "Segurança Jurídica", "Direito Adquirido", "TJ-SC"]
+    },
+    {
+        "id": 10141,
+        "front": {
+            "title": "Direito Constitucional — Princípio do Juiz Natural ⚖️",
+            "subtitle": "O que é o Tribunal de Exceção e qual é a regra constitucional sobre ele?"
+        },
+        "back": {
+            "body": "🔹 **A Regra Absoluta:** NÃO HAVERÁ juízo ou tribunal de exceção no Brasil.\n🔹 **O que é:** É um tribunal/juiz (*ad hoc*) criado **DEPOIS** do fato, com a finalidade exclusiva de julgar uma pessoa ou caso específico.\n🚨 **Foco de Prova:** Ninguém será processado senão pela autoridade competente (definida ANTES do crime)."
+        },
+        "tags": ["Direito Constitucional", "Artigo 5º", "Juiz Natural", "Tribunal de Exceção", "TJ-SC"]
+    },
+    {
+        "id": 10144,
+        "front": {
+            "title": "Direito Constitucional — Tribunal do Júri (Parte I) ⚖️",
+            "subtitle": "Quais são os 4 princípios do Júri (Macete Com PS2) e qual a maior pegadinha de competência?"
+        },
+        "back": {
+            "body": "🔹 **Princípios (Mnemônico Com PS2):** \n1) **Com**petência para crimes DOLOSOS contra a vida.\n2) **P**lenitude de defesa.\n3) **S**igilo das votações.\n4) **S**oberania dos veredictos.\n\n🚨 **O Pega-Ratão:** **Latrocínio** (roubo + morte), homicídio *culposo* e lesão corporal seguida de morte **NÃO VÃO** para o Júri! Eles são julgados pelo juiz comum."
+        },
+        "tags": ["Direito Constitucional", "Artigo 5º", "Tribunal do Júri", "Com PS2", "TJ-SC"]
+    },
+    {
+        "id": 10145,
+        "front": {
+            "title": "Súmula Vinculante 45 — Júri x Foro Privilegiado ⚖️",
+            "subtitle": "Quem julga a autoridade com foro privilegiado que comete crime doloso contra a vida?"
+        },
+        "back": {
+            "body": "🔹 **A Regra (SV 45):** A competência constitucional do Tribunal do Júri **PREVALECE** sobre o foro por prerrogativa de função estabelecido *exclusivamente* pela Constituição Estadual.\n🚨 **A Exceção Suprema:** Se o foro privilegiado estiver previsto na **Constituição Federal** (ex: Juízes, Promotores, Parlamentares Federais), a autoridade **NÃO** vai a júri popular!"
+        },
+        "tags": ["Direito Constitucional", "Tribunal do Júri", "Súmula Vinculante 45", "Foro Privilegiado", "TJ-SC"]
+    },
+    {
+        "id": 10146,
+        "front": {
+            "title": "Direito Constitucional/Penal — Princípio da Legalidade 🛡️",
+            "subtitle": "Quais são os dois pilares do Princípio da Legalidade e qual a maior pegadinha sobre a criação de crimes?"
+        },
+        "back": {
+            "body": "O Princípio da Legalidade se divide em:\n🔹 **1. Anterioridade:** A lei penal deve existir **ANTES** da conduta (proíbe a retroatividade para prejudicar).\n🔹 **2. Reserva Legal:** Somente **LEI** em sentido estrito pode criar crimes e penas.\n🚨 **O Pega-Ratão:** **Medida Provisória e Decretos NÃO PODEM** criar crimes ou cominar penas em nenhuma hipótese!"
+        },
+        "tags": ["Direito Constitucional", "Direito Penal", "Legalidade", "Reserva Legal", "Anterioridade", "TJ-SC"]
+    },
+    {
+        "id": 10148,
+        "front": {
+            "title": "Direito Penal — Reserva Legal e Medidas Provisórias 🛡️",
+            "subtitle": "Medida Provisória (MP) pode tratar de matéria de Direito Penal?"
+        },
+        "back": {
+            "body": "🔹 **Regra Geral:** NÃO! A CF veda edição de MP em matéria penal e processual penal (Reserva Legal).\n🚨 **A Exceção (Jurisprudência do STF):** É admitida a edição de Medida Provisória em matéria penal **DESDE QUE seja favorável (benéfica)** ao réu (ex: descriminalizar uma conduta)!"
+        },
+        "tags": ["Direito Constitucional", "Direito Penal", "Reserva Legal", "Medida Provisória", "STF", "TJ-SC"]
+    },
+    {
+        "id": 10150,
+        "front": {
+            "title": "Direito Constitucional — Crime de Racismo ⚖️",
+            "subtitle": "Quais são as 3 características constitucionais do crime de racismo (Art. 5º, XLII)?"
+        },
+        "back": {
+            "body": "O crime de racismo possui 3 características absolutas:\n🔹 **1. Inafiançável** (não cabe fiança).\n🔹 **2. Imprescritível** (não prescreve com o tempo, o Estado pune a qualquer momento).\n🚨 **3. Pena de RECLUSÃO!** (O Pega-Ratão: a FGV adora trocar por 'detenção')."
+        },
+        "tags": ["Direito Constitucional", "Artigo 5º", "Racismo", "Imprescritível", "TJ-SC"]
+    },
+    {
+        "id": 10153,
+        "front": {
+            "title": "Direito Constitucional — Matriz dos Crimes Constitucionais ⚖️",
+            "subtitle": "Quais são os crimes Imprescritíveis, quais são os Insuscetíveis de Graça/Anistia e quais são Inafiançáveis?"
+        },
+        "back": {
+            "body": "⏳ **Imprescritíveis (Macete 'R AÇÃO'):** **R**acismo e **Ação** de Grupos Armados.\n🚫 **Insuscetíveis de Graça/Anistia:** **3TH** (Tortura, Tráfico, Terrorismo, Hediondos).\n🔒 **Inafiançáveis:** TODOS ELES!\n🚨 **O Pega-Ratão:** A banca vai dizer que Tortura ou Tráfico são imprescritíveis. FALSO! Eles prescrevem com o tempo."
+        },
+        "tags": ["Direito Constitucional", "Artigo 5º", "Crimes Constitucionais", "Imprescritível", "3TH", "TJ-SC"]
+    },
+    {
+        "id": 10154,
+        "front": {
+            "title": "Direito Constitucional — Penas Proibidas 🚫",
+            "subtitle": "Quais são as 5 penas proibidas, qual é a única exceção e qual é o limite máximo de prisão?"
+        },
+        "back": {
+            "body": "🔹 **As 5 Penas Proibidas:** \n1) Caráter Perpétuo;\n2) Trabalhos forçados;\n3) Banimento;\n4) Cruéis;\n5) Morte.\n\n🚨 **A Única Exceção:** A pena de morte é admitida em caso de **GUERRA DECLARADA**.\n⏳ **Limite Máximo (STF):** O tempo máximo de cumprimento de pena no Brasil é de **40 anos**."
+        },
+        "tags": ["Direito Constitucional", "Artigo 5º", "Penas Proibidas", "Pena de Morte", "TJ-SC"]
+    },
+    {
+        "id": 10155,
+        "front": {
+            "title": "Direito Constitucional — Extradição 🛂",
+            "subtitle": "Brasileiro nato pode ser extraditado? E o naturalizado?"
+        },
+        "back": {
+            "body": "🔹 **Nato:** **JAMAIS** é extraditado (Art. 5º, LI).\n🔹 **Naturalizado:** Só em 2 casos:\n1) Crime COMUM praticado **ANTES** da naturalização.\n2) Tráfico de Drogas (a **QUALQUER TEMPO**).\n🚨 **Estrangeiro:** Não é extraditado por crime POLÍTICO ou de OPINIÃO."
+        },
+        "tags": ["Direito Constitucional", "Extradição", "Artigo 5º", "Nacionalidade", "TJ-SC"]
+    },
+    {
+        "id": 10155,
+        "front": {
+            "title": "Direito Constitucional — Extradição 🛂",
+            "subtitle": "Brasileiro nato pode ser extraditado? E o naturalizado?"
+        },
+        "back": {
+            "body": "🔹 **Nato:** **JAMAIS** é extraditado (Art. 5º, LI).\n🔹 **Naturalizado:** Só em 2 casos:\n1) Crime COMUM praticado **ANTES** da naturalização.\n2) Tráfico de Drogas (a **QUALQUER TEMPO**).\n🚨 **Estrangeiro:** Não é extraditado por crime POLÍTICO ou de OPINIÃO."
+        },
+        "tags": ["Direito Constitucional", "Extradição", "Artigo 5º", "Nacionalidade", "TJ-SC"]
+    },
+    {
+        "id": 10156,
+        "front": {
+            "title": "Direito Constitucional — Provas Ilícitas 🍎",
+            "subtitle": "O que é a Teoria dos Frutos da Árvore Envenenada?"
+        },
+        "back": {
+            "body": "🔹 **Definição:** É a doutrina (Art. 5º, LVI) que determina que uma prova obtida licitamente, mas que deriva de uma prova ilícita anterior, também é considerada inadmissível.\n🚨 **Exemplo:** Se a polícia descobre a localização de uma arma (prova derivada) através de uma tortura (prova ilícita originária), a apreensão da arma não pode ser usada no processo."
+        },
+        "tags": ["Direito Constitucional", "Artigo 5º", "Provas Ilícitas", "Processo Penal", "TJ-SC"]
+    },
+    {
+        "id": 10158,
+        "front": {
+            "title": "Direito Constitucional — Presunção de Inocência ⚖️",
+            "subtitle": "Até quando alguém é considerado inocente e qual o entendimento do STF sobre a 2ª instância?"
+        },
+        "back": {
+            "body": "🔹 **Duração:** Até o **trânsito em julgado** da sentença penal condenatória (Art. 5º, LVII).\n🔹 **STF (Atual):** É **VEDADA** a prisão automática após condenação em 2ª instância (é preciso esperar o fim de todos os recursos).\n🚨 **Cuidado:** Prisões de natureza **CAUTELAR** (preventiva) ainda podem ocorrer se houver necessidade demonstrada."
+        },
+        "tags": ["Direito Constitucional", "Artigo 5º", "STF", "Jurisprudência", "TJ-SC"]
+    },
+    {
+        "id": 10159,
+        "front": {
+            "title": "Direito Constitucional — Identificação Criminal 🪪",
+            "subtitle": "Qual a regra da identificação criminal e como se classifica essa norma?"
+        },
+        "back": {
+            "body": "🔹 **Regra:** O civilmente identificado NÃO será submetido a identificação criminal.\n🔹 **Exceção:** Salvo nas hipóteses previstas em LEI (ex: dúvida sobre o documento).\n🔹 **Classificação:** Norma de **Eficácia Contida** (pois a lei pode restringir o direito).\n🚨 **Atenção:** A FGV adora dizer que a proibição é absoluta. É FALSO!"
+        },
+        "tags": ["Direito Constitucional", "Artigo 5º", "Identificação Criminal", "Eficácia Contida", "TJ-SC"]
+    },
+    {
+        "id": 10160,
+        "front": {
+            "title": "Direito Constitucional — Aplicabilidade das Normas 🚗",
+            "subtitle": "Qual a diferença prática entre as normas de eficácia Plena, Contida e Limitada?"
+        },
+        "back": {
+            "body": "🔹 **PLENA (Carro Livre):** Nasce com força total. Não precisa de lei e **NÃO PODE ser restringida**.\n🔹 **CONTIDA (Carro com Freio):** Nasce com força total, mas a Constituição autoriza que uma lei futura **RESTRINJA/FREIE** o direito (Ex: Identificação criminal - 'salvo na lei').\n🔹 **LIMITADA (Carro sem Motor):** Nasce travada/incompleta. Depende de uma lei futura para **FAZER FUNCIONAR** o direito (Ex: Greve de servidor)."
+        },
+        "tags": ["Direito Constitucional", "Aplicabilidade das Normas", "Eficácia Contida", "Eficácia Limitada", "TJ-SC"]
     }
 
 ]
@@ -1629,7 +1882,16 @@ export const mapaTJSC: Record<string, string[]> = {
         "Direitos Políticos", "Direitos Sociais", "Direitos Econômicos",
         "Direitos Culturais", "Direito à Vida", "Direito à Liberdade",
         "Dignidade da Pessoa Humana", "Natureza Jurídica"
-    ]
+    ],
+    "Direito Penal": [
+        "Direito Penal", "Teoria do Crime", "Crimes Hediondos",
+        "Imputacao Objetiva", "Erro de Tipo", "Erro de Proibição",
+        "Culpa", "Dolo", "Legítima Defesa", "Estado de Necessidade",
+        "Atenuantes", "Agravantes", "Concurso de Pessoas",
+        "Concurso de Crimes", "Crimes contra a Administração", "Lavagem de Dinheiro",
+        "Crimes Contra a Honra", "Crimes contra o Patrimônio", "Tortura",
+        "Pena", "Dosimetria", "Crimes Contra a Fé Pública", "Crimes contra a Pessoa"
+    ],
 
 };
 
